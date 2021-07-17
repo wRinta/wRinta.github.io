@@ -198,25 +198,24 @@
 
         <div class="article-content markdown-body">
             <h1 id="安装准备"><a href="#安装准备" class="headerlink" title="安装准备"></a>安装准备</h1><p>安装博客前，电脑需要安装node.js，git。并且要在GitHub上建立一个仓库</p>
-<img  
+<p><img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="/Users/mac/blog/source/_posts/小白搭建博客教程/newrepository.png"
-                      style="zoom:50%;" 
-                >
-
+                     data-src="newrepository.png"
+                     
+                ></p>
 <p>如图所示，yourname是你的名字，要和你的GitHub名字完全一样，比如我是wrinta，我的Repository name那里填的就是write.github.io，下面的Add a README file也要记得勾选，然后就可以创建仓库了</p>
 <p><img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="/Users/mac/blog/source/_posts/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B/build.png"
+                     data-src="build.png"
                      
                 ></p>
 <p>进入刚刚我们新建的仓库，点击Settings，找到Pages，点击Choose a theme随便选择一个主题，过一会他会提示你可以通过域名访问啦</p>
 <p><img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="/Users/mac/blog/source/_posts/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B/choosetheme.png"
+                     data-src="choosetheme.png"
                      
                 ></p>
 <p>点击那个链接，出现的页面效果就是你刚刚随意选择的主题样式。觉得丑没关系，我们后面可以配置自己喜欢的主题。</p>
@@ -241,7 +240,7 @@
 <p><img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="/Users/mac/blog/source/_posts/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B/ssh.png"
+                     data-src="ssh.png"
                      
                 ></p>
 <p>还差一步，打开博客根目录下的_config.yml文件，这个是博客的配置文件，修改deploy</p>
@@ -249,13 +248,12 @@
 
 <h1 id="发布文章"><a href="#发布文章" class="headerlink" title="发布文章"></a>发布文章</h1><p>首先在博客的根目录下面打开git bash，安装扩展 npm i hexo-deployer-git</p>
 <p>打开博客根目录的配置文件_config.yml，将 post_asset_folder改成true，如图所示：</p>
-<img  
+<p><img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="/Users/mac/blog/source/_posts/小白搭建博客教程/asset.png"
-                      style="zoom:50%;" 
-                >
-
+                     data-src="asset.png"
+                     
+                ></p>
 <p>输入 hexo new post “article title”，新建一篇文章，在博客的根目录下，进入/source/_posts，可以看到刚刚新建的文件，其中.md文件是你写博客内容的地方，文件夹用来放你在同名.md文件里要用的图片。</p>
 <p>编写完后，输入 hexo g 生成静态文件，可以输入 hexo s 本地预览，然后输入 hexo d 。</p>
 <p>如果 hexo d 后报错 ERROR Deployer not found: git 输入：</p>
