@@ -1,5 +1,5 @@
 :root {
-  --background-color: #fef6f7;
+  --background-color: #fff;
   --second-background-color: #f7f7f7;
   --primary-color: #ffe8e9;
   --first-text-color: #484853;
@@ -20,7 +20,7 @@
 }
 @media (prefers-color-scheme: light) {
   :root {
-    --background-color: #fef6f7;
+    --background-color: #fff;
     --second-background-color: #f7f7f7;
     --primary-color: #ffe8e9;
     --first-text-color: #484853;
@@ -63,7 +63,7 @@
   }
 }
 .light-mode {
-  --background-color: #fef6f7;
+  --background-color: #fff;
   --second-background-color: #f7f7f7;
   --primary-color: #ffe8e9;
   --first-text-color: #484853;
