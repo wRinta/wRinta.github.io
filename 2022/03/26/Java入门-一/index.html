@@ -176,7 +176,7 @@
     
     
         <span class="article-wordcount article-meta-item">
-            <i class="fas fa-file-word"></i>&nbsp;<span>77 Words</span>
+            <i class="fas fa-file-word"></i>&nbsp;<span>486 Words</span>
         </span>
     
     
@@ -197,9 +197,68 @@
         
 
         <div class="article-content markdown-body">
-            <h1 id="入门"><a href="#入门" class="headerlink" title="入门"></a>入门</h1><h2 id="JDK、JRE、JVM"><a href="#JDK、JRE、JVM" class="headerlink" title="JDK、JRE、JVM"></a>JDK、JRE、JVM</h2><p>JDK：Java Development Kit，包含了JRE和JVM，扩充了开发工具</p>
+            <h1 id="JDK、JRE、JVM"><a href="#JDK、JRE、JVM" class="headerlink" title="JDK、JRE、JVM"></a>JDK、JRE、JVM</h1><p>JDK：Java Development Kit，包含了JRE和JVM，扩充了开发工具</p>
 <p>JRE：Java Runtime Environment，运行环境</p>
-<p>JVM：Java Virtual Machine，可以用软件或硬件来实现，模拟了一个小巧的CPU处理JAVA。跨平台的核心，屏蔽底层系统的差别。有解释型和编译型。</p>
+<p>JVM：Java Virtual Machine，可以用软件或硬件来实现，模拟了一个小巧的CPU处理JAVA。跨平台的核心，屏蔽底层系统的差别。</p>
+<h1 id="Hello-World"><a href="#Hello-World" class="headerlink" title="Hello World"></a>Hello World</h1><ol>
+<li><p>新建一个Java文件，文件的后缀名为.java，如helloworld.java</p>
+</li>
+<li><p>输入代码</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">helloworld</span></span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123; <span class="comment">// 程序通过mai方法执行</span></span><br><span class="line">		System.out.print(<span class="string">&quot;Hello,world!&quot;</span>);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li><p>在控制台输入命令进行编译</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">javac Helloworld.java <span class="comment">#编译成功控制台不输出消息，会在文件夹里生成一个helloworld类</span></span><br></pre></td></tr></table></figure>
+
+<p><img  
+                     lazyload
+                     src="/images/star.gif"
+                     data-src="p1.png"
+                     
+                ></p>
+</li>
+<li><p>在控制台输入命令运行类</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">java Helloworld <span class="comment">#输出结果会在控制台中显示</span></span><br></pre></td></tr></table></figure>
+
+<p><img  
+                     lazyload
+                     src="/images/star.gif"
+                     data-src="p2.png"
+                     
+                ></p>
+</li>
+</ol>
+<hr>
+<p><strong>注意</strong>：</p>
+<ul>
+<li><strong>Java是大小写敏感的</strong></li>
+<li><strong>文件名和代码里的类名必须保持一致，且首字母大写</strong></li>
+</ul>
+<h1 id="Java程序运行机制"><a href="#Java程序运行机制" class="headerlink" title="Java程序运行机制"></a>Java程序运行机制</h1><p>Java既有编译型(Complie)的特点，又有解释型(Interpret)的特点。.java的源文件经过Java编译器成为.class文件。.class文件放入虚拟机的类装载器中，类加载进JVM。字节码校验器会检查代码是否出错，最后解释器会将代码解释给操作系统平台。<em><strong>先编译，再解释</strong></em>。</p>
+<h1 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h1><p>注释并不会被执行</p>
+<ul>
+<li><p>单行注释：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 这是单行注释</span></span><br></pre></td></tr></table></figure></li>
+<li><p>多行注释：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">这是多行注释</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure></li>
+<li><p>JavaDoc文档注释：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">* <span class="doctag">@Description</span> Helloworld</span></span><br><span class="line"><span class="comment">* <span class="doctag">@Author</span> Rinta</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h1 id="标识符"><a href="#标识符" class="headerlink" title="标识符"></a>标识符</h1><p>Java所有的组成部分都需要名字。类名、变量名以及方法名都被称为标识符。</p>
+<p>Java中的关键字：</p>
+<p><img  
+                     lazyload
+                     src="/images/star.gif"
+                     data-src="guanjianzi.png"
+                     
+                ></p>
+<hr>
+<p><strong>注意：</strong></p>
+<ul>
+<li>所有的标识符应该以<strong>字母（A-Z或a-z），美元符（$），或下划线（_）开始</strong></li>
+<li>首字母之后可以是<strong>字母（A-Z或a-z），美元符（$），下划线（_）或数字</strong>的随意组合</li>
+<li><strong>不能使用关键字作为变量名或方法名</strong></li>
+<li><strong>标识符大小写敏感</strong></li>
+<li>可以使用中文命名，不建议</li>
+</ul>
 
         </div>
 
@@ -356,7 +415,7 @@
         <aside class="page-aside">
             <div class="post-toc-wrap">
     <div class="post-toc">
-        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%85%A5%E9%97%A8"><span class="nav-number">1.</span> <span class="nav-text">入门</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#JDK%E3%80%81JRE%E3%80%81JVM"><span class="nav-number">1.1.</span> <span class="nav-text">JDK、JRE、JVM</span></a></li></ol></li></ol>
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#JDK%E3%80%81JRE%E3%80%81JVM"><span class="nav-number">1.</span> <span class="nav-text">JDK、JRE、JVM</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Hello-World"><span class="nav-number">2.</span> <span class="nav-text">Hello World</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Java%E7%A8%8B%E5%BA%8F%E8%BF%90%E8%A1%8C%E6%9C%BA%E5%88%B6"><span class="nav-number">3.</span> <span class="nav-text">Java程序运行机制</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%B3%A8%E9%87%8A"><span class="nav-number">4.</span> <span class="nav-text">注释</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%A0%87%E8%AF%86%E7%AC%A6"><span class="nav-number">5.</span> <span class="nav-text">标识符</span></a></li></ol>
     </div>
 </div>
         </aside>
@@ -446,13 +505,13 @@
 
 
 
-<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/wanko.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script><script>
+<script>
             window.imageLazyLoadSetting = {
                 isSPA: false,
                 preloadRatio: 1,
                 processImages: null,
             };
-        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=o;var e=n.imageLazyLoadSetting.isSPA,i=n.imageLazyLoadSetting.preloadRatio||1,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function o(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(n.innerHeight*i||document.documentElement.clientHeight*i)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},t.src!==i&&(n.src=i)}()}o(),n.addEventListener("scroll",function(){var t,e;t=o,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script></body>
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=o;var e=n.imageLazyLoadSetting.isSPA,i=n.imageLazyLoadSetting.preloadRatio||1,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function o(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(n.innerHeight*i||document.documentElement.clientHeight*i)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},t.src!==i&&(n.src=i)}()}o(),n.addEventListener("scroll",function(){var t,e;t=o,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/wanko.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
 </html>
 
 <script type="text/javascript" src="/js/funnytitle.js"></script>
