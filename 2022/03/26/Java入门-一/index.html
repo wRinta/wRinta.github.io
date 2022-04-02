@@ -176,12 +176,12 @@
     
     
         <span class="article-wordcount article-meta-item">
-            <i class="fas fa-file-word"></i>&nbsp;<span>486 Words</span>
+            <i class="fas fa-file-word"></i>&nbsp;<span>3.4k Words</span>
         </span>
     
     
         <span class="article-min2read article-meta-item">
-            <i class="fas fa-clock"></i>&nbsp;<span>1 Mins</span>
+            <i class="fas fa-clock"></i>&nbsp;<span>12 Mins</span>
         </span>
     
     
@@ -201,12 +201,12 @@
 <p>JRE：Java Runtime Environment，运行环境</p>
 <p>JVM：Java Virtual Machine，可以用软件或硬件来实现，模拟了一个小巧的CPU处理JAVA。跨平台的核心，屏蔽底层系统的差别。</p>
 <h1 id="Hello-World"><a href="#Hello-World" class="headerlink" title="Hello World"></a>Hello World</h1><ol>
-<li><p>新建一个Java文件，文件的后缀名为.java，如helloworld.java</p>
+<li><p>新建一个Java文件，文件的后缀名为.java，如Helloworld.java</p>
 </li>
 <li><p>输入代码</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">helloworld</span></span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123; <span class="comment">// 程序通过mai方法执行</span></span><br><span class="line">		System.out.print(<span class="string">&quot;Hello,world!&quot;</span>);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Helloworld</span></span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123; <span class="comment">// 程序通过mai方法执行</span></span><br><span class="line">		System.out.print(<span class="string">&quot;Hello,world!&quot;</span>);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
 <li><p>在控制台输入命令进行编译</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">javac Helloworld.java <span class="comment">#编译成功控制台不输出消息，会在文件夹里生成一个helloworld类</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">javac Helloworld.java <span class="comment">#编译成功控制台不输出消息，会在文件夹里生成一个Helloworld类</span></span><br></pre></td></tr></table></figure>
 
 <p><img  
                      lazyload
@@ -229,8 +229,16 @@
 <hr>
 <p><strong>注意</strong>：</p>
 <ul>
-<li><strong>Java是大小写敏感的</strong></li>
-<li><strong>文件名和代码里的类名必须保持一致，且首字母大写</strong></li>
+<li><p>Java是<strong>大小写敏感的。</strong></p>
+</li>
+<li><p><strong>所有的方法名都应该以小写字母开头。</strong>如果方法名含有若干单词，则<strong>后面的每个单词首字母大写。</strong></p>
+</li>
+<li><p><strong>类名的首字母应该大写</strong>。如果类名由若干单词组成，那么<strong>每个单词的首字母应该大写，例如 MyFirstJavaClass</strong></p>
+</li>
+<li><p><strong>源文件名和代码里的类名必须保持一致，且首字母大写</strong></p>
+</li>
+<li><p><strong>主方法入口</strong>：所有的 Java 程序由 <strong>public static void main(String[] args)</strong> 方法开始执行。</p>
+</li>
 </ul>
 <h1 id="Java程序运行机制"><a href="#Java程序运行机制" class="headerlink" title="Java程序运行机制"></a>Java程序运行机制</h1><p>Java既有编译型(Complie)的特点，又有解释型(Interpret)的特点。.java的源文件经过Java编译器成为.class文件。.class文件放入虚拟机的类装载器中，类加载进JVM。字节码校验器会检查代码是否出错，最后解释器会将代码解释给操作系统平台。<em><strong>先编译，再解释</strong></em>。</p>
 <h1 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h1><p>注释并不会被执行</p>
@@ -259,6 +267,439 @@
 <li><strong>标识符大小写敏感</strong></li>
 <li>可以使用中文命名，不建议</li>
 </ul>
+<h1 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h1><p>Java是强类型语言，要求变量的使用严格符合规定，所有变量必须先定义后才能使用，</p>
+<h2 id="基本类型（primitive-type）"><a href="#基本类型（primitive-type）" class="headerlink" title="基本类型（primitive type）"></a>基本类型（primitive type）</h2><ul>
+<li><p>数值类型</p>
+<ul>
+<li><p>整数类型</p>
+<ul>
+<li><p>byte 一个字节范围：-128 - 127</p>
+</li>
+<li><p>short 两个字节范围：-32768 - 32767</p>
+</li>
+<li><p>int 四个字节范围：-2147483648 - 2147483647</p>
+</li>
+<li><p>long 八个字节范围：-9223372036854775808 - 9223372036854775807 </p>
+<p>在数字后面加L，如：long num1 = 12344321L;</p>
+</li>
+</ul>
+</li>
+<li><p>浮点类型</p>
+<ul>
+<li><p>float 占4个字节</p>
+<p>在数字后面要加F，如：float num2 = 22.3f;</p>
+</li>
+<li><p>double 占8个字节</p>
+</li>
+</ul>
+</li>
+<li><p>字符类型 </p>
+<ul>
+<li>char 占2个字节</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>boolean类型：占1位，值只有true和false</p>
+</li>
+</ul>
+<h3 id="类型转换"><a href="#类型转换" class="headerlink" title="类型转换"></a>类型转换</h3><p>转换的从低到高为：byte,short,char—&gt; int —&gt;long—&gt;float—&gt;double，低（范围）向高转换是自动转换，高到低要强制转换</p>
+<p><strong>注意：</strong></p>
+<ul>
+<li>不能对布尔值进行转换</li>
+<li>不能把对象类型转换成不相干的类型</li>
+<li>高到低要用到强制转换</li>
+<li>转换的时候可能存在<strong>内存溢出</strong>，或者<strong>精度问题</strong></li>
+</ul>
+<h2 id="引用类型（reference-type）"><a href="#引用类型（reference-type）" class="headerlink" title="引用类型（reference type）"></a>引用类型（reference type）</h2><ul>
+<li>类</li>
+<li>接口</li>
+<li>数组</li>
+</ul>
+<h2 id="拓展"><a href="#拓展" class="headerlink" title="拓展"></a>拓展</h2><ul>
+<li><p>整数拓展</p>
+<ul>
+<li>二进制：0b，八进制：0，十六进制：0x</li>
+</ul>
+</li>
+<li><p>浮点数拓展</p>
+<ul>
+<li>eg. 银行业务怎么表示？BigDecimal 数学工具类</li>
+</ul>
+</li>
+</ul>
+<p><strong>最好完全避免用浮点数进行比较</strong></p>
+<ul>
+<li><p>字符类拓展</p>
+<ul>
+<li>所有的字符本质上是数字，Unicode编码，从U0000到UFFFF</li>
+<li>\u 转义字符表示</li>
+</ul>
+</li>
+<li><p>布尔值拓展</p>
+<ul>
+<li>```java<br>boolean flag = true;<br>if(falg){}<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">    </span><br><span class="line"></span><br><span class="line"># 变量</span><br><span class="line"></span><br><span class="line">每个变量必须声明其类型，Java变量是程序中最基本的存储单元，要素包括变量名，变量类型和作用域。</span><br><span class="line"></span><br><span class="line">**注意：**</span><br><span class="line"></span><br><span class="line">- 每个变量都有类型，可以是基本类型，也可以是引用类型</span><br><span class="line">- 变量名必须是合法的标识符</span><br><span class="line">- 变量声明是一条完整的语句，分号结束</span><br><span class="line"></span><br><span class="line">## 变量作用域</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">```java</span><br><span class="line">public class Variable(</span><br><span class="line">	static int allClicks = 0;   // 类变量</span><br><span class="line">	String str = &quot;hello world&quot;;  //  实例变量</span><br><span class="line">    public void method()&#123;</span><br><span class="line">        int i = 0;  //  局部变量</span><br><span class="line">    &#125;</span><br><span class="line">)</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p>类变量</p>
+<p>关键词：static，从属于类</p>
+<ul>
+<li>类变量也称为<strong>静态变量，在类中以 static 关键字声明，但必须在方法之外</strong>。</li>
+<li>无论一个类创建了多少个对象，类只拥有类变量的一份拷贝。</li>
+<li>静态变量除了被声明为常量外很少使用，<strong>静态变量是指声明为 public/private，final 和 static 类型的变量。静态变量初始化后不可改变</strong>。</li>
+<li>静态变量储存在静态存储区。经常被声明为常量，很少单独使用 static 声明变量。</li>
+<li>静态变量在第一次被访问时创建，在程序结束时销毁。</li>
+<li>与实例变量具有相似的可见性。但为了对类的使用者可见，大多数静态变量声明为 public 类型。</li>
+<li>默认值和实例变量相似。数值型变量默认值是 0，布尔型默认值是 false，引用类型默认值是 null。变量的值可以在声明的时候指定，也可以在构造方法中指定。此外，静态变量还可以在静态语句块中初始化。</li>
+<li>静态变量可以通过：<em>ClassName.VariableName</em>的方式访问。</li>
+<li>类变量被声明为 public static final 类型时，类变量名称一般建议使用大写字母。如果静态变量不是 public 和 final 类型，其命名方式与实例变量以及局部变量的命名方式一致。</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p>实例变量</p>
+<p>独立于方法之外的变量，类的里面，从属于对象 </p>
+<ul>
+<li><p>实例变量声明在一个类中，但在方法、构造方法和语句块之外；</p>
+</li>
+<li><p>当一个对象被实例化之后，每个实例变量的值就跟着确定；</p>
+</li>
+<li><p>实例变量在对象创建的时候创建，在对象被销毁的时候销毁；</p>
+</li>
+<li><p><strong>实例变量的值应该至少被一个方法、构造方法或者语句块引用，使得外部能够通过这些方式获取实例变量信息；</strong></p>
+</li>
+<li><p><strong>实例变量可以声明在使用前或者使用后；</strong></p>
+</li>
+<li><p>访问修饰符可以修饰实例变量；</p>
+</li>
+<li><p>实例变量<strong>对于类中的方法、构造方法或者语句块是可见的。</strong>一般情况下应该<strong>把实例变量设为私有。通过使用访问修饰符可以使实例变量对子类可见；</strong></p>
+</li>
+<li><p>实例变量具有默认值。数值型变量的默认值是0，布尔型变量的默认值是false，引用类型变量的默认值是null。变量的值可以在声明时指定，也可以在构造方法中指定；</p>
+</li>
+<li><p>实例变量可以直接通过变量名访问。但在静态方法以及其他类中，就应该使用完全限定名：ObejectReference.VariableName。</p>
+</li>
+</ul>
+</li>
+<li><p>局部变量</p>
+<p>类的方法中的变量，必须声明和初始化值。</p>
+<ul>
+<li>局部变量声明在方法、构造方法或者语句块中；</li>
+<li>局部变量在方法、构造方法、或者语句块被执行的时候创建，当它们执行完成后，变量将会被销毁；</li>
+<li><strong>访问修饰符不能用于局部变量；</strong></li>
+<li>局部变量<strong>只在声明它的方法、构造方法或者语句块中可见</strong>；</li>
+<li>局部变量是在栈上分配的。</li>
+<li>局部变量没有默认值，所以局部变量被声明后，必须<strong>经过初始化，才可以使用。</strong></li>
+</ul>
+</li>
+</ul>
+<h1 id="常量"><a href="#常量" class="headerlink" title="常量"></a>常量</h1><p>初始化后不能再改变值</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// final 常量名=值;</span></span><br><span class="line"><span class="keyword">final</span> <span class="keyword">double</span> PI=<span class="number">3.14</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="Java运算符"><a href="#Java运算符" class="headerlink" title="Java运算符"></a>Java运算符</h1><h2 id="关系运算符"><a href="#关系运算符" class="headerlink" title="关系运算符"></a>关系运算符</h2><table>
+<thead>
+<tr>
+<th align="left">操作符</th>
+<th align="center">描述</th>
+<th align="center">例子（A=10,B=20）</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">+</td>
+<td align="center">加法 - 相加运算符两侧的值</td>
+<td align="center">A + B 等于 30</td>
+</tr>
+<tr>
+<td align="left">-</td>
+<td align="center">减法 - 左操作数减去右操作数</td>
+<td align="center">A – B 等于 -10</td>
+</tr>
+<tr>
+<td align="left">*</td>
+<td align="center">乘法 - 相乘操作符两侧的值</td>
+<td align="center">A * B等于200</td>
+</tr>
+<tr>
+<td align="left">/</td>
+<td align="center">除法 - 左操作数除以右操作数</td>
+<td align="center">B / A等于2</td>
+</tr>
+<tr>
+<td align="left">％</td>
+<td align="center">取余 - 左操作数除以右操作数的余数</td>
+<td align="center">B%A等于0</td>
+</tr>
+<tr>
+<td align="left">++</td>
+<td align="center">自增: 操作数的值增加1</td>
+<td align="center">B++ 或 ++B 等于 21</td>
+</tr>
+<tr>
+<td align="left">–</td>
+<td align="center">自减: 操作数的值减少1</td>
+<td align="center">B– 或 –B 等于 19</td>
+</tr>
+</tbody></table>
+<ul>
+<li><strong>前缀自增自减法（++a，–a）：</strong>先进行自增或自减运算，再进行表达式运算。</li>
+<li><strong>后缀自增自减法（a++，a–）：</strong>先进性表达式运算，再进行自增或自减运算。</li>
+</ul>
+<h2 id="关系运算符-1"><a href="#关系运算符-1" class="headerlink" title="关系运算符"></a>关系运算符</h2><table>
+<thead>
+<tr>
+<th align="left">运算符</th>
+<th align="center">描述</th>
+<th align="center">例子（A=10,B=20）</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">==</td>
+<td align="center">检查如果两个操作数的值是否相等，如果相等则条件为真。</td>
+<td align="center">（A == B）为假。</td>
+</tr>
+<tr>
+<td align="left">!=</td>
+<td align="center">检查如果两个操作数的值是否相等，如果值不相等则条件为真。</td>
+<td align="center">(A != B) 为真。</td>
+</tr>
+<tr>
+<td align="left">&gt;</td>
+<td align="center">检查左操作数的值是否大于右操作数的值，如果是那么条件为真。</td>
+<td align="center">（A&gt; B）为假。</td>
+</tr>
+<tr>
+<td align="left">&lt;</td>
+<td align="center">检查左操作数的值是否小于右操作数的值，如果是那么条件为真。</td>
+<td align="center">（A &lt;B）为真。</td>
+</tr>
+<tr>
+<td align="left">&gt;=</td>
+<td align="center">检查左操作数的值是否大于或等于右操作数的值，如果是那么条件为真。</td>
+<td align="center">（A&gt; = B）为假。</td>
+</tr>
+<tr>
+<td align="left">&lt;=</td>
+<td align="center">检查左操作数的值是否小于或等于右操作数的值，如果是那么条件为真。</td>
+<td align="center">（A &lt;= B）为真。</td>
+</tr>
+</tbody></table>
+<h2 id="位运算符"><a href="#位运算符" class="headerlink" title="位运算符"></a>位运算符</h2><p>位运算符，应用于整数类型(int)，长整型(long)，短整型(short)，字符型(char)，和字节型(byte)等类型。</p>
+<hr>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">A = <span class="number">0011</span> <span class="number">1100</span></span><br><span class="line">B = <span class="number">0000</span> <span class="number">1101</span></span><br><span class="line">-----------------</span><br><span class="line">A&amp;B = <span class="number">0000</span> <span class="number">1100</span></span><br><span class="line">A | B = <span class="number">0011</span> <span class="number">1101</span></span><br><span class="line">A ^ B = <span class="number">0011</span> <span class="number">0001</span></span><br><span class="line">~A= <span class="number">1100</span> <span class="number">0011</span></span><br></pre></td></tr></table></figure>
+
+<table>
+<thead>
+<tr>
+<th align="left">操作符</th>
+<th align="center">描述</th>
+<th align="center">例子（A=60，B=13）</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">＆</td>
+<td align="center">如果相对应位都是1，则结果为1，否则为0</td>
+<td align="center">（A＆B），得到12，即0000 1100</td>
+</tr>
+<tr>
+<td align="left">|</td>
+<td align="center">如果相对应位都是 0，则结果为 0，否则为 1</td>
+<td align="center">（A | B）得到61，即 0011 1101</td>
+</tr>
+<tr>
+<td align="left">^</td>
+<td align="center">如果相对应位值相同，则结果为0，否则为1</td>
+<td align="center">（A ^ B）得到49，即 0011 0001</td>
+</tr>
+<tr>
+<td align="left">〜</td>
+<td align="center">按位取反运算符翻转操作数的每一位，即0变成1，1变成0。</td>
+<td align="center">（〜A）得到-61，即1100 0011</td>
+</tr>
+<tr>
+<td align="left">&lt;&lt;</td>
+<td align="center">按位左移运算符。左操作数按位左移右操作数指定的位数。</td>
+<td align="center">A &lt;&lt; 2得到240，即 1111 0000</td>
+</tr>
+<tr>
+<td align="left">&gt;&gt;</td>
+<td align="center">按位右移运算符。左操作数按位右移右操作数指定的位数。</td>
+<td align="center">A &gt;&gt; 2得到15即 1111</td>
+</tr>
+<tr>
+<td align="left">&gt;&gt;&gt;</td>
+<td align="center">按位右移补零操作符。左操作数的值按右操作数指定的位数右移，移动得到的空位以零填充。</td>
+<td align="center">A&gt;&gt;&gt;2得到15即0000 1111</td>
+</tr>
+</tbody></table>
+<p>当使用与逻辑运算符时，在两个操作数都为true时，结果才为true，但是当得到第一个操作为false时，其结果就必定是false，这时候就<strong>不会再判断第二个操作了</strong>。</p>
+<h2 id="赋值运算符"><a href="#赋值运算符" class="headerlink" title="赋值运算符"></a>赋值运算符</h2><table>
+<thead>
+<tr>
+<th align="center">操作符</th>
+<th align="center">描述</th>
+<th align="center">例子</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">=</td>
+<td align="center">简单的赋值运算符，将右操作数的值赋给左侧操作数</td>
+<td align="center">C = A + B将把A + B得到的值赋给C</td>
+</tr>
+<tr>
+<td align="center">+ =</td>
+<td align="center">加和赋值操作符，它把左操作数和右操作数相加赋值给左操作数</td>
+<td align="center">C + = A等价于C = C + A</td>
+</tr>
+<tr>
+<td align="center">- =</td>
+<td align="center">减和赋值操作符，它把左操作数和右操作数相减赋值给左操作数</td>
+<td align="center">C - = A等价于C = C - A</td>
+</tr>
+<tr>
+<td align="center">* =</td>
+<td align="center">乘和赋值操作符，它把左操作数和右操作数相乘赋值给左操作数</td>
+<td align="center">C * = A等价于C = C * A</td>
+</tr>
+<tr>
+<td align="center">/ =</td>
+<td align="center">除和赋值操作符，它把左操作数和右操作数相除赋值给左操作数</td>
+<td align="center">C / = A，C 与 A 同类型时等价于 C = C / A</td>
+</tr>
+<tr>
+<td align="center">（％）=</td>
+<td align="center">取模和赋值操作符，它把左操作数和右操作数取模后赋值给左操作数</td>
+<td align="center">C％= A等价于C = C％A</td>
+</tr>
+<tr>
+<td align="center">&lt;&lt; =</td>
+<td align="center">左移位赋值运算符</td>
+<td align="center">C &lt;&lt; = 2等价于C = C &lt;&lt; 2</td>
+</tr>
+<tr>
+<td align="center">&gt;&gt; =</td>
+<td align="center">右移位赋值运算符</td>
+<td align="center">C &gt;&gt; = 2等价于C = C &gt;&gt; 2</td>
+</tr>
+<tr>
+<td align="center">＆=</td>
+<td align="center">按位与赋值运算符</td>
+<td align="center">C＆= 2等价于C = C＆2</td>
+</tr>
+<tr>
+<td align="center">^ =</td>
+<td align="center">按位异或赋值操作符</td>
+<td align="center">C ^ = 2等价于C = C ^ 2</td>
+</tr>
+<tr>
+<td align="center">| =</td>
+<td align="center">按位或赋值操作符</td>
+<td align="center">C | = 2等价于C = C | 2</td>
+</tr>
+</tbody></table>
+<h2 id="条件运算符（-）"><a href="#条件运算符（-）" class="headerlink" title="条件运算符（?:）"></a>条件运算符（?:）</h2><p>条件运算符也被称为三元运算符。该运算符有3个操作数，并且需要判断布尔表达式的值。该运算符的主要是决定哪个值应该赋值给变量。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">variable x = (expression) ? value <span class="keyword">if</span> <span class="keyword">true</span> : value <span class="keyword">if</span> <span class="keyword">false</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="intanceof运算符"><a href="#intanceof运算符" class="headerlink" title="intanceof运算符"></a>intanceof运算符</h2><p>该运算符用于操作对象实例，<strong>检查该对象是否是一个特定类型（类类型或接口类型）</strong>。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">( Object reference variable ) <span class="keyword">instanceof</span>  (<span class="class"><span class="keyword">class</span>/<span class="title">interface</span> <span class="title">type</span>)</span></span><br></pre></td></tr></table></figure>
+
+<p>如果运算符左侧变量所指的对象，是操作符右侧类或接口(class/interface)的一个对象，那么结果为真。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">String name = <span class="string">&quot;James&quot;</span>;</span><br><span class="line"><span class="keyword">boolean</span> result = name <span class="keyword">instanceof</span> String; <span class="comment">// 由于 name 是 String 类型，所以返回真</span></span><br></pre></td></tr></table></figure>
+
+<p>如果被比较的对象兼容于右侧类型,该运算符仍然返回true。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Vehicle</span> </span>&#123;&#125;</span><br><span class="line"> </span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Car</span> <span class="keyword">extends</span> <span class="title">Vehicle</span> </span>&#123;</span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">      Vehicle a = <span class="keyword">new</span> Car();</span><br><span class="line">      <span class="keyword">boolean</span> result =  a <span class="keyword">instanceof</span> Car;</span><br><span class="line">      System.out.println(result);</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="Java运算符优先级"><a href="#Java运算符优先级" class="headerlink" title="Java运算符优先级"></a>Java运算符优先级</h2><table>
+<thead>
+<tr>
+<th align="left">类别</th>
+<th align="left">操作符</th>
+<th align="center">关联性</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">后缀</td>
+<td align="left">() [] . (点操作符)</td>
+<td align="center">左到右</td>
+</tr>
+<tr>
+<td align="left">一元</td>
+<td align="left">expr++ expr–</td>
+<td align="center">从左到右</td>
+</tr>
+<tr>
+<td align="left">一元</td>
+<td align="left">++expr –expr + - ～ ！</td>
+<td align="center">从右到左</td>
+</tr>
+<tr>
+<td align="left">乘性</td>
+<td align="left">* /％</td>
+<td align="center">左到右</td>
+</tr>
+<tr>
+<td align="left">加性</td>
+<td align="left">+ -</td>
+<td align="center">左到右</td>
+</tr>
+<tr>
+<td align="left">移位</td>
+<td align="left">&gt;&gt; &gt;&gt;&gt;  &lt;&lt;</td>
+<td align="center">左到右</td>
+</tr>
+<tr>
+<td align="left">关系</td>
+<td align="left">&gt; &gt;= &lt; &lt;=</td>
+<td align="center">左到右</td>
+</tr>
+<tr>
+<td align="left">相等</td>
+<td align="left">== !=</td>
+<td align="center">左到右</td>
+</tr>
+<tr>
+<td align="left">按位与</td>
+<td align="left">＆</td>
+<td align="center">左到右</td>
+</tr>
+<tr>
+<td align="left">按位异或</td>
+<td align="left">^</td>
+<td align="center">左到右</td>
+</tr>
+<tr>
+<td align="left">按位或</td>
+<td align="left">|</td>
+<td align="center">左到右</td>
+</tr>
+<tr>
+<td align="left">逻辑与</td>
+<td align="left">&amp;&amp;</td>
+<td align="center">左到右</td>
+</tr>
+<tr>
+<td align="left">逻辑或</td>
+<td align="left">| |</td>
+<td align="center">左到右</td>
+</tr>
+<tr>
+<td align="left">条件</td>
+<td align="left">？：</td>
+<td align="center">从右到左</td>
+</tr>
+<tr>
+<td align="left">赋值</td>
+<td align="left">= + = - = * = / =％= &gt;&gt; = &lt;&lt; =＆= ^ = | =</td>
+<td align="center">从右到左</td>
+</tr>
+<tr>
+<td align="left">逗号</td>
+<td align="left">，</td>
+<td align="center">左到右</td>
+</tr>
+</tbody></table>
 
         </div>
 
@@ -415,7 +856,7 @@
         <aside class="page-aside">
             <div class="post-toc-wrap">
     <div class="post-toc">
-        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#JDK%E3%80%81JRE%E3%80%81JVM"><span class="nav-number">1.</span> <span class="nav-text">JDK、JRE、JVM</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Hello-World"><span class="nav-number">2.</span> <span class="nav-text">Hello World</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Java%E7%A8%8B%E5%BA%8F%E8%BF%90%E8%A1%8C%E6%9C%BA%E5%88%B6"><span class="nav-number">3.</span> <span class="nav-text">Java程序运行机制</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%B3%A8%E9%87%8A"><span class="nav-number">4.</span> <span class="nav-text">注释</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%A0%87%E8%AF%86%E7%AC%A6"><span class="nav-number">5.</span> <span class="nav-text">标识符</span></a></li></ol>
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#JDK%E3%80%81JRE%E3%80%81JVM"><span class="nav-number">1.</span> <span class="nav-text">JDK、JRE、JVM</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Hello-World"><span class="nav-number">2.</span> <span class="nav-text">Hello World</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Java%E7%A8%8B%E5%BA%8F%E8%BF%90%E8%A1%8C%E6%9C%BA%E5%88%B6"><span class="nav-number">3.</span> <span class="nav-text">Java程序运行机制</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%B3%A8%E9%87%8A"><span class="nav-number">4.</span> <span class="nav-text">注释</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%A0%87%E8%AF%86%E7%AC%A6"><span class="nav-number">5.</span> <span class="nav-text">标识符</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B"><span class="nav-number">6.</span> <span class="nav-text">数据类型</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9F%BA%E6%9C%AC%E7%B1%BB%E5%9E%8B%EF%BC%88primitive-type%EF%BC%89"><span class="nav-number">6.1.</span> <span class="nav-text">基本类型（primitive type）</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2"><span class="nav-number">6.1.1.</span> <span class="nav-text">类型转换</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BC%95%E7%94%A8%E7%B1%BB%E5%9E%8B%EF%BC%88reference-type%EF%BC%89"><span class="nav-number">6.2.</span> <span class="nav-text">引用类型（reference type）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%8B%93%E5%B1%95"><span class="nav-number">6.3.</span> <span class="nav-text">拓展</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%B8%B8%E9%87%8F"><span class="nav-number">7.</span> <span class="nav-text">常量</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Java%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="nav-number">8.</span> <span class="nav-text">Java运算符</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%B3%E7%B3%BB%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="nav-number">8.1.</span> <span class="nav-text">关系运算符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%B3%E7%B3%BB%E8%BF%90%E7%AE%97%E7%AC%A6-1"><span class="nav-number">8.2.</span> <span class="nav-text">关系运算符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BD%8D%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="nav-number">8.3.</span> <span class="nav-text">位运算符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%B5%8B%E5%80%BC%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="nav-number">8.4.</span> <span class="nav-text">赋值运算符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9D%A1%E4%BB%B6%E8%BF%90%E7%AE%97%E7%AC%A6%EF%BC%88-%EF%BC%89"><span class="nav-number">8.5.</span> <span class="nav-text">条件运算符（?:）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#intanceof%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="nav-number">8.6.</span> <span class="nav-text">intanceof运算符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Java%E8%BF%90%E7%AE%97%E7%AC%A6%E4%BC%98%E5%85%88%E7%BA%A7"><span class="nav-number">8.7.</span> <span class="nav-text">Java运算符优先级</span></a></li></ol></li></ol>
     </div>
 </div>
         </aside>
