@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="Hexo Theme Keep">
+    <meta name="description" content="Hexo Theme Keep">
+    <meta name="author" content="Elora">
+    
+    <title>
+        
+            测试点设计 |
+        
+        Elora blog
+    </title>
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <link rel="shortcut icon" href="/images/icon16.png">
+    
+<link rel="stylesheet" href="/css/font-awesome.min.css">
+
+    <script id="hexo-configurations">
+    let KEEP = window.KEEP || {};
+    KEEP.hexo_config = {"hostname":"example.com","root":"/","language":"en","path":"search.json"};
+    KEEP.theme_config = {"toc":{"enable":true,"number":true,"expand_all":true,"init_open":true},"style":{"primary_color":"#ffe8e9","background-color":null,"avatar":"/images/icon40.png","favicon":"/images/icon16.png","article_img_align":"center","left_side_width":"260px","content_max_width":"920px","hover":{"shadow":true,"scale":true},"first_screen":{"enable":true,"background_img":"/images/pmgroup.png","description":"Heroes never die!"},"scroll":{"progress_bar":{"enable":false},"percent":{"enable":true}}},"local_search":{"enable":true,"preload":true},"code_copy":{"enable":true,"style":"mac"},"pjax":{"enable":false},"lazyload":{"enable":true,"onlypost":true,"loadingImg":"/images/star.gif"},"version":"3.4.3"};
+    KEEP.language_ago = {"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days ago","week":"%s weeks ago","month":"%s months ago","year":"%s years ago"};
+  </script>
+<meta name="generator" content="Hexo 5.4.2"></head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+
+    
+</div>
+
+
+<main class="page-container">
+
+    
+
+    <div class="page-main-content">
+
+        <div class="page-main-content-top">
+            <header class="header-wrapper">
+
+    <div class="header-content">
+        <div class="left">
+            
+                <a class="logo-image" href="/">
+                    <img src="/images/icon40.png">
+                </a>
+            
+            <a class="logo-title" href="/">
+                Elora blog
+            </a>
+        </div>
+
+        <div class="right">
+            <div class="pc">
+                <ul class="menu-list">
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/"
+                            >
+                                HOME
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/archives"
+                            >
+                                ARCHIVES
+                            </a>
+                        </li>
+                    
+                    
+                        <li class="menu-item search search-popup-trigger">
+                            <i class="fas fa-search"></i>
+                        </li>
+                    
+                </ul>
+            </div>
+            <div class="mobile">
+                
+                    <div class="icon-item search search-popup-trigger"><i class="fas fa-search"></i></div>
+                
+                <div class="icon-item menu-bar">
+                    <div class="menu-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-drawer">
+        <ul class="drawer-menu-list">
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/">HOME</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/archives">ARCHIVES</a>
+                </li>
+            
+        </ul>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="page-main-content-middle">
+
+            <div class="main-content">
+
+                
+                    <div class="fade-in-down-animation">
+    <div class="article-content-container">
+
+        <div class="article-title">
+            <span class="title-hover-animation">测试点设计</span>
+        </div>
+
+        
+            <div class="article-header">
+                <div class="avatar">
+                    <img src="/images/icon40.png">
+                </div>
+                <div class="info">
+                    <div class="author">
+                        <span class="name">Elora</span>
+                        
+                            <span class="author-label">Cute!</span>
+                        
+                    </div>
+                    <div class="meta-info">
+                        <div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        <i class="fas fa-edit"></i>&nbsp;2024-03-25 18:27:24
+    </span>
+    
+        <span class="article-categories article-meta-item">
+            <i class="fas fa-folder"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/categories/sofetware-test/">sofetware test</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+    
+
+    
+    
+        <span class="article-wordcount article-meta-item">
+            <i class="fas fa-file-word"></i>&nbsp;<span>545 Words</span>
+        </span>
+    
+    
+        <span class="article-min2read article-meta-item">
+            <i class="fas fa-clock"></i>&nbsp;<span>1 Mins</span>
+        </span>
+    
+    
+        <span class="article-pv article-meta-item">
+            <i class="fas fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
+        </span>
+    
+</div>
+
+                    </div>
+                </div>
+            </div>
+        
+
+        <div class="article-content markdown-body">
+            <h1 id="对穷举场景设计测试点"><a href="#对穷举场景设计测试点" class="headerlink" title="对穷举场景设计测试点"></a>对穷举场景设计测试点</h1><h2 id="等价类划分法"><a href="#等价类划分法" class="headerlink" title="等价类划分法"></a>等价类划分法</h2><h3 id="说明-分类-步骤"><a href="#说明-分类-步骤" class="headerlink" title="说明|分类|步骤"></a>说明|分类|步骤</h3><p><img lazyload src="keep/source/images/star.gif" data-original="/images/star.gif" data-src="D:\blog\source_posts\测试点设计\des.png" alt="Pasted image 20240217174030"></p>
+<ul>
+<li>有效等价只取其一，每个无效集合取1个</li>
+<li>政协：一条用例尽可能覆盖多条；逆向：每一条都是一个单独用例</li>
+</ul>
+<h3 id="适用场景"><a href="#适用场景" class="headerlink" title="适用场景"></a>适用场景</h3><p><img lazyload src="keep/source/images/star.gif" data-original="/images/star.gif" data-src="D:\blog\source_posts\测试点设计\scene.png" alt="Pasted image 20240218103044"></p>
+<h1 id="对限定边界规则设计测试点"><a href="#对限定边界规则设计测试点" class="headerlink" title="对限定边界规则设计测试点"></a>对限定边界规则设计测试点</h1><h2 id="边界值分析法"><a href="#边界值分析法" class="headerlink" title="边界值分析法"></a>边界值分析法</h2><h3 id="边界范围节点"><a href="#边界范围节点" class="headerlink" title="边界范围节点"></a>边界范围节点</h3><p><img lazyload src="keep/source/images/star.gif" data-original="/images/star.gif" data-src="D:\blog\source_posts\测试点设计\boundaries.png" alt="Pasted image 20240218151837"><br>内点一般取居中的点<br><img lazyload src="keep/source/images/star.gif" data-original="/images/star.gif" data-src="D:\blog\source_posts\测试点设计\dot.png" alt="Pasted image 20240218152713"><br>最多7条</p>
+<h3 id="边界值法设计用例步骤"><a href="#边界值法设计用例步骤" class="headerlink" title="边界值法设计用例步骤"></a>边界值法设计用例步骤</h3><p><img lazyload src="keep/source/images/star.gif" data-original="/images/star.gif" data-src="D:\blog\source_posts\测试点设计\process.png" alt="Pasted image 20240218153637"></p>
+<h3 id="案例优化"><a href="#案例优化" class="headerlink" title="案例优化"></a>案例优化</h3><p><img lazyload src="keep/source/images/star.gif" data-original="/images/star.gif" data-src="D:\blog\source_posts\测试点设计\case.png" alt="Pasted image 20240218171118"></p>
+<h3 id="适用场景-1"><a href="#适用场景-1" class="headerlink" title="适用场景"></a>适用场景</h3><p><img lazyload src="keep/source/images/star.gif" data-original="/images/star.gif" data-src="D:\blog\source_posts\测试点设计\sce.png" alt="Pasted image 20240218175818"><br>单个输入框，常用的方式：边界+等效类</p>
+<h1 id="对多条件依赖关系设计测试点"><a href="#对多条件依赖关系设计测试点" class="headerlink" title="对多条件依赖关系设计测试点"></a>对多条件依赖关系设计测试点</h1><h2 id="判定表法"><a href="#判定表法" class="headerlink" title="判定表法"></a>判定表法</h2><ul>
+<li>等价类边界值分析法主要关注单个输入类条件的测试</li>
+<li>并未考虑输入条件之间的各种组合、输入条件于输出结果之间有相互制约关系的测试</li>
+<li>判定表法要求多个条件之间有依赖或制约关系</li>
+</ul>
+<h3 id="判定表定义及组成部分"><a href="#判定表定义及组成部分" class="headerlink" title="判定表定义及组成部分"></a>判定表定义及组成部分</h3><p><img lazyload src="keep/source/images/star.gif" data-original="/images/star.gif" data-src="D:\blog\source_posts\测试点设计\table1.png" alt="Pasted image 20240221114617"><br><img lazyload src="keep/source/images/star.gif" data-original="/images/star.gif" data-src="D:\blog\source_posts\测试点设计\table2.png" alt="Pasted image 20240221135041"><br><img lazyload src="keep/source/images/star.gif" data-original="/images/star.gif" data-src="D:\blog\source_posts\测试点设计\table3.png" alt="Pasted image 20240221215423"><br><img lazyload src="keep/source/images/star.gif" data-original="/images/star.gif" data-src="D:\blog\source_posts\测试点设计\table4.png" alt="Pasted image 20240221215516"></p>
+<h3 id="判定表法设计用例步骤"><a href="#判定表法设计用例步骤" class="headerlink" title="判定表法设计用例步骤"></a>判定表法设计用例步骤</h3><p><img lazyload src="keep/source/images/star.gif" data-original="/images/star.gif" data-src="D:\blog\source_posts\测试点设计\tablepro.png" alt="Pasted image 20240221141814"></p>
+<h3 id="使用场景"><a href="#使用场景" class="headerlink" title="使用场景"></a>使用场景</h3><p><img lazyload src="keep/source/images/star.gif" data-original="/images/star.gif" data-src="D:\blog\source_posts\测试点设计\used.png" alt="Pasted image 20240221165425"><br>如果条件超过4个，就不适合覆盖所有条件，应采用正交法来解决。</p>
+<h1 id="对于项目业务设计测试点"><a href="#对于项目业务设计测试点" class="headerlink" title="对于项目业务设计测试点"></a>对于项目业务设计测试点</h1><h2 id="场景法"><a href="#场景法" class="headerlink" title="场景法"></a>场景法</h2><p>测项目要先测业务，测业务需要使用场景法</p>
+<h3 id="流程图"><a href="#流程图" class="headerlink" title="流程图"></a>流程图</h3><p><img lazyload src="keep/source/images/star.gif" data-original="/images/star.gif" data-src="D:\blog\source_posts\测试点设计\business1.png" alt="Pasted image 20240221171853"><br><img lazyload src="keep/source/images/star.gif" data-original="/images/star.gif" data-src="D:\blog\source_posts\测试点设计\business2.png" alt="Pasted image 20240221172129"></p>
+<ul>
+<li>覆盖业务测试需要使用流程图法</li>
+<li>先测试业务、再测试单功能、单模块、单页面<br><img lazyload src="keep/source/images/star.gif" data-original="/images/star.gif" data-src="D:\blog\source_posts\测试点设计\oder.png" alt="Pasted image 20240221181128"></li>
+</ul>
+<h3 id="使用场景-1"><a href="#使用场景-1" class="headerlink" title="使用场景"></a>使用场景</h3><p><img lazyload src="keep/source/images/star.gif" data-original="/images/star.gif" data-src="D:\blog\source_posts\测试点设计\site1.png" alt="Pasted image 20240221200132"><br><strong>业务用例必须先测</strong><br>案例3-1：<br><img lazyload src="keep/source/images/star.gif" data-original="/images/star.gif" data-src="D:\blog\source_posts\测试点设计\case1.png" alt="Pasted image 20240221200352"><img lazyload src="keep/source/images/star.gif" data-original="/images/star.gif" data-src="D:\blog\source_posts\测试点设计\case2.png"></p>
+<h2 id="错误推测法"><a href="#错误推测法" class="headerlink" title="错误推测法"></a>错误推测法</h2><ul>
+<li>通过经验推测系统可能出现的问题</li>
+<li>根据经验列举出可能出现问题的清单，根据清单分析问题可能原因，推测发现缺陷。</li>
+</ul>
+<h3 id="场景"><a href="#场景" class="headerlink" title="场景"></a>场景</h3><p><img lazyload src="keep/source/images/star.gif" data-original="/images/star.gif" data-src="D:\blog\source_posts\测试点设计\sites.png"></p>
+<ul>
+<li>当项目用例都执行完毕且BUG修复完成，离上线还有一段时间，在这段时间中可以使用错误推测法复测主要业务或未测试的功能</li>
+</ul>
+<h1 id="web测试"><a href="#web测试" class="headerlink" title="web测试"></a>web测试</h1><p>测试点：前端页面发布上线之前需要检查（描述不恰当的文字出现）所有注释或去除注释<br>img图片必须要有title属性（悬停和未加载显示）<br>按钮测试点：统一使用value赋值</p>
+
+        </div>
+
+        
+            <div class="post-copyright-info">
+                <div class="article-copyright-info-container">
+    <ul>
+        <li>Post title：测试点设计</li>
+        <li>Post author：Elora</li>
+        <li>Create time：2024-03-25 18:27:24</li>
+        <li>
+            Post link：https://wrinta.github.io/2024/03/25/测试点设计/
+        </li>
+        <li>
+            Copyright Notice：All articles in this blog are licensed under <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">BY-NC-SA</a> unless stating additionally.
+        </li>
+    </ul>
+</div>
+
+            </div>
+        
+
+        
+            <div class="article-nav">
+                
+                
+                    <div class="article-next">
+                        <a class="next"
+                           rel="next"
+                           href="/2024/03/25/%E7%94%A8%E4%BE%8B%E6%89%A7%E8%A1%8C%E5%8F%8A%E7%BC%BA%E9%99%B7/"
+                        >
+                            <span class="title flex-center">
+                                <span class="post-nav-title-item">用例执行及缺陷</span>
+                                <span class="post-nav-item">Next posts</span>
+                            </span>
+                            <span class="right arrow-icon flex-center">
+                              <i class="fas fa-chevron-right"></i>
+                            </span>
+                        </a>
+                    </div>
+                
+            </div>
+        
+
+        
+    </div>
+</div>
+
+
+                
+            </div>
+
+        </div>
+
+        <div class="page-main-content-bottom">
+            <footer class="footer">
+    <div class="info-container">
+        <div class="copyright-info info-item">
+            &copy;
+            
+              <span>2020</span>&nbsp;-&nbsp;
+            
+            2024&nbsp;<i class="fas fa-heart icon-animate"></i>&nbsp;<a href="/">Elora</a>
+        </div>
+        
+            <script async  src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+            <div class="website-count info-item">
+                
+                    <span id="busuanzi_container_site_uv">
+                        Visitor Count&nbsp;<span id="busuanzi_value_site_uv"></span>&ensp;
+                    </span>
+                
+                
+                    <span id="busuanzi_container_site_pv">
+                        Totalview&nbsp;<span id="busuanzi_value_site_pv"></span>
+                    </span>
+                
+            </div>
+        
+        <div class="theme-info info-item">
+            Powered by <a target="_blank" href="https://hexo.io">Hexo</a>&nbsp;|&nbsp;Theme&nbsp;<a class="theme-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep">Keep v3.4.3</a>
+        </div>
+        
+    </div>
+</footer>
+
+        </div>
+    </div>
+
+    
+        <div class="post-tools">
+            <div class="post-tools-container">
+    <ul class="tools-list">
+        <!-- TOC aside toggle -->
+        
+            <li class="tools-item page-aside-toggle">
+                <i class="fas fa-outdent"></i>
+            </li>
+        
+
+        <!-- go comment -->
+        
+    </ul>
+</div>
+
+        </div>
+    
+
+    <div class="right-bottom-side-tools">
+        <div class="side-tools-container">
+    <ul class="side-tools-list">
+        <li class="tools-item tool-font-adjust-plus flex-center">
+            <i class="fas fa-search-plus"></i>
+        </li>
+
+        <li class="tools-item tool-font-adjust-minus flex-center">
+            <i class="fas fa-search-minus"></i>
+        </li>
+
+        <li class="tools-item tool-expand-width flex-center">
+            <i class="fas fa-arrows-alt-h"></i>
+        </li>
+
+        <li class="tools-item tool-dark-light-toggle flex-center">
+            <i class="fas fa-moon"></i>
+        </li>
+
+        <!-- rss -->
+        
+
+        
+
+        <li class="tools-item tool-scroll-to-bottom flex-center">
+            <i class="fas fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="exposed-tools-list">
+        <li class="tools-item tool-toggle-show flex-center">
+            <i class="fas fa-cog fa-spin"></i>
+        </li>
+        
+            <li class="tools-item tool-scroll-to-top flex-center">
+                <i class="arrow-up fas fa-arrow-up"></i>
+                <span class="percent"></span>
+            </li>
+        
+    </ul>
+</div>
+
+    </div>
+
+    
+        <aside class="page-aside">
+            <div class="post-toc-wrap">
+    <div class="post-toc">
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%AF%B9%E7%A9%B7%E4%B8%BE%E5%9C%BA%E6%99%AF%E8%AE%BE%E8%AE%A1%E6%B5%8B%E8%AF%95%E7%82%B9"><span class="nav-number">1.</span> <span class="nav-text">对穷举场景设计测试点</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AD%89%E4%BB%B7%E7%B1%BB%E5%88%92%E5%88%86%E6%B3%95"><span class="nav-number">1.1.</span> <span class="nav-text">等价类划分法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AF%B4%E6%98%8E-%E5%88%86%E7%B1%BB-%E6%AD%A5%E9%AA%A4"><span class="nav-number">1.1.1.</span> <span class="nav-text">说明|分类|步骤</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%80%82%E7%94%A8%E5%9C%BA%E6%99%AF"><span class="nav-number">1.1.2.</span> <span class="nav-text">适用场景</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%AF%B9%E9%99%90%E5%AE%9A%E8%BE%B9%E7%95%8C%E8%A7%84%E5%88%99%E8%AE%BE%E8%AE%A1%E6%B5%8B%E8%AF%95%E7%82%B9"><span class="nav-number">2.</span> <span class="nav-text">对限定边界规则设计测试点</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BE%B9%E7%95%8C%E5%80%BC%E5%88%86%E6%9E%90%E6%B3%95"><span class="nav-number">2.1.</span> <span class="nav-text">边界值分析法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BE%B9%E7%95%8C%E8%8C%83%E5%9B%B4%E8%8A%82%E7%82%B9"><span class="nav-number">2.1.1.</span> <span class="nav-text">边界范围节点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BE%B9%E7%95%8C%E5%80%BC%E6%B3%95%E8%AE%BE%E8%AE%A1%E7%94%A8%E4%BE%8B%E6%AD%A5%E9%AA%A4"><span class="nav-number">2.1.2.</span> <span class="nav-text">边界值法设计用例步骤</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%A1%88%E4%BE%8B%E4%BC%98%E5%8C%96"><span class="nav-number">2.1.3.</span> <span class="nav-text">案例优化</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%80%82%E7%94%A8%E5%9C%BA%E6%99%AF-1"><span class="nav-number">2.1.4.</span> <span class="nav-text">适用场景</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%AF%B9%E5%A4%9A%E6%9D%A1%E4%BB%B6%E4%BE%9D%E8%B5%96%E5%85%B3%E7%B3%BB%E8%AE%BE%E8%AE%A1%E6%B5%8B%E8%AF%95%E7%82%B9"><span class="nav-number">3.</span> <span class="nav-text">对多条件依赖关系设计测试点</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%A4%E5%AE%9A%E8%A1%A8%E6%B3%95"><span class="nav-number">3.1.</span> <span class="nav-text">判定表法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%A4%E5%AE%9A%E8%A1%A8%E5%AE%9A%E4%B9%89%E5%8F%8A%E7%BB%84%E6%88%90%E9%83%A8%E5%88%86"><span class="nav-number">3.1.1.</span> <span class="nav-text">判定表定义及组成部分</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%A4%E5%AE%9A%E8%A1%A8%E6%B3%95%E8%AE%BE%E8%AE%A1%E7%94%A8%E4%BE%8B%E6%AD%A5%E9%AA%A4"><span class="nav-number">3.1.2.</span> <span class="nav-text">判定表法设计用例步骤</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8%E5%9C%BA%E6%99%AF"><span class="nav-number">3.1.3.</span> <span class="nav-text">使用场景</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%AF%B9%E4%BA%8E%E9%A1%B9%E7%9B%AE%E4%B8%9A%E5%8A%A1%E8%AE%BE%E8%AE%A1%E6%B5%8B%E8%AF%95%E7%82%B9"><span class="nav-number">4.</span> <span class="nav-text">对于项目业务设计测试点</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9C%BA%E6%99%AF%E6%B3%95"><span class="nav-number">4.1.</span> <span class="nav-text">场景法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B5%81%E7%A8%8B%E5%9B%BE"><span class="nav-number">4.1.1.</span> <span class="nav-text">流程图</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8%E5%9C%BA%E6%99%AF-1"><span class="nav-number">4.1.2.</span> <span class="nav-text">使用场景</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%94%99%E8%AF%AF%E6%8E%A8%E6%B5%8B%E6%B3%95"><span class="nav-number">4.2.</span> <span class="nav-text">错误推测法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9C%BA%E6%99%AF"><span class="nav-number">4.2.1.</span> <span class="nav-text">场景</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#web%E6%B5%8B%E8%AF%95"><span class="nav-number">5.</span> <span class="nav-text">web测试</span></a></li></ol>
+    </div>
+</div>
+        </aside>
+    
+
+    <div class="image-viewer-container">
+    <img src="">
+</div>
+
+
+    
+        <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+          <span class="search-input-field-pre">
+            <i class="fas fa-keyboard"></i>
+          </span>
+            <div class="search-input-container">
+                <input autocomplete="off"
+                       autocorrect="off"
+                       autocapitalize="off"
+                       placeholder="Search..."
+                       spellcheck="false"
+                       type="search"
+                       class="search-input"
+                >
+            </div>
+            <span class="popup-btn-close">
+                <i class="fas fa-times"></i>
+            </span>
+        </div>
+        <div id="search-result">
+            <div id="no-result">
+                <i class="fas fa-spinner fa-pulse fa-5x fa-fw"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+</main>
+
+
+
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/main.js"></script>
+
+<script src="/js/header-shrink.js"></script>
+
+<script src="/js/back2top.js"></script>
+
+<script src="/js/dark-light-toggle.js"></script>
+
+
+
+    
+<script src="/js/local-search.js"></script>
+
+
+
+
+    
+<script src="/js/code-copy.js"></script>
+
+
+
+
+    
+<script src="/js/lazyload.js"></script>
+
+
+
+<div class="post-scripts">
+    
+        
+<script src="/js/left-side-toggle.js"></script>
+
+<script src="/js/libs/anime.min.js"></script>
+
+<script src="/js/toc.js"></script>
+
+    
+</div>
+
+
+
+<script>
+            window.imageLazyLoadSetting = {
+                isSPA: false,
+                preloadRatio: 1,
+                processImages: null,
+            };
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=o;var e=n.imageLazyLoadSetting.isSPA,i=n.imageLazyLoadSetting.preloadRatio||1,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function o(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(n.innerHeight*i||document.documentElement.clientHeight*i)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},t.src!==i&&(n.src=i)}()}o(),n.addEventListener("scroll",function(){var t,e;t=o,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/wanko.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+</html>
+
+<script type="text/javascript" src="/js/funnytitle.js"></script>
+<script type="text/javascript" src="/js/love.js"></script>

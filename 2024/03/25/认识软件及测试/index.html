@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="Hexo Theme Keep">
+    <meta name="description" content="Hexo Theme Keep">
+    <meta name="author" content="Elora">
+    
+    <title>
+        
+            认识软件及测试 |
+        
+        Elora blog
+    </title>
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <link rel="shortcut icon" href="/images/icon16.png">
+    
+<link rel="stylesheet" href="/css/font-awesome.min.css">
+
+    <script id="hexo-configurations">
+    let KEEP = window.KEEP || {};
+    KEEP.hexo_config = {"hostname":"example.com","root":"/","language":"en","path":"search.json"};
+    KEEP.theme_config = {"toc":{"enable":true,"number":true,"expand_all":true,"init_open":true},"style":{"primary_color":"#ffe8e9","background-color":null,"avatar":"/images/icon40.png","favicon":"/images/icon16.png","article_img_align":"center","left_side_width":"260px","content_max_width":"920px","hover":{"shadow":true,"scale":true},"first_screen":{"enable":true,"background_img":"/images/pmgroup.png","description":"Heroes never die!"},"scroll":{"progress_bar":{"enable":false},"percent":{"enable":true}}},"local_search":{"enable":true,"preload":true},"code_copy":{"enable":true,"style":"mac"},"pjax":{"enable":false},"lazyload":{"enable":true,"onlypost":true,"loadingImg":"/images/star.gif"},"version":"3.4.3"};
+    KEEP.language_ago = {"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days ago","week":"%s weeks ago","month":"%s months ago","year":"%s years ago"};
+  </script>
+<meta name="generator" content="Hexo 5.4.2"></head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+
+    
+</div>
+
+
+<main class="page-container">
+
+    
+
+    <div class="page-main-content">
+
+        <div class="page-main-content-top">
+            <header class="header-wrapper">
+
+    <div class="header-content">
+        <div class="left">
+            
+                <a class="logo-image" href="/">
+                    <img src="/images/icon40.png">
+                </a>
+            
+            <a class="logo-title" href="/">
+                Elora blog
+            </a>
+        </div>
+
+        <div class="right">
+            <div class="pc">
+                <ul class="menu-list">
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/"
+                            >
+                                HOME
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/archives"
+                            >
+                                ARCHIVES
+                            </a>
+                        </li>
+                    
+                    
+                        <li class="menu-item search search-popup-trigger">
+                            <i class="fas fa-search"></i>
+                        </li>
+                    
+                </ul>
+            </div>
+            <div class="mobile">
+                
+                    <div class="icon-item search search-popup-trigger"><i class="fas fa-search"></i></div>
+                
+                <div class="icon-item menu-bar">
+                    <div class="menu-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-drawer">
+        <ul class="drawer-menu-list">
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/">HOME</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/archives">ARCHIVES</a>
+                </li>
+            
+        </ul>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="page-main-content-middle">
+
+            <div class="main-content">
+
+                
+                    <div class="fade-in-down-animation">
+    <div class="article-content-container">
+
+        <div class="article-title">
+            <span class="title-hover-animation">认识软件及测试</span>
+        </div>
+
+        
+            <div class="article-header">
+                <div class="avatar">
+                    <img src="/images/icon40.png">
+                </div>
+                <div class="info">
+                    <div class="author">
+                        <span class="name">Elora</span>
+                        
+                            <span class="author-label">Cute!</span>
+                        
+                    </div>
+                    <div class="meta-info">
+                        <div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        <i class="fas fa-edit"></i>&nbsp;2024-03-25 17:34:38
+    </span>
+    
+        <span class="article-categories article-meta-item">
+            <i class="fas fa-folder"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/categories/software-test/">software test</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+    
+
+    
+    
+        <span class="article-wordcount article-meta-item">
+            <i class="fas fa-file-word"></i>&nbsp;<span>769 Words</span>
+        </span>
+    
+    
+        <span class="article-min2read article-meta-item">
+            <i class="fas fa-clock"></i>&nbsp;<span>2 Mins</span>
+        </span>
+    
+    
+        <span class="article-pv article-meta-item">
+            <i class="fas fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
+        </span>
+    
+</div>
+
+                    </div>
+                </div>
+            </div>
+        
+
+        <div class="article-content markdown-body">
+            <h1 id="什么是软件测试"><a href="#什么是软件测试" class="headerlink" title="什么是软件测试"></a>什么是软件测试</h1><h2 id="什么是软件？"><a href="#什么是软件？" class="headerlink" title="什么是软件？"></a>什么是软件？</h2><p>控制计算机硬件工作的工具，分为：</p>
+<ul>
+<li>应用软件</li>
+<li>系统软件</li>
+</ul>
+<h2 id="软件基本组成"><a href="#软件基本组成" class="headerlink" title="软件基本组成"></a>软件基本组成</h2><p><img lazyload src="keep/source/images/star.gif" data-original="/images/star.gif" data-src="D:\blog\source_posts\认识软件及测试\software.png" alt="Pasted image 20240217134950"></p>
+<p>软件的产生过程：</p>
+<p><img lazyload src="keep/source/images/star.gif" data-original="/images/star.gif" data-src="D:\blog\source_posts\认识软件及测试\process.png" alt="Pasted image 20240217135422"></p>
+<h2 id="什么是软件测试？"><a href="#什么是软件测试？" class="headerlink" title="什么是软件测试？"></a>什么是软件测试？</h2><p>使用技术手段验证软件是否满足使用需求</p>
+<p><img lazyload src="keep/source/images/star.gif" data-original="/images/star.gif" data-src="D:\blog\source_posts\认识软件及测试\st.png" alt="Pasted image 20240217135825"></p>
+<h2 id="软件测试的目的"><a href="#软件测试的目的" class="headerlink" title="软件测试的目的"></a>软件测试的目的</h2><p>减少软件中的缺陷bug，保障软件的质量 </p>
+<p><img lazyload src="keep/source/images/star.gif" data-original="/images/star.gif" data-src="D:\blog\source_posts\认识软件及测试\target.png" alt="Pasted image 20240217140032"></p>
+<h1 id="测试的主流技能"><a href="#测试的主流技能" class="headerlink" title="测试的主流技能"></a>测试的主流技能</h1><ol>
+<li>功能测试：根据文档执行，将反馈结果与预期结果比较。功能测试主要验证程序的功能是否满足需求</li>
+<li>自动化测试：使用代码或工具代替手工，对项目进行测试</li>
+<li>接口测试：使用代码或工具对服务端提供的接口进行测试，验证程序中的接口是否访问正常。</li>
+<li>性能测试-工具实现：模拟多人使用软件，查找服务器缺陷</li>
+</ol>
+<h1 id="常见的测试分类"><a href="#常见的测试分类" class="headerlink" title="常见的测试分类"></a>常见的测试分类</h1><h3 id="按测试阶段划分"><a href="#按测试阶段划分" class="headerlink" title="按测试阶段划分"></a>按测试阶段划分</h3><p><img lazyload src="keep/source/images/star.gif" data-original="/images/star.gif" data-src="D:\blog\source_posts\认识软件及测试\classification.png" alt="Pasted image 20240217145553"></p>
+<ul>
+<li>单元测试：bug太多，修复率太低，开发人员自测</li>
+<li>集成测试：接口测试</li>
+<li>系统测试：看做整体进行测试，除功能以外，需求、兼容性也需要考虑</li>
+<li>验收测试：针对有的项目有这种测试，即内测、公测</li>
+</ul>
+<h3 id="按代码可见度划分"><a href="#按代码可见度划分" class="headerlink" title="按代码可见度划分"></a>按代码可见度划分</h3><p><img lazyload src="keep/source/images/star.gif" data-original="/images/star.gif" data-src="D:\blog\source_posts\认识软件及测试\clas1.png" alt="Pasted image 20240217150004"></p>
+<ul>
+<li>黑盒测试：针对功能、兼容性进行测试。对应系统测试</li>
+<li>灰盒测试：对应集成测试</li>
+<li>白盒测试：对应单元测试</li>
+</ul>
+<h3 id="专项"><a href="#专项" class="headerlink" title="专项"></a>专项</h3><ul>
+<li>性能测试</li>
+<li>安全</li>
+</ul>
+<h1 id="质量模型"><a href="#质量模型" class="headerlink" title="质量模型"></a>质量模型</h1><p>衡量一个优秀软件的纬度<br><img lazyload src="keep/source/images/star.gif" data-original="/images/star.gif" data-src="D:\blog\source_posts\认识软件及测试\massmodel.png" alt="Pasted image 20240217151819"></p>
+<ul>
+<li><strong>功能性：</strong><img lazyload src="keep/source/images/star.gif" data-original="/images/star.gif" data-src="D:\blog\source_posts\认识软件及测试\functional.png" alt="Pasted image 20240217152210"></li>
+<li><strong>性能：</strong><img lazyload src="keep/source/images/star.gif" data-original="/images/star.gif" data-src="D:\blog\source_posts\认识软件及测试\performance.png" alt="Pasted image 20240217152747"></li>
+<li><strong>兼容性：</strong><img lazyload src="keep/source/images/star.gif" data-original="/images/star.gif" data-src="D:\blog\source_posts\认识软件及测试\compatibility.png" alt="Pasted image 20240217153154"></li>
+<li><strong>易用性：</strong><img lazyload src="keep/source/images/star.gif" data-original="/images/star.gif" data-src="D:\blog\source_posts\认识软件及测试\acceptable.png" alt="Pasted image 20240217153307"></li>
+<li><strong>安全：</strong><img lazyload src="keep/source/images/star.gif" data-original="/images/star.gif" data-src="D:\blog\source_posts\认识软件及测试\security.png" alt="Pasted image 20240217153557"></li>
+<li>可靠性：<img lazyload src="keep/source/images/star.gif" data-original="/images/star.gif" data-src="D:\blog\source_posts\认识软件及测试\relia.png" alt="Pasted image 20240217153400"></li>
+<li>可维护性：核心代码要有说明，该独立的要独立</li>
+<li>可移植性：<img lazyload src="keep/source/images/star.gif" data-original="/images/star.gif" data-src="D:\blog\source_posts\认识软件及测试\planta.png" alt="Pasted image 20240217153707"></li>
+</ul>
+<h1 id="软件测试流程"><a href="#软件测试流程" class="headerlink" title="软件测试流程"></a>软件测试流程</h1><p><img lazyload src="keep/source/images/star.gif" data-original="/images/star.gif" data-src="D:\blog\source_posts\认识软件及测试\proced.png" alt="Pasted image 20240217154302"></p>
+<ol>
+<li>需求评审 </li>
+</ol>
+<ul>
+<li>参与角色：产品经理、开发、测试</li>
+<li>目的：需求一致、在各角度对需求进行查漏补缺、知道被测项目有哪些功能模块</li>
+</ul>
+<ol start="2">
+<li>测试计划</li>
+</ol>
+<ul>
+<li>测什么、谁来测、怎么测</li>
+</ul>
+<ol start="3">
+<li>用例设计 针对穷举进行设计</li>
+<li>用例执行</li>
+<li>缺陷管理</li>
+<li>测试报告</li>
+</ol>
+<h1 id="测试用例"><a href="#测试用例" class="headerlink" title="测试用例"></a>测试用例</h1><h2 id="什么是用例？"><a href="#什么是用例？" class="headerlink" title="什么是用例？"></a>什么是用例？</h2><p>用例：用户使用的案例</p>
+<h2 id="什么是测试用例？"><a href="#什么是测试用例？" class="headerlink" title="什么是测试用例？"></a>什么是测试用例？</h2><p>测试用例：为测试项目而设计的执行文档</p>
+<h2 id="测试用例的作用"><a href="#测试用例的作用" class="headerlink" title="测试用例的作用"></a>测试用例的作用</h2><ul>
+<li>防止漏测</li>
+<li>实施2测试的标准</li>
+</ul>
+<h2 id="用例格式标准"><a href="#用例格式标准" class="headerlink" title="用例格式标准"></a>用例格式标准</h2><h3 id="用例执行的八大要素"><a href="#用例执行的八大要素" class="headerlink" title="用例执行的八大要素"></a>用例执行的八大要素</h3><p>| 用例编号 | 用例标题  | 项目/模块 | 优先级 | 前置条件 | 测试步骤 | 测试数据 | 预期结果 |</p>
+<ul>
+<li>用例编号：项目简称_模块简称_编号</li>
+<li>用例标题：预期结果（测试点）</li>
+<li>项目/模块：所属项目或模块</li>
+<li>优先级：表示用例重要程度或者影响力P0~P4（P0最高，用户使用频率最高为核心功能）</li>
+<li>前置条件/预置条件：要执行此条用例，有哪些前置操作。可以用来简化步骤</li>
+<li>测试步骤：执行用例步骤</li>
+<li>测试数据：操作的数据，没有的话可以为空</li>
+<li>预期结果：用例执行结果+不同角色隐形结果</li>
+</ul>
+
+        </div>
+
+        
+            <div class="post-copyright-info">
+                <div class="article-copyright-info-container">
+    <ul>
+        <li>Post title：认识软件及测试</li>
+        <li>Post author：Elora</li>
+        <li>Create time：2024-03-25 17:34:38</li>
+        <li>
+            Post link：https://wrinta.github.io/2024/03/25/认识软件及测试/
+        </li>
+        <li>
+            Copyright Notice：All articles in this blog are licensed under <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">BY-NC-SA</a> unless stating additionally.
+        </li>
+    </ul>
+</div>
+
+            </div>
+        
+
+        
+            <div class="article-nav">
+                
+                    <div class="article-prev">
+                        <a class="prev"
+                           rel="prev"
+                           href="/2024/03/25/%E7%94%A8%E4%BE%8B%E6%89%A7%E8%A1%8C%E5%8F%8A%E7%BC%BA%E9%99%B7/"
+                        >
+                            <span class="left arrow-icon flex-center">
+                              <i class="fas fa-chevron-left"></i>
+                            </span>
+                            <span class="title flex-center">
+                                <span class="post-nav-title-item">用例执行及缺陷</span>
+                                <span class="post-nav-item">Prev posts</span>
+                            </span>
+                        </a>
+                    </div>
+                
+                
+                    <div class="article-next">
+                        <a class="next"
+                           rel="next"
+                           href="/2024/03/12/Web%E8%87%AA%E5%8A%A8%E5%8C%96/"
+                        >
+                            <span class="title flex-center">
+                                <span class="post-nav-title-item">Web自动化</span>
+                                <span class="post-nav-item">Next posts</span>
+                            </span>
+                            <span class="right arrow-icon flex-center">
+                              <i class="fas fa-chevron-right"></i>
+                            </span>
+                        </a>
+                    </div>
+                
+            </div>
+        
+
+        
+    </div>
+</div>
+
+
+                
+            </div>
+
+        </div>
+
+        <div class="page-main-content-bottom">
+            <footer class="footer">
+    <div class="info-container">
+        <div class="copyright-info info-item">
+            &copy;
+            
+              <span>2020</span>&nbsp;-&nbsp;
+            
+            2024&nbsp;<i class="fas fa-heart icon-animate"></i>&nbsp;<a href="/">Elora</a>
+        </div>
+        
+            <script async  src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+            <div class="website-count info-item">
+                
+                    <span id="busuanzi_container_site_uv">
+                        Visitor Count&nbsp;<span id="busuanzi_value_site_uv"></span>&ensp;
+                    </span>
+                
+                
+                    <span id="busuanzi_container_site_pv">
+                        Totalview&nbsp;<span id="busuanzi_value_site_pv"></span>
+                    </span>
+                
+            </div>
+        
+        <div class="theme-info info-item">
+            Powered by <a target="_blank" href="https://hexo.io">Hexo</a>&nbsp;|&nbsp;Theme&nbsp;<a class="theme-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep">Keep v3.4.3</a>
+        </div>
+        
+    </div>
+</footer>
+
+        </div>
+    </div>
+
+    
+        <div class="post-tools">
+            <div class="post-tools-container">
+    <ul class="tools-list">
+        <!-- TOC aside toggle -->
+        
+            <li class="tools-item page-aside-toggle">
+                <i class="fas fa-outdent"></i>
+            </li>
+        
+
+        <!-- go comment -->
+        
+    </ul>
+</div>
+
+        </div>
+    
+
+    <div class="right-bottom-side-tools">
+        <div class="side-tools-container">
+    <ul class="side-tools-list">
+        <li class="tools-item tool-font-adjust-plus flex-center">
+            <i class="fas fa-search-plus"></i>
+        </li>
+
+        <li class="tools-item tool-font-adjust-minus flex-center">
+            <i class="fas fa-search-minus"></i>
+        </li>
+
+        <li class="tools-item tool-expand-width flex-center">
+            <i class="fas fa-arrows-alt-h"></i>
+        </li>
+
+        <li class="tools-item tool-dark-light-toggle flex-center">
+            <i class="fas fa-moon"></i>
+        </li>
+
+        <!-- rss -->
+        
+
+        
+
+        <li class="tools-item tool-scroll-to-bottom flex-center">
+            <i class="fas fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="exposed-tools-list">
+        <li class="tools-item tool-toggle-show flex-center">
+            <i class="fas fa-cog fa-spin"></i>
+        </li>
+        
+            <li class="tools-item tool-scroll-to-top flex-center">
+                <i class="arrow-up fas fa-arrow-up"></i>
+                <span class="percent"></span>
+            </li>
+        
+    </ul>
+</div>
+
+    </div>
+
+    
+        <aside class="page-aside">
+            <div class="post-toc-wrap">
+    <div class="post-toc">
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95"><span class="nav-number">1.</span> <span class="nav-text">什么是软件测试</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E8%BD%AF%E4%BB%B6%EF%BC%9F"><span class="nav-number">1.1.</span> <span class="nav-text">什么是软件？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BD%AF%E4%BB%B6%E5%9F%BA%E6%9C%AC%E7%BB%84%E6%88%90"><span class="nav-number">1.2.</span> <span class="nav-text">软件基本组成</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%EF%BC%9F"><span class="nav-number">1.3.</span> <span class="nav-text">什么是软件测试？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%9A%84%E7%9B%AE%E7%9A%84"><span class="nav-number">1.4.</span> <span class="nav-text">软件测试的目的</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%B5%8B%E8%AF%95%E7%9A%84%E4%B8%BB%E6%B5%81%E6%8A%80%E8%83%BD"><span class="nav-number">2.</span> <span class="nav-text">测试的主流技能</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%B8%B8%E8%A7%81%E7%9A%84%E6%B5%8B%E8%AF%95%E5%88%86%E7%B1%BB"><span class="nav-number">3.</span> <span class="nav-text">常见的测试分类</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%8C%89%E6%B5%8B%E8%AF%95%E9%98%B6%E6%AE%B5%E5%88%92%E5%88%86"><span class="nav-number">3.0.1.</span> <span class="nav-text">按测试阶段划分</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%8C%89%E4%BB%A3%E7%A0%81%E5%8F%AF%E8%A7%81%E5%BA%A6%E5%88%92%E5%88%86"><span class="nav-number">3.0.2.</span> <span class="nav-text">按代码可见度划分</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%93%E9%A1%B9"><span class="nav-number">3.0.3.</span> <span class="nav-text">专项</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%B4%A8%E9%87%8F%E6%A8%A1%E5%9E%8B"><span class="nav-number">4.</span> <span class="nav-text">质量模型</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E6%B5%81%E7%A8%8B"><span class="nav-number">5.</span> <span class="nav-text">软件测试流程</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B"><span class="nav-number">6.</span> <span class="nav-text">测试用例</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E7%94%A8%E4%BE%8B%EF%BC%9F"><span class="nav-number">6.1.</span> <span class="nav-text">什么是用例？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B%EF%BC%9F"><span class="nav-number">6.2.</span> <span class="nav-text">什么是测试用例？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B%E7%9A%84%E4%BD%9C%E7%94%A8"><span class="nav-number">6.3.</span> <span class="nav-text">测试用例的作用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%94%A8%E4%BE%8B%E6%A0%BC%E5%BC%8F%E6%A0%87%E5%87%86"><span class="nav-number">6.4.</span> <span class="nav-text">用例格式标准</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%94%A8%E4%BE%8B%E6%89%A7%E8%A1%8C%E7%9A%84%E5%85%AB%E5%A4%A7%E8%A6%81%E7%B4%A0"><span class="nav-number">6.4.1.</span> <span class="nav-text">用例执行的八大要素</span></a></li></ol></li></ol></li></ol>
+    </div>
+</div>
+        </aside>
+    
+
+    <div class="image-viewer-container">
+    <img src="">
+</div>
+
+
+    
+        <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+          <span class="search-input-field-pre">
+            <i class="fas fa-keyboard"></i>
+          </span>
+            <div class="search-input-container">
+                <input autocomplete="off"
+                       autocorrect="off"
+                       autocapitalize="off"
+                       placeholder="Search..."
+                       spellcheck="false"
+                       type="search"
+                       class="search-input"
+                >
+            </div>
+            <span class="popup-btn-close">
+                <i class="fas fa-times"></i>
+            </span>
+        </div>
+        <div id="search-result">
+            <div id="no-result">
+                <i class="fas fa-spinner fa-pulse fa-5x fa-fw"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+</main>
+
+
+
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/main.js"></script>
+
+<script src="/js/header-shrink.js"></script>
+
+<script src="/js/back2top.js"></script>
+
+<script src="/js/dark-light-toggle.js"></script>
+
+
+
+    
+<script src="/js/local-search.js"></script>
+
+
+
+
+    
+<script src="/js/code-copy.js"></script>
+
+
+
+
+    
+<script src="/js/lazyload.js"></script>
+
+
+
+<div class="post-scripts">
+    
+        
+<script src="/js/left-side-toggle.js"></script>
+
+<script src="/js/libs/anime.min.js"></script>
+
+<script src="/js/toc.js"></script>
+
+    
+</div>
+
+
+
+<script>
+            window.imageLazyLoadSetting = {
+                isSPA: false,
+                preloadRatio: 1,
+                processImages: null,
+            };
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=o;var e=n.imageLazyLoadSetting.isSPA,i=n.imageLazyLoadSetting.preloadRatio||1,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function o(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(n.innerHeight*i||document.documentElement.clientHeight*i)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},t.src!==i&&(n.src=i)}()}o(),n.addEventListener("scroll",function(){var t,e;t=o,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/wanko.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+</html>
+
+<script type="text/javascript" src="/js/funnytitle.js"></script>
+<script type="text/javascript" src="/js/love.js"></script>
