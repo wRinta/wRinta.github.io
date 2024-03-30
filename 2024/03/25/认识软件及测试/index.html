@@ -165,12 +165,12 @@
     
     
         <span class="article-wordcount article-meta-item">
-            <i class="fas fa-file-word"></i>&nbsp;<span>769 Words</span>
+            <i class="fas fa-file-word"></i>&nbsp;<span>3.3k Words</span>
         </span>
     
     
         <span class="article-min2read article-meta-item">
-            <i class="fas fa-clock"></i>&nbsp;<span>2 Mins</span>
+            <i class="fas fa-clock"></i>&nbsp;<span>10 Mins</span>
         </span>
     
     
@@ -188,15 +188,27 @@
         <div class="article-content markdown-body">
             <h1 id="什么是软件测试"><a href="#什么是软件测试" class="headerlink" title="什么是软件测试"></a>什么是软件测试</h1><h2 id="什么是软件？"><a href="#什么是软件？" class="headerlink" title="什么是软件？"></a>什么是软件？</h2><p>控制计算机硬件工作的工具，分为：</p>
 <ul>
-<li>应用软件</li>
-<li>系统软件</li>
+<li><p>应用软件：计算机用户为了解决某些具体问题而购买、开发或研制的各种程序或软件包</p>
+<ul>
+<li>C/S架构：client-server，需要安装客户端才能够使用的软件，每次更新都需要更新服务端和客户端</li>
+<li>B/S架构：browser-server，只需要更新服务器，通过浏览器访问</li>
 </ul>
-<h2 id="软件基本组成"><a href="#软件基本组成" class="headerlink" title="软件基本组成"></a>软件基本组成</h2><p><img lazyload src="keep/source/images/star.gif" data-original="/images/star.gif" data-src="D:\blog\source_posts\认识软件及测试\software.png" alt="Pasted image 20240217134950"></p>
+</li>
+<li><p>系统软件：生成、准备和执行其他程序所需要的一组文件和程序。</p>
+</li>
+</ul>
+<h2 id="软件基本组成"><a href="#软件基本组成" class="headerlink" title="软件基本组成"></a>软件基本组成</h2><p>软件是计算机程序、程序所用的数据及相关文档资料。</p>
+<p>软件=程序+数据+文档</p>
+<p><img lazyload src="keep/source/images/star.gif" data-original="/images/star.gif" data-src="D:\blog\source_posts\认识软件及测试\software.png"></p>
 <p>软件的产生过程：</p>
-<p><img lazyload src="keep/source/images/star.gif" data-original="/images/star.gif" data-src="D:\blog\source_posts\认识软件及测试\process.png" alt="Pasted image 20240217135422"></p>
-<h2 id="什么是软件测试？"><a href="#什么是软件测试？" class="headerlink" title="什么是软件测试？"></a>什么是软件测试？</h2><p>使用技术手段验证软件是否满足使用需求</p>
-<p><img lazyload src="keep/source/images/star.gif" data-original="/images/star.gif" data-src="D:\blog\source_posts\认识软件及测试\st.png" alt="Pasted image 20240217135825"></p>
-<h2 id="软件测试的目的"><a href="#软件测试的目的" class="headerlink" title="软件测试的目的"></a>软件测试的目的</h2><p>减少软件中的缺陷bug，保障软件的质量 </p>
+<p><img lazyload src="keep/source/images/star.gif" data-original="/images/star.gif" data-src="D:\blog\source_posts\认识软件及测试\process.png"></p>
+<h2 id="什么是软件测试？"><a href="#什么是软件测试？" class="headerlink" title="什么是软件测试？"></a>什么是软件测试？</h2><p>使用人工和自动手段来运行或测试某个系统的过程，其目的在于检验它是否满足规定的需求或弄清预期结果与实际结果之间的差别。</p>
+<p><img lazyload src="keep/source/images/star.gif" data-original="/images/star.gif" data-src="D:\blog\source_posts\认识软件及测试\st.png"></p>
+<h2 id="软件测试的目的"><a href="#软件测试的目的" class="headerlink" title="软件测试的目的"></a>软件测试的目的</h2><ul>
+<li>为了发型程序（软件）存在的代码或业务逻辑错误（找到bug）</li>
+<li>为了检验产品是否符合用户需求（提升质量）</li>
+<li>为了提供用户的体验（提高用户体验）</li>
+</ul>
 <p><img lazyload src="keep/source/images/star.gif" data-original="/images/star.gif" data-src="D:\blog\source_posts\认识软件及测试\target.png" alt="Pasted image 20240217140032"></p>
 <h1 id="测试的主流技能"><a href="#测试的主流技能" class="headerlink" title="测试的主流技能"></a>测试的主流技能</h1><ol>
 <li>功能测试：根据文档执行，将反馈结果与预期结果比较。功能测试主要验证程序的功能是否满足需求</li>
@@ -206,10 +218,15 @@
 </ol>
 <h1 id="常见的测试分类"><a href="#常见的测试分类" class="headerlink" title="常见的测试分类"></a>常见的测试分类</h1><h3 id="按测试阶段划分"><a href="#按测试阶段划分" class="headerlink" title="按测试阶段划分"></a>按测试阶段划分</h3><p><img lazyload src="keep/source/images/star.gif" data-original="/images/star.gif" data-src="D:\blog\source_posts\认识软件及测试\classification.png" alt="Pasted image 20240217145553"></p>
 <ul>
-<li>单元测试：bug太多，修复率太低，开发人员自测</li>
-<li>集成测试：接口测试</li>
-<li>系统测试：看做整体进行测试，除功能以外，需求、兼容性也需要考虑</li>
-<li>验收测试：针对有的项目有这种测试，即内测、公测</li>
+<li>单元测试：为了确保各单元模块被正确的编译，比如有具体到模块的测试，也有具体到类、函数、方法的测试。bug太多，修复率太低，开发人员自测</li>
+<li>集成测试（接口测试）：单元测试后，将各单元组合成完整的体系，测试单位之间的接口是否正确、数据能否正常传递。</li>
+<li>系统测试：把软件系统搭建起来，按照软件规格说明书中所要求，测试软件其性能功能是否和用户需求相符合，在系统运行中是否存在漏洞。看做整体进行测试，除功能以外，需求、兼容性也需要考虑。</li>
+<li>验收测试：主要是用户在拿到软件的时候，在使用现场，会根据前边所提到的需求，以及规格说明书来做相应测试，以确定软件达到符合效果的。针对有的项目有这种测试，即内测、公测<ul>
+<li>α测试：把用户请到开发方对软件进行的测试，测试环境受开发方控制，测试人员不多，测试时间比较集中。执行者：测试人员、用户、公司内部人员</li>
+<li>β测试：测试环境不受开发方控制，测试人比较多，测试时间不集中</li>
+<li>一般先做α测试再做β测试</li>
+</ul>
+</li>
 </ul>
 <h3 id="按代码可见度划分"><a href="#按代码可见度划分" class="headerlink" title="按代码可见度划分"></a>按代码可见度划分</h3><p><img lazyload src="keep/source/images/star.gif" data-original="/images/star.gif" data-src="D:\blog\source_posts\认识软件及测试\clas1.png" alt="Pasted image 20240217150004"></p>
 <ul>
@@ -217,10 +234,41 @@
 <li>灰盒测试：对应集成测试</li>
 <li>白盒测试：对应单元测试</li>
 </ul>
-<h3 id="专项"><a href="#专项" class="headerlink" title="专项"></a>专项</h3><ul>
-<li>性能测试</li>
-<li>安全</li>
+<h3 id="被测对象是否运行"><a href="#被测对象是否运行" class="headerlink" title="被测对象是否运行"></a>被测对象是否运行</h3><ul>
+<li>动态测试：运行被测试系统而进行的测试</li>
+<li>静态测试：不需要运行被测试系统而进行的测试（界面检查、文档检查、代码走查）</li>
 </ul>
+<h3 id="包含内容划分"><a href="#包含内容划分" class="headerlink" title="包含内容划分"></a>包含内容划分</h3><ul>
+<li>功能测试</li>
+<li>界面测试</li>
+<li>易用性测试</li>
+<li>性能测试（负载测试、压力测试）</li>
+<li>安全测试</li>
+</ul>
+<h3 id="其他测试"><a href="#其他测试" class="headerlink" title="其他测试"></a>其他测试</h3><ul>
+<li>冒烟测试：硬件测试中产生的概念。在进行正式测试前对主要核心功能进行的测试，一般由开发或者测试主管来负责。不通过会发回给开发</li>
+<li>回归测试：开发对存在问题的功能进行修改后再一次进行的测试，也需要验证相关功能</li>
+<li>探索性测试/自由测试：根据项目经验进行的随意测试</li>
+</ul>
+<h1 id="软件的生命周期"><a href="#软件的生命周期" class="headerlink" title="软件的生命周期"></a>软件的生命周期</h1><h2 id="SDLC"><a href="#SDLC" class="headerlink" title="SDLC"></a>SDLC</h2><p>Systems Development Life Cycle是软件开始研制到最终被废弃不用所经历的各个阶段</p>
+<h3 id="瀑布型生命周期"><a href="#瀑布型生命周期" class="headerlink" title="瀑布型生命周期"></a>瀑布型生命周期</h3><p><img lazyload src="keep/source/images/star.gif" data-original="/images/star.gif" data-src="%E8%AE%A4%E8%AF%86%E8%BD%AF%E4%BB%B6%E5%8F%8A%E6%B5%8B%E8%AF%95%5Ccycle.png"></p>
+<p>特点：自上而下、有顺序性</p>
+<p>缺点：回测成本比较高、测试周期比较长</p>
+<h3 id="V模型"><a href="#V模型" class="headerlink" title="V模型"></a>V模型</h3><p><img lazyload src="keep/source/images/star.gif" data-original="/images/star.gif" data-src="%E8%AE%A4%E8%AF%86%E8%BD%AF%E4%BB%B6%E5%8F%8A%E6%B5%8B%E8%AF%95%5Cvmodel.png"></p>
+<p>需求分析阶段会产生需求规格说明书（SRS），测试根据这个编写测试用例。</p>
+<p>V模型，测试在需求阶段就已经介入了，可以降低测试成本，缩短开发周期。</p>
+<p>传统、周期长的项目使用V模型</p>
+<h3 id="敏捷模型"><a href="#敏捷模型" class="headerlink" title="敏捷模型"></a>敏捷模型</h3><p>强调以人文本，把一个大项目分为多个相互联系但也可以独立运行的小项目并分别完成，在这个过程中软件一直处于可使用状态。</p>
+<p>特点：快，迭代周期短。弱化文档，通过人与人的沟通实现需求</p>
+<p><img lazyload src="keep/source/images/star.gif" data-original="/images/star.gif" data-src="D:\blog\source_posts\认识软件及测试\fastdev.png" alt="image-20240326210611126"></p>
+<h2 id="软件生命周期的各阶段"><a href="#软件生命周期的各阶段" class="headerlink" title="软件生命周期的各阶段"></a>软件生命周期的各阶段</h2><h3 id="问题的定义及规划"><a href="#问题的定义及规划" class="headerlink" title="问题的定义及规划"></a>问题的定义及规划</h3><p>主要确定软件的开发目的及其可行性，制定项目总体开发计划</p>
+<h3 id="需求分析"><a href="#需求分析" class="headerlink" title="需求分析"></a>需求分析</h3><p>在确定软件开发可行的情况下，对软件需要实现的各个功能进行详细分析，明确客户的需求，输出<strong>需求规格说明书终版（原型图）</strong>，提交评审</p>
+<h3 id="设计"><a href="#设计" class="headerlink" title="设计"></a>设计</h3><p>把需求分析得到的结果转换为软件结构和数据结构，形成系统架构</p>
+<p>概要设计：主要是架构的实现，指搭建架构、表述各模块功能、模块接口连接和数据传递的实现等项事务</p>
+<p>详细设计：对概要设计中表述的各模块进行深入分析等，其中需要包含数据库设计说明</p>
+<h3 id="编码"><a href="#编码" class="headerlink" title="编码"></a>编码</h3><p>按照详细设计好的模块功能表，编程人员编写出计算机可运行的程序代码</p>
+<h3 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h3><p>单元测试、集成测试、系统测试、验收测试</p>
+<h3 id="运行维护"><a href="#运行维护" class="headerlink" title="运行维护"></a>运行维护</h3><p>是软件生命周期中持续时间最长的阶段，在软件开发完成并投入使用之后，由于多方面的原因，软件不能继续适应用户的需求。要延续软件的使用寿命，就必须对软件进行维护。软件的维护主要包括纠错性维护和改进性维护两方面。</p>
 <h1 id="质量模型"><a href="#质量模型" class="headerlink" title="质量模型"></a>质量模型</h1><p>衡量一个优秀软件的纬度<br><img lazyload src="keep/source/images/star.gif" data-original="/images/star.gif" data-src="D:\blog\source_posts\认识软件及测试\massmodel.png" alt="Pasted image 20240217151819"></p>
 <ul>
 <li><strong>功能性：</strong><img lazyload src="keep/source/images/star.gif" data-original="/images/star.gif" data-src="D:\blog\source_posts\认识软件及测试\functional.png" alt="Pasted image 20240217152210"></li>
@@ -232,7 +280,21 @@
 <li>可维护性：核心代码要有说明，该独立的要独立</li>
 <li>可移植性：<img lazyload src="keep/source/images/star.gif" data-original="/images/star.gif" data-src="D:\blog\source_posts\认识软件及测试\planta.png" alt="Pasted image 20240217153707"></li>
 </ul>
-<h1 id="软件测试流程"><a href="#软件测试流程" class="headerlink" title="软件测试流程"></a>软件测试流程</h1><p><img lazyload src="keep/source/images/star.gif" data-original="/images/star.gif" data-src="D:\blog\source_posts\认识软件及测试\proced.png" alt="Pasted image 20240217154302"></p>
+<h1 id="软件测试流程"><a href="#软件测试流程" class="headerlink" title="软件测试流程"></a>软件测试流程</h1><p><img lazyload src="keep/source/images/star.gif" data-original="/images/star.gif" data-src="D:\blog\source_posts\认识软件及测试\proceeding.png" alt="image-20240326210705163"></p>
+<p>在什么条件下可以发布？剩余bug数量很少，达到一定的用例执行覆盖率</p>
+<p>发布流程：开发打包—&gt;运维/运营/开发—&gt;部署到生产环境（用户的使用环境）</p>
+<p>开发环境：开发人员写代码的环境</p>
+<p>测试环境：测试人员进行测试的环境（1个或一个以上）</p>
+<p>预发布环境（UAT环境）：验收测试（UAT测试）进行的环境。</p>
+<p>生产环境：真实用户使用环境</p>
+<p>灰度测试：先发布部分功能，看用户的反馈，再去发布另外一部分的功能更新。</p>
+<p>A/B测试：先发布的功能先让A部分的用户进行更新，再根据用户的反馈更新B用户的功能</p>
+<h2 id="流程"><a href="#流程" class="headerlink" title="流程"></a>流程</h2><p><img lazyload src="keep/source/images/star.gif" data-original="/images/star.gif" data-src="D:\blog\source_posts\认识软件及测试\flowpath.png" alt="image-20240326212557135"></p>
+<h3 id="各个阶段的输出"><a href="#各个阶段的输出" class="headerlink" title="各个阶段的输出"></a>各个阶段的输出</h3><p>需求分析——根据需求规格说明书输出项目需求分析测试点列表</p>
+<p>用例设计——测试用例文档</p>
+<p>执行测试——bug</p>
+<p>评估测试——测试报告的输出</p>
+<p><img lazyload src="keep/source/images/star.gif" data-original="/images/star.gif" data-src="%E8%AE%A4%E8%AF%86%E8%BD%AF%E4%BB%B6%E5%8F%8A%E6%B5%8B%E8%AF%95%5Cproced.png"></p>
 <ol>
 <li>需求评审 </li>
 </ol>
@@ -252,23 +314,88 @@
 <li>缺陷管理</li>
 <li>测试报告</li>
 </ol>
+<h1 id="测试需求分析"><a href="#测试需求分析" class="headerlink" title="测试需求分析"></a>测试需求分析</h1><p>解决测什么的问题，一般来自需求规格说明书中原始需求。测试需求应全部覆盖已定义的业务流程，以及功能和非功能方面的需求。</p>
+<p>功能：业务流程</p>
+<p>非功能：界面、文档、兼容性、易用性、性能、安全性</p>
+<p>根据需求规格说明书明确的测试的内容提取测试点，测试点是软件的最小单元</p>
+<h2 id="测试需求分析的目的"><a href="#测试需求分析的目的" class="headerlink" title="测试需求分析的目的"></a>测试需求分析的目的</h2><ul>
+<li>测试需求分析是编写测试用例的依据</li>
+<li>有助于保证测试的质量与进度</li>
+<li>测试需求是衡量测试覆盖率的重要指标</li>
+</ul>
+<h2 id="需求分析的步骤"><a href="#需求分析的步骤" class="headerlink" title="需求分析的步骤"></a>需求分析的步骤</h2><ol>
+<li>查阅需求规格说明书（原型图），初步熟悉被测软件的核心的业务流程</li>
+<li>针对某个功能，细化需求，列出测试点</li>
+<li>根据业务逻辑的先后顺序来进行分析按钮，一般按钮存在（什么条件）操作成功，（什么条件）操作失败，验证操作结果（验证交互功能、即关联功能），验证当前操作的结果的功能</li>
+</ol>
+<h3 id="一个页面进行测试需求分析"><a href="#一个页面进行测试需求分析" class="headerlink" title="一个页面进行测试需求分析"></a>一个页面进行测试需求分析</h3><ol>
+<li>进行页面检查，参考原型图，查看界面是否一致</li>
+<li>依次分析每个输入项，从上到下从左到右的顺序进行分析约束限制、是否必填、是否重复、隐形需求（如手机号码的格式验证）。</li>
+</ol>
+<h2 id="案例"><a href="#案例" class="headerlink" title="案例"></a>案例</h2><p><img lazyload src="keep/source/images/star.gif" data-original="/images/star.gif" data-src="D:\blog\source_posts\认识软件及测试\case.png" alt="image-20240327115656399"></p>
+<p><img lazyload src="keep/source/images/star.gif" data-original="/images/star.gif" data-src="D:\blog\source_posts\认识软件及测试\login.png" alt="image-20240328113424132"></p>
+<p><img lazyload src="keep/source/images/star.gif" data-original="/images/star.gif" data-src="D:\blog\source_posts\认识软件及测试\signup.png" alt="image-20240328113335945"></p>
+<h2 id="面试题"><a href="#面试题" class="headerlink" title="面试题"></a>面试题</h2><ol>
+<li><p>遇到隐形需求怎么办？</p>
+<p>要充分熟悉产品，参考成熟的同类产品，站在用户的角度去考虑，从而挖掘需求</p>
+</li>
+<li><p>给你一个带logo的水杯，你会如何去测试？<br>先明确测试的对象，什么样的杯子</p>
+<p>对应功能：能否装水，是否漏水，能否装热水冰水饮料，是否保温</p>
+<p>对应非功能：logo是否与原型图一致，美观，是否掉色，材质是否环保安全</p>
+<p>对应易用性：防滑，防烫，是否带手把，边缘是否光滑，携带是否方便</p>
+<p>兼容性：是否能装其他液体</p>
+<p>安全性：装热水的时候会有毒素吗</p>
+<p>性能：（如果是保温杯的化可以保温多久），是否防摔，挤压被子会不会坏，容不容易被水泡软</p>
+</li>
+<li><p>你会如何测试朋友圈，购物车等熟知的软件产品（支付，优惠券，二维码）</p>
+</li>
+</ol>
+<h1 id="需求评审"><a href="#需求评审" class="headerlink" title="需求评审"></a>需求评审</h1><p>需求分析完成后要对需求进行评审，评审是否存在漏测和错测的测试点。</p>
+<p>参与人员：测试人员、组内人员、测试主管/组长、产品、开发</p>
 <h1 id="测试用例"><a href="#测试用例" class="headerlink" title="测试用例"></a>测试用例</h1><h2 id="什么是用例？"><a href="#什么是用例？" class="headerlink" title="什么是用例？"></a>什么是用例？</h2><p>用例：用户使用的案例</p>
-<h2 id="什么是测试用例？"><a href="#什么是测试用例？" class="headerlink" title="什么是测试用例？"></a>什么是测试用例？</h2><p>测试用例：为测试项目而设计的执行文档</p>
+<h2 id="什么是测试用例？"><a href="#什么是测试用例？" class="headerlink" title="什么是测试用例？"></a>什么是测试用例？</h2><p>测试用例：为项目需求而编制的一组测试输入、执行条件以及预期结果，以便测试某个程序是否满足客户需求。每一个测试点的数据设计和步骤设计</p>
 <h2 id="测试用例的作用"><a href="#测试用例的作用" class="headerlink" title="测试用例的作用"></a>测试用例的作用</h2><ul>
 <li>防止漏测</li>
-<li>实施2测试的标准</li>
+<li>实施测试的标准</li>
 </ul>
-<h2 id="用例格式标准"><a href="#用例格式标准" class="headerlink" title="用例格式标准"></a>用例格式标准</h2><h3 id="用例执行的八大要素"><a href="#用例执行的八大要素" class="headerlink" title="用例执行的八大要素"></a>用例执行的八大要素</h3><p>| 用例编号 | 用例标题  | 项目/模块 | 优先级 | 前置条件 | 测试步骤 | 测试数据 | 预期结果 |</p>
+<h2 id="用例格式标准"><a href="#用例格式标准" class="headerlink" title="用例格式标准"></a>用例格式标准</h2><h3 id="用例执行的八大要素"><a href="#用例执行的八大要素" class="headerlink" title="用例执行的八大要素"></a>用例执行的八大要素</h3><p>| 用例编号 | 项目/模块  | 用例标题 | 优先级 | 前置条件 | 测试步骤 | 测试数据 | 预期结果 |</p>
 <ul>
-<li>用例编号：项目简称_模块简称_编号</li>
-<li>用例标题：预期结果（测试点）</li>
-<li>项目/模块：所属项目或模块</li>
-<li>优先级：表示用例重要程度或者影响力P0~P4（P0最高，用户使用频率最高为核心功能）</li>
-<li>前置条件/预置条件：要执行此条用例，有哪些前置操作。可以用来简化步骤</li>
-<li>测试步骤：执行用例步骤</li>
-<li>测试数据：操作的数据，没有的话可以为空</li>
-<li>预期结果：用例执行结果+不同角色隐形结果</li>
+<li><p>用例编号：项目简称_模块简称_编号，产品名-测试阶段（it、st、uat）-测试项-xxx（英文）或者项目+编号</p>
+</li>
+<li><p>项目/模块：所属项目或模块</p>
+</li>
+<li><p>用例标题：主要描述测试的目的，输入内容＋结果，用例标题不要重复</p>
+</li>
+<li><p>优先级：表示用例重要程度或者影响力P0~P4（P0最高，用户使用频率最高为核心功能）。高（主要核心业务功能，冒烟用例）中（错误异常的测试点，如注册失败）低（兼容性、界面错误）</p>
+</li>
+<li><p>前置条件/预置条件：要执行此条用例，有哪些前置操作。可以用来简化步骤。如果用例不需要其他条件，可以无条件</p>
+</li>
+<li><p>测试步骤：执行用例步骤</p>
+<ul>
+<li><ol>
+<li>路径</li>
+<li>具体数据</li>
+<li>操作动作</li>
+</ol>
+</li>
 </ul>
+</li>
+<li><p>测试数据：操作的数据，没有的话可以为空（可以和操作步骤分开）</p>
+</li>
+<li><p>预期结果：按照操作步骤，应该有什么结果，分为一对一（一个步骤对一个结果）和多对一（多个步骤对一个结果）用例执行结果+不同角色隐形结果</p>
+</li>
+<li><p>实际结果：通过、不通过、阻塞（当前用例无法执行）</p>
+</li>
+<li><p>（备注）：bugid/测试无法执行原因</p>
+</li>
+<li><p>（测试版本）</p>
+</li>
+<li><p>（用例设计者）</p>
+</li>
+<li><p>（测试时间）</p>
+</li>
+</ul>
+<p>用例是根据测试点进行编辑，但并不是针对每个测试点编辑一条用例，否则会造成重复测试</p>
 
         </div>
 
@@ -440,7 +567,7 @@
         <aside class="page-aside">
             <div class="post-toc-wrap">
     <div class="post-toc">
-        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95"><span class="nav-number">1.</span> <span class="nav-text">什么是软件测试</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E8%BD%AF%E4%BB%B6%EF%BC%9F"><span class="nav-number">1.1.</span> <span class="nav-text">什么是软件？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BD%AF%E4%BB%B6%E5%9F%BA%E6%9C%AC%E7%BB%84%E6%88%90"><span class="nav-number">1.2.</span> <span class="nav-text">软件基本组成</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%EF%BC%9F"><span class="nav-number">1.3.</span> <span class="nav-text">什么是软件测试？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%9A%84%E7%9B%AE%E7%9A%84"><span class="nav-number">1.4.</span> <span class="nav-text">软件测试的目的</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%B5%8B%E8%AF%95%E7%9A%84%E4%B8%BB%E6%B5%81%E6%8A%80%E8%83%BD"><span class="nav-number">2.</span> <span class="nav-text">测试的主流技能</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%B8%B8%E8%A7%81%E7%9A%84%E6%B5%8B%E8%AF%95%E5%88%86%E7%B1%BB"><span class="nav-number">3.</span> <span class="nav-text">常见的测试分类</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%8C%89%E6%B5%8B%E8%AF%95%E9%98%B6%E6%AE%B5%E5%88%92%E5%88%86"><span class="nav-number">3.0.1.</span> <span class="nav-text">按测试阶段划分</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%8C%89%E4%BB%A3%E7%A0%81%E5%8F%AF%E8%A7%81%E5%BA%A6%E5%88%92%E5%88%86"><span class="nav-number">3.0.2.</span> <span class="nav-text">按代码可见度划分</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%93%E9%A1%B9"><span class="nav-number">3.0.3.</span> <span class="nav-text">专项</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%B4%A8%E9%87%8F%E6%A8%A1%E5%9E%8B"><span class="nav-number">4.</span> <span class="nav-text">质量模型</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E6%B5%81%E7%A8%8B"><span class="nav-number">5.</span> <span class="nav-text">软件测试流程</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B"><span class="nav-number">6.</span> <span class="nav-text">测试用例</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E7%94%A8%E4%BE%8B%EF%BC%9F"><span class="nav-number">6.1.</span> <span class="nav-text">什么是用例？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B%EF%BC%9F"><span class="nav-number">6.2.</span> <span class="nav-text">什么是测试用例？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B%E7%9A%84%E4%BD%9C%E7%94%A8"><span class="nav-number">6.3.</span> <span class="nav-text">测试用例的作用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%94%A8%E4%BE%8B%E6%A0%BC%E5%BC%8F%E6%A0%87%E5%87%86"><span class="nav-number">6.4.</span> <span class="nav-text">用例格式标准</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%94%A8%E4%BE%8B%E6%89%A7%E8%A1%8C%E7%9A%84%E5%85%AB%E5%A4%A7%E8%A6%81%E7%B4%A0"><span class="nav-number">6.4.1.</span> <span class="nav-text">用例执行的八大要素</span></a></li></ol></li></ol></li></ol>
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95"><span class="nav-number">1.</span> <span class="nav-text">什么是软件测试</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E8%BD%AF%E4%BB%B6%EF%BC%9F"><span class="nav-number">1.1.</span> <span class="nav-text">什么是软件？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BD%AF%E4%BB%B6%E5%9F%BA%E6%9C%AC%E7%BB%84%E6%88%90"><span class="nav-number">1.2.</span> <span class="nav-text">软件基本组成</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%EF%BC%9F"><span class="nav-number">1.3.</span> <span class="nav-text">什么是软件测试？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%9A%84%E7%9B%AE%E7%9A%84"><span class="nav-number">1.4.</span> <span class="nav-text">软件测试的目的</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%B5%8B%E8%AF%95%E7%9A%84%E4%B8%BB%E6%B5%81%E6%8A%80%E8%83%BD"><span class="nav-number">2.</span> <span class="nav-text">测试的主流技能</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%B8%B8%E8%A7%81%E7%9A%84%E6%B5%8B%E8%AF%95%E5%88%86%E7%B1%BB"><span class="nav-number">3.</span> <span class="nav-text">常见的测试分类</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%8C%89%E6%B5%8B%E8%AF%95%E9%98%B6%E6%AE%B5%E5%88%92%E5%88%86"><span class="nav-number">3.0.1.</span> <span class="nav-text">按测试阶段划分</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%8C%89%E4%BB%A3%E7%A0%81%E5%8F%AF%E8%A7%81%E5%BA%A6%E5%88%92%E5%88%86"><span class="nav-number">3.0.2.</span> <span class="nav-text">按代码可见度划分</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%A2%AB%E6%B5%8B%E5%AF%B9%E8%B1%A1%E6%98%AF%E5%90%A6%E8%BF%90%E8%A1%8C"><span class="nav-number">3.0.3.</span> <span class="nav-text">被测对象是否运行</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8C%85%E5%90%AB%E5%86%85%E5%AE%B9%E5%88%92%E5%88%86"><span class="nav-number">3.0.4.</span> <span class="nav-text">包含内容划分</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%B6%E4%BB%96%E6%B5%8B%E8%AF%95"><span class="nav-number">3.0.5.</span> <span class="nav-text">其他测试</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%BD%AF%E4%BB%B6%E7%9A%84%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F"><span class="nav-number">4.</span> <span class="nav-text">软件的生命周期</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#SDLC"><span class="nav-number">4.1.</span> <span class="nav-text">SDLC</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%80%91%E5%B8%83%E5%9E%8B%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F"><span class="nav-number">4.1.1.</span> <span class="nav-text">瀑布型生命周期</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#V%E6%A8%A1%E5%9E%8B"><span class="nav-number">4.1.2.</span> <span class="nav-text">V模型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%95%8F%E6%8D%B7%E6%A8%A1%E5%9E%8B"><span class="nav-number">4.1.3.</span> <span class="nav-text">敏捷模型</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BD%AF%E4%BB%B6%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E7%9A%84%E5%90%84%E9%98%B6%E6%AE%B5"><span class="nav-number">4.2.</span> <span class="nav-text">软件生命周期的各阶段</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%97%AE%E9%A2%98%E7%9A%84%E5%AE%9A%E4%B9%89%E5%8F%8A%E8%A7%84%E5%88%92"><span class="nav-number">4.2.1.</span> <span class="nav-text">问题的定义及规划</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90"><span class="nav-number">4.2.2.</span> <span class="nav-text">需求分析</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AE%BE%E8%AE%A1"><span class="nav-number">4.2.3.</span> <span class="nav-text">设计</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BC%96%E7%A0%81"><span class="nav-number">4.2.4.</span> <span class="nav-text">编码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B5%8B%E8%AF%95"><span class="nav-number">4.2.5.</span> <span class="nav-text">测试</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BF%90%E8%A1%8C%E7%BB%B4%E6%8A%A4"><span class="nav-number">4.2.6.</span> <span class="nav-text">运行维护</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%B4%A8%E9%87%8F%E6%A8%A1%E5%9E%8B"><span class="nav-number">5.</span> <span class="nav-text">质量模型</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E6%B5%81%E7%A8%8B"><span class="nav-number">6.</span> <span class="nav-text">软件测试流程</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B5%81%E7%A8%8B"><span class="nav-number">6.1.</span> <span class="nav-text">流程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%90%84%E4%B8%AA%E9%98%B6%E6%AE%B5%E7%9A%84%E8%BE%93%E5%87%BA"><span class="nav-number">6.1.1.</span> <span class="nav-text">各个阶段的输出</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%B5%8B%E8%AF%95%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90"><span class="nav-number">7.</span> <span class="nav-text">测试需求分析</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B5%8B%E8%AF%95%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90%E7%9A%84%E7%9B%AE%E7%9A%84"><span class="nav-number">7.1.</span> <span class="nav-text">测试需求分析的目的</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90%E7%9A%84%E6%AD%A5%E9%AA%A4"><span class="nav-number">7.2.</span> <span class="nav-text">需求分析的步骤</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%80%E4%B8%AA%E9%A1%B5%E9%9D%A2%E8%BF%9B%E8%A1%8C%E6%B5%8B%E8%AF%95%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90"><span class="nav-number">7.2.1.</span> <span class="nav-text">一个页面进行测试需求分析</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%A1%88%E4%BE%8B"><span class="nav-number">7.3.</span> <span class="nav-text">案例</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%9D%A2%E8%AF%95%E9%A2%98"><span class="nav-number">7.4.</span> <span class="nav-text">面试题</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E9%9C%80%E6%B1%82%E8%AF%84%E5%AE%A1"><span class="nav-number">8.</span> <span class="nav-text">需求评审</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B"><span class="nav-number">9.</span> <span class="nav-text">测试用例</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E7%94%A8%E4%BE%8B%EF%BC%9F"><span class="nav-number">9.1.</span> <span class="nav-text">什么是用例？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B%EF%BC%9F"><span class="nav-number">9.2.</span> <span class="nav-text">什么是测试用例？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B%E7%9A%84%E4%BD%9C%E7%94%A8"><span class="nav-number">9.3.</span> <span class="nav-text">测试用例的作用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%94%A8%E4%BE%8B%E6%A0%BC%E5%BC%8F%E6%A0%87%E5%87%86"><span class="nav-number">9.4.</span> <span class="nav-text">用例格式标准</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%94%A8%E4%BE%8B%E6%89%A7%E8%A1%8C%E7%9A%84%E5%85%AB%E5%A4%A7%E8%A6%81%E7%B4%A0"><span class="nav-number">9.4.1.</span> <span class="nav-text">用例执行的八大要素</span></a></li></ol></li></ol></li></ol>
     </div>
 </div>
         </aside>
