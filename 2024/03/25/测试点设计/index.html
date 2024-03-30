@@ -187,12 +187,12 @@
 
         <div class="article-content markdown-body">
             <h1 id="对穷举场景设计测试点"><a href="#对穷举场景设计测试点" class="headerlink" title="对穷举场景设计测试点"></a>对穷举场景设计测试点</h1><h2 id="等价类划分法"><a href="#等价类划分法" class="headerlink" title="等价类划分法"></a>等价类划分法</h2><h3 id="说明-分类-步骤"><a href="#说明-分类-步骤" class="headerlink" title="说明|分类|步骤"></a>说明|分类|步骤</h3><p>一种典型的、重要的黑盒测试方法，是指某个输入域的子集合，在该子集合中，所有的输入数据对于揭露软件中的错误都是等效的。</p>
-<p><img lazyload src="keep/source/images/star.gif" data-original="/images/star.gif" data-src="D:\blog\source_posts\测试点设计\des.png" alt="Pasted image 20240217174030"></p>
+<p><img lazyload src="keep/source/images/star.gif" data-original="/images/star.gif" data-src="/2024/03/25/%E6%B5%8B%E8%AF%95%E7%82%B9%E8%AE%BE%E8%AE%A1/des.png"></p>
 <ul>
 <li>有效等价只取其一，每个无效集合取1个</li>
 <li>设计一个新的测试用例，使其<strong>尽可能多的覆盖</strong>尚未被覆盖的有效等价类，重复这一步直到所有的有效等价类都被覆盖为止；设计一个新的测试用例，使其<strong>仅覆盖一个</strong>尚未被覆盖的无效等价类，重复这一步直到所有的无效等价类都被覆盖为止</li>
 </ul>
-<h3 id="适用场景"><a href="#适用场景" class="headerlink" title="适用场景"></a>适用场景</h3><p><img lazyload src="keep/source/images/star.gif" data-original="/images/star.gif" data-src="D:\blog\source_posts\测试点设计\scene.png" alt="Pasted image 20240218103044"></p>
+<h3 id="适用场景"><a href="#适用场景" class="headerlink" title="适用场景"></a>适用场景</h3><p><img lazyload src="keep/source/images/star.gif" data-original="/images/star.gif" data-src="/2024/03/25/%E6%B5%8B%E8%AF%95%E7%82%B9%E8%AE%BE%E8%AE%A1/scene.png"></p>
 <p>通过等价类把穷尽测试转化为有限的有效测试</p>
 <h3 id="举例"><a href="#举例" class="headerlink" title="举例"></a>举例</h3><ul>
 <li>用户名长度6~18，必须以字母数字下划线两者或两者以上组合</li>
@@ -201,10 +201,10 @@
 </ul>
 </li>
 </ul>
-<h1 id="对限定边界规则设计测试点"><a href="#对限定边界规则设计测试点" class="headerlink" title="对限定边界规则设计测试点"></a>对限定边界规则设计测试点</h1><h2 id="边界值分析法"><a href="#边界值分析法" class="headerlink" title="边界值分析法"></a>边界值分析法</h2><h3 id="边界范围节点"><a href="#边界范围节点" class="headerlink" title="边界范围节点"></a>边界范围节点</h3><p><img lazyload src="keep/source/images/star.gif" data-original="/images/star.gif" data-src="D:\blog\source_posts\测试点设计\boundaries.png" alt="Pasted image 20240218151837"><br>内点一般取居中的点<br><img lazyload src="keep/source/images/star.gif" data-original="/images/star.gif" data-src="D:\blog\source_posts\测试点设计\dot.png" alt="Pasted image 20240218152713"><br>最多7条</p>
-<h3 id="边界值法设计用例步骤"><a href="#边界值法设计用例步骤" class="headerlink" title="边界值法设计用例步骤"></a>边界值法设计用例步骤</h3><p><img lazyload src="keep/source/images/star.gif" data-original="/images/star.gif" data-src="D:\blog\source_posts\测试点设计\process.png" alt="Pasted image 20240218153637"></p>
-<h3 id="案例优化"><a href="#案例优化" class="headerlink" title="案例优化"></a>案例优化</h3><p><img lazyload src="keep/source/images/star.gif" data-original="/images/star.gif" data-src="D:\blog\source_posts\测试点设计\case.png" alt="Pasted image 20240218171118"></p>
-<h3 id="适用场景-1"><a href="#适用场景-1" class="headerlink" title="适用场景"></a>适用场景</h3><p><img lazyload src="keep/source/images/star.gif" data-original="/images/star.gif" data-src="D:\blog\source_posts\测试点设计\sce.png" alt="Pasted image 20240218175818"><br>单个输入框，常用的方式：边界+等效类</p>
+<h1 id="对限定边界规则设计测试点"><a href="#对限定边界规则设计测试点" class="headerlink" title="对限定边界规则设计测试点"></a>对限定边界规则设计测试点</h1><h2 id="边界值分析法"><a href="#边界值分析法" class="headerlink" title="边界值分析法"></a>边界值分析法</h2><h3 id="边界范围节点"><a href="#边界范围节点" class="headerlink" title="边界范围节点"></a>边界范围节点</h3><p><img lazyload src="keep/source/images/star.gif" data-original="/images/star.gif" data-src="/2024/03/25/%E6%B5%8B%E8%AF%95%E7%82%B9%E8%AE%BE%E8%AE%A1/boundaries.png"><br>内点一般取居中的点<br><img lazyload src="keep/source/images/star.gif" data-original="/images/star.gif" data-src="/2024/03/25/%E6%B5%8B%E8%AF%95%E7%82%B9%E8%AE%BE%E8%AE%A1/dot.png"><br>最多7条</p>
+<h3 id="边界值法设计用例步骤"><a href="#边界值法设计用例步骤" class="headerlink" title="边界值法设计用例步骤"></a>边界值法设计用例步骤</h3><p><img lazyload src="keep/source/images/star.gif" data-original="/images/star.gif" data-src="/2024/03/25/%E6%B5%8B%E8%AF%95%E7%82%B9%E8%AE%BE%E8%AE%A1/process.png"></p>
+<h3 id="案例优化"><a href="#案例优化" class="headerlink" title="案例优化"></a>案例优化</h3><p><img lazyload src="keep/source/images/star.gif" data-original="/images/star.gif" data-src="/2024/03/25/%E6%B5%8B%E8%AF%95%E7%82%B9%E8%AE%BE%E8%AE%A1/case.png"></p>
+<h3 id="适用场景-1"><a href="#适用场景-1" class="headerlink" title="适用场景"></a>适用场景</h3><p><img lazyload src="keep/source/images/star.gif" data-original="/images/star.gif" data-src="/2024/03/25/%E6%B5%8B%E8%AF%95%E7%82%B9%E8%AE%BE%E8%AE%A1/sce.png"><br>单个输入框，常用的方式：边界+等效类</p>
 <h1 id="对多条件依赖关系设计测试点"><a href="#对多条件依赖关系设计测试点" class="headerlink" title="对多条件依赖关系设计测试点"></a>对多条件依赖关系设计测试点</h1><h2 id="因果图法"><a href="#因果图法" class="headerlink" title="因果图法"></a>因果图法</h2><p>使用场景：当需求中存在多个条件，不同条件中存在不同的结果，就会使用因果图法。</p>
 <p>分别列出需求中的因子（条件）和结果</p>
 <h2 id="判定表法"><a href="#判定表法" class="headerlink" title="判定表法"></a>判定表法</h2><ul>
@@ -213,9 +213,9 @@
 <li>判定表法要求多个条件之间有依赖或制约关系</li>
 </ul>
 <h3 id="判定表定义及组成部分"><a href="#判定表定义及组成部分" class="headerlink" title="判定表定义及组成部分"></a>判定表定义及组成部分</h3><p>判定表&#x3D;条件桩（需求中的因子）+动作桩（需求中的结果）+条件项（不同因子的组合）+动作项（不同因子造成结果的组合） </p>
-<p><img lazyload src="keep/source/images/star.gif" data-original="/images/star.gif" data-src="D:\blog\source_posts\测试点设计\table1.png" alt="Pasted image 20240221114617"><br><img lazyload src="keep/source/images/star.gif" data-original="/images/star.gif" data-src="D:\blog\source_posts\测试点设计\table2.png" alt="Pasted image 20240221135041"><br><img lazyload src="keep/source/images/star.gif" data-original="/images/star.gif" data-src="D:\blog\source_posts\测试点设计\table3.png" alt="Pasted image 20240221215423"><br><img lazyload src="keep/source/images/star.gif" data-original="/images/star.gif" data-src="D:\blog\source_posts\测试点设计\table4.png" alt="Pasted image 20240221215516"></p>
-<h3 id="判定表法设计用例步骤"><a href="#判定表法设计用例步骤" class="headerlink" title="判定表法设计用例步骤"></a>判定表法设计用例步骤</h3><p><img lazyload src="keep/source/images/star.gif" data-original="/images/star.gif" data-src="D:\blog\source_posts\测试点设计\tablepro.png" alt="Pasted image 20240221141814"></p>
-<h3 id="使用场景"><a href="#使用场景" class="headerlink" title="使用场景"></a>使用场景</h3><p><img lazyload src="keep/source/images/star.gif" data-original="/images/star.gif" data-src="D:\blog\source_posts\测试点设计\used.png" alt="Pasted image 20240221165425"><br>如果条件超过4个，就不适合覆盖所有条件，应采用正交法来解决。</p>
+<p><img lazyload src="keep/source/images/star.gif" data-original="/images/star.gif" data-src="/2024/03/25/%E6%B5%8B%E8%AF%95%E7%82%B9%E8%AE%BE%E8%AE%A1/table1.png"><br><img lazyload src="keep/source/images/star.gif" data-original="/images/star.gif" data-src="/2024/03/25/%E6%B5%8B%E8%AF%95%E7%82%B9%E8%AE%BE%E8%AE%A1/table2.png"><br><img lazyload src="keep/source/images/star.gif" data-original="/images/star.gif" data-src="/2024/03/25/%E6%B5%8B%E8%AF%95%E7%82%B9%E8%AE%BE%E8%AE%A1/table3.png"><br><img lazyload src="keep/source/images/star.gif" data-original="/images/star.gif" data-src="/2024/03/25/%E6%B5%8B%E8%AF%95%E7%82%B9%E8%AE%BE%E8%AE%A1/table4.png"></p>
+<h3 id="判定表法设计用例步骤"><a href="#判定表法设计用例步骤" class="headerlink" title="判定表法设计用例步骤"></a>判定表法设计用例步骤</h3><p><img lazyload src="keep/source/images/star.gif" data-original="/images/star.gif" data-src="/2024/03/25/%E6%B5%8B%E8%AF%95%E7%82%B9%E8%AE%BE%E8%AE%A1/tablepro.png"></p>
+<h3 id="使用场景"><a href="#使用场景" class="headerlink" title="使用场景"></a>使用场景</h3><p><img lazyload src="keep/source/images/star.gif" data-original="/images/star.gif" data-src="/2024/03/25/%E6%B5%8B%E8%AF%95%E7%82%B9%E8%AE%BE%E8%AE%A1/used.png"><br>如果条件超过4个，就不适合覆盖所有条件，应采用正交法来解决。</p>
 <h2 id="正交实验法"><a href="#正交实验法" class="headerlink" title="正交实验法"></a>正交实验法</h2><p>利用因果图设计测试用例时，作为输入条件的原因和输出结果之间的因果关系，有时候很难从软件需求规格说明中得到。往往因果关系非常庞大，提取的用例数目多的惊人，则可以采用正交实验设计方法。</p>
 <h3 id="正交表"><a href="#正交表" class="headerlink" title="正交表"></a>正交表</h3><p>$$<br>L_n(m^k)<br>$$</p>
 <ul>
@@ -230,25 +230,25 @@
 <p>9为需要测试的组合个数</p>
 </li>
 </ul>
-<p><img lazyload src="keep/source/images/star.gif" data-original="/images/star.gif" data-src="D:\blog\source_posts\测试点设计\form.png" alt="image-20240329124705727"></p>
+<p><img lazyload src="keep/source/images/star.gif" data-original="/images/star.gif" data-src="/2024/03/25/%E6%B5%8B%E8%AF%95%E7%82%B9%E8%AE%BE%E8%AE%A1/form.png"></p>
 <h1 id="对于项目业务设计测试点"><a href="#对于项目业务设计测试点" class="headerlink" title="对于项目业务设计测试点"></a>对于项目业务设计测试点</h1><h2 id="场景法"><a href="#场景法" class="headerlink" title="场景法"></a>场景法</h2><p>对项目的业务流程功能用例的设计基于场景法来进行设计</p>
 <p>通过场景描述的业务流程（业务逻辑），也包括代码实现逻辑，设计用例来遍历场景（路径），验证软件系统功能的正确性</p>
 <p>正常流&#x2F;基本流：从起点开始，通过各个路径，在最后的节点结束。模拟用户正常操作的流程</p>
 <p>异常流&#x2F;错误流&#x2F;备选流：从起点开始，可能在某个节点结束或者会返回上一节点，模拟用户错误的操作的流程。</p>
 <h3 id="流程图"><a href="#流程图" class="headerlink" title="流程图"></a>流程图</h3><p>业务流程图是基于场景法设计测试用例的依据，由产品去提供业务流程图</p>
-<p><img lazyload src="keep/source/images/star.gif" data-original="/images/star.gif" data-src="D:\blog\source_posts\测试点设计\business1.png" alt="Pasted image 20240221171853"><br><img lazyload src="keep/source/images/star.gif" data-original="/images/star.gif" data-src="D:\blog\source_posts\测试点设计\business2.png" alt="Pasted image 20240221172129"></p>
+<p><img lazyload src="keep/source/images/star.gif" data-original="/images/star.gif" data-src="/2024/03/25/%E6%B5%8B%E8%AF%95%E7%82%B9%E8%AE%BE%E8%AE%A1/business1.png"><br><img lazyload src="keep/source/images/star.gif" data-original="/images/star.gif" data-src="/2024/03/25/%E6%B5%8B%E8%AF%95%E7%82%B9%E8%AE%BE%E8%AE%A1/business2.png"></p>
 <ul>
 <li>覆盖业务测试需要使用流程图法</li>
-<li>先测试业务、再测试单功能、单模块、单页面<br><img lazyload src="keep/source/images/star.gif" data-original="/images/star.gif" data-src="D:\blog\source_posts\测试点设计\oder.png" alt="Pasted image 20240221181128"></li>
+<li>先测试业务、再测试单功能、单模块、单页面<br><img lazyload src="keep/source/images/star.gif" data-original="/images/star.gif" data-src="/2024/03/25/%E6%B5%8B%E8%AF%95%E7%82%B9%E8%AE%BE%E8%AE%A1/oder.png"></li>
 </ul>
-<h3 id="使用场景-1"><a href="#使用场景-1" class="headerlink" title="使用场景"></a>使用场景</h3><p><img lazyload src="keep/source/images/star.gif" data-original="/images/star.gif" data-src="D:\blog\source_posts\测试点设计\site1.png" alt="Pasted image 20240221200132"><br><strong>业务用例必须先测</strong><br>案例3-1：<br><img lazyload src="keep/source/images/star.gif" data-original="/images/star.gif" data-src="D:\blog\source_posts\测试点设计\case1.png" alt="Pasted image 20240221200352"><img lazyload src="keep/source/images/star.gif" data-original="/images/star.gif" data-src="D:\blog\source_posts\测试点设计\case2.png"></p>
+<h3 id="使用场景-1"><a href="#使用场景-1" class="headerlink" title="使用场景"></a>使用场景</h3><p><img lazyload src="keep/source/images/star.gif" data-original="/images/star.gif" data-src="/2024/03/25/%E6%B5%8B%E8%AF%95%E7%82%B9%E8%AE%BE%E8%AE%A1/site1.png"><br><strong>业务用例必须先测</strong><br>案例3-1：<br><img lazyload src="keep/source/images/star.gif" data-original="/images/star.gif" data-src="/2024/03/25/%E6%B5%8B%E8%AF%95%E7%82%B9%E8%AE%BE%E8%AE%A1/case1.png"><img lazyload src="keep/source/images/star.gif" data-original="/images/star.gif" data-src="/2024/03/25/%E6%B5%8B%E8%AF%95%E7%82%B9%E8%AE%BE%E8%AE%A1/case2.png"></p>
 <h2 id="错误推测法（反推法）"><a href="#错误推测法（反推法）" class="headerlink" title="错误推测法（反推法）"></a>错误推测法（反推法）</h2><ul>
 <li>通过经验推测程序中所有可能出现的问题，主要依靠经验、知识、直觉</li>
 <li>根据经验列举出可能出现问题的清单，根据清单分析问题可能原因，推测发现缺陷。</li>
 <li>探索性测试</li>
 </ul>
-<p><img lazyload src="keep/source/images/star.gif" data-original="/images/star.gif" data-src="D:\blog\source_posts\测试点设计\faultcase.png" alt="image-20240328211430356"></p>
-<h3 id="场景"><a href="#场景" class="headerlink" title="场景"></a>场景</h3><p><img lazyload src="keep/source/images/star.gif" data-original="/images/star.gif" data-src="D:\blog\source_posts\测试点设计\sites.png"></p>
+<p><img lazyload src="keep/source/images/star.gif" data-original="/images/star.gif" data-src="/2024/03/25/%E6%B5%8B%E8%AF%95%E7%82%B9%E8%AE%BE%E8%AE%A1/faultcase.png"></p>
+<h3 id="场景"><a href="#场景" class="headerlink" title="场景"></a>场景</h3><p><img lazyload src="keep/source/images/star.gif" data-original="/images/star.gif" data-src="/2024/03/25/%E6%B5%8B%E8%AF%95%E7%82%B9%E8%AE%BE%E8%AE%A1/sites.png"></p>
 <ul>
 <li>当项目用例都执行完毕且BUG修复完成，离上线还有一段时间，在这段时间中可以使用错误推测法复测主要业务或未测试的功能</li>
 </ul>
