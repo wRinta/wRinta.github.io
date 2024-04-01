@@ -14,15 +14,29 @@
     
 <link rel="stylesheet" href="/css/style.css">
 
-    <link rel="shortcut icon" href="/images/icon16.png">
     
-<link rel="stylesheet" href="/css/font-awesome.min.css">
+        <link rel="shortcut icon" href="/images/icon16.png">
+    
+    
+<link rel="stylesheet" href="/font/css/fontawesome.min.css">
 
-    <script id="hexo-configurations">
-    let KEEP = window.KEEP || {};
-    KEEP.hexo_config = {"hostname":"example.com","root":"/","language":"en","path":"search.json"};
-    KEEP.theme_config = {"toc":{"enable":true,"number":true,"expand_all":true,"init_open":true},"style":{"primary_color":"#ffe8e9","background-color":null,"avatar":"/images/icon40.png","favicon":"/images/icon16.png","article_img_align":"center","left_side_width":"260px","content_max_width":"920px","hover":{"shadow":true,"scale":true},"first_screen":{"enable":true,"background_img":"/images/pmgroup.png","description":"Heroes never die!"},"scroll":{"progress_bar":{"enable":true},"percent":{"enable":true}}},"local_search":{"enable":true,"preload":true},"code_copy":{"enable":true,"style":"mac"},"pjax":{"enable":true},"lazyload":{"enable":true,"onlypost":true,"loadingImg":"/images/star.gif"},"version":"3.4.3"};
-    KEEP.language_ago = {"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days ago","week":"%s weeks ago","month":"%s months ago","year":"%s years ago"};
+    
+<link rel="stylesheet" href="/font/css/regular.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/solid.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/brands.min.css">
+
+    
+    <script class="keep-theme-configurations">
+    const KEEP = window.KEEP || {}
+    KEEP.hexo_config = {"hostname":"example.com","root":"/","language":"en","path":"search.json"}
+    KEEP.theme_config = {"base_info":{"primary_color":"#ffe8e9","title":"Elora blog","author":"Elora","avatar":"/images/icon40.png","logo":"/images/icon40.png","favicon":"/images/icon16.png"},"menu":{"home":"/ || fa-solid fa-home","archives":"/archives || fa-solid fa-box-archive","tags":"/tags || fa-solid fa-tags","categories":"/categories || fa-solid fa-layer-group"},"first_screen":{"enable":true,"background_img":"/images/pmgroup.png","background_img_dark":null,"description":"Heroes never die!","hitokoto":false},"social_contact":{"enable":true,"links":{"github":"https://github.com/wRinta","weixin":"img | /images/wechat.png","qq":null,"weibo":null,"zhihu":null,"twitter":null,"x":null,"facebook":null,"email":"wsq1357812@163.com"}},"scroll":{"progress_bar":true,"percent":true,"hide_header":true},"home":{"announcement":"python部分图片未上传！","category":true,"tag":true,"post_datetime":"updated || fa-solid fa-hourglass-start","post_datetime_format":"YYYY-MM-DD HH:mm:ss"},"post":{"author_badge":{"enable":true,"level_badge":true,"custom_badge":["Rinta!"]},"word_count":{"wordcount":true,"min2read":true},"datetime_format":"YYYY-MM-DD HH:mm:ss","copyright_info":true,"share":true,"reward":{"enable":true,"img_link":"/images/reward.png","text":"请作者喝奶茶","img_align":"right"}},"code_block":{"tools":{"enable":true,"style":"mac"},"highlight_theme":"default"},"toc":{"enable":true,"number":true,"expand_all":true,"init_open":true,"layout":"left"},"website_count":{"busuanzi_count":{"enable":true,"site_uv":true,"site_pv":true,"page_pv":true}},"local_search":{"enable":true,"preload":true},"comment":{"enable":true,"use":"valine","valine":{"appid":"oKezB5PXBe6SFd75Ab2I1igt-gzGzoHsz","appkey":"ZyjE4IekdBOYhHEQyVhPqWf9","server_urls":null,"placeholder":"say something.."},"gitalk":{"github_id":null,"github_admins":null,"repository":null,"client_id":null,"client_secret":null,"proxy":null},"twikoo":{"env_id":null,"region":null,"version":"1.6.21"},"waline":{"server_url":null,"reaction":false,"version":2},"giscus":{"repo":null,"repo_id":null,"category":"Announcements","category_id":null,"reactions_enabled":false},"artalk":{"server":null},"disqus":{"shortname":null}},"rss":{"enable":false},"lazyload":{"enable":true},"cdn":{"enable":false,"provider":"cdnjs"},"pjax":{"enable":true},"footer":{"since":2020,"word_count":false,"icp":{"enable":false,"record_code":null,"url":"https://beian.miit.gov.cn"},"site_deploy":{"enable":false,"provider":"github","url":null},"shields_style":{"enable":false,"custom":[{"link_url":null,"img_url":null}]}},"inject":{"enable":false,"css":[null],"js":[null]},"root":"","source_data":{},"version":"4.1.0"}
+    KEEP.language_ago = {"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days ago","week":"%s weeks ago","month":"%s months ago","year":"%s years ago"}
+    KEEP.language_code_block = {"copy":"Copy code","copied":"Copied","fold":"Fold code block","folded":"Folded"}
+    KEEP.language_copy_copyright = {"copy":"Copy copyright info","copied":"Copied","title":"Original post title","author":"Original post author","link":"Original post link"}
   </script>
 <meta name="generator" content="Hexo 7.1.1"><link rel="alternate" href="/atom.xml" title="hexo" type="application/atom+xml">
 </head>
@@ -36,73 +50,89 @@
 
     
         <span class="pjax-progress-bar"></span>
-        <span class="pjax-progress-icon">
-            <i class="fas fa-circle-notch fa-spin"></i>
-        </span>
+        <i class="pjax-progress-icon fas fa-circle-notch fa-spin"></i>
     
 </div>
 
 
-<main class="page-container">
 
+<main class="page-container border-box">
+    <!-- home first screen  -->
     
 
-    <div class="page-main-content">
-
+    <!-- page content -->
+    <div class="page-main-content border-box is-home">
         <div class="page-main-content-top">
-            <header class="header-wrapper">
-
-    <div class="header-content">
-        <div class="left">
             
-                <a class="logo-image" href="/">
+<header class="header-wrapper transparent-1">
+
+    <div class="border-box header-content">
+        <div class="left border-box">
+            
+                <a class="logo-image border-box" href="/">
                     <img src="/images/icon40.png">
                 </a>
             
-            <a class="logo-title" href="/">
-                Elora blog
+            <a class="site-name border-box" href="/">
+               Elora blog
             </a>
         </div>
 
-        <div class="right">
+        <div class="right border-box">
             <div class="pc">
                 <ul class="menu-list">
                     
+                        
                         <li class="menu-item">
-                            <a class="active"
+                            <a class=""
                                href="/"
                             >
+                                
+                                    <i class="menu-icon fa-solid fa-home"></i>
+                                
                                 HOME
                             </a>
                         </li>
                     
+                        
                         <li class="menu-item">
                             <a class=""
                                href="/archives"
                             >
+                                
+                                    <i class="menu-icon fa-solid fa-box-archive"></i>
+                                
                                 ARCHIVES
                             </a>
                         </li>
                     
-                        <li class="menu-item">
-                            <a class=""
-                               href="/categories"
-                            >
-                                CATEGORIES
-                            </a>
-                        </li>
-                    
+                        
                         <li class="menu-item">
                             <a class=""
                                href="/tags"
                             >
+                                
+                                    <i class="menu-icon fa-solid fa-tags"></i>
+                                
                                 TAGS
+                            </a>
+                        </li>
+                    
+                        
+                        <li class="menu-item">
+                            <a class=""
+                               href="/categories"
+                            >
+                                
+                                    <i class="menu-icon fa-solid fa-layer-group"></i>
+                                
+                                CATEGORIES
                             </a>
                         </li>
                     
                     
                         <li class="menu-item search search-popup-trigger">
-                            <i class="fas fa-search"></i>
+                            <i class="fas search fa-search"></i>
                         </li>
                     
                 </ul>
@@ -121,24 +151,32 @@
     <div class="header-drawer">
         <ul class="drawer-menu-list">
             
-                <li class="drawer-menu-item flex-center">
-                    <a class="active"
-                       href="/">HOME</a>
-                </li>
-            
+                
                 <li class="drawer-menu-item flex-center">
                     <a class=""
-                       href="/archives">ARCHIVES</a>
+                       href="/"
+                    >HOME</a>
                 </li>
             
+                
                 <li class="drawer-menu-item flex-center">
                     <a class=""
-                       href="/categories">CATEGORIES</a>
+                       href="/archives"
+                    >ARCHIVES</a>
                 </li>
             
+                
                 <li class="drawer-menu-item flex-center">
                     <a class=""
-                       href="/tags">TAGS</a>
+                       href="/tags"
+                    >TAGS</a>
+                </li>
+            
+                
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/categories"
+                    >CATEGORIES</a>
                 </li>
             
         </ul>
@@ -151,360 +189,501 @@
 
         </div>
 
-        <div class="page-main-content-middle">
+        <div class="page-main-content-middle border-box">
 
-            <div class="main-content">
-
+            <div class="main-content border-box">
                 
+
                     <div class="home-content-container fade-in-down-animation">
-    <ul class="home-article-list">
+    
+        <div class="website-announcement border-box">
+            <i class="icon left fa-solid fa-bullhorn"></i>
+            <div class="announcement border-box text-ellipsis">
+                <p>python部分图片未上传！</p>
+
+            </div>
+            <i class="icon right close fa-solid fa-close"></i>
+        </div>
+    
+    <ul class="home-post-list border-box">
         
-            <li class="home-article-item">
+            <li class="home-post-item">
 
                 
 
-                <h3 class="home-article-title">
-                    <a href="/2022/03/25/Markdown%E8%AF%AD%E6%B3%95/">
-                        Markdown语法
-                    </a>
-                </h3>
-
-                <div class="home-article-content markdown-body">
+                <div class="home-post-item-bottom border-box">
                     
-                        Markdown学习标题标题用 #+标题（中间要有空格）回车生成，有六级标题，一个#是一级标题，六#是六级标题。
+                    <h3 class="home-post-title border-box">
+                        <a href="/2022/03/25/Markdown%E8%AF%AD%E6%B3%95/">
+                            Markdown语法
+                        </a>
+                    </h3>
+
+                    <div class="home-post-content keep-markdown-body">
+                        
+                            Markdown学习标题标题用 #+标题（中间要有空格）回车生成，有六级标题，一个#是一级标题，六#是六级标题。
 字体在文段内容，两边各加**就可以变成粗体，两边各加*就可以变成斜体，加***就会加粗斜体。在两边各加~~就会有中间划线的效果。
 引用
 ...
-                    
-                </div>
+                        
+                    </div>
 
-                <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fas fa-history"></i>&nbsp;<span class="home-article-date" data-date="Fri Mar 25 2022 17:59:31 GMT+0800">2022-03-25</span></span>
-        
-        
-            <span class="home-article-tag">
-                <i class="fas fa-tags"></i>&nbsp;
-                <ul>
                     
-                        <li>
-                            
-                            <a href="/tags/Markdown/">Markdown</a>&nbsp;
-                        </li>
+
+<div class="post-meta-info-container border-box home">
+    <div class="post-meta-info border-box">
+        
+            <span class="meta-info-item border-box">
+                <i class="icon fa-solid fa-hourglass-start"></i>&nbsp;<span class="home-post-history"
+                                                                                data-updated="Mon Apr 18 2022 22:18:42 GMT+0800"
+                >2022-04-18 22:18:42</span>
+            </span>
+        
+
+        
+
+        
+
+        
+            <span class="post-tag meta-info-item border-box">
+                <ul class="post-tag-ul">
+                    
+                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/Markdown/">Markdown</a></li>
+                        
                     
                 </ul>
             </span>
         
+
+        
+        
+        
+        
     </div>
 
-    <a href="/2022/03/25/Markdown%E8%AF%AD%E6%B3%95/">Read more&nbsp;<i class="fas fa-angle-right"></i></a>
+    
+        <a class="home-read-more" href="/2022/03/25/Markdown%E8%AF%AD%E6%B3%95/">Read more&nbsp;<i class="icon fas fa-angle-right"></i></a>
+    
 </div>
 
+                </div>
             </li>
         
-            <li class="home-article-item">
+            <li class="home-post-item">
 
                 
 
-                <h3 class="home-article-title">
-                    <a href="/2022/03/25/Monster-Hunter-World/">
-                        Monster Hunter World
-                    </a>
-                </h3>
-
-                <div class="home-article-content markdown-body">
+                <div class="home-post-item-bottom border-box">
                     
-                        秦雁回喝喝
+                    <h3 class="home-post-title border-box">
+                        <a href="/2022/03/25/Monster-Hunter-World/">
+                            Monster Hunter World
+                        </a>
+                    </h3>
+
+                    <div class="home-post-content keep-markdown-body">
+                        
+                            秦雁回喝喝
+
+                        
+                    </div>
 
                     
-                </div>
 
-                <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fas fa-history"></i>&nbsp;<span class="home-article-date" data-date="Fri Mar 25 2022 17:17:12 GMT+0800">2022-03-25</span></span>
+<div class="post-meta-info-container border-box home">
+    <div class="post-meta-info border-box">
         
+            <span class="meta-info-item border-box">
+                <i class="icon fa-solid fa-hourglass-start"></i>&nbsp;<span class="home-post-history"
+                                                                                data-updated="Mon Apr 18 2022 22:17:14 GMT+0800"
+                >2022-04-18 22:17:14</span>
+            </span>
         
-            <span class="home-article-tag">
-                <i class="fas fa-tags"></i>&nbsp;
-                <ul>
+
+        
+
+        
+
+        
+            <span class="post-tag meta-info-item border-box">
+                <ul class="post-tag-ul">
                     
-                        <li>
-                            
-                            <a href="/tags/Monster-Hunter-World/">Monster Hunter World</a>&nbsp;
-                        </li>
+                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/Monster-Hunter-World/">Monster Hunter World</a></li>
+                        
                     
                 </ul>
             </span>
         
+
+        
+        
+        
+        
     </div>
 
-    <a href="/2022/03/25/Monster-Hunter-World/">Read more&nbsp;<i class="fas fa-angle-right"></i></a>
+    
+        <a class="home-read-more" href="/2022/03/25/Monster-Hunter-World/">Read more&nbsp;<i class="icon fas fa-angle-right"></i></a>
+    
 </div>
 
+                </div>
             </li>
         
-            <li class="home-article-item">
+            <li class="home-post-item">
 
                 
 
-                <h3 class="home-article-title">
-                    <a href="/2021/07/17/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B/">
-                        小白搭建博客教程
-                    </a>
-                </h3>
-
-                <div class="home-article-content markdown-body">
+                <div class="home-post-item-bottom border-box">
                     
-                        安装准备安装博客前，电脑需要安装node.js，git。并且要在GitHub上建立一个仓库
+                    <h3 class="home-post-title border-box">
+                        <a href="/2021/07/17/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B/">
+                            小白搭建博客教程
+                        </a>
+                    </h3>
+
+                    <div class="home-post-content keep-markdown-body">
+                        
+                            安装准备安装博客前，电脑需要安装node.js，git。并且要在GitHub上建立一个仓库
 
 如图所示，yourname是你的名字，要和你的GitHub名字完全一样，比如我是wrinta，我的Repository name那里填的就是wrinta.g...
-                    
-                </div>
+                        
+                    </div>
 
-                <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fas fa-history"></i>&nbsp;<span class="home-article-date" data-date="Sat Jul 17 2021 15:40:00 GMT+0800">2021-07-17</span></span>
+                    
+
+<div class="post-meta-info-container border-box home">
+    <div class="post-meta-info border-box">
         
-            <span class="home-article-category"><i class="fas fa-folder"></i>&nbsp;
-                <ul>
+            <span class="meta-info-item border-box">
+                <i class="icon fa-solid fa-hourglass-start"></i>&nbsp;<span class="home-post-history"
+                                                                                data-updated="Mon Jul 19 2021 08:19:14 GMT+0800"
+                >2021-07-19 08:19:14</span>
+            </span>
+        
+
+        
+
+        
+            <span class="meta-info-item post-category border-box"><i class="icon fas fa-folder"></i>&nbsp;
+                <ul class="post-category-ul">
                     
-                        <li>
-                            
-                            <a href="/categories/hexo/">hexo</a>&nbsp;
-                        </li>
-                    
+                            <li class="category-item"><a href="/categories/hexo/">hexo</a></li>
+                        
                     
                 </ul>
             </span>
         
+
         
-            <span class="home-article-tag">
-                <i class="fas fa-tags"></i>&nbsp;
-                <ul>
+            <span class="post-tag meta-info-item border-box">
+                <ul class="post-tag-ul">
                     
-                        <li>
-                            
-                            <a href="/tags/blog-build/">blog build</a>&nbsp;
-                        </li>
+                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/blog-build/">blog build</a></li>
+                        
                     
                 </ul>
             </span>
+        
+
+        
+        
+        
         
     </div>
 
-    <a href="/2021/07/17/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B/">Read more&nbsp;<i class="fas fa-angle-right"></i></a>
+    
+        <a class="home-read-more" href="/2021/07/17/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B/">Read more&nbsp;<i class="icon fas fa-angle-right"></i></a>
+    
 </div>
 
+                </div>
             </li>
         
-            <li class="home-article-item">
+            <li class="home-post-item">
 
                 
 
-                <h3 class="home-article-title">
-                    <a href="/2021/07/17/C-program-language/">
-                        C program language
-                    </a>
-                </h3>
-
-                <div class="home-article-content markdown-body">
+                <div class="home-post-item-bottom border-box">
                     
-                        Here's something encrypted, password is required to continue reading.
-                    
-                </div>
+                    <h3 class="home-post-title border-box">
+                        <a href="/2021/07/17/C-program-language/">
+                            C program language
+                        </a>
+                    </h3>
 
-                <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fas fa-history"></i>&nbsp;<span class="home-article-date" data-date="Sat Jul 17 2021 14:26:19 GMT+0800">2021-07-17</span></span>
+                    <div class="home-post-content keep-markdown-body">
+                        
+                            Here's something encrypted, password is required to continue reading.
+                        
+                    </div>
+
+                    
+
+<div class="post-meta-info-container border-box home">
+    <div class="post-meta-info border-box">
         
-            <span class="home-article-category"><i class="fas fa-folder"></i>&nbsp;
-                <ul>
+            <span class="meta-info-item border-box">
+                <i class="icon fa-solid fa-hourglass-start"></i>&nbsp;<span class="home-post-history"
+                                                                                data-updated="Sat Jul 17 2021 15:03:13 GMT+0800"
+                >2021-07-17 15:03:13</span>
+            </span>
+        
+
+        
+
+        
+            <span class="meta-info-item post-category border-box"><i class="icon fas fa-folder"></i>&nbsp;
+                <ul class="post-category-ul">
                     
-                        <li>
-                            
-                            <a href="/categories/reviews/">reviews</a>&nbsp;
-                        </li>
-                    
+                            <li class="category-item"><a href="/categories/reviews/">reviews</a></li>
+                        
                     
                 </ul>
             </span>
         
+
         
-            <span class="home-article-tag">
-                <i class="fas fa-tags"></i>&nbsp;
-                <ul>
+            <span class="post-tag meta-info-item border-box">
+                <ul class="post-tag-ul">
                     
-                        <li>
-                            
-                            <a href="/tags/C/">C</a>&nbsp;
-                        </li>
+                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/C/">C</a></li>
+                        
                     
                 </ul>
             </span>
+        
+
+        
+        
+        
         
     </div>
 
-    <a href="/2021/07/17/C-program-language/">Read more&nbsp;<i class="fas fa-angle-right"></i></a>
+    
+        <a class="home-read-more" href="/2021/07/17/C-program-language/">Read more&nbsp;<i class="icon fas fa-angle-right"></i></a>
+    
 </div>
 
+                </div>
             </li>
         
-            <li class="home-article-item">
+            <li class="home-post-item">
 
                 
 
-                <h3 class="home-article-title">
-                    <a href="/2021/07/16/JQuery%E5%AF%B9%E5%88%97%E8%A1%A8%E7%9A%84%E5%A2%9E%E5%88%A0%E6%94%B9%E4%BB%A5%E5%8F%8A%E9%81%8D%E5%8E%86/">
-                        JQuery对列表的增删改以及遍历
-                    </a>
-                </h3>
-
-                <div class="home-article-content markdown-body">
+                <div class="home-post-item-bottom border-box">
                     
-                        问题描述使用JQuery对html中的ul进行li的增删改以及遍历查看
+                    <h3 class="home-post-title border-box">
+                        <a href="/2021/07/16/JQuery%E5%AF%B9%E5%88%97%E8%A1%A8%E7%9A%84%E5%A2%9E%E5%88%A0%E6%94%B9%E4%BB%A5%E5%8F%8A%E9%81%8D%E5%8E%86/">
+                            JQuery对列表的增删改以及遍历
+                        </a>
+                    </h3>
+
+                    <div class="home-post-content keep-markdown-body">
+                        
+                            问题描述使用JQuery对html中的ul进行li的增删改以及遍历查看
 代码html部分123456789101112&lt;div&gt;        &lt;ul&gt;        &lt;/ul&gt;    &lt;/div&gt;  ...
-                    
-                </div>
+                        
+                    </div>
 
-                <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fas fa-history"></i>&nbsp;<span class="home-article-date" data-date="Fri Jul 16 2021 20:51:20 GMT+0800">2021-07-16</span></span>
+                    
+
+<div class="post-meta-info-container border-box home">
+    <div class="post-meta-info border-box">
         
-            <span class="home-article-category"><i class="fas fa-folder"></i>&nbsp;
-                <ul>
+            <span class="meta-info-item border-box">
+                <i class="icon fa-solid fa-hourglass-start"></i>&nbsp;<span class="home-post-history"
+                                                                                data-updated="Sat Jul 17 2021 08:58:00 GMT+0800"
+                >2021-07-17 08:58:00</span>
+            </span>
+        
+
+        
+
+        
+            <span class="meta-info-item post-category border-box"><i class="icon fas fa-folder"></i>&nbsp;
+                <ul class="post-category-ul">
                     
-                        <li>
-                            
-                            <a href="/categories/HTML/">HTML</a>&nbsp;
-                        </li>
-                    
+                            <li class="category-item"><a href="/categories/HTML/">HTML</a></li>
+                        
                     
                 </ul>
             </span>
         
+
         
-            <span class="home-article-tag">
-                <i class="fas fa-tags"></i>&nbsp;
-                <ul>
+            <span class="post-tag meta-info-item border-box">
+                <ul class="post-tag-ul">
                     
-                        <li>
-                            
-                            <a href="/tags/JQuery/">JQuery</a>&nbsp;
-                        </li>
+                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/JQuery/">JQuery</a></li>
+                        
                     
                 </ul>
             </span>
+        
+
+        
+        
+        
         
     </div>
 
-    <a href="/2021/07/16/JQuery%E5%AF%B9%E5%88%97%E8%A1%A8%E7%9A%84%E5%A2%9E%E5%88%A0%E6%94%B9%E4%BB%A5%E5%8F%8A%E9%81%8D%E5%8E%86/">Read more&nbsp;<i class="fas fa-angle-right"></i></a>
+    
+        <a class="home-read-more" href="/2021/07/16/JQuery%E5%AF%B9%E5%88%97%E8%A1%A8%E7%9A%84%E5%A2%9E%E5%88%A0%E6%94%B9%E4%BB%A5%E5%8F%8A%E9%81%8D%E5%8E%86/">Read more&nbsp;<i class="icon fas fa-angle-right"></i></a>
+    
 </div>
 
+                </div>
             </li>
         
-            <li class="home-article-item">
+            <li class="home-post-item">
 
                 
 
-                <h3 class="home-article-title">
-                    <a href="/2021/07/16/overwatch/">
-                        Overwatch
-                    </a>
-                </h3>
-
-                <div class="home-article-content markdown-body">
+                <div class="home-post-item-bottom border-box">
                     
-                        Hello Overwatch!
+                    <h3 class="home-post-title border-box">
+                        <a href="/2021/07/16/overwatch/">
+                            Overwatch
+                        </a>
+                    </h3>
+
+                    <div class="home-post-content keep-markdown-body">
+                        
+                            Hello Overwatch!
+
+                        
+                    </div>
 
                     
-                </div>
 
-                <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fas fa-history"></i>&nbsp;<span class="home-article-date" data-date="Fri Jul 16 2021 11:01:29 GMT+0800">2021-07-16</span></span>
+<div class="post-meta-info-container border-box home">
+    <div class="post-meta-info border-box">
         
+            <span class="meta-info-item border-box">
+                <i class="icon fa-solid fa-hourglass-start"></i>&nbsp;<span class="home-post-history"
+                                                                                data-updated="Sat Mar 26 2022 16:40:12 GMT+0800"
+                >2022-03-26 16:40:12</span>
+            </span>
         
-            <span class="home-article-tag">
-                <i class="fas fa-tags"></i>&nbsp;
-                <ul>
+
+        
+
+        
+
+        
+            <span class="post-tag meta-info-item border-box">
+                <ul class="post-tag-ul">
                     
-                        <li>
-                            
-                            <a href="/tags/overwatch/">overwatch</a>&nbsp;
-                        </li>
+                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/overwatch/">overwatch</a></li>
+                        
                     
                 </ul>
             </span>
         
+
+        
+        
+        
+        
     </div>
 
-    <a href="/2021/07/16/overwatch/">Read more&nbsp;<i class="fas fa-angle-right"></i></a>
+    
+        <a class="home-read-more" href="/2021/07/16/overwatch/">Read more&nbsp;<i class="icon fas fa-angle-right"></i></a>
+    
 </div>
 
+                </div>
             </li>
         
     </ul>
-
-    <div class="home-paginator">
-        <div class="paginator">
     
-        <a class="prev btn"
-           href="/"
-        >Prev</a>
-    
+    <div class="paginator border-box flex-center">
+        <div class="btn-wrap allowed">
+            <a class="jump-btn"
+               href="/"
+            ><i class="fa-solid fa-chevron-left"></i></a>
+        </div>
 
-    
-</div>
 
+        <div class="page-number-box border-box flex-center">
+            <input class="page-number-input border-box base-color-size"
+                   type="number"
+                   value="2"
+                   min="1"
+                   max="2"
+            ><span class="delimiter base-color-size">/</span><span class="base-color-size">2</span>
+        </div>
+
+
+        <div class="btn-wrap">
+            <a class="jump-btn"
+               href="/"
+            ><i class="fa-solid fa-chevron-right"></i></a>
+        </div>
     </div>
+
+
+
+
 </div>
 
 
                 
             </div>
-
         </div>
 
-        <div class="page-main-content-bottom">
-            <footer class="footer">
-    <div class="info-container">
-        <div class="copyright-info info-item">
-            &copy;
+        <div class="page-main-content-bottom border-box">
             
-              <span>2020</span>&nbsp;-&nbsp;
-            
-            2024&nbsp;<i class="fas fa-heart icon-animate"></i>&nbsp;<a href="/">Elora</a>
-        </div>
+<footer class="footer border-box">
+    <div class="border-box website-info-box default">
         
-            <script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-            <div class="website-count info-item">
+            <div class="copyright-info info-item default">
+                &copy;&nbsp;<span>2020</span>&nbsp;-&nbsp;2024
                 
-                    <span id="busuanzi_container_site_uv">
-                        Visitor Count&nbsp;<span id="busuanzi_value_site_uv"></span>&ensp;
-                    </span>
-                
-                
-                    <span id="busuanzi_container_site_pv">
-                        Totalview&nbsp;<span id="busuanzi_value_site_pv"></span>
-                    </span>
+                    &nbsp;<i class="fas fa-heart icon-animate"></i>&nbsp;&nbsp;<a href="/">Elora</a>
                 
             </div>
+
+            <div class="theme-info info-item default">
+                Powered by&nbsp;<a target="_blank" href="https://hexo.io">Hexo</a>&nbsp;&&nbsp;Theme&nbsp;<a class="keep-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep">Keep</a>
+            </div>
+
+            
+
+            
         
-        <div class="theme-info info-item">
-            Powered by <a target="_blank" href="https://hexo.io">Hexo</a>&nbsp;|&nbsp;Theme&nbsp;<a class="theme-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep">Keep v3.4.3</a>
+
+        <div class="count-item info-item default">
+            
+
+            
+                <span class="count-box border-box uv">
+                    <span class="item-type border-box">Unique Visitor</span>
+                    <span class="item-value border-box uv" id="busuanzi_value_site_uv"></span>
+                </span>
+            
+
+            
+                <span class="count-box border-box pv">
+                    <span class="item-type border-box">Page View</span>
+                    <span class="item-value border-box pv" id="busuanzi_value_site_pv"></span>
+                </span>
+            
         </div>
-        
     </div>
 </footer>
 
         </div>
     </div>
 
+    <!-- post tools -->
     
 
-    <div class="right-bottom-side-tools">
-        <div class="side-tools-container">
-    <ul class="side-tools-list">
+    <!-- side tools -->
+    <div class="side-tools">
+        <div class="side-tools-container border-box side-tools-show-handle">
+    <ul class="side-tools-list side-tools-show-handle border-box">
         <li class="tools-item tool-font-adjust-plus flex-center">
             <i class="fas fa-search-plus"></i>
         </li>
@@ -513,26 +692,11 @@
             <i class="fas fa-search-minus"></i>
         </li>
 
-        <li class="tools-item tool-expand-width flex-center">
-            <i class="fas fa-arrows-alt-h"></i>
-        </li>
-
-        <li class="tools-item tool-dark-light-toggle flex-center">
+        <li class="tools-item tool-toggle-theme-mode flex-center">
             <i class="fas fa-moon"></i>
         </li>
 
         <!-- rss -->
-        
-            <li class="tools-item rss flex-center">
-                <a class="flex-center"
-                   href="/atom.xml"
-                   target="_blank"
-                >
-                    <i class="fas fa-rss"></i>
-                </a>
-            </li>
-        
-
         
 
         <li class="tools-item tool-scroll-to-bottom flex-center">
@@ -540,28 +704,31 @@
         </li>
     </ul>
 
-    <ul class="exposed-tools-list">
+    <ul class="exposed-tools-list border-box">
+        
+
+        
+
         <li class="tools-item tool-toggle-show flex-center">
             <i class="fas fa-cog fa-spin"></i>
         </li>
-        
-            <li class="tools-item tool-scroll-to-top flex-center">
-                <i class="arrow-up fas fa-arrow-up"></i>
-                <span class="percent"></span>
-            </li>
-        
+
+        <li class="tools-item tool-scroll-to-top flex-center show-arrow">
+            <i class="arrow fas fa-arrow-up"></i>
+            <span class="percent"></span>
+        </li>
     </ul>
 </div>
 
     </div>
 
-    
-
-    <div class="image-viewer-container">
-    <img src="">
+    <!-- image mask -->
+    <div class="zoom-in-image-mask">
+    <img class="zoom-in-image">
 </div>
 
 
+    <!-- local search -->
     
         <div class="search-pop-overlay">
     <div class="popup search-popup">
@@ -579,7 +746,7 @@
                        class="search-input"
                 >
             </div>
-            <span class="popup-btn-close">
+            <span class="close-popup-btn">
                 <i class="fas fa-times"></i>
             </span>
         </div>
@@ -593,45 +760,64 @@
 
     
 
+    <!-- tablet toc -->
+    
 </main>
 
 
 
 
+<!-- common -->
 
 <script src="/js/utils.js"></script>
-
-<script src="/js/main.js"></script>
 
 <script src="/js/header-shrink.js"></script>
 
 <script src="/js/back2top.js"></script>
 
-<script src="/js/dark-light-toggle.js"></script>
+<script src="/js/toggle-theme.js"></script>
+
+<script src="/js/code-block.js"></script>
+
+<script src="/js/main.js"></script>
+
+<script src="/js/libs/anime.min.js"></script>
 
 
+<!-- local-search -->
 
     
 <script src="/js/local-search.js"></script>
 
 
 
-
-    
-<script src="/js/code-copy.js"></script>
-
-
-
+<!-- lazyload -->
 
     
 <script src="/js/lazyload.js"></script>
 
 
 
-<div class="post-scripts pjax">
+<div class="pjax">
+    
+
+    <!-- categories page -->
+    
+
+    <!-- links page -->
+    
+
+    <!-- photos page -->
+    
+
+    <!-- tools page -->
     
 </div>
 
+<!-- mermaid -->
+
+
+<!-- pjax -->
 
     
 <script src="/js/libs/pjax.min.js"></script>
@@ -651,24 +837,24 @@
             analytics: false,
             currentUrlFullReload: false,
             scrollRestoration: false,
-            // scrollTo: true,
         });
 
         document.addEventListener('pjax:send', () => {
-            KEEP.utils.pjaxProgressBarStart();
+            KEEP.utils.pjaxProgressBarStart()
         });
 
         document.addEventListener('pjax:complete', () => {
-            KEEP.utils.pjaxProgressBarEnd();
-            window.pjax.executeScripts(document.querySelectorAll('script[data-pjax], .pjax script'));
-            KEEP.refresh();
+            KEEP.utils.pjaxProgressBarEnd()
+            window.pjax.executeScripts(document.querySelectorAll('script[data-pjax], .pjax script'))
+            KEEP.initExecute()
         });
     });
 </script>
 
 
 
-<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/wanko.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script>
+
+
         <style>
             [bg-lazy] {
                 background-image: none !important;
@@ -681,8 +867,5 @@
                 preloadRatio: 1,
                 processImages: null,
             };
-        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(r){r.imageLazyLoadSetting.processImages=t;var e=r.imageLazyLoadSetting.isSPA,n=r.imageLazyLoadSetting.preloadRatio||1,c=a();function a(){var t=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")),e=Array.prototype.slice.call(document.querySelectorAll("[bg-lazy]"));return t.concat(e)}function t(){e&&(c=a());for(var t,o=0;o<c.length;o++)0<=(t=(t=c[o]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(r.innerHeight*n||document.documentElement.clientHeight*n)&&function(){var t,e,n,a,i=c[o];e=function(){c=c.filter(function(t){return i!==t}),r.imageLazyLoadSetting.onImageLoaded&&r.imageLazyLoadSetting.onImageLoaded(i)},(t=i).hasAttribute("bg-lazy")?(t.removeAttribute("bg-lazy"),e&&e()):(n=new Image,a=t.getAttribute("data-original"),n.onload=function(){t.src=a,t.removeAttribute("data-original"),e&&e()},t.src!==a&&(n.src=a))}()}function i(){clearTimeout(t.tId),t.tId=setTimeout(t,500)}t(),document.addEventListener("scroll",i),r.addEventListener("resize",i),r.addEventListener("orientationchange",i)}(this);</script></body>
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(r){r.imageLazyLoadSetting.processImages=t;var e=r.imageLazyLoadSetting.isSPA,n=r.imageLazyLoadSetting.preloadRatio||1,c=a();function a(){var t=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")),e=Array.prototype.slice.call(document.querySelectorAll("[bg-lazy]"));return t.concat(e)}function t(){e&&(c=a());for(var t,o=0;o<c.length;o++)0<=(t=(t=c[o]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(r.innerHeight*n||document.documentElement.clientHeight*n)&&function(){var t,e,n,a,i=c[o];e=function(){c=c.filter(function(t){return i!==t}),r.imageLazyLoadSetting.onImageLoaded&&r.imageLazyLoadSetting.onImageLoaded(i)},(t=i).hasAttribute("bg-lazy")?(t.removeAttribute("bg-lazy"),e&&e()):(n=new Image,a=t.getAttribute("data-original"),n.onload=function(){t.src=a,t.removeAttribute("data-original"),e&&e()},t.src!==a&&(n.src=a))}()}function i(){clearTimeout(t.tId),t.tId=setTimeout(t,500)}t(),document.addEventListener("scroll",i),r.addEventListener("resize",i),r.addEventListener("orientationchange",i)}(this);</script><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/wanko.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
 </html>
-
-<script type="text/javascript" src="/js/funnytitle.js"></script>
-<script type="text/javascript" src="/js/love.js"></script>

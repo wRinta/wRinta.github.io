@@ -16,15 +16,29 @@
     
 <link rel="stylesheet" href="/css/style.css">
 
-    <link rel="shortcut icon" href="/images/icon16.png">
     
-<link rel="stylesheet" href="/css/font-awesome.min.css">
+        <link rel="shortcut icon" href="/images/icon16.png">
+    
+    
+<link rel="stylesheet" href="/font/css/fontawesome.min.css">
 
-    <script id="hexo-configurations">
-    let KEEP = window.KEEP || {};
-    KEEP.hexo_config = {"hostname":"example.com","root":"/","language":"en","path":"search.json"};
-    KEEP.theme_config = {"toc":{"enable":true,"number":true,"expand_all":true,"init_open":true},"style":{"primary_color":"#ffe8e9","background-color":null,"avatar":"/images/icon40.png","favicon":"/images/icon16.png","article_img_align":"center","left_side_width":"260px","content_max_width":"920px","hover":{"shadow":true,"scale":true},"first_screen":{"enable":true,"background_img":"/images/pmgroup.png","description":"Heroes never die!"},"scroll":{"progress_bar":{"enable":true},"percent":{"enable":true}}},"local_search":{"enable":true,"preload":true},"code_copy":{"enable":true,"style":"mac"},"pjax":{"enable":true},"lazyload":{"enable":true,"onlypost":true,"loadingImg":"/images/star.gif"},"version":"3.4.3"};
-    KEEP.language_ago = {"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days ago","week":"%s weeks ago","month":"%s months ago","year":"%s years ago"};
+    
+<link rel="stylesheet" href="/font/css/regular.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/solid.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/brands.min.css">
+
+    
+    <script class="keep-theme-configurations">
+    const KEEP = window.KEEP || {}
+    KEEP.hexo_config = {"hostname":"example.com","root":"/","language":"en","path":"search.json"}
+    KEEP.theme_config = {"base_info":{"primary_color":"#ffe8e9","title":"Elora blog","author":"Elora","avatar":"/images/icon40.png","logo":"/images/icon40.png","favicon":"/images/icon16.png"},"menu":{"home":"/ || fa-solid fa-home","archives":"/archives || fa-solid fa-box-archive","tags":"/tags || fa-solid fa-tags","categories":"/categories || fa-solid fa-layer-group"},"first_screen":{"enable":true,"background_img":"/images/pmgroup.png","background_img_dark":null,"description":"Heroes never die!","hitokoto":false},"social_contact":{"enable":true,"links":{"github":"https://github.com/wRinta","weixin":"img | /images/wechat.png","qq":null,"weibo":null,"zhihu":null,"twitter":null,"x":null,"facebook":null,"email":"wsq1357812@163.com"}},"scroll":{"progress_bar":true,"percent":true,"hide_header":true},"home":{"announcement":"python部分图片未上传！","category":true,"tag":true,"post_datetime":"updated || fa-solid fa-hourglass-start","post_datetime_format":"YYYY-MM-DD HH:mm:ss"},"post":{"author_badge":{"enable":true,"level_badge":true,"custom_badge":["Rinta!"]},"word_count":{"wordcount":true,"min2read":true},"datetime_format":"YYYY-MM-DD HH:mm:ss","copyright_info":true,"share":true,"reward":{"enable":true,"img_link":"/images/reward.png","text":"请作者喝奶茶","img_align":"right"}},"code_block":{"tools":{"enable":true,"style":"mac"},"highlight_theme":"default"},"toc":{"enable":true,"number":true,"expand_all":true,"init_open":true,"layout":"left"},"website_count":{"busuanzi_count":{"enable":true,"site_uv":true,"site_pv":true,"page_pv":true}},"local_search":{"enable":true,"preload":true},"comment":{"enable":true,"use":"valine","valine":{"appid":"oKezB5PXBe6SFd75Ab2I1igt-gzGzoHsz","appkey":"ZyjE4IekdBOYhHEQyVhPqWf9","server_urls":null,"placeholder":"say something.."},"gitalk":{"github_id":null,"github_admins":null,"repository":null,"client_id":null,"client_secret":null,"proxy":null},"twikoo":{"env_id":null,"region":null,"version":"1.6.21"},"waline":{"server_url":null,"reaction":false,"version":2},"giscus":{"repo":null,"repo_id":null,"category":"Announcements","category_id":null,"reactions_enabled":false},"artalk":{"server":null},"disqus":{"shortname":null}},"rss":{"enable":false},"lazyload":{"enable":true},"cdn":{"enable":false,"provider":"cdnjs"},"pjax":{"enable":true},"footer":{"since":2020,"word_count":false,"icp":{"enable":false,"record_code":null,"url":"https://beian.miit.gov.cn"},"site_deploy":{"enable":false,"provider":"github","url":null},"shields_style":{"enable":false,"custom":[{"link_url":null,"img_url":null}]}},"inject":{"enable":false,"css":[null],"js":[null]},"root":"","source_data":{},"version":"4.1.0"}
+    KEEP.language_ago = {"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days ago","week":"%s weeks ago","month":"%s months ago","year":"%s years ago"}
+    KEEP.language_code_block = {"copy":"Copy code","copied":"Copied","fold":"Fold code block","folded":"Folded"}
+    KEEP.language_copy_copyright = {"copy":"Copy copyright info","copied":"Copied","title":"Original post title","author":"Original post author","link":"Original post link"}
   </script>
 <meta name="generator" content="Hexo 7.1.1"><link rel="alternate" href="/atom.xml" title="hexo" type="application/atom+xml">
 </head>
@@ -38,73 +52,89 @@
 
     
         <span class="pjax-progress-bar"></span>
-        <span class="pjax-progress-icon">
-            <i class="fas fa-circle-notch fa-spin"></i>
-        </span>
+        <i class="pjax-progress-icon fas fa-circle-notch fa-spin"></i>
     
 </div>
 
 
-<main class="page-container">
 
+<main class="page-container border-box">
+    <!-- home first screen  -->
     
 
-    <div class="page-main-content">
-
+    <!-- page content -->
+    <div class="page-main-content border-box">
         <div class="page-main-content-top">
-            <header class="header-wrapper">
-
-    <div class="header-content">
-        <div class="left">
             
-                <a class="logo-image" href="/">
+<header class="header-wrapper">
+
+    <div class="border-box header-content">
+        <div class="left border-box">
+            
+                <a class="logo-image border-box" href="/">
                     <img src="/images/icon40.png">
                 </a>
             
-            <a class="logo-title" href="/">
-                Elora blog
+            <a class="site-name border-box" href="/">
+               Elora blog
             </a>
         </div>
 
-        <div class="right">
+        <div class="right border-box">
             <div class="pc">
                 <ul class="menu-list">
                     
+                        
                         <li class="menu-item">
                             <a class=""
                                href="/"
                             >
+                                
+                                    <i class="menu-icon fa-solid fa-home"></i>
+                                
                                 HOME
                             </a>
                         </li>
                     
+                        
                         <li class="menu-item">
                             <a class=""
                                href="/archives"
                             >
+                                
+                                    <i class="menu-icon fa-solid fa-box-archive"></i>
+                                
                                 ARCHIVES
                             </a>
                         </li>
                     
-                        <li class="menu-item">
-                            <a class=""
-                               href="/categories"
-                            >
-                                CATEGORIES
-                            </a>
-                        </li>
-                    
+                        
                         <li class="menu-item">
                             <a class=""
                                href="/tags"
                             >
+                                
+                                    <i class="menu-icon fa-solid fa-tags"></i>
+                                
                                 TAGS
+                            </a>
+                        </li>
+                    
+                        
+                        <li class="menu-item">
+                            <a class=""
+                               href="/categories"
+                            >
+                                
+                                    <i class="menu-icon fa-solid fa-layer-group"></i>
+                                
+                                CATEGORIES
                             </a>
                         </li>
                     
                     
                         <li class="menu-item search search-popup-trigger">
-                            <i class="fas fa-search"></i>
+                            <i class="fas search fa-search"></i>
                         </li>
                     
                 </ul>
@@ -123,24 +153,32 @@
     <div class="header-drawer">
         <ul class="drawer-menu-list">
             
+                
                 <li class="drawer-menu-item flex-center">
                     <a class=""
-                       href="/">HOME</a>
+                       href="/"
+                    >HOME</a>
                 </li>
             
+                
                 <li class="drawer-menu-item flex-center">
                     <a class=""
-                       href="/archives">ARCHIVES</a>
+                       href="/archives"
+                    >ARCHIVES</a>
                 </li>
             
+                
                 <li class="drawer-menu-item flex-center">
                     <a class=""
-                       href="/categories">CATEGORIES</a>
+                       href="/tags"
+                    >TAGS</a>
                 </li>
             
+                
                 <li class="drawer-menu-item flex-center">
                     <a class=""
-                       href="/tags">TAGS</a>
+                       href="/categories"
+                    >CATEGORIES</a>
                 </li>
             
         </ul>
@@ -153,74 +191,100 @@
 
         </div>
 
-        <div class="page-main-content-middle">
+        <div class="page-main-content-middle border-box">
 
-            <div class="main-content">
+            <div class="main-content border-box">
+                
+
+                    
+<div class="fade-in-down-animation">
+    <div class="post-page-container border-box">
+        <div class="post-content-container border-box">
+            
+
+            <div class="post-content-bottom border-box">
+                
+                    <div class="post-title">
+                        用例执行及缺陷
+                    </div>
+                
 
                 
-                    <div class="fade-in-down-animation">
-    <div class="article-content-container">
+                    <div class="post-header border-box">
+                        
+                            <div class="avatar-box border-box">
+                                <img src="/images/icon40.png">
+                            </div>
+                        
+                        <div class="info-box">
+                            <div class="author border-box">
+                                <span class="name">Elora</span>
+                                
+                                    <span class="author-badge">Lv3</span>
+                                
+                            </div>
+                            <div class="meta-info border-box">
+                                
 
-        <div class="article-title">
-            <span class="title-hover-animation">用例执行及缺陷</span>
-        </div>
+<div class="post-meta-info-container border-box post">
+    <div class="post-meta-info border-box">
+        
 
         
-            <div class="article-header">
-                <div class="avatar">
-                    <img src="/images/icon40.png">
-                </div>
-                <div class="info">
-                    <div class="author">
-                        <span class="name">Elora</span>
-                        
-                            <span class="author-label">Rinta!</span>
-                        
-                    </div>
-                    <div class="meta-info">
-                        <div class="article-meta-info">
-    <span class="article-date article-meta-item">
-        <i class="fas fa-edit"></i>&nbsp;2024-03-25 18:08:52
-    </span>
-    
-        <span class="article-categories article-meta-item">
-            <i class="fas fa-folder"></i>&nbsp;
-            <ul>
-                
-                    <li>
-                        <a href="/categories/software-test/">software test</a>&nbsp;
-                    </li>
-                
-            </ul>
-        </span>
-    
-    
+            <span class="meta-info-item post-create-date">
+                <i class="icon fa-solid fa-calendar-plus"></i>&nbsp;
+                <span class="datetime">2024-03-25 18:08:52</span>
+            </span>
 
-    
-    
-        <span class="article-wordcount article-meta-item">
-            <i class="fas fa-file-word"></i>&nbsp;<span>1.3k Words</span>
-        </span>
-    
-    
-        <span class="article-min2read article-meta-item">
-            <i class="fas fa-clock"></i>&nbsp;<span>4 Mins</span>
-        </span>
-    
-    
-        <span class="article-pv article-meta-item">
-            <i class="fas fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
-        </span>
+            <span class="meta-info-item post-update-date">
+                <i class="icon fa-solid fa-file-pen"></i>&nbsp;
+                <span class="datetime" data-updated="Fri Mar 29 2024 22:25:27 GMT+0800">2024-03-29 22:25:27</span>
+            </span>
+        
+
+        
+            <span class="meta-info-item post-category border-box"><i class="icon fas fa-folder"></i>&nbsp;
+                <ul class="post-category-ul">
+                    
+                            <li class="category-item"><a href="/categories/software-test/">software test</a></li>
+                        
+                    
+                </ul>
+            </span>
+        
+
+        
+
+        
+        
+            <span class="meta-info-item post-wordcount">
+                <i class="icon fas fa-file-word"></i>&nbsp;<span>1.3k Words</span>
+            </span>
+        
+        
+            <span class="meta-info-item post-min2read">
+                <i class="icon fas fa-clock"></i>&nbsp;<span>4 Mins</span>
+            </span>
+        
+        
+            <span class="meta-info-item post-pv">
+                <i class="icon fas fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
+            </span>
+        
+    </div>
+
     
 </div>
 
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-        
+                
 
-        <div class="article-content markdown-body">
-            <h1 id="用例执行"><a href="#用例执行" class="headerlink" title="用例执行"></a>用例执行</h1><p>执行结果与用例的期望结果不一致（含义），为缺陷，需要进行缺陷管理</p>
+                <div class="post-content keep-markdown-body">
+                    
+
+                    <h1 id="用例执行"><a href="#用例执行" class="headerlink" title="用例执行"></a>用例执行</h1><p>执行结果与用例的期望结果不一致（含义），为缺陷，需要进行缺陷管理</p>
 <h1 id="测试计划"><a href="#测试计划" class="headerlink" title="测试计划"></a>测试计划</h1><p>一份描述测试工作计划的测试文档，对测试工作进行统筹计划安排</p>
 <p>测试计划编写者：测试主管&#x2F;leader</p>
 <p>测试计划的查阅者：测试人员、测试主管&#x2F;leader、产品、开发、销售人员</p>
@@ -312,140 +376,248 @@
 </ul>
 <h2 id="项目管理流程"><a href="#项目管理流程" class="headerlink" title="项目管理流程"></a>项目管理流程</h2><p><img lazyload src="keep/source/images/star.gif" data-original="/images/star.gif" data-src="D:\blog\source_posts\用例执行及缺陷\project.png" alt="Pasted image 20240222190118"></p>
 
+                </div>
+                
+                        
+<div class="post-copyright-info-container border-box">
+    <div class="copyright-info-content border-box">
+        <div class="copyright-info-top border-box">
+            <div class="copyright-post-title border-box text-ellipsis">
+                用例执行及缺陷
+            </div>
+
+            <div class="copyright-post-link border-box text-ellipsis">
+                2024/03/25/用例执行及缺陷/
+            </div>
         </div>
 
-        
-            <div class="post-copyright-info">
-                <div class="article-copyright-info-container">
-    <ul>
-        <li>Post title：用例执行及缺陷</li>
-        <li>Post author：Elora</li>
-        <li>Create time：2024-03-25 18:08:52</li>
-        <li>
-            Post link：https://wrinta.github.io/2024/03/25/用例执行及缺陷/
+        <div class="copyright-info-bottom border-box">
+            <div class="copyright-post-author bottom-item">
+                <div class="type">
+                    Author
+                </div>
+                <div class="content">Elora</div>
+            </div>
+
+            <div class="post-time bottom-item">
+                <div class="type">
+                    Published
+                </div>
+                <div class="content">2024-03-25 18:08</div>
+            </div>
+
+
+            <div class="post-license bottom-item">
+                <div class="type">
+                    License
+                </div>
+                <div class="content tooltip" data-tooltip-content="CC BY-NC-SA 4.0">
+                    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed" target="_blank">
+                        
+                            <i class="fa-brands fa-creative-commons"></i>
+                            <i class="fa-brands fa-creative-commons-by"></i>
+                            <i class="fa-brands fa-creative-commons-nc"></i>
+                            <i class="fa-brands fa-creative-commons-sa"></i>
+                        
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <i class="copyright-bg fa-solid fa-copyright"></i>
+    </div>
+    <div class="copy-copyright-info flex-center tooltip" data-tooltip-content="Copy copyright info" data-tooltip-offset-y="-2px">
+        <i class="fa-solid fa-copy"></i>
+    </div>
+</div>
+
+                
+
+                <div class="post-bottom-tags-and-share border-box">
+                    <div>
+                        
+                    </div>
+                    <div>
+                        
+                            <div class="post-share-container border-box">
+    <ul class="share-list-wrap border-box">
+        <li class="qq share-item border-box flex-center tooltip"
+            data-tooltip-content="Share to QQ"
+        >
+            <i class="fa-brands fa-qq"></i>
         </li>
-        <li>
-            Copyright Notice：All articles in this blog are licensed under <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">BY-NC-SA</a> unless stating additionally.
+        <li class="wechat share-item border-box flex-center tooltip tooltip-img"
+            data-tooltip-content="Share to WeChat"
+            data-tooltip-img-tip="Scan by WeChat"
+            data-tooltip-img-style="background-color: #fff; top: -10px; padding: 0.6rem 0.6rem 0.1rem 0.6rem;"
+        >
+            <i class="fa-brands fa-weixin"></i>
+        </li>
+        <li class="weibo share-item border-box flex-center tooltip"
+            data-tooltip-content="Share to WeiBo"
+        >
+            <i class="fa-brands fa-weibo"></i>
         </li>
     </ul>
 </div>
 
-            </div>
-        
-
-        
-            <div class="article-nav">
-                
-                    <div class="article-prev">
-                        <a class="prev"
-                           rel="prev"
-                           href="/2024/03/25/%E6%B5%8B%E8%AF%95%E7%82%B9%E8%AE%BE%E8%AE%A1/"
-                        >
-                            <span class="left arrow-icon flex-center">
-                              <i class="fas fa-chevron-left"></i>
-                            </span>
-                            <span class="title flex-center">
-                                <span class="post-nav-title-item">测试点设计</span>
-                                <span class="post-nav-item">Prev posts</span>
-                            </span>
-                        </a>
+                        
                     </div>
-                
-                
-                    <div class="article-next">
-                        <a class="next"
-                           rel="next"
-                           href="/2024/03/25/%E8%AE%A4%E8%AF%86%E8%BD%AF%E4%BB%B6%E5%8F%8A%E6%B5%8B%E8%AF%95/"
-                        >
-                            <span class="title flex-center">
-                                <span class="post-nav-title-item">认识软件及测试</span>
-                                <span class="post-nav-item">Next posts</span>
-                            </span>
-                            <span class="right arrow-icon flex-center">
-                              <i class="fas fa-chevron-right"></i>
-                            </span>
-                        </a>
-                    </div>
-                
-            </div>
-        
+                </div>
 
-        
-            <div class="comment-container">
-                <div class="comments-container">
-    <div id="comment-anchor"></div>
-    <div class="comment-area-title">
-        <i class="fas fa-comments">&nbsp;Comments</i>
+                
+                    <div class="reward-author-container border-box flex-center">
+    <div class="reward-btn keep-button border-box flex-center tooltip tooltip-img"
+            data-tooltip-content="请作者喝奶茶"
+            data-tooltip-img-url="/images/reward.png"
+            data-tooltip-img-trigger="click"
+            data-tooltip-img-style="top: -8px;"
+    >
+        <i class="fa-solid fa-hand-holding-heart"></i>
     </div>
-    
+</div>
+
+                
+
+                
+                    <div class="post-nav border-box">
+                        
+                            <div class="prev-post">
+                                <a class="prev"
+                                   rel="prev"
+                                   href="/2024/03/25/%E6%B5%8B%E8%AF%95%E7%82%B9%E8%AE%BE%E8%AE%A1/"
+                                   title="测试点设计"
+                                >
+                                    <span class="left arrow-icon flex-center">
+                                        <i class="fas fa-chevron-left"></i>
+                                    </span>
+                                    <span class="title flex-center">
+                                        <span class="post-nav-title-item text-ellipsis">测试点设计</span>
+                                        <span class="post-nav-item">Prev posts</span>
+                                    </span>
+                                </a>
+                            </div>
+                        
+                        
+                            <div class="next-post">
+                                <a class="next"
+                                   rel="next"
+                                   href="/2024/03/25/%E8%AE%A4%E8%AF%86%E8%BD%AF%E4%BB%B6%E5%8F%8A%E6%B5%8B%E8%AF%95/"
+                                   title="认识软件及测试"
+                                >
+                                    <span class="title flex-center">
+                                        <span class="post-nav-title-item text-ellipsis">认识软件及测试</span>
+                                        <span class="post-nav-item">Next posts</span>
+                                    </span>
+                                    <span class="right arrow-icon flex-center">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        
+                    </div>
+                
+
+                
+                    
+
+
+    <div class="comments-container border-box">
+        <div id="comments-anchor" class="comment-area-title border-box">
+            <i class="fas fa-comments"></i>&nbsp;Comments
+        </div>
+        <div class="comment-plugin-fail border-box">
+    <span class="fail-tip">Comment plugin failed to load</span>
+    <button class="reload keep-button">Click to reload</button>
+</div>
+<div class="comment-plugin-loading flex-center border-box">
+    <i class="loading-icon fa-solid fa-spinner fa-spin"></i>
+    <span class="load-tip">Loading comment plugin</span>
+</div>
+<script data-pjax>
+  window.KeepCommentPlugin = {}
+  window.KeepCommentPlugin.hideLoading = () => {
+    const cplDom = document.querySelector('.comments-container .comment-plugin-loading')
+    cplDom.style.display = 'none'
+  }
+  window.KeepCommentPlugin.loadFailHandle = () => {
+    window.KeepCommentPlugin.hideLoading()
+    const cpfDom = document.querySelector('.comments-container .comment-plugin-fail')
+    cpfDom.style.display = 'flex'
+    cpfDom.querySelector('.reload').addEventListener('click', () => {
+      window.location.reload()
+    })
+  }
+</script>
 
         
             
+
     <div class="valine-container">
-        <script data-pjax
-                src="//cdn.jsdelivr.net/npm/valine@latest/dist/Valine.min.js"></script>
         <div id="vcomments"></div>
-        <script data-pjax>
-            function loadValine() {
-                new Valine({
-                    el: '#vcomments',
-                    appId: 'oKezB5PXBe6SFd75Ab2I1igt-gzGzoHsz',
-                    appKey: 'ZyjE4IekdBOYhHEQyVhPqWf9',
-                    meta: ['nick', 'mail', 'link'],
-                    avatar: 'wavatar',
-                    enableQQ: true,
-                    placeholder: '说点什么？',
-                    lang: 'en'.toLowerCase()
-                });
-
-                function getAuthor(language) {
-                    switch (language) {
-                        case 'en':
-                            return 'Author';
-                        case 'zh-CN':
-                            return '博主';
-                        default:
-                            return 'Master';
-                    }
-                }
-
-                // Add "Author" identify
-                const getValineDomTimer = setInterval(() => {
-                    const vcards = document.querySelectorAll('#vcomments .vcards .vcard');
-                    if (vcards.length > 0) {
-                        let author = 'Elora';
-
-                        if (author) {
-                            for (let vcard of vcards) {
-                                const vnick_dom = vcard.querySelector('.vhead .vnick');
-                                const vnick = vnick_dom.innerHTML;
-                                if (vnick === author) {
-                                    vnick_dom.innerHTML = `${vnick} <span class="author">${getAuthor(KEEP.hexo_config.language)}</span>`
-                                }
-                            }
-                        }
-                        clearInterval(getValineDomTimer);
-                    } else {
-                        clearInterval(getValineDomTimer);
-                    }
-                }, 2000);
+        <script data-pjax
+                src="//cdn.jsdelivr.net/npm/valine@latest/dist/Valine.min.js"
+                async
+                onerror="window.KeepCommentPlugin.loadFailHandle()"
+        ></script>
+        <script data-pjax
+                async
+                onerror="window.KeepCommentPlugin.loadFailHandle()"
+        >
+          window.KeepCommentPlugin.initValine = () => {
+            const config = {
+              el: '#vcomments',
+              appId: 'oKezB5PXBe6SFd75Ab2I1igt-gzGzoHsz',
+              appKey: 'ZyjE4IekdBOYhHEQyVhPqWf9',
+              meta: ['nick', 'mail', 'link'],
+              avatar: 'wavatar',
+              enableQQ: true,
+              placeholder: 'say something..',
+              lang: 'en'.toLowerCase()
             }
 
-            if ('true') {
-                const loadValineTimeout = setTimeout(() => {
-                    loadValine();
-                    clearTimeout(loadValineTimeout);
-                }, 1000);
+            if ('') {
+              config.serverURLs = ''
+            }
+
+            if (window?.Valine) {
+              new Valine(config)
+              window.KeepCommentPlugin.hideLoading()
             } else {
-                window.addEventListener('DOMContentLoaded', loadValine);
+              setTimeout(() => {
+                window.KeepCommentPlugin.initValine()
+              }, 1000)
             }
+          }
+
+          if ('true' === 'true') {
+            setTimeout(() => {
+              window.KeepCommentPlugin.initValine()
+            }, 1200)
+          } else {
+            window.addEventListener('DOMContentLoaded', window.KeepCommentPlugin.initValine)
+          }
         </script>
     </div>
 
 
+        
+    </div>
+
+
+
+
+
+                
+            </div>
+        </div>
 
         
-    
+            <div class="pc-post-toc left-toc">
+                <div class="post-toc-wrap border-box">
+    <div class="post-toc border-box">
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%94%A8%E4%BE%8B%E6%89%A7%E8%A1%8C"><span class="nav-number">1.</span> <span class="nav-text">用例执行</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%B5%8B%E8%AF%95%E8%AE%A1%E5%88%92"><span class="nav-number">2.</span> <span class="nav-text">测试计划</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%9D%A2%E8%AF%95%E9%A2%98"><span class="nav-number">2.1.</span> <span class="nav-text">面试题</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%BC%BA%E9%99%B7"><span class="nav-number">3.</span> <span class="nav-text">缺陷</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BC%BA%E9%99%B7%E7%9A%84%E5%88%A4%E5%AE%9A%E6%A0%87%E5%87%86"><span class="nav-number">3.1.</span> <span class="nav-text">缺陷的判定标准</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#bug%E7%9A%84%E7%B1%BB%E5%9E%8B"><span class="nav-number">3.2.</span> <span class="nav-text">bug的类型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#bug%E7%9A%84%E7%AD%89%E7%BA%A7"><span class="nav-number">3.3.</span> <span class="nav-text">bug的等级</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BC%BA%E9%99%B7%E4%BA%A7%E7%94%9F%E7%9A%84%E5%8E%9F%E5%9B%A0"><span class="nav-number">3.4.</span> <span class="nav-text">缺陷产生的原因</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BD%AF%E4%BB%B6%E7%BC%BA%E9%99%B7%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F"><span class="nav-number">3.5.</span> <span class="nav-text">软件缺陷生命周期</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BD%AF%E4%BB%B6%E7%BC%BA%E9%99%B7%E7%9A%84%E6%A0%B8%E5%BF%83%E5%86%85%E5%AE%B9"><span class="nav-number">3.6.</span> <span class="nav-text">软件缺陷的核心内容</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BC%BA%E9%99%B7%E6%8F%90%E4%BA%A4%E8%A6%81%E7%B4%A0"><span class="nav-number">3.7.</span> <span class="nav-text">缺陷提交要素</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B5%8B%E8%AF%95%E6%8A%A5%E5%91%8A%E5%86%85%E5%AE%B9"><span class="nav-number">3.7.1.</span> <span class="nav-text">测试报告内容</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BD%AF%E4%BB%B6%E7%BC%BA%E9%99%B7%E7%B1%BB%E5%9E%8B"><span class="nav-number">3.8.</span> <span class="nav-text">软件缺陷类型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BC%BA%E9%99%B7%E7%BC%96%E5%86%99"><span class="nav-number">3.9.</span> <span class="nav-text">缺陷编写</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BC%BA%E9%99%B7%E7%BC%96%E5%86%99%E7%A4%BA%E4%BE%8B"><span class="nav-number">3.9.1.</span> <span class="nav-text">缺陷编写示例</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BC%BA%E9%99%B7%E7%9A%84%E8%B7%9F%E8%B8%AA%E6%B5%81%E7%A8%8B"><span class="nav-number">3.9.2.</span> <span class="nav-text">缺陷的跟踪流程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%8F%90%E4%BA%A4%E7%BC%BA%E9%99%B7%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9"><span class="nav-number">3.9.3.</span> <span class="nav-text">提交缺陷注意事项</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BC%BA%E9%99%B7%E7%BC%96%E5%86%99%E8%A7%84%E8%8C%83"><span class="nav-number">3.9.4.</span> <span class="nav-text">缺陷编写规范</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BC%BA%E9%99%B7%E6%A0%87%E9%A2%98%E5%88%86%E6%9E%90"><span class="nav-number">3.9.5.</span> <span class="nav-text">缺陷标题分析</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86%E6%B5%81%E7%A8%8B"><span class="nav-number">3.10.</span> <span class="nav-text">项目管理流程</span></a></li></ol></li></ol>
+    </div>
 </div>
 
             </div>
@@ -456,70 +628,86 @@
 
                 
             </div>
-
         </div>
 
-        <div class="page-main-content-bottom">
-            <footer class="footer">
-    <div class="info-container">
-        <div class="copyright-info info-item">
-            &copy;
+        <div class="page-main-content-bottom border-box">
             
-              <span>2020</span>&nbsp;-&nbsp;
-            
-            2024&nbsp;<i class="fas fa-heart icon-animate"></i>&nbsp;<a href="/">Elora</a>
-        </div>
+<footer class="footer border-box">
+    <div class="border-box website-info-box default">
         
-            <script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-            <div class="website-count info-item">
+            <div class="copyright-info info-item default">
+                &copy;&nbsp;<span>2020</span>&nbsp;-&nbsp;2024
                 
-                    <span id="busuanzi_container_site_uv">
-                        Visitor Count&nbsp;<span id="busuanzi_value_site_uv"></span>&ensp;
-                    </span>
-                
-                
-                    <span id="busuanzi_container_site_pv">
-                        Totalview&nbsp;<span id="busuanzi_value_site_pv"></span>
-                    </span>
+                    &nbsp;<i class="fas fa-heart icon-animate"></i>&nbsp;&nbsp;<a href="/">Elora</a>
                 
             </div>
+
+            <div class="theme-info info-item default">
+                Powered by&nbsp;<a target="_blank" href="https://hexo.io">Hexo</a>&nbsp;&&nbsp;Theme&nbsp;<a class="keep-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep">Keep</a>
+            </div>
+
+            
+
+            
         
-        <div class="theme-info info-item">
-            Powered by <a target="_blank" href="https://hexo.io">Hexo</a>&nbsp;|&nbsp;Theme&nbsp;<a class="theme-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep">Keep v3.4.3</a>
+
+        <div class="count-item info-item default">
+            
+
+            
+                <span class="count-box border-box uv">
+                    <span class="item-type border-box">Unique Visitor</span>
+                    <span class="item-value border-box uv" id="busuanzi_value_site_uv"></span>
+                </span>
+            
+
+            
+                <span class="count-box border-box pv">
+                    <span class="item-type border-box">Page View</span>
+                    <span class="item-value border-box pv" id="busuanzi_value_site_pv"></span>
+                </span>
+            
         </div>
-        
     </div>
 </footer>
 
         </div>
     </div>
 
+    <!-- post tools -->
     
-        <div class="post-tools">
-            <div class="post-tools-container">
-    <ul class="tools-list">
-        <!-- TOC aside toggle -->
+        <div class="post-tools left-toc">
+            <div class="post-tools-container border-box">
+    <ul class="tools-list border-box">
+        <!-- PC TOC show toggle -->
         
-            <li class="tools-item page-aside-toggle">
-                <i class="fas fa-outdent"></i>
+            <li class="tools-item flex-center toggle-show-toc">
+                <i class="fas fa-list"></i>
             </li>
         
 
-        <!-- go comment -->
+        <!-- PC go comment -->
         
-            <li class="go-comment">
+            <li class="tools-item flex-center go-to-comments">
                 <i class="fas fa-comment"></i>
+                <span class="post-comments-count"></span>
             </li>
         
+
+        <!-- PC full screen -->
+        <li class="tools-item flex-center full-screen">
+            <i class="fa-solid fa-expand"></i>
+        </li>
     </ul>
 </div>
 
         </div>
     
 
-    <div class="right-bottom-side-tools">
-        <div class="side-tools-container">
-    <ul class="side-tools-list">
+    <!-- side tools -->
+    <div class="side-tools">
+        <div class="side-tools-container border-box ">
+    <ul class="side-tools-list side-tools-show-handle border-box">
         <li class="tools-item tool-font-adjust-plus flex-center">
             <i class="fas fa-search-plus"></i>
         </li>
@@ -528,26 +716,11 @@
             <i class="fas fa-search-minus"></i>
         </li>
 
-        <li class="tools-item tool-expand-width flex-center">
-            <i class="fas fa-arrows-alt-h"></i>
-        </li>
-
-        <li class="tools-item tool-dark-light-toggle flex-center">
+        <li class="tools-item tool-toggle-theme-mode flex-center">
             <i class="fas fa-moon"></i>
         </li>
 
         <!-- rss -->
-        
-            <li class="tools-item rss flex-center">
-                <a class="flex-center"
-                   href="/atom.xml"
-                   target="_blank"
-                >
-                    <i class="fas fa-rss"></i>
-                </a>
-            </li>
-        
-
         
 
         <li class="tools-item tool-scroll-to-bottom flex-center">
@@ -555,36 +728,39 @@
         </li>
     </ul>
 
-    <ul class="exposed-tools-list">
+    <ul class="exposed-tools-list border-box">
+        
+            <li class="tools-item toggle-show-toc-tablet flex-center">
+                <i class="fas fa-list"></i>
+            </li>
+        
+
+        
+            <li class="tools-item go-to-comments-tablet flex-center">
+                <i class="fas fa-comment"></i>
+            </li>
+        
+
         <li class="tools-item tool-toggle-show flex-center">
             <i class="fas fa-cog fa-spin"></i>
         </li>
-        
-            <li class="tools-item tool-scroll-to-top flex-center">
-                <i class="arrow-up fas fa-arrow-up"></i>
-                <span class="percent"></span>
-            </li>
-        
+
+        <li class="tools-item tool-scroll-to-top flex-center show-arrow">
+            <i class="arrow fas fa-arrow-up"></i>
+            <span class="percent"></span>
+        </li>
     </ul>
 </div>
 
     </div>
 
-    
-        <aside class="page-aside">
-            <div class="post-toc-wrap">
-    <div class="post-toc">
-        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%94%A8%E4%BE%8B%E6%89%A7%E8%A1%8C"><span class="nav-number">1.</span> <span class="nav-text">用例执行</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%B5%8B%E8%AF%95%E8%AE%A1%E5%88%92"><span class="nav-number">2.</span> <span class="nav-text">测试计划</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%9D%A2%E8%AF%95%E9%A2%98"><span class="nav-number">2.1.</span> <span class="nav-text">面试题</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%BC%BA%E9%99%B7"><span class="nav-number">3.</span> <span class="nav-text">缺陷</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BC%BA%E9%99%B7%E7%9A%84%E5%88%A4%E5%AE%9A%E6%A0%87%E5%87%86"><span class="nav-number">3.1.</span> <span class="nav-text">缺陷的判定标准</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#bug%E7%9A%84%E7%B1%BB%E5%9E%8B"><span class="nav-number">3.2.</span> <span class="nav-text">bug的类型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#bug%E7%9A%84%E7%AD%89%E7%BA%A7"><span class="nav-number">3.3.</span> <span class="nav-text">bug的等级</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BC%BA%E9%99%B7%E4%BA%A7%E7%94%9F%E7%9A%84%E5%8E%9F%E5%9B%A0"><span class="nav-number">3.4.</span> <span class="nav-text">缺陷产生的原因</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BD%AF%E4%BB%B6%E7%BC%BA%E9%99%B7%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F"><span class="nav-number">3.5.</span> <span class="nav-text">软件缺陷生命周期</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BD%AF%E4%BB%B6%E7%BC%BA%E9%99%B7%E7%9A%84%E6%A0%B8%E5%BF%83%E5%86%85%E5%AE%B9"><span class="nav-number">3.6.</span> <span class="nav-text">软件缺陷的核心内容</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BC%BA%E9%99%B7%E6%8F%90%E4%BA%A4%E8%A6%81%E7%B4%A0"><span class="nav-number">3.7.</span> <span class="nav-text">缺陷提交要素</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B5%8B%E8%AF%95%E6%8A%A5%E5%91%8A%E5%86%85%E5%AE%B9"><span class="nav-number">3.7.1.</span> <span class="nav-text">测试报告内容</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BD%AF%E4%BB%B6%E7%BC%BA%E9%99%B7%E7%B1%BB%E5%9E%8B"><span class="nav-number">3.8.</span> <span class="nav-text">软件缺陷类型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BC%BA%E9%99%B7%E7%BC%96%E5%86%99"><span class="nav-number">3.9.</span> <span class="nav-text">缺陷编写</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BC%BA%E9%99%B7%E7%BC%96%E5%86%99%E7%A4%BA%E4%BE%8B"><span class="nav-number">3.9.1.</span> <span class="nav-text">缺陷编写示例</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BC%BA%E9%99%B7%E7%9A%84%E8%B7%9F%E8%B8%AA%E6%B5%81%E7%A8%8B"><span class="nav-number">3.9.2.</span> <span class="nav-text">缺陷的跟踪流程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%8F%90%E4%BA%A4%E7%BC%BA%E9%99%B7%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9"><span class="nav-number">3.9.3.</span> <span class="nav-text">提交缺陷注意事项</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BC%BA%E9%99%B7%E7%BC%96%E5%86%99%E8%A7%84%E8%8C%83"><span class="nav-number">3.9.4.</span> <span class="nav-text">缺陷编写规范</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BC%BA%E9%99%B7%E6%A0%87%E9%A2%98%E5%88%86%E6%9E%90"><span class="nav-number">3.9.5.</span> <span class="nav-text">缺陷标题分析</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86%E6%B5%81%E7%A8%8B"><span class="nav-number">3.10.</span> <span class="nav-text">项目管理流程</span></a></li></ol></li></ol>
-    </div>
-</div>
-        </aside>
-    
-
-    <div class="image-viewer-container">
-    <img src="">
+    <!-- image mask -->
+    <div class="zoom-in-image-mask">
+    <img class="zoom-in-image">
 </div>
 
 
+    <!-- local search -->
     
         <div class="search-pop-overlay">
     <div class="popup search-popup">
@@ -602,7 +778,7 @@
                        class="search-input"
                 >
             </div>
-            <span class="popup-btn-close">
+            <span class="close-popup-btn">
                 <i class="fas fa-times"></i>
             </span>
         </div>
@@ -616,52 +792,100 @@
 
     
 
+    <!-- tablet toc -->
+    
+        <div class="tablet-post-toc-mask">
+            <div class="tablet-post-toc">
+                <div class="post-toc-wrap border-box">
+    <div class="post-toc border-box">
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%94%A8%E4%BE%8B%E6%89%A7%E8%A1%8C"><span class="nav-number">1.</span> <span class="nav-text">用例执行</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%B5%8B%E8%AF%95%E8%AE%A1%E5%88%92"><span class="nav-number">2.</span> <span class="nav-text">测试计划</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%9D%A2%E8%AF%95%E9%A2%98"><span class="nav-number">2.1.</span> <span class="nav-text">面试题</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%BC%BA%E9%99%B7"><span class="nav-number">3.</span> <span class="nav-text">缺陷</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BC%BA%E9%99%B7%E7%9A%84%E5%88%A4%E5%AE%9A%E6%A0%87%E5%87%86"><span class="nav-number">3.1.</span> <span class="nav-text">缺陷的判定标准</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#bug%E7%9A%84%E7%B1%BB%E5%9E%8B"><span class="nav-number">3.2.</span> <span class="nav-text">bug的类型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#bug%E7%9A%84%E7%AD%89%E7%BA%A7"><span class="nav-number">3.3.</span> <span class="nav-text">bug的等级</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BC%BA%E9%99%B7%E4%BA%A7%E7%94%9F%E7%9A%84%E5%8E%9F%E5%9B%A0"><span class="nav-number">3.4.</span> <span class="nav-text">缺陷产生的原因</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BD%AF%E4%BB%B6%E7%BC%BA%E9%99%B7%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F"><span class="nav-number">3.5.</span> <span class="nav-text">软件缺陷生命周期</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BD%AF%E4%BB%B6%E7%BC%BA%E9%99%B7%E7%9A%84%E6%A0%B8%E5%BF%83%E5%86%85%E5%AE%B9"><span class="nav-number">3.6.</span> <span class="nav-text">软件缺陷的核心内容</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BC%BA%E9%99%B7%E6%8F%90%E4%BA%A4%E8%A6%81%E7%B4%A0"><span class="nav-number">3.7.</span> <span class="nav-text">缺陷提交要素</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B5%8B%E8%AF%95%E6%8A%A5%E5%91%8A%E5%86%85%E5%AE%B9"><span class="nav-number">3.7.1.</span> <span class="nav-text">测试报告内容</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BD%AF%E4%BB%B6%E7%BC%BA%E9%99%B7%E7%B1%BB%E5%9E%8B"><span class="nav-number">3.8.</span> <span class="nav-text">软件缺陷类型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BC%BA%E9%99%B7%E7%BC%96%E5%86%99"><span class="nav-number">3.9.</span> <span class="nav-text">缺陷编写</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BC%BA%E9%99%B7%E7%BC%96%E5%86%99%E7%A4%BA%E4%BE%8B"><span class="nav-number">3.9.1.</span> <span class="nav-text">缺陷编写示例</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BC%BA%E9%99%B7%E7%9A%84%E8%B7%9F%E8%B8%AA%E6%B5%81%E7%A8%8B"><span class="nav-number">3.9.2.</span> <span class="nav-text">缺陷的跟踪流程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%8F%90%E4%BA%A4%E7%BC%BA%E9%99%B7%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9"><span class="nav-number">3.9.3.</span> <span class="nav-text">提交缺陷注意事项</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BC%BA%E9%99%B7%E7%BC%96%E5%86%99%E8%A7%84%E8%8C%83"><span class="nav-number">3.9.4.</span> <span class="nav-text">缺陷编写规范</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BC%BA%E9%99%B7%E6%A0%87%E9%A2%98%E5%88%86%E6%9E%90"><span class="nav-number">3.9.5.</span> <span class="nav-text">缺陷标题分析</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86%E6%B5%81%E7%A8%8B"><span class="nav-number">3.10.</span> <span class="nav-text">项目管理流程</span></a></li></ol></li></ol>
+    </div>
+</div>
+
+            </div>
+        </div>
+    
 </main>
 
 
 
+<!-- common -->
 
 <script src="/js/utils.js"></script>
-
-<script src="/js/main.js"></script>
 
 <script src="/js/header-shrink.js"></script>
 
 <script src="/js/back2top.js"></script>
 
-<script src="/js/dark-light-toggle.js"></script>
+<script src="/js/toggle-theme.js"></script>
+
+<script src="/js/code-block.js"></script>
+
+<script src="/js/main.js"></script>
+
+<script src="/js/libs/anime.min.js"></script>
 
 
+<!-- local-search -->
 
     
 <script src="/js/local-search.js"></script>
 
 
 
-
-    
-<script src="/js/code-copy.js"></script>
-
-
-
+<!-- lazyload -->
 
     
 <script src="/js/lazyload.js"></script>
 
 
 
-<div class="post-scripts pjax">
+<div class="pjax">
     
+        <!-- post-helper -->
         
-<script src="/js/left-side-toggle.js"></script>
+<script src="/js/post/post-helper.js"></script>
 
-<script src="/js/libs/anime.min.js"></script>
 
-<script src="/js/toc.js"></script>
+        <!-- toc -->
+        
+            
+<script src="/js/post/toc.js"></script>
 
+        
+
+        <!-- copyright-info -->
+        
+            
+<script src="/js/post/copyright-info.js"></script>
+
+        
+
+        <!-- share -->
+        
+            
+<script src="/js/post/share.js"></script>
+
+        
+    
+
+    <!-- categories page -->
+    
+
+    <!-- links page -->
+    
+
+    <!-- photos page -->
+    
+
+    <!-- tools page -->
     
 </div>
 
+<!-- mermaid -->
+
+
+<!-- pjax -->
 
     
 <script src="/js/libs/pjax.min.js"></script>
@@ -681,24 +905,24 @@
             analytics: false,
             currentUrlFullReload: false,
             scrollRestoration: false,
-            // scrollTo: true,
         });
 
         document.addEventListener('pjax:send', () => {
-            KEEP.utils.pjaxProgressBarStart();
+            KEEP.utils.pjaxProgressBarStart()
         });
 
         document.addEventListener('pjax:complete', () => {
-            KEEP.utils.pjaxProgressBarEnd();
-            window.pjax.executeScripts(document.querySelectorAll('script[data-pjax], .pjax script'));
-            KEEP.refresh();
+            KEEP.utils.pjaxProgressBarEnd()
+            window.pjax.executeScripts(document.querySelectorAll('script[data-pjax], .pjax script'))
+            KEEP.initExecute()
         });
     });
 </script>
 
 
 
-<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/wanko.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script>
+
+
         <style>
             [bg-lazy] {
                 background-image: none !important;
@@ -711,8 +935,5 @@
                 preloadRatio: 1,
                 processImages: null,
             };
-        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(r){r.imageLazyLoadSetting.processImages=t;var e=r.imageLazyLoadSetting.isSPA,n=r.imageLazyLoadSetting.preloadRatio||1,c=a();function a(){var t=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")),e=Array.prototype.slice.call(document.querySelectorAll("[bg-lazy]"));return t.concat(e)}function t(){e&&(c=a());for(var t,o=0;o<c.length;o++)0<=(t=(t=c[o]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(r.innerHeight*n||document.documentElement.clientHeight*n)&&function(){var t,e,n,a,i=c[o];e=function(){c=c.filter(function(t){return i!==t}),r.imageLazyLoadSetting.onImageLoaded&&r.imageLazyLoadSetting.onImageLoaded(i)},(t=i).hasAttribute("bg-lazy")?(t.removeAttribute("bg-lazy"),e&&e()):(n=new Image,a=t.getAttribute("data-original"),n.onload=function(){t.src=a,t.removeAttribute("data-original"),e&&e()},t.src!==a&&(n.src=a))}()}function i(){clearTimeout(t.tId),t.tId=setTimeout(t,500)}t(),document.addEventListener("scroll",i),r.addEventListener("resize",i),r.addEventListener("orientationchange",i)}(this);</script></body>
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(r){r.imageLazyLoadSetting.processImages=t;var e=r.imageLazyLoadSetting.isSPA,n=r.imageLazyLoadSetting.preloadRatio||1,c=a();function a(){var t=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")),e=Array.prototype.slice.call(document.querySelectorAll("[bg-lazy]"));return t.concat(e)}function t(){e&&(c=a());for(var t,o=0;o<c.length;o++)0<=(t=(t=c[o]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(r.innerHeight*n||document.documentElement.clientHeight*n)&&function(){var t,e,n,a,i=c[o];e=function(){c=c.filter(function(t){return i!==t}),r.imageLazyLoadSetting.onImageLoaded&&r.imageLazyLoadSetting.onImageLoaded(i)},(t=i).hasAttribute("bg-lazy")?(t.removeAttribute("bg-lazy"),e&&e()):(n=new Image,a=t.getAttribute("data-original"),n.onload=function(){t.src=a,t.removeAttribute("data-original"),e&&e()},t.src!==a&&(n.src=a))}()}function i(){clearTimeout(t.tId),t.tId=setTimeout(t,500)}t(),document.addEventListener("scroll",i),r.addEventListener("resize",i),r.addEventListener("orientationchange",i)}(this);</script><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/wanko.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
 </html>
-
-<script type="text/javascript" src="/js/funnytitle.js"></script>
-<script type="text/javascript" src="/js/love.js"></script>
