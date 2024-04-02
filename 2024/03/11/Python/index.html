@@ -238,7 +238,7 @@
 
             <span class="meta-info-item post-update-date">
                 <i class="icon fa-solid fa-file-pen"></i>&nbsp;
-                <span class="datetime" data-updated="Mon Apr 01 2024 19:39:09 GMT+0800">2024-04-01 19:39:09</span>
+                <span class="datetime" data-updated="Tue Apr 02 2024 23:40:38 GMT+0800">2024-04-02 23:40:38</span>
             </span>
         
 
@@ -267,7 +267,7 @@
         
         
             <span class="meta-info-item post-wordcount">
-                <i class="icon fas fa-file-word"></i>&nbsp;<span>22.5k Words</span>
+                <i class="icon fas fa-file-word"></i>&nbsp;<span>22.6k Words</span>
             </span>
         
         
@@ -299,7 +299,7 @@
 <p>python+appium 移动端（手机端app）自动化</p>
 <p>python+ requests 接口</p>
 </blockquote>
-<p>Python 是一个高层次的结合了解释性、编译性、互动性和面向对象的脚本语言。</p>
+<p>Python 是一个高层次的结合了解释性、编译性、互动性和面向对象的脚本语言。python是轻量级语言。</p>
 <p>Python 的设计具有很强的可读性，相比其他语言经常使用英文关键字，其他语言的一些标点符号，它具有比其他语言更有特色语法结构。</p>
 <ul>
 <li><strong>Python 是一种解释型语言：</strong> 这意味着开发过程中<strong>没有编译</strong>这个环节。类似于PHP和Perl语言。</li>
@@ -308,11 +308,11 @@
 <li><strong>Python 是初学者的语言：</strong>Python 对初级程序员而言，是一种伟大的语言，它支持广泛的应用程序开发，从简单的文字处理到 WWW 浏览器再到游戏。</li>
 </ul>
 <h1 id="Python基础代码"><a href="#Python基础代码" class="headerlink" title="Python基础代码"></a>Python基础代码</h1><h2 id="标识符"><a href="#标识符" class="headerlink" title="标识符"></a>标识符</h2><ul>
-<li><p>第一个字符必须是字母表中字母或下划线 <strong>_</strong> ,不能以数字开头。</p>
+<li><p>第一个字符必须是字母表中字母或下划线**_** ,不能以数字开头。</p>
 <p>驼峰命名法：</p>
-<p>​	大驼峰：每个单词首字母大写：MyName</p>
-<p>​	小驼峰：第一个单词首字母小写，其他大写：myNam</p>
-<p>下划线连接法：每个单词之间用下划线连接my_name</p>
+<p>​	大驼峰（又称帕斯卡命名法Pascal Case）：通常用于标识符（如变量名、函数名、类名等）的命名。在帕斯卡命名法中，每个单词的首字母都大写，单词之间没有下划线或其他分隔符。：MyName</p>
+<p>​	小驼峰（Camel Case）：通常用于命名变量、函数、方法等标识符。在小驼峰命名法中，除了第一个单词的首字母小写外，后续单词的首字母都大写，单词之间没有下划线或其他分隔符。，其他大写：myName</p>
+<p>​	下划线连接法（Snake Case）：每个单词之间用下划线连接my_name</p>
 </li>
 <li><p>变量一般使用下划线法</p>
 </li>
@@ -323,7 +323,7 @@
 </ul>
 <p>在 Python 3 中，可以用中文作为变量名，非 ASCII 标识符也是允许的了。</p>
 <h2 id="python保留字"><a href="#python保留字" class="headerlink" title="python保留字"></a>python保留字</h2><blockquote>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt;[&#x27;False&#x27;, &#x27;None&#x27;, &#x27;True&#x27;, &#x27;and&#x27;, &#x27;as&#x27;, &#x27;assert&#x27;, &#x27;break&#x27;, &#x27;class&#x27;, &#x27;continue&#x27;, &#x27;def&#x27;, &#x27;del&#x27;, &#x27;elif&#x27;, &#x27;else&#x27;, &#x27;except&#x27;, &#x27;finally&#x27;, &#x27;for&#x27;, &#x27;from&#x27;, &#x27;global&#x27;, &#x27;if&#x27;, &#x27;import&#x27;, &#x27;in&#x27;, &#x27;is&#x27;, &#x27;lambda&#x27;, &#x27;nonlocal&#x27;, &#x27;not&#x27;, &#x27;or&#x27;, &#x27;pass&#x27;, &#x27;raise&#x27;, &#x27;return&#x27;, &#x27;try&#x27;, &#x27;while&#x27;, &#x27;with&#x27;, &#x27;yield&#x27;]</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&gt;[&#x27;False&#x27;, &#x27;None&#x27;, &#x27;True&#x27;, &#x27;and&#x27;, &#x27;as&#x27;, &#x27;assert&#x27;, &#x27;break&#x27;, &#x27;class&#x27;, &#x27;continue&#x27;, &#x27;def&#x27;, &#x27;del&#x27;,</span><br><span class="line">&gt;&#x27;elif&#x27;, &#x27;else&#x27;, &#x27;except&#x27;, &#x27;finally&#x27;, &#x27;for&#x27;, &#x27;from&#x27;, &#x27;global&#x27;, &#x27;if&#x27;, &#x27;import&#x27;, &#x27;in&#x27;, &#x27;is&#x27;, </span><br><span class="line">&gt;&#x27;lambda&#x27;, &#x27;nonlocal&#x27;, &#x27;not&#x27;, &#x27;or&#x27;, &#x27;pass&#x27;, &#x27;raise&#x27;, &#x27;return&#x27;, &#x27;try&#x27;, &#x27;while&#x27;, &#x27;with&#x27;,</span><br><span class="line">&gt;&#x27;yield&#x27;]</span><br></pre></td></tr></table></figure>
 </blockquote>
 <h2 id="多行语句"><a href="#多行语句" class="headerlink" title="多行语句"></a>多行语句</h2><p>Python 通常是一行写完一条语句，但如果语句很长，我们可以使用反斜杠 *<em>*</em> 来实现多行语句，例如：</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">total = item_one + \</span><br><span class="line">        item_two + \</span><br><span class="line">        item_three</span><br></pre></td></tr></table></figure>
@@ -339,26 +339,27 @@
 </ul>
 <h2 id="输出print"><a href="#输出print" class="headerlink" title="输出print()"></a>输出print()</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># print 默认输出是换行的，如果要实现不换行需要在变量末尾加上 end=&quot;&quot;</span></span><br><span class="line">x = <span class="string">&quot;a&quot;</span></span><br><span class="line">y = <span class="string">&quot;b&quot;</span></span><br><span class="line"><span class="comment"># 换行输出</span></span><br><span class="line"><span class="built_in">print</span>(x)</span><br><span class="line"><span class="built_in">print</span>(y)</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;---------&#x27;</span>)</span><br><span class="line"><span class="comment"># 不换行输出</span></span><br><span class="line"><span class="built_in">print</span>(x, end=<span class="string">&quot; &quot;</span>)</span><br><span class="line"><span class="built_in">print</span>(y, end=<span class="string">&quot; &quot;</span>)</span><br><span class="line"><span class="built_in">print</span>()</span><br></pre></td></tr></table></figure>
 
-<p><img lazyload alt="image" data-src="keep/source/images/star.gif" data-original="D:\blog\source_posts\Python\print.png"></p>
+<p><img lazyload alt="image" data-src="keep/source/images/star.gif" data-original="/2024/03/11/Python/print.png"></p>
 <h2 id="输入input"><a href="#输入input" class="headerlink" title="输入input"></a>输入input</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">a = <span class="built_in">input</span>(<span class="string">&#x27;输入你心中想的内容：&#x27;</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;你输入的是&quot;</span> + a)</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">type</span>(a))</span><br></pre></td></tr></table></figure>
 
-<p><img lazyload alt="image" data-src="keep/source/images/star.gif" data-original="D:\blog\source_posts\Python\input.png"></p>
+<p><img lazyload alt="image" data-src="keep/source/images/star.gif" data-original="/2024/03/11/Python/input.png"></p>
 <p>输入的内容类型是字符串类型</p>
 <h2 id="类型转换"><a href="#类型转换" class="headerlink" title="类型转换"></a>类型转换</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">a = <span class="built_in">input</span>(<span class="string">&#x27;输入你的年龄：&#x27;</span>)</span><br><span class="line">b = <span class="built_in">int</span>(a)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;你的年龄是&quot;</span>, b)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;一年后你的年龄是&quot;</span>, <span class="built_in">int</span>(a) + <span class="number">1</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">type</span>(a))</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">type</span>(b))</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
-<p><img lazyload alt="image" data-src="keep/source/images/star.gif" data-original="D:\blog\source_posts\Python\typeconvert.png"></p>
+<p><img lazyload alt="image" data-src="keep/source/images/star.gif" data-original="/2024/03/11/Python/typeconvert.png"></p>
 <ul>
-<li><p>int()可以将其他类型转换成int类型</p>
+<li><p><code>int()</code>可以将其他类型转换成int类型</p>
 <p>​	可以将float类型转换成整型</p>
 <p>​	可以将整数类型字符串转换为整型</p>
+<p><img lazyload alt="image" data-src="keep/source/images/star.gif" data-original="/2024/03/11/Python/image-20240402225258518.png"></p>
 </li>
-<li><p>float()可以将其他类型转换成float类型</p>
+<li><p><code>float()</code>可以将其他类型转换成float类型</p>
 <ul>
 <li>可以将int类型转换成浮点型</li>
 <li>可以将数字类型字符串（整数、小数）转换为浮点型</li>
 </ul>
 </li>
-<li><p>str()可以将其他类型转换成字符串类型</p>
+<li><p><code>str()</code>可以将其他类型转换成字符串类型</p>
 <ul>
 <li>任何类型都可以使用str()将其转换成字符串，一般都是直接加引号</li>
 </ul>
@@ -1913,7 +1914,7 @@
             
                 <span class="count-box border-box word">
                     <span class="item-type border-box">Total words</span>
-                    <span class="item-value border-box word">46.9k</span>
+                    <span class="item-value border-box word">47k</span>
                 </span>
             
 
@@ -2200,3 +2201,6 @@
             };
         </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(r){r.imageLazyLoadSetting.processImages=t;var e=r.imageLazyLoadSetting.isSPA,n=r.imageLazyLoadSetting.preloadRatio||1,c=a();function a(){var t=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")),e=Array.prototype.slice.call(document.querySelectorAll("[bg-lazy]"));return t.concat(e)}function t(){e&&(c=a());for(var t,o=0;o<c.length;o++)0<=(t=(t=c[o]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(r.innerHeight*n||document.documentElement.clientHeight*n)&&function(){var t,e,n,a,i=c[o];e=function(){c=c.filter(function(t){return i!==t}),r.imageLazyLoadSetting.onImageLoaded&&r.imageLazyLoadSetting.onImageLoaded(i)},(t=i).hasAttribute("bg-lazy")?(t.removeAttribute("bg-lazy"),e&&e()):(n=new Image,a=t.getAttribute("data-original"),n.onload=function(){t.src=a,t.removeAttribute("data-original"),e&&e()},t.src!==a&&(n.src=a))}()}function i(){clearTimeout(t.tId),t.tId=setTimeout(t,500)}t(),document.addEventListener("scroll",i),r.addEventListener("resize",i),r.addEventListener("orientationchange",i)}(this);</script><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/wanko.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
 </html>
+
+<script type="text/javascript" src="/js/funnytitle.js"></script>
+<script type="text/javascript" src="/js/love.js"></script>
