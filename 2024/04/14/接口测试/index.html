@@ -1,0 +1,1348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="Hexo Theme Keep">
+    <meta name="description" content="Hexo Theme Keep">
+    <meta name="author" content="Elora">
+    
+    <title>
+        
+            接口测试 |
+        
+        Elora blog
+    </title>
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    
+        <link rel="shortcut icon" href="/images/icon16.png">
+    
+    
+<link rel="stylesheet" href="/font/css/fontawesome.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/regular.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/solid.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/brands.min.css">
+
+    
+    <script class="keep-theme-configurations">
+    const KEEP = window.KEEP || {}
+    KEEP.hexo_config = {"hostname":"example.com","root":"/","language":"en","path":"search.json"}
+    KEEP.theme_config = {"base_info":{"primary_color":"#ffe8e9","title":"Elora blog","author":"Elora","avatar":"/images/icon40.png","logo":"/images/icon40.png","favicon":"/images/icon16.png"},"menu":{"home":"/ || fa-solid fa-home","archives":"/archives || fa-solid fa-box-archive","tags":"/tags || fa-solid fa-tags","categories":"/categories || fa-solid fa-layer-group"},"first_screen":{"enable":true,"background_img":"/images/pmgroup.png","background_img_dark":"/images/pmgroup.png","description":"Heroes never die!","hitokoto":false},"social_contact":{"enable":true,"links":{"github":"https://github.com/wRinta","weixin":"img | /images/wechat.png","qq":null,"weibo":null,"zhihu":null,"twitter":null,"x":null,"facebook":null,"email":"wsq1357812@163.com"}},"scroll":{"progress_bar":true,"percent":true,"hide_header":true},"home":{"announcement":"评论没有实时通知！","category":true,"tag":true,"post_datetime":"updated || fa-solid fa-hourglass-start","post_datetime_format":"YYYY-MM-DD HH:mm:ss"},"post":{"author_badge":{"enable":true,"level_badge":false,"custom_badge":["Rinta!"]},"word_count":{"wordcount":true,"min2read":true},"datetime_format":"YYYY-MM-DD HH:mm:ss","copyright_info":true,"share":true,"reward":{"enable":true,"img_link":"/images/reward.png","text":"请作者喝奶茶","img_align":"right"}},"code_block":{"tools":{"enable":true,"style":"mac"},"highlight_theme":"default"},"toc":{"enable":true,"number":true,"expand_all":true,"init_open":true,"layout":"left"},"website_count":{"busuanzi_count":{"enable":true,"site_uv":true,"site_pv":true,"page_pv":true}},"local_search":{"enable":true,"preload":true},"comment":{"enable":true,"use":"valine","valine":{"appid":"oKezB5PXBe6SFd75Ab2I1igt-gzGzoHsz","appkey":"ZyjE4IekdBOYhHEQyVhPqWf9","server_urls":null,"placeholder":"say something.."},"gitalk":{"github_id":"wRinta","github_admins":null,"repository":"repoforcomment","client_id":"78ba639dca276f6befb3","client_secret":"d893b8494166a18989ce599c8e362ccc307f3be9","proxy":null},"twikoo":{"env_id":null,"region":null,"version":"1.6.21"},"waline":{"server_url":null,"reaction":false,"version":2},"giscus":{"repo":null,"repo_id":null,"category":"Announcements","category_id":null,"reactions_enabled":false},"artalk":{"server":null},"disqus":{"shortname":null}},"rss":{"enable":false},"lazyload":{"enable":true},"cdn":{"enable":false,"provider":"cdnjs"},"pjax":{"enable":true},"footer":{"since":2020,"word_count":true,"icp":{"enable":false,"record_code":null,"url":"https://beian.miit.gov.cn"},"site_deploy":{"enable":true,"provider":"github","url":null},"shields_style":{"enable":false,"custom":[{"link_url":null,"img_url":null}]}},"inject":{"enable":false,"css":[null],"js":[null]},"root":"","source_data":{},"version":"4.1.0"}
+    KEEP.language_ago = {"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days ago","week":"%s weeks ago","month":"%s months ago","year":"%s years ago"}
+    KEEP.language_code_block = {"copy":"Copy code","copied":"Copied","fold":"Fold code block","folded":"Folded"}
+    KEEP.language_copy_copyright = {"copy":"Copy copyright info","copied":"Copied","title":"Original post title","author":"Original post author","link":"Original post link"}
+  </script>
+<meta name="generator" content="Hexo 7.1.1"><link rel="alternate" href="/atom.xml" title="hexo" type="application/atom+xml">
+</head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+        <span class="scroll-progress-bar"></span>
+    
+
+    
+        <span class="pjax-progress-bar"></span>
+        <i class="pjax-progress-icon fas fa-circle-notch fa-spin"></i>
+    
+</div>
+
+
+
+<main class="page-container border-box">
+    <!-- home first screen  -->
+    
+
+    <!-- page content -->
+    <div class="page-main-content border-box">
+        <div class="page-main-content-top">
+            
+<header class="header-wrapper">
+
+    <div class="border-box header-content">
+        <div class="left border-box">
+            
+                <a class="logo-image border-box" href="/">
+                    <img src="/images/icon40.png">
+                </a>
+            
+            <a class="site-name border-box" href="/">
+               Elora blog
+            </a>
+        </div>
+
+        <div class="right border-box">
+            <div class="pc">
+                <ul class="menu-list">
+                    
+                        
+                        <li class="menu-item">
+                            <a class=""
+                               href="/"
+                            >
+                                
+                                    <i class="menu-icon fa-solid fa-home"></i>
+                                
+                                HOME
+                            </a>
+                        </li>
+                    
+                        
+                        <li class="menu-item">
+                            <a class=""
+                               href="/archives"
+                            >
+                                
+                                    <i class="menu-icon fa-solid fa-box-archive"></i>
+                                
+                                ARCHIVES
+                            </a>
+                        </li>
+                    
+                        
+                        <li class="menu-item">
+                            <a class=""
+                               href="/tags"
+                            >
+                                
+                                    <i class="menu-icon fa-solid fa-tags"></i>
+                                
+                                TAGS
+                            </a>
+                        </li>
+                    
+                        
+                        <li class="menu-item">
+                            <a class=""
+                               href="/categories"
+                            >
+                                
+                                    <i class="menu-icon fa-solid fa-layer-group"></i>
+                                
+                                CATEGORIES
+                            </a>
+                        </li>
+                    
+                    
+                        <li class="menu-item search search-popup-trigger">
+                            <i class="fas search fa-search"></i>
+                        </li>
+                    
+                </ul>
+            </div>
+            <div class="mobile">
+                
+                    <div class="icon-item search search-popup-trigger"><i class="fas fa-search"></i></div>
+                
+                <div class="icon-item menu-bar">
+                    <div class="menu-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-drawer">
+        <ul class="drawer-menu-list">
+            
+                
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/"
+                    >HOME</a>
+                </li>
+            
+                
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/archives"
+                    >ARCHIVES</a>
+                </li>
+            
+                
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/tags"
+                    >TAGS</a>
+                </li>
+            
+                
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/categories"
+                    >CATEGORIES</a>
+                </li>
+            
+        </ul>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="page-main-content-middle border-box">
+
+            <div class="main-content border-box">
+                
+
+                    
+<div class="fade-in-down-animation">
+    <div class="post-page-container border-box">
+        <div class="post-content-container border-box">
+            
+
+            <div class="post-content-bottom border-box">
+                
+                    <div class="post-title">
+                        接口测试
+                    </div>
+                
+
+                
+                    <div class="post-header border-box">
+                        
+                            <div class="avatar-box border-box">
+                                <img src="/images/icon40.png">
+                            </div>
+                        
+                        <div class="info-box">
+                            <div class="author border-box">
+                                <span class="name">Elora</span>
+                                
+                                    <span class="author-badge">Rinta!</span>
+                                
+                            </div>
+                            <div class="meta-info border-box">
+                                
+
+<div class="post-meta-info-container border-box post">
+    <div class="post-meta-info border-box">
+        
+
+        
+            <span class="meta-info-item post-create-date">
+                <i class="icon fa-solid fa-calendar-plus"></i>&nbsp;
+                <span class="datetime">2024-04-14 11:16:10</span>
+            </span>
+
+            <span class="meta-info-item post-update-date">
+                <i class="icon fa-solid fa-file-pen"></i>&nbsp;
+                <span class="datetime" data-updated="Tue Apr 16 2024 14:34:55 GMT+0800">2024-04-16 14:34:55</span>
+            </span>
+        
+
+        
+            <span class="meta-info-item post-category border-box"><i class="icon fas fa-folder"></i>&nbsp;
+                <ul class="post-category-ul">
+                    
+                            <li class="category-item"><a href="/categories/test/">test</a></li>
+                        
+                    
+                </ul>
+            </span>
+        
+
+        
+            <span class="post-tag meta-info-item border-box">
+                <ul class="post-tag-ul">
+                    
+                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/test/">test</a></li>
+                        
+                    
+                </ul>
+            </span>
+        
+
+        
+        
+            <span class="meta-info-item post-wordcount">
+                <i class="icon fas fa-file-word"></i>&nbsp;<span>4.1k Words</span>
+            </span>
+        
+        
+            <span class="meta-info-item post-min2read">
+                <i class="icon fas fa-clock"></i>&nbsp;<span>15 Mins</span>
+            </span>
+        
+        
+            <span class="meta-info-item post-pv">
+                <i class="icon fas fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
+            </span>
+        
+    </div>
+
+    
+</div>
+
+                            </div>
+                        </div>
+                    </div>
+                
+
+                <div class="post-content keep-markdown-body">
+                    
+
+                    <h1 id="接口"><a href="#接口" class="headerlink" title="接口"></a>接口</h1><p>接口是系统或组件（组成某个系统的部件之一）之间的交互点，通过这些交互点可以进行数据的交互。</p>
+<h2 id="接口的类型"><a href="#接口的类型" class="headerlink" title="接口的类型"></a>接口的类型</h2><p>按划分形式，大致分为3类</p>
+<ol>
+<li><p>按协议分，协议不同，接口类型不同。HTTP、TCP、UDP、FTP、USB</p>
+</li>
+<li><p>按语言分类。Java、Python、C++、PHP</p>
+</li>
+<li><p>按范围划分。系统之间和程序内部</p>
+<ol>
+<li><p>系统之间，内部系统之间、内部系统和外部系统之间</p>
+</li>
+<li><p>程序内部，方法（函数）和方法（函数）之间、类和类之间、模块和模块之间</p>
+<p><img lazyload alt="image" data-src="keep/source/images/star.gif" data-original="/2024/04/14/%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95/image-20240414113834004.png"></p>
+</li>
+</ol>
+</li>
+</ol>
+<h2 id="接口测试"><a href="#接口测试" class="headerlink" title="接口测试"></a>接口测试</h2><p>对系统或组件之间的接口进行测试，主要是校验数据的交换、传递和控制管理过程，以及相互依赖关系。</p>
+<p>数据是否正确？逻辑依赖关系是否正确？</p>
+<h2 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h2><p>模拟客户端向服务器发送请求，服务器接受请求后进行相应的业务处理，并向客户端返回响应数据，检查响应数据是否符合预期。</p>
+<ul>
+<li>数据（预期结果）<ul>
+<li>从用户需求来</li>
+</ul>
+</li>
+<li>怎样校验<ul>
+<li>借助工具、代码模拟客户端，组织数据（没有前端也可以完成）</li>
+</ul>
+</li>
+</ul>
+<h2 id="特点"><a href="#特点" class="headerlink" title="特点"></a>特点</h2><ul>
+<li>测试可以提前介入，提早发现Bug，符合质量控制前移的理念</li>
+<li>可以发现一些页面操作发现不了的问题</li>
+<li>接口测试低成本高收益（底层的一个Bug可以引发上层8个左右Bug，接口测试可以实现自动化）</li>
+<li>从用户的角度对系统全方面进行全面的检测</li>
+</ul>
+<h2 id="实现方式"><a href="#实现方式" class="headerlink" title="实现方式"></a>实现方式</h2><ul>
+<li>使用接口测试工具实现：JMeter、Fiddler、Postman</li>
+<li>通过编写代码来实现：Python+Requests+Unittest</li>
+<li>依赖断言去判断</li>
+</ul>
+<h1 id="HTTP协议"><a href="#HTTP协议" class="headerlink" title="HTTP协议"></a>HTTP协议</h1><p>HTTP（Hyper Text Transfer Protocol）：超文本传输协议，是一个基于请求与响应模式的、应用层的协议，也是互联网上最为广泛的一种协议</p>
+<h2 id="特点-1"><a href="#特点-1" class="headerlink" title="特点"></a>特点</h2><ol>
+<li>支持客户端&#x2F;服务器模式</li>
+<li>简单快速</li>
+<li>灵活</li>
+<li>无连接</li>
+<li>无状态</li>
+</ol>
+<h2 id="URL"><a href="#URL" class="headerlink" title="URL"></a>URL</h2><p>URL（Uniform Resource Locator）统一资源定位符，是互联网上标准资源的地址。HTTP使用URL来建立连接和传输数据。</p>
+<h3 id="URL格式"><a href="#URL格式" class="headerlink" title="URL格式"></a>URL格式</h3><p><code>http://www.itcast.cn:8080/news/index.html?uid=123&amp;page=1</code></p>
+<p><code>http</code>：协议</p>
+<p><code>www.itcast.cn</code>：域名（ip），定位网络环境中的一台主机</p>
+<p><code>8080</code>：端口号，在网络主机上定位一个应用。没有指定端口号，默认跟随协议。</p>
+<p><code>news/index.html</code>：资源路径，对应网页的源代码或网络中的一个数据资源。</p>
+<p><code>uid=123&amp;page=1</code>：查询参数，可以有多个，用&amp;分割</p>
+<ul>
+<li>端口：<ul>
+<li>http协议默认端口：80</li>
+<li>https协议默认端口：443</li>
+<li>mysql默认端口：3306</li>
+<li>redis缓存数据库默认端口：6379</li>
+<li>Oracle默认端口：1521</li>
+</ul>
+</li>
+<li>资源路径：<ul>
+<li>资源路径可以为空（没有），相当于”&#x2F;“</li>
+<li>如果没有查询参数，资源路径从域名（端口）之和</li>
+<li>如果有查询参数，资源路径为?之前，域名（端口）之和的所有内容</li>
+</ul>
+</li>
+<li>查询参数：传参给网页源代码</li>
+</ul>
+<h2 id="HTTP请求"><a href="#HTTP请求" class="headerlink" title="HTTP请求"></a>HTTP请求</h2><ul>
+<li>由客户端发送给服务器</li>
+<li>规定了数据的语法格式</li>
+</ul>
+<p>由四部分组成：请求行、请求头、空行、请求体</p>
+<p><img lazyload alt="image" data-src="keep/source/images/star.gif" data-original="/2024/04/14/%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95/image-20240414201610448.png"></p>
+<p><img lazyload alt="image" data-src="keep/source/images/star.gif" data-original="D:\blog\source_posts\接口测试\image-20240414201834425.png"></p>
+<h3 id="请求行"><a href="#请求行" class="headerlink" title="请求行"></a>请求行</h3><ul>
+<li>作用：指定请求方法、请求资源</li>
+<li>语法格式：请求方法（空格）URL（空格）协议版本（\n\r）</li>
+<li>请求方法：<ul>
+<li>GET：查询，没有请求体</li>
+<li>POST：新增，有请求体，登录注册主要使用</li>
+<li>PUT：修改，有请求体</li>
+<li>DELETE：删除，无请求体</li>
+</ul>
+</li>
+<li>URL：数据资源的定位符。协议:&#x2F;&#x2F;域名:端口&#x2F;资源路径?查询参数&amp;…</li>
+<li>协议版本：<ul>
+<li>http1.1&#x2F;http1.2&#x2F;http2.0</li>
+<li>主要使用http1.1</li>
+</ul>
+</li>
+</ul>
+<h3 id="请求头"><a href="#请求头" class="headerlink" title="请求头"></a>请求头</h3><ul>
+<li><p>作用：向服务器描述客户端（浏览器）的基本信息</p>
+</li>
+<li><p>语法：k: v</p>
+<ul>
+<li><p>User-Agent：向服务器描述浏览器的类型</p>
+<p>Content-Type：向服务器描述请求体的数据类型</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="请求体"><a href="#请求体" class="headerlink" title="请求体"></a>请求体</h3><ul>
+<li>GET、DELETE请求方法没有请求体</li>
+<li>POST、PUT请求方法有请求体</li>
+<li>请求体的数据类型，收请求头中的Content-Type的值影响</li>
+</ul>
+<h2 id="HTTP相应"><a href="#HTTP相应" class="headerlink" title="HTTP相应"></a>HTTP相应</h2><ul>
+<li>作用：由服务器回发给客户端</li>
+<li>规定了服务器回发给客户端的数据语法格式</li>
+</ul>
+<p>组成：响应行（状态行）、响应头、空行、响应体。整体称为响应包&#x2F;响应报文</p>
+<p><img lazyload alt="image" data-src="keep/source/images/star.gif" data-original="/2024/04/14/%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95/image-20240414233356899.png"></p>
+<p><img lazyload alt="image" data-src="keep/source/images/star.gif" data-original="/2024/04/14/%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95/image-20240414233750677.png"></p>
+<h3 id="响应行"><a href="#响应行" class="headerlink" title="响应行"></a>响应行</h3><ul>
+<li>语法格式：响应版本（空格）状态码（空格）状态码描述\r\n</li>
+<li>协议版本：http1.0&#x2F;http1.1&#x2F;http2.0</li>
+<li>状态码：针对http请求响应的状态<ul>
+<li>第一个数字定义了响应的类别<ul>
+<li><strong>1xx：指示信息，表示请求已接受，继续处理，请求需要进一步访问</strong><ul>
+<li>100 Continue</li>
+<li>101 Switching Protocols</li>
+</ul>
+</li>
+<li><strong>2xx：成功，表示请求已被成功接受、理解、接受</strong><ul>
+<li><strong>200 OK</strong></li>
+<li>201 Created</li>
+<li>202 Accepted</li>
+<li>203 Non-Authoritative Information</li>
+<li>204 No Content</li>
+<li>205 Reset Content</li>
+<li>206 Partial Content</li>
+</ul>
+</li>
+<li><strong>3xx：重定向，要完成请求必须进行更进一步的操作</strong><ul>
+<li>300 Multiple Choices </li>
+<li>301 Moved Permanently</li>
+<li>302 Found</li>
+<li>303 See Other</li>
+<li>304 Not Modified</li>
+<li>305 Use Proxy</li>
+<li>307 Temporary Redirect</li>
+</ul>
+</li>
+<li><strong>4xx：客户端错误，请求有语法错误或请求无法实现</strong><ul>
+<li>400 Bad Request</li>
+<li>401 Unauthorized</li>
+<li>402 Payment Required</li>
+<li><strong>403 Forbidden（请求的文件&#x2F;资源存在，但是没有访问权限）</strong></li>
+<li><strong>404 Not Found（请求的资源&#x2F;文件不存在）</strong></li>
+<li>405 Method Not Allowed</li>
+<li>406 Not Acceptable</li>
+<li>407 Proxy Authentication Required</li>
+<li>408 Request Timeout</li>
+<li>409 Conflict</li>
+<li>410 Gone</li>
+<li>411 Length Required</li>
+<li>412 Precondition Failed</li>
+<li>413 Request Entity Too Large</li>
+<li>414 Request-URI Too Long</li>
+<li>415 Unsupported Media Type</li>
+<li>416 Requested Range Not Satisfiable</li>
+<li>417 Expectation Failed</li>
+</ul>
+</li>
+<li><strong>5xx：服务器端错误，服务器未能实现合法请求</strong> <ul>
+<li>500 Internal Server Error</li>
+<li>501 Not Implemented</li>
+<li>502 Bad Gateway</li>
+<li>503 Service Unavailable</li>
+<li>504 Gateway Timeout</li>
+<li>505 HTTP Version Not Supported</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>状态描述：对状态码的说明</li>
+</ul>
+<h3 id="响应头"><a href="#响应头" class="headerlink" title="响应头"></a>响应头</h3><ul>
+<li><p>作用：向客户端（浏览器）描述服务器的基本信息</p>
+</li>
+<li><p>语法：k: v</p>
+<p>Content-Type：向客户端（浏览器）描述响应体的数据类型</p>
+</li>
+</ul>
+<h3 id="响应体"><a href="#响应体" class="headerlink" title="响应体"></a>响应体</h3><ul>
+<li>http的响应报文大多数有响应体，重定向没有响应体</li>
+<li>响应体的数据类型，受响应头中Content-Type的值的影响</li>
+<li>常见的类型：<ul>
+<li>json类型</li>
+<li>表单类型</li>
+<li>图片类型</li>
+</ul>
+</li>
+</ul>
+<h2 id="传统风格接口"><a href="#传统风格接口" class="headerlink" title="传统风格接口"></a>传统风格接口</h2><p>对用户进行操作的相关接口，包括增删改查</p>
+<p><img lazyload alt="image" data-src="keep/source/images/star.gif" data-original="/2024/04/14/%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95/image-20240415104748417.png"></p>
+<ul>
+<li>使用GET、POST实现所有数据的增删改查操作</li>
+<li>针对用户的某一个操作，URL不唯一，同一个用户操作对应不同的URL</li>
+<li>状态码统一使用200</li>
+</ul>
+<p>优点：</p>
+<ul>
+<li><p>对开发的技术要求低。只需要GET、POST方法</p>
+</li>
+<li><p>代码实现灵活</p>
+</li>
+</ul>
+<p>缺点：相同功能的实现代码不唯一</p>
+<h2 id="RESTful风格接口"><a href="#RESTful风格接口" class="headerlink" title="RESTful风格接口"></a>RESTful风格接口</h2><p>一种软件架构风格、设计风格，不是标准。提供了一组设计原则和约束条件</p>
+<p>REST（Representational State Transfer）的缩写，表现层状态转化。如果一个架构符合REST原则，称它为RESTful架构</p>
+<ul>
+<li>使用GET&#x2F;POST&#x2F;PUT&#x2F;DELETE分别表示增、查、改、删</li>
+<li>使用一个url对应一个唯一的资源</li>
+<li>状态码根据实际操作请求加以区分。（实际操作中都返回200，在响应体中描述成功&#x2F;失败）</li>
+</ul>
+<p><img lazyload alt="image" data-src="keep/source/images/star.gif" data-original="/2024/04/14/%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95/image-20240415111939766.png"></p>
+<h3 id="界定RESTful风格接口"><a href="#界定RESTful风格接口" class="headerlink" title="界定RESTful风格接口"></a>界定RESTful风格接口</h3><ol>
+<li>请求方法：使用get、post、delete、put对应查、增、删、改</li>
+<li>数据资源的定位符（url）是否唯一</li>
+<li>在url中不使用动词，替换使用名词。结合请求方法，界定具体操作</li>
+</ol>
+<h3 id="RESTful架构特点"><a href="#RESTful架构特点" class="headerlink" title="RESTful架构特点"></a>RESTful架构特点</h3><ol>
+<li>每一个URL代表一种资源</li>
+<li>客户端和服务器之间传递这种资源的某种表现层</li>
+<li>客户端通过四个HTTP动词，对服务器端资源进行操作，实现“表现层状态转化：</li>
+<li>接口之间传递的数据<strong>最常用</strong>的格式为json</li>
+</ol>
+<h1 id="接口测试-1"><a href="#接口测试-1" class="headerlink" title="接口测试"></a>接口测试</h1><h2 id="流程"><a href="#流程" class="headerlink" title="流程"></a>流程</h2><ol>
+<li>需求分析，依据需求文档</li>
+<li>接口文档解析，一般由开发人员编写接口文档</li>
+<li>设计测试用例</li>
+<li>执行测试用例：工具&#x2F;代码</li>
+<li>接口缺陷管理与跟踪</li>
+<li>生产测试报告</li>
+<li>接口自动化持续集成（可选），一般是项目发布上线前大批量回归测试使用，或者新版本迭代使用</li>
+</ol>
+<h2 id="接口文档"><a href="#接口文档" class="headerlink" title="接口文档"></a>接口文档</h2><p>又称API文档，一般由开发编写，用来描述系统所提供接口信息的文档。大家都根据这个接口文档进行开发，并需要一直维护和遵守。</p>
+<p>作用：</p>
+<ul>
+<li>方便前端和后端在开发的时候进行对接</li>
+<li>在人员更迭时，方便新人快速接手项目</li>
+<li>方便测试人员编写接口测试用例</li>
+</ul>
+<h3 id="展现形式"><a href="#展现形式" class="headerlink" title="展现形式"></a>展现形式</h3><ul>
+<li>在线文档（html）</li>
+<li>离线文档<ul>
+<li>word</li>
+<li>xmind</li>
+<li>pdf</li>
+<li>excel</li>
+</ul>
+</li>
+</ul>
+<h3 id="结构"><a href="#结构" class="headerlink" title="结构"></a>结构</h3><ul>
+<li>基本信息：<ul>
+<li>接口描述</li>
+<li>URL：（协议+域名）+资源路径</li>
+<li>请求方法</li>
+</ul>
+</li>
+<li>请求参数<ul>
+<li>请求头</li>
+<li>请求体（GET、DELETE没有）</li>
+</ul>
+</li>
+<li>返回结果<ul>
+<li>状态码、状态描述</li>
+<li>响应体</li>
+</ul>
+</li>
+</ul>
+<h3 id="接口文档解析"><a href="#接口文档解析" class="headerlink" title="接口文档解析"></a>接口文档解析</h3><p><strong>http请求</strong></p>
+<ul>
+<li><p>请求行</p>
+<ul>
+<li><p>请求方法</p>
+<p>URL</p>
+<p>协议版本：默认http&#x2F;1.1</p>
+</li>
+</ul>
+</li>
+<li><p>请求头</p>
+<ul>
+<li>Content-Type</li>
+</ul>
+</li>
+<li><p>请求体</p>
+</li>
+</ul>
+<p><strong>http应答：</strong></p>
+<ul>
+<li>响应行<ul>
+<li>状态码、状态描述</li>
+</ul>
+</li>
+<li>响应头</li>
+<li>响应体</li>
+</ul>
+<h1 id="接口设计用例"><a href="#接口设计用例" class="headerlink" title="接口设计用例"></a>接口设计用例</h1><ul>
+<li>为什么写？<ul>
+<li>防止漏测</li>
+<li>管理当前工作进度，评估工作量</li>
+</ul>
+</li>
+</ul>
+<h2 id="接口测试点"><a href="#接口测试点" class="headerlink" title="接口测试点"></a>接口测试点</h2><h3 id="功能测试"><a href="#功能测试" class="headerlink" title="功能测试"></a>功能测试</h3><ul>
+<li>单接口功能：手工测试中的单个业务模块，一般对应一个接口。借助工具、代码绕开前端界面，组织接口所需要的数据展开接口测试<ul>
+<li>登录业务–&gt;登录接口</li>
+<li>加入购物车业务–&gt;加入购物车接口</li>
+<li>登录业务–&gt;登录接口</li>
+<li>订单业务–&gt;订单接口</li>
+<li>支付业务–&gt;支付接口</li>
+</ul>
+</li>
+<li>业务场景功能：安装用户实际使用场景，梳理接口业务场景。组织业务场景时一般只做正向测试即可（与手工一致）。一般建议用最少的用例覆盖最多的业务场景。<ul>
+<li>登录——搜索商品——加购物车——下单——支付</li>
+</ul>
+</li>
+</ul>
+<h3 id="性能测试"><a href="#性能测试" class="headerlink" title="性能测试"></a>性能测试</h3><ul>
+<li>响应时长</li>
+<li>吞吐量：TPS，单位时间内当前接口能处理的事务数</li>
+<li>并发数</li>
+<li>服务器资源使用率</li>
+</ul>
+<h3 id="安全测试"><a href="#安全测试" class="headerlink" title="安全测试"></a>安全测试</h3><ul>
+<li>攻击安全：由专业安全测试工程师完成</li>
+<li>业务安全<ul>
+<li>敏感数据是否加密</li>
+<li>SQL注入</li>
+</ul>
+</li>
+</ul>
+<h2 id="设计方法与思路"><a href="#设计方法与思路" class="headerlink" title="设计方法与思路"></a>设计方法与思路</h2><h3 id="与手工设计相同之处"><a href="#与手工设计相同之处" class="headerlink" title="与手工设计相同之处"></a>与手工设计相同之处</h3><p>接口用例设计的测试点与手工页面业务功能的测试点几乎完全一样</p>
+<ul>
+<li><p>手工功能测试用例设计要点</p>
+<ul>
+<li><p>测试页面布局、控件的位置是否精准</p>
+</li>
+<li><p>针对用户名的编辑框中的数据值展开测试</p>
+<p>​	正确手机号、手机号由特殊字符、手机不足11位…</p>
+<p>针对密码的编辑框中的数据值展开测试</p>
+<p>​	正确密码、错误密码…</p>
+<p>针对验证码的编辑框的数据值展开测试</p>
+<p>​	正确验证码、错误验证码…</p>
+</li>
+</ul>
+</li>
+<li><p>接口用例设计要点</p>
+<ul>
+<li>手工页面中的用户名编辑框，对应接口中key为username的value值。针对username的值展开测试</li>
+<li>手工页面中的密码编辑框，对应接口中key为password的value值。针对password的值展开测试</li>
+<li>手工页面中的用户名编辑框，对应接口中key为verify_code的value值。针对verify_code的值展开测试</li>
+<li></li>
+</ul>
+</li>
+</ul>
+<h3 id="与手工设计不同之处"><a href="#与手工设计不同之处" class="headerlink" title="与手工设计不同之处"></a>与手工设计不同之处</h3><ol>
+<li>手工测试写入到输入框数据是否正确，接口测试测参数对应的参数值是否正确</li>
+<li>不单单只能对参数值进行测试，还针对参数进行测试<ol>
+<li>正向参数<ol>
+<li>必选参数：所有的必须（必填）都包含</li>
+<li>组合参数：所有的必选+任意一个&#x2F;多个可选参数</li>
+<li>全部参数：所有的必选+所有的可选参数</li>
+</ol>
+</li>
+<li>反向参数<ol>
+<li>多惨：多出一个&#x2F;多个必选参数（可以任意指定）</li>
+<li>少参：缺少一个&#x2F;多个必选参数</li>
+<li>无参：没有必选参数</li>
+<li>错误参数：参数名输入错误</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<h3 id="单接口测试用例"><a href="#单接口测试用例" class="headerlink" title="单接口测试用例"></a>单接口测试用例</h3><p>手工测试中每个业务功能，在接口测试中就对应唯一的一个接口。针对 该接口展开测试</p>
+<p>接口测试用例文档要素：</p>
+<p>编号、标题、用例名称、模块、优先级、预置条件、请求方法、URL、请求头、请求体（请求数据）</p>
+<p><strong>登录测试点：</strong></p>
+<ul>
+<li>数值正向<ul>
+<li>登录成功</li>
+</ul>
+</li>
+<li>数据反向<ul>
+<li>手机号为空</li>
+<li>手机号有特殊字符</li>
+<li>手机号不足11位</li>
+<li>手机号超出11位</li>
+<li>手机号未注册</li>
+<li>密码错误</li>
+<li>密码为空</li>
+<li>密码有特殊字符</li>
+<li>密码1位</li>
+<li>密码100位</li>
+</ul>
+</li>
+<li>参数正向<ul>
+<li>必选参数（全部参数）</li>
+</ul>
+</li>
+<li>参数反向<ul>
+<li>多参</li>
+<li>少参</li>
+<li>无参</li>
+<li>错误参数</li>
+</ul>
+</li>
+</ul>
+<h3 id="业务场景功能"><a href="#业务场景功能" class="headerlink" title="业务场景功能"></a>业务场景功能</h3><p>对应手工测试的业务流程，即接口调用的先后顺序，按照调用顺序展开接口测试。</p>
+<ul>
+<li><p>业务场景尽量遵循用户实际使用的场景，按顺序调用接口进行测试</p>
+</li>
+<li><p>尽量设计最少的测试用例去覆盖最多的业务场景</p>
+<ul>
+<li>登录成功——添加员工——查询员工——修改员工——再查询——删除员工——查询员工列表</li>
+</ul>
+</li>
+<li><p>一般情况下，只需要测试正向的业务场景即可。</p>
+</li>
+<li><p>依赖关系：</p>
+<ul>
+<li>登录成功返回的token，被添加、查询、修改、删除所依赖</li>
+<li>添加员工成功，返回员工id，被查询、修改、删除依赖</li>
+</ul>
+</li>
+</ul>
+<h1 id="Postman用法"><a href="#Postman用法" class="headerlink" title="Postman用法"></a>Postman用法</h1><h2 id="管理用例集"><a href="#管理用例集" class="headerlink" title="管理用例集"></a>管理用例集</h2><h2 id="Postman断言"><a href="#Postman断言" class="headerlink" title="Postman断言"></a>Postman断言</h2><p>Postman的断言使用js编写，写在Tests标签页里。Tests中的脚本在发送请求后执行，会把断言的结果最终显示在TestResults中</p>
+<p><img lazyload alt="image" data-src="keep/source/images/star.gif" data-original="/2024/04/14/%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95/image-20240416140045028.png"></p>
+<h3 id="断言响应状态码"><a href="#断言响应状态码" class="headerlink" title="断言响应状态码"></a>断言响应状态码</h3><p><strong>Status code: Code is 200</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">pm.<span class="title function_">test</span>(<span class="string">&quot;Status code is 200&quot;</span>, <span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">    pm.<span class="property">response</span>.<span class="property">to</span>.<span class="property">have</span>.<span class="title function_">status</span>(<span class="number">200</span>);</span><br><span class="line">&#125;);</span><br><span class="line"><span class="comment">// pm:Postman的一个实例</span></span><br><span class="line"><span class="comment">// test()：Postman实例的一个方法，有两个参数。</span></span><br><span class="line">	参数<span class="number">1</span>：<span class="string">&quot;Status code is 200&quot;</span> 断言完成后给出的提示信息</span><br><span class="line">    参数<span class="number">2</span>：<span class="keyword">function</span>(<span class="params"></span>)&#123;&#125;匿名函数的调用</span><br><span class="line">    pm.<span class="property">response</span>.<span class="property">to</span>.<span class="property">have</span>.<span class="title function_">status</span>(<span class="number">200</span>);<span class="title class_">Postman</span>的响应结果中，有状态码<span class="number">200</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="断言响应体是否包含某个字符"><a href="#断言响应体是否包含某个字符" class="headerlink" title="断言响应体是否包含某个字符"></a>断言响应体是否包含某个字符</h3><p><strong>Response body: Contains string</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">pm.<span class="title function_">test</span>(<span class="string">&quot;Body matches string&quot;</span>, <span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">    pm.<span class="title function_">expect</span>(pm.<span class="property">response</span>.<span class="title function_">text</span>()).<span class="property">to</span>.<span class="title function_">include</span>(<span class="string">&quot;string_you_want_to_search&quot;</span>);</span><br><span class="line">&#125;);</span><br><span class="line"><span class="comment">// pm:Postman的一个实例</span></span><br><span class="line"><span class="comment">// test()：Postman实例的一个方法，有两个参数。</span></span><br><span class="line">	参数<span class="number">1</span>：<span class="string">&quot;Body matches string&quot;</span> 断言完成后给出的提示信息</span><br><span class="line">    参数<span class="number">2</span>：<span class="keyword">function</span>(<span class="params"></span>)&#123;&#125;匿名函数的调用</span><br><span class="line">    pm.<span class="title function_">expect</span>(pm.<span class="property">response</span>.<span class="title function_">text</span>()).<span class="property">to</span>.<span class="title function_">include</span>(<span class="string">&quot;string_you_want_to_search&quot;</span>);<span class="title class_">Postman</span>实例预期结果包含<span class="string">&quot;string_you_want_to_search&quot;</span>字符串</span><br></pre></td></tr></table></figure>
+
+<h3 id="断言响应体是否等于某个字符串（对象）"><a href="#断言响应体是否等于某个字符串（对象）" class="headerlink" title="断言响应体是否等于某个字符串（对象）"></a>断言响应体是否等于某个字符串（对象）</h3><p><strong>Response body: is equal to a string</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">pm.<span class="title function_">test</span>(<span class="string">&quot;Body is correct&quot;</span>, <span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">    pm.<span class="property">response</span>.<span class="property">to</span>.<span class="property">have</span>.<span class="title function_">body</span>(<span class="string">&quot;response_body_string&quot;</span>);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<h3 id="断言json数据"><a href="#断言json数据" class="headerlink" title="断言json数据"></a>断言json数据</h3><p><strong>Response body: JSON value check</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">pm.<span class="title function_">test</span>(<span class="string">&quot;Your test name&quot;</span>, <span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">    <span class="keyword">var</span> jsonData = pm.<span class="property">response</span>.<span class="title function_">json</span>();</span><br><span class="line">    pm.<span class="title function_">expect</span>(jsonData.<span class="property">value</span>).<span class="property">to</span>.<span class="title function_">eql</span>(<span class="number">100</span>);</span><br><span class="line">&#125;);</span><br><span class="line"><span class="comment">// var jsonData = pm.response.json();定义变量jsonData，值为json格式的响应体数据</span></span><br><span class="line"><span class="comment">// pm.expect(jsonData.value).to.eql(100);</span></span><br><span class="line">	value指的是json中的值的key，<span class="title function_">eql</span>()为对应的值</span><br><span class="line">    value的值对应：success、code、message、data</span><br><span class="line">    to.<span class="title function_">eql</span>()的值对应：<span class="literal">true</span>、<span class="number">10000</span>、<span class="string">&quot;操作成功&quot;</span>、<span class="string">&quot;7ea56147-acf3-4527-a603-060a8ec52f34&quot;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="断言响应头"><a href="#断言响应头" class="headerlink" title="断言响应头"></a>断言响应头</h3><p><strong>Response headers: Content-Type header check</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">pm.<span class="title function_">test</span>(<span class="string">&quot;Content-Type is present&quot;</span>, <span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">    pm.<span class="property">response</span>.<span class="property">to</span>.<span class="property">have</span>.<span class="title function_">header</span>(<span class="string">&quot;Content-Type&quot;</span>);</span><br><span class="line">&#125;);</span><br><span class="line"><span class="comment">// pm.response.to.have.header(&quot;Content-Type&quot;)</span></span><br><span class="line">	<span class="title class_">Postman</span>响应结果中响应头有<span class="string">&quot;Content-Type&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>增加value</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">pm.<span class="title function_">test</span>(<span class="string">&quot;Content-Type is present&quot;</span>, <span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">    pm.<span class="property">response</span>.<span class="property">to</span>.<span class="property">have</span>.<span class="title function_">header</span>(<span class="string">&quot;Content-Type&quot;</span>,<span class="string">&quot;application/json;charset=UTF-8&quot;</span>);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<h2 id="Postman全局变量-环境变量"><a href="#Postman全局变量-环境变量" class="headerlink" title="Postman全局变量&amp;环境变量"></a>Postman全局变量&amp;环境变量</h2><ul>
+<li>全局变量：全局唯一的，不可重复定义的变量</li>
+<li>环境变量：<ul>
+<li>一个变量只能属于某个环境，在某一个环境中变量不可重复定义</li>
+<li>在环境与环境之间可以定义重复的变量</li>
+<li>一个环境可以包含多个环境变量</li>
+<li>常见的环境分类：开发环境、测试环境、生产环境</li>
+</ul>
+</li>
+</ul>
+<h2 id="设置变量"><a href="#设置变量" class="headerlink" title="设置变量"></a>设置变量</h2><h3 id="全局变量"><a href="#全局变量" class="headerlink" title="全局变量"></a>全局变量</h3><ol>
+<li>手动设置</li>
+<li>代码设置<code>pm.globals.set(&quot;var_name&quot;,value);</code></li>
+</ol>
+<h3 id="环境变量"><a href="#环境变量" class="headerlink" title="环境变量"></a>环境变量</h3><ol>
+<li>手动设置</li>
+<li>代码设置<code>pm.environment.set(&quot;var_name&quot;,value);</code></li>
+</ol>
+<h2 id="获取变量值"><a href="#获取变量值" class="headerlink" title="获取变量值"></a>获取变量值</h2><h3 id="全局变量-1"><a href="#全局变量-1" class="headerlink" title="全局变量"></a>全局变量</h3><ol>
+<li>请求参数（查询参数、请求头、请求体）中获取：</li>
+<li>代码中获取：<code>var value = pm.globals.get(&quot;var_name&quot;)</code></li>
+</ol>
+<h3 id="环境变量-1"><a href="#环境变量-1" class="headerlink" title="环境变量"></a>环境变量</h3><ol>
+<li>请求参数中获取：</li>
+<li>代码中获取：<code>var value = pm.environment.get(&quot;var_name&quot;)</code></li>
+</ol>
+
+                </div>
+                
+                        
+<div class="post-copyright-info-container border-box">
+    <div class="copyright-info-content border-box">
+        <div class="copyright-info-top border-box">
+            <div class="copyright-post-title border-box text-ellipsis">
+                接口测试
+            </div>
+
+            <div class="copyright-post-link border-box text-ellipsis">
+                2024/04/14/接口测试/
+            </div>
+        </div>
+
+        <div class="copyright-info-bottom border-box">
+            <div class="copyright-post-author bottom-item">
+                <div class="type">
+                    Author
+                </div>
+                <div class="content">Elora</div>
+            </div>
+
+            <div class="post-time bottom-item">
+                <div class="type">
+                    Published
+                </div>
+                <div class="content">2024-04-14 11:16</div>
+            </div>
+
+
+            <div class="post-license bottom-item">
+                <div class="type">
+                    License
+                </div>
+                <div class="content tooltip" data-tooltip-content="CC BY-NC-SA 4.0">
+                    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed" target="_blank">
+                        
+                            <i class="fa-brands fa-creative-commons"></i>
+                            <i class="fa-brands fa-creative-commons-by"></i>
+                            <i class="fa-brands fa-creative-commons-nc"></i>
+                            <i class="fa-brands fa-creative-commons-sa"></i>
+                        
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <i class="copyright-bg fa-solid fa-copyright"></i>
+    </div>
+    <div class="copy-copyright-info flex-center tooltip" data-tooltip-content="Copy copyright info" data-tooltip-offset-y="-2px">
+        <i class="fa-solid fa-copy"></i>
+    </div>
+</div>
+
+                
+
+                <div class="post-bottom-tags-and-share border-box">
+                    <div>
+                        
+                            <ul class="post-tags-box border-box">
+                                
+                                    <li class="tag-item border-box">
+                                        <i class="icon fas fa-hashtag"></i>&nbsp;<a href="/tags/test/">test</a>
+                                    </li>
+                                
+                            </ul>
+                        
+                    </div>
+                    <div>
+                        
+                            <div class="post-share-container border-box">
+    <ul class="share-list-wrap border-box">
+        <li class="qq share-item border-box flex-center tooltip"
+            data-tooltip-content="Share to QQ"
+        >
+            <i class="fa-brands fa-qq"></i>
+        </li>
+        <li class="wechat share-item border-box flex-center tooltip tooltip-img"
+            data-tooltip-content="Share to WeChat"
+            data-tooltip-img-tip="Scan by WeChat"
+            data-tooltip-img-style="background-color: #fff; top: -10px; padding: 0.6rem 0.6rem 0.1rem 0.6rem;"
+        >
+            <i class="fa-brands fa-weixin"></i>
+        </li>
+        <li class="weibo share-item border-box flex-center tooltip"
+            data-tooltip-content="Share to WeiBo"
+        >
+            <i class="fa-brands fa-weibo"></i>
+        </li>
+    </ul>
+</div>
+
+                        
+                    </div>
+                </div>
+
+                
+                    <div class="reward-author-container border-box flex-center">
+    <div class="reward-btn keep-button border-box flex-center tooltip tooltip-img"
+            data-tooltip-content="请作者喝奶茶"
+            data-tooltip-img-url="/images/reward.png"
+            data-tooltip-img-trigger="click"
+            data-tooltip-img-style="top: -8px;"
+    >
+        <i class="fa-solid fa-hand-holding-heart"></i>
+    </div>
+</div>
+
+                
+
+                
+                    <div class="post-nav border-box">
+                        
+                        
+                            <div class="next-post">
+                                <a class="next"
+                                   rel="next"
+                                   href="/2024/04/07/%E9%A1%B9%E7%9B%AE%E5%AE%9E%E6%88%98%E6%BC%94%E7%BB%83/"
+                                   title="项目实战演练"
+                                >
+                                    <span class="title flex-center">
+                                        <span class="post-nav-title-item text-ellipsis">项目实战演练</span>
+                                        <span class="post-nav-item">Next posts</span>
+                                    </span>
+                                    <span class="right arrow-icon flex-center">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        
+                    </div>
+                
+
+                
+                    
+
+
+    <div class="comments-container border-box">
+        <div id="comments-anchor" class="comment-area-title border-box">
+            <i class="fas fa-comments"></i>&nbsp;Comments
+        </div>
+        <div class="comment-plugin-fail border-box">
+    <span class="fail-tip">Comment plugin failed to load</span>
+    <button class="reload keep-button">Click to reload</button>
+</div>
+<div class="comment-plugin-loading flex-center border-box">
+    <i class="loading-icon fa-solid fa-spinner fa-spin"></i>
+    <span class="load-tip">Loading comment plugin</span>
+</div>
+<script data-pjax>
+  window.KeepCommentPlugin = {}
+  window.KeepCommentPlugin.hideLoading = () => {
+    const cplDom = document.querySelector('.comments-container .comment-plugin-loading')
+    cplDom.style.display = 'none'
+  }
+  window.KeepCommentPlugin.loadFailHandle = () => {
+    window.KeepCommentPlugin.hideLoading()
+    const cpfDom = document.querySelector('.comments-container .comment-plugin-fail')
+    cpfDom.style.display = 'flex'
+    cpfDom.querySelector('.reload').addEventListener('click', () => {
+      window.location.reload()
+    })
+  }
+</script>
+
+        
+            
+
+    <div class="valine-container">
+        <div id="vcomments"></div>
+        <script data-pjax
+                src="//cdn.jsdelivr.net/npm/valine@latest/dist/Valine.min.js"
+                async
+                onerror="window.KeepCommentPlugin.loadFailHandle()"
+        ></script>
+        <script data-pjax
+                async
+                onerror="window.KeepCommentPlugin.loadFailHandle()"
+        >
+          window.KeepCommentPlugin.initValine = () => {
+            const config = {
+              el: '#vcomments',
+              appId: 'oKezB5PXBe6SFd75Ab2I1igt-gzGzoHsz',
+              appKey: 'ZyjE4IekdBOYhHEQyVhPqWf9',
+              meta: ['nick', 'mail', 'link'],
+              avatar: 'wavatar',
+              enableQQ: true,
+              placeholder: 'say something..',
+              lang: 'en'.toLowerCase()
+            }
+
+            if ('') {
+              config.serverURLs = ''
+            }
+
+            if (window?.Valine) {
+              new Valine(config)
+              window.KeepCommentPlugin.hideLoading()
+            } else {
+              setTimeout(() => {
+                window.KeepCommentPlugin.initValine()
+              }, 1000)
+            }
+          }
+
+          if ('true' === 'true') {
+            setTimeout(() => {
+              window.KeepCommentPlugin.initValine()
+            }, 1200)
+          } else {
+            window.addEventListener('DOMContentLoaded', window.KeepCommentPlugin.initValine)
+          }
+        </script>
+    </div>
+
+
+        
+    </div>
+
+
+
+
+
+                
+            </div>
+        </div>
+
+        
+            <div class="pc-post-toc left-toc">
+                <div class="post-toc-wrap border-box">
+    <div class="post-toc border-box">
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%8E%A5%E5%8F%A3"><span class="nav-number">1.</span> <span class="nav-text">接口</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%8E%A5%E5%8F%A3%E7%9A%84%E7%B1%BB%E5%9E%8B"><span class="nav-number">1.1.</span> <span class="nav-text">接口的类型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95"><span class="nav-number">1.2.</span> <span class="nav-text">接口测试</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8E%9F%E7%90%86"><span class="nav-number">1.3.</span> <span class="nav-text">原理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%89%B9%E7%82%B9"><span class="nav-number">1.4.</span> <span class="nav-text">特点</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%9E%E7%8E%B0%E6%96%B9%E5%BC%8F"><span class="nav-number">1.5.</span> <span class="nav-text">实现方式</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#HTTP%E5%8D%8F%E8%AE%AE"><span class="nav-number">2.</span> <span class="nav-text">HTTP协议</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%89%B9%E7%82%B9-1"><span class="nav-number">2.1.</span> <span class="nav-text">特点</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#URL"><span class="nav-number">2.2.</span> <span class="nav-text">URL</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#URL%E6%A0%BC%E5%BC%8F"><span class="nav-number">2.2.1.</span> <span class="nav-text">URL格式</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#HTTP%E8%AF%B7%E6%B1%82"><span class="nav-number">2.3.</span> <span class="nav-text">HTTP请求</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AF%B7%E6%B1%82%E8%A1%8C"><span class="nav-number">2.3.1.</span> <span class="nav-text">请求行</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AF%B7%E6%B1%82%E5%A4%B4"><span class="nav-number">2.3.2.</span> <span class="nav-text">请求头</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AF%B7%E6%B1%82%E4%BD%93"><span class="nav-number">2.3.3.</span> <span class="nav-text">请求体</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#HTTP%E7%9B%B8%E5%BA%94"><span class="nav-number">2.4.</span> <span class="nav-text">HTTP相应</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%93%8D%E5%BA%94%E8%A1%8C"><span class="nav-number">2.4.1.</span> <span class="nav-text">响应行</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%93%8D%E5%BA%94%E5%A4%B4"><span class="nav-number">2.4.2.</span> <span class="nav-text">响应头</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%93%8D%E5%BA%94%E4%BD%93"><span class="nav-number">2.4.3.</span> <span class="nav-text">响应体</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BC%A0%E7%BB%9F%E9%A3%8E%E6%A0%BC%E6%8E%A5%E5%8F%A3"><span class="nav-number">2.5.</span> <span class="nav-text">传统风格接口</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#RESTful%E9%A3%8E%E6%A0%BC%E6%8E%A5%E5%8F%A3"><span class="nav-number">2.6.</span> <span class="nav-text">RESTful风格接口</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%95%8C%E5%AE%9ARESTful%E9%A3%8E%E6%A0%BC%E6%8E%A5%E5%8F%A3"><span class="nav-number">2.6.1.</span> <span class="nav-text">界定RESTful风格接口</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#RESTful%E6%9E%B6%E6%9E%84%E7%89%B9%E7%82%B9"><span class="nav-number">2.6.2.</span> <span class="nav-text">RESTful架构特点</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95-1"><span class="nav-number">3.</span> <span class="nav-text">接口测试</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B5%81%E7%A8%8B"><span class="nav-number">3.1.</span> <span class="nav-text">流程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%8E%A5%E5%8F%A3%E6%96%87%E6%A1%A3"><span class="nav-number">3.2.</span> <span class="nav-text">接口文档</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B1%95%E7%8E%B0%E5%BD%A2%E5%BC%8F"><span class="nav-number">3.2.1.</span> <span class="nav-text">展现形式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BB%93%E6%9E%84"><span class="nav-number">3.2.2.</span> <span class="nav-text">结构</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%8E%A5%E5%8F%A3%E6%96%87%E6%A1%A3%E8%A7%A3%E6%9E%90"><span class="nav-number">3.2.3.</span> <span class="nav-text">接口文档解析</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%8E%A5%E5%8F%A3%E8%AE%BE%E8%AE%A1%E7%94%A8%E4%BE%8B"><span class="nav-number">4.</span> <span class="nav-text">接口设计用例</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%82%B9"><span class="nav-number">4.1.</span> <span class="nav-text">接口测试点</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8A%9F%E8%83%BD%E6%B5%8B%E8%AF%95"><span class="nav-number">4.1.1.</span> <span class="nav-text">功能测试</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95"><span class="nav-number">4.1.2.</span> <span class="nav-text">性能测试</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%89%E5%85%A8%E6%B5%8B%E8%AF%95"><span class="nav-number">4.1.3.</span> <span class="nav-text">安全测试</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AE%BE%E8%AE%A1%E6%96%B9%E6%B3%95%E4%B8%8E%E6%80%9D%E8%B7%AF"><span class="nav-number">4.2.</span> <span class="nav-text">设计方法与思路</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%8E%E6%89%8B%E5%B7%A5%E8%AE%BE%E8%AE%A1%E7%9B%B8%E5%90%8C%E4%B9%8B%E5%A4%84"><span class="nav-number">4.2.1.</span> <span class="nav-text">与手工设计相同之处</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%8E%E6%89%8B%E5%B7%A5%E8%AE%BE%E8%AE%A1%E4%B8%8D%E5%90%8C%E4%B9%8B%E5%A4%84"><span class="nav-number">4.2.2.</span> <span class="nav-text">与手工设计不同之处</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8D%95%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B"><span class="nav-number">4.2.3.</span> <span class="nav-text">单接口测试用例</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%9A%E5%8A%A1%E5%9C%BA%E6%99%AF%E5%8A%9F%E8%83%BD"><span class="nav-number">4.2.4.</span> <span class="nav-text">业务场景功能</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Postman%E7%94%A8%E6%B3%95"><span class="nav-number">5.</span> <span class="nav-text">Postman用法</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AE%A1%E7%90%86%E7%94%A8%E4%BE%8B%E9%9B%86"><span class="nav-number">5.1.</span> <span class="nav-text">管理用例集</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Postman%E6%96%AD%E8%A8%80"><span class="nav-number">5.2.</span> <span class="nav-text">Postman断言</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%96%AD%E8%A8%80%E5%93%8D%E5%BA%94%E7%8A%B6%E6%80%81%E7%A0%81"><span class="nav-number">5.2.1.</span> <span class="nav-text">断言响应状态码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%96%AD%E8%A8%80%E5%93%8D%E5%BA%94%E4%BD%93%E6%98%AF%E5%90%A6%E5%8C%85%E5%90%AB%E6%9F%90%E4%B8%AA%E5%AD%97%E7%AC%A6"><span class="nav-number">5.2.2.</span> <span class="nav-text">断言响应体是否包含某个字符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%96%AD%E8%A8%80%E5%93%8D%E5%BA%94%E4%BD%93%E6%98%AF%E5%90%A6%E7%AD%89%E4%BA%8E%E6%9F%90%E4%B8%AA%E5%AD%97%E7%AC%A6%E4%B8%B2%EF%BC%88%E5%AF%B9%E8%B1%A1%EF%BC%89"><span class="nav-number">5.2.3.</span> <span class="nav-text">断言响应体是否等于某个字符串（对象）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%96%AD%E8%A8%80json%E6%95%B0%E6%8D%AE"><span class="nav-number">5.2.4.</span> <span class="nav-text">断言json数据</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%96%AD%E8%A8%80%E5%93%8D%E5%BA%94%E5%A4%B4"><span class="nav-number">5.2.5.</span> <span class="nav-text">断言响应头</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Postman%E5%85%A8%E5%B1%80%E5%8F%98%E9%87%8F-%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F"><span class="nav-number">5.3.</span> <span class="nav-text">Postman全局变量&amp;环境变量</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AE%BE%E7%BD%AE%E5%8F%98%E9%87%8F"><span class="nav-number">5.4.</span> <span class="nav-text">设置变量</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%A8%E5%B1%80%E5%8F%98%E9%87%8F"><span class="nav-number">5.4.1.</span> <span class="nav-text">全局变量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F"><span class="nav-number">5.4.2.</span> <span class="nav-text">环境变量</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%8E%B7%E5%8F%96%E5%8F%98%E9%87%8F%E5%80%BC"><span class="nav-number">5.5.</span> <span class="nav-text">获取变量值</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%A8%E5%B1%80%E5%8F%98%E9%87%8F-1"><span class="nav-number">5.5.1.</span> <span class="nav-text">全局变量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F-1"><span class="nav-number">5.5.2.</span> <span class="nav-text">环境变量</span></a></li></ol></li></ol></li></ol>
+    </div>
+</div>
+
+            </div>
+        
+    </div>
+</div>
+
+
+                
+            </div>
+        </div>
+
+        <div class="page-main-content-bottom border-box">
+            
+<footer class="footer border-box">
+    <div class="border-box website-info-box default">
+        
+            <div class="copyright-info info-item default">
+                &copy;&nbsp;<span>2020</span>&nbsp;-&nbsp;2024
+                
+                    &nbsp;<i class="fas fa-heart icon-animate"></i>&nbsp;&nbsp;<a href="/">Elora</a>
+                
+            </div>
+
+            <div class="theme-info info-item default">
+                Powered by&nbsp;<a target="_blank" href="https://hexo.io">Hexo</a>&nbsp;&&nbsp;Theme&nbsp;<a class="keep-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep">Keep</a>
+            </div>
+
+            
+
+            
+                
+                <div class="deploy-info info-item default">
+                    
+                        This site is deployed on <span class="tooltip" data-tooltip-content="GitHub Pages"><img src="/images/deploy-provider/github.png"></span>
+                    
+                </div>
+            
+        
+
+        <div class="count-item info-item default">
+            
+                <span class="count-box border-box word">
+                    <span class="item-type border-box">Total words</span>
+                    <span class="item-value border-box word">67.9k</span>
+                </span>
+            
+
+            
+                <span class="count-box border-box uv">
+                    <span class="item-type border-box">Unique Visitor</span>
+                    <span class="item-value border-box uv" id="busuanzi_value_site_uv"></span>
+                </span>
+            
+
+            
+                <span class="count-box border-box pv">
+                    <span class="item-type border-box">Page View</span>
+                    <span class="item-value border-box pv" id="busuanzi_value_site_pv"></span>
+                </span>
+            
+        </div>
+    </div>
+</footer>
+
+        </div>
+    </div>
+
+    <!-- post tools -->
+    
+        <div class="post-tools left-toc">
+            <div class="post-tools-container border-box">
+    <ul class="tools-list border-box">
+        <!-- PC TOC show toggle -->
+        
+            <li class="tools-item flex-center toggle-show-toc">
+                <i class="fas fa-list"></i>
+            </li>
+        
+
+        <!-- PC go comment -->
+        
+            <li class="tools-item flex-center go-to-comments">
+                <i class="fas fa-comment"></i>
+                <span class="post-comments-count"></span>
+            </li>
+        
+
+        <!-- PC full screen -->
+        <li class="tools-item flex-center full-screen">
+            <i class="fa-solid fa-expand"></i>
+        </li>
+    </ul>
+</div>
+
+        </div>
+    
+
+    <!-- side tools -->
+    <div class="side-tools">
+        <div class="side-tools-container border-box ">
+    <ul class="side-tools-list side-tools-show-handle border-box">
+        <li class="tools-item tool-font-adjust-plus flex-center">
+            <i class="fas fa-search-plus"></i>
+        </li>
+
+        <li class="tools-item tool-font-adjust-minus flex-center">
+            <i class="fas fa-search-minus"></i>
+        </li>
+
+        <li class="tools-item tool-toggle-theme-mode flex-center">
+            <i class="fas fa-moon"></i>
+        </li>
+
+        <!-- rss -->
+        
+
+        <li class="tools-item tool-scroll-to-bottom flex-center">
+            <i class="fas fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="exposed-tools-list border-box">
+        
+            <li class="tools-item toggle-show-toc-tablet flex-center">
+                <i class="fas fa-list"></i>
+            </li>
+        
+
+        
+            <li class="tools-item go-to-comments-tablet flex-center">
+                <i class="fas fa-comment"></i>
+            </li>
+        
+
+        <li class="tools-item tool-toggle-show flex-center">
+            <i class="fas fa-cog fa-spin"></i>
+        </li>
+
+        <li class="tools-item tool-scroll-to-top flex-center show-arrow">
+            <i class="arrow fas fa-arrow-up"></i>
+            <span class="percent"></span>
+        </li>
+    </ul>
+</div>
+
+    </div>
+
+    <!-- image mask -->
+    <div class="zoom-in-image-mask">
+    <img class="zoom-in-image">
+</div>
+
+
+    <!-- local search -->
+    
+        <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+          <span class="search-input-field-pre">
+            <i class="fas fa-keyboard"></i>
+          </span>
+            <div class="search-input-container">
+                <input autocomplete="off"
+                       autocorrect="off"
+                       autocapitalize="off"
+                       placeholder="Search..."
+                       spellcheck="false"
+                       type="search"
+                       class="search-input"
+                >
+            </div>
+            <span class="close-popup-btn">
+                <i class="fas fa-times"></i>
+            </span>
+        </div>
+        <div id="search-result">
+            <div id="no-result">
+                <i class="fas fa-spinner fa-pulse fa-5x fa-fw"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+    <!-- tablet toc -->
+    
+        <div class="tablet-post-toc-mask">
+            <div class="tablet-post-toc">
+                <div class="post-toc-wrap border-box">
+    <div class="post-toc border-box">
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%8E%A5%E5%8F%A3"><span class="nav-number">1.</span> <span class="nav-text">接口</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%8E%A5%E5%8F%A3%E7%9A%84%E7%B1%BB%E5%9E%8B"><span class="nav-number">1.1.</span> <span class="nav-text">接口的类型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95"><span class="nav-number">1.2.</span> <span class="nav-text">接口测试</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8E%9F%E7%90%86"><span class="nav-number">1.3.</span> <span class="nav-text">原理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%89%B9%E7%82%B9"><span class="nav-number">1.4.</span> <span class="nav-text">特点</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%9E%E7%8E%B0%E6%96%B9%E5%BC%8F"><span class="nav-number">1.5.</span> <span class="nav-text">实现方式</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#HTTP%E5%8D%8F%E8%AE%AE"><span class="nav-number">2.</span> <span class="nav-text">HTTP协议</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%89%B9%E7%82%B9-1"><span class="nav-number">2.1.</span> <span class="nav-text">特点</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#URL"><span class="nav-number">2.2.</span> <span class="nav-text">URL</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#URL%E6%A0%BC%E5%BC%8F"><span class="nav-number">2.2.1.</span> <span class="nav-text">URL格式</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#HTTP%E8%AF%B7%E6%B1%82"><span class="nav-number">2.3.</span> <span class="nav-text">HTTP请求</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AF%B7%E6%B1%82%E8%A1%8C"><span class="nav-number">2.3.1.</span> <span class="nav-text">请求行</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AF%B7%E6%B1%82%E5%A4%B4"><span class="nav-number">2.3.2.</span> <span class="nav-text">请求头</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AF%B7%E6%B1%82%E4%BD%93"><span class="nav-number">2.3.3.</span> <span class="nav-text">请求体</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#HTTP%E7%9B%B8%E5%BA%94"><span class="nav-number">2.4.</span> <span class="nav-text">HTTP相应</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%93%8D%E5%BA%94%E8%A1%8C"><span class="nav-number">2.4.1.</span> <span class="nav-text">响应行</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%93%8D%E5%BA%94%E5%A4%B4"><span class="nav-number">2.4.2.</span> <span class="nav-text">响应头</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%93%8D%E5%BA%94%E4%BD%93"><span class="nav-number">2.4.3.</span> <span class="nav-text">响应体</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BC%A0%E7%BB%9F%E9%A3%8E%E6%A0%BC%E6%8E%A5%E5%8F%A3"><span class="nav-number">2.5.</span> <span class="nav-text">传统风格接口</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#RESTful%E9%A3%8E%E6%A0%BC%E6%8E%A5%E5%8F%A3"><span class="nav-number">2.6.</span> <span class="nav-text">RESTful风格接口</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%95%8C%E5%AE%9ARESTful%E9%A3%8E%E6%A0%BC%E6%8E%A5%E5%8F%A3"><span class="nav-number">2.6.1.</span> <span class="nav-text">界定RESTful风格接口</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#RESTful%E6%9E%B6%E6%9E%84%E7%89%B9%E7%82%B9"><span class="nav-number">2.6.2.</span> <span class="nav-text">RESTful架构特点</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95-1"><span class="nav-number">3.</span> <span class="nav-text">接口测试</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B5%81%E7%A8%8B"><span class="nav-number">3.1.</span> <span class="nav-text">流程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%8E%A5%E5%8F%A3%E6%96%87%E6%A1%A3"><span class="nav-number">3.2.</span> <span class="nav-text">接口文档</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B1%95%E7%8E%B0%E5%BD%A2%E5%BC%8F"><span class="nav-number">3.2.1.</span> <span class="nav-text">展现形式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BB%93%E6%9E%84"><span class="nav-number">3.2.2.</span> <span class="nav-text">结构</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%8E%A5%E5%8F%A3%E6%96%87%E6%A1%A3%E8%A7%A3%E6%9E%90"><span class="nav-number">3.2.3.</span> <span class="nav-text">接口文档解析</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%8E%A5%E5%8F%A3%E8%AE%BE%E8%AE%A1%E7%94%A8%E4%BE%8B"><span class="nav-number">4.</span> <span class="nav-text">接口设计用例</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%82%B9"><span class="nav-number">4.1.</span> <span class="nav-text">接口测试点</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8A%9F%E8%83%BD%E6%B5%8B%E8%AF%95"><span class="nav-number">4.1.1.</span> <span class="nav-text">功能测试</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95"><span class="nav-number">4.1.2.</span> <span class="nav-text">性能测试</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%89%E5%85%A8%E6%B5%8B%E8%AF%95"><span class="nav-number">4.1.3.</span> <span class="nav-text">安全测试</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AE%BE%E8%AE%A1%E6%96%B9%E6%B3%95%E4%B8%8E%E6%80%9D%E8%B7%AF"><span class="nav-number">4.2.</span> <span class="nav-text">设计方法与思路</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%8E%E6%89%8B%E5%B7%A5%E8%AE%BE%E8%AE%A1%E7%9B%B8%E5%90%8C%E4%B9%8B%E5%A4%84"><span class="nav-number">4.2.1.</span> <span class="nav-text">与手工设计相同之处</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%8E%E6%89%8B%E5%B7%A5%E8%AE%BE%E8%AE%A1%E4%B8%8D%E5%90%8C%E4%B9%8B%E5%A4%84"><span class="nav-number">4.2.2.</span> <span class="nav-text">与手工设计不同之处</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8D%95%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B"><span class="nav-number">4.2.3.</span> <span class="nav-text">单接口测试用例</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%9A%E5%8A%A1%E5%9C%BA%E6%99%AF%E5%8A%9F%E8%83%BD"><span class="nav-number">4.2.4.</span> <span class="nav-text">业务场景功能</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Postman%E7%94%A8%E6%B3%95"><span class="nav-number">5.</span> <span class="nav-text">Postman用法</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AE%A1%E7%90%86%E7%94%A8%E4%BE%8B%E9%9B%86"><span class="nav-number">5.1.</span> <span class="nav-text">管理用例集</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Postman%E6%96%AD%E8%A8%80"><span class="nav-number">5.2.</span> <span class="nav-text">Postman断言</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%96%AD%E8%A8%80%E5%93%8D%E5%BA%94%E7%8A%B6%E6%80%81%E7%A0%81"><span class="nav-number">5.2.1.</span> <span class="nav-text">断言响应状态码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%96%AD%E8%A8%80%E5%93%8D%E5%BA%94%E4%BD%93%E6%98%AF%E5%90%A6%E5%8C%85%E5%90%AB%E6%9F%90%E4%B8%AA%E5%AD%97%E7%AC%A6"><span class="nav-number">5.2.2.</span> <span class="nav-text">断言响应体是否包含某个字符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%96%AD%E8%A8%80%E5%93%8D%E5%BA%94%E4%BD%93%E6%98%AF%E5%90%A6%E7%AD%89%E4%BA%8E%E6%9F%90%E4%B8%AA%E5%AD%97%E7%AC%A6%E4%B8%B2%EF%BC%88%E5%AF%B9%E8%B1%A1%EF%BC%89"><span class="nav-number">5.2.3.</span> <span class="nav-text">断言响应体是否等于某个字符串（对象）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%96%AD%E8%A8%80json%E6%95%B0%E6%8D%AE"><span class="nav-number">5.2.4.</span> <span class="nav-text">断言json数据</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%96%AD%E8%A8%80%E5%93%8D%E5%BA%94%E5%A4%B4"><span class="nav-number">5.2.5.</span> <span class="nav-text">断言响应头</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Postman%E5%85%A8%E5%B1%80%E5%8F%98%E9%87%8F-%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F"><span class="nav-number">5.3.</span> <span class="nav-text">Postman全局变量&amp;环境变量</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AE%BE%E7%BD%AE%E5%8F%98%E9%87%8F"><span class="nav-number">5.4.</span> <span class="nav-text">设置变量</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%A8%E5%B1%80%E5%8F%98%E9%87%8F"><span class="nav-number">5.4.1.</span> <span class="nav-text">全局变量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F"><span class="nav-number">5.4.2.</span> <span class="nav-text">环境变量</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%8E%B7%E5%8F%96%E5%8F%98%E9%87%8F%E5%80%BC"><span class="nav-number">5.5.</span> <span class="nav-text">获取变量值</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%A8%E5%B1%80%E5%8F%98%E9%87%8F-1"><span class="nav-number">5.5.1.</span> <span class="nav-text">全局变量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F-1"><span class="nav-number">5.5.2.</span> <span class="nav-text">环境变量</span></a></li></ol></li></ol></li></ol>
+    </div>
+</div>
+
+            </div>
+        </div>
+    
+</main>
+
+
+
+<!-- common -->
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/header-shrink.js"></script>
+
+<script src="/js/back2top.js"></script>
+
+<script src="/js/toggle-theme.js"></script>
+
+<script src="/js/code-block.js"></script>
+
+<script src="/js/main.js"></script>
+
+<script src="/js/libs/anime.min.js"></script>
+
+
+<!-- local-search -->
+
+    
+<script src="/js/local-search.js"></script>
+
+
+
+<!-- lazyload -->
+
+    
+<script src="/js/lazyload.js"></script>
+
+
+
+<div class="pjax">
+    
+        <!-- post-helper -->
+        
+<script src="/js/post/post-helper.js"></script>
+
+
+        <!-- toc -->
+        
+            
+<script src="/js/post/toc.js"></script>
+
+        
+
+        <!-- copyright-info -->
+        
+            
+<script src="/js/post/copyright-info.js"></script>
+
+        
+
+        <!-- share -->
+        
+            
+<script src="/js/post/share.js"></script>
+
+        
+    
+
+    <!-- categories page -->
+    
+
+    <!-- links page -->
+    
+
+    <!-- photos page -->
+    
+
+    <!-- tools page -->
+    
+</div>
+
+<!-- mermaid -->
+
+
+<!-- pjax -->
+
+    
+<script src="/js/libs/pjax.min.js"></script>
+
+<script>
+    window.addEventListener('DOMContentLoaded', () => {
+        window.pjax = new Pjax({
+            selectors: [
+                'head title',
+                '.page-container',
+                '.pjax'
+            ],
+            history: true,
+            debug: false,
+            cacheBust: false,
+            timeout: 0,
+            analytics: false,
+            currentUrlFullReload: false,
+            scrollRestoration: false,
+        });
+
+        document.addEventListener('pjax:send', () => {
+            KEEP.utils.pjaxProgressBarStart()
+        });
+
+        document.addEventListener('pjax:complete', () => {
+            KEEP.utils.pjaxProgressBarEnd()
+            window.pjax.executeScripts(document.querySelectorAll('script[data-pjax], .pjax script'))
+            KEEP.initExecute()
+        });
+    });
+</script>
+
+
+
+
+
+        <style>
+            [bg-lazy] {
+                background-image: none !important;
+                background-color: #eee !important;
+            }
+        </style>
+        <script>
+            window.imageLazyLoadSetting = {
+                isSPA: false,
+                preloadRatio: 1,
+                processImages: null,
+            };
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(r){r.imageLazyLoadSetting.processImages=t;var e=r.imageLazyLoadSetting.isSPA,n=r.imageLazyLoadSetting.preloadRatio||1,c=a();function a(){var t=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")),e=Array.prototype.slice.call(document.querySelectorAll("[bg-lazy]"));return t.concat(e)}function t(){e&&(c=a());for(var t,o=0;o<c.length;o++)0<=(t=(t=c[o]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(r.innerHeight*n||document.documentElement.clientHeight*n)&&function(){var t,e,n,a,i=c[o];e=function(){c=c.filter(function(t){return i!==t}),r.imageLazyLoadSetting.onImageLoaded&&r.imageLazyLoadSetting.onImageLoaded(i)},(t=i).hasAttribute("bg-lazy")?(t.removeAttribute("bg-lazy"),e&&e()):(n=new Image,a=t.getAttribute("data-original"),n.onload=function(){t.src=a,t.removeAttribute("data-original"),e&&e()},t.src!==a&&(n.src=a))}()}function i(){clearTimeout(t.tId),t.tId=setTimeout(t,500)}t(),document.addEventListener("scroll",i),r.addEventListener("resize",i),r.addEventListener("orientationchange",i)}(this);</script><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/wanko.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+</html>
+
+<script type="text/javascript" src="/js/funnytitle.js"></script>
+<script type="text/javascript" src="/js/love.js"></script>
