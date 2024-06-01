@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="Hexo Theme Keep">
+    <meta name="description" content="Hexo Theme Keep">
+    <meta name="author" content="Elora">
+    
+    <title>
+        
+            Java语言与面向程序设计 |
+        
+        Elora blog
+    </title>
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    
+        <link rel="shortcut icon" href="/images/icon16.png">
+    
+    
+<link rel="stylesheet" href="/font/css/fontawesome.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/regular.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/solid.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/brands.min.css">
+
+    
+    <script class="keep-theme-configurations">
+    const KEEP = window.KEEP || {}
+    KEEP.hexo_config = {"hostname":"example.com","root":"/","language":"en","path":"search.json"}
+    KEEP.theme_config = {"base_info":{"primary_color":"#ffe8e9","title":"Elora blog","author":"Elora","avatar":"/images/icon40.png","logo":"/images/icon40.png","favicon":"/images/icon16.png"},"menu":{"home":"/ || fa-solid fa-home","archives":"/archives || fa-solid fa-box-archive","tags":"/tags || fa-solid fa-tags","categories":"/categories || fa-solid fa-layer-group"},"first_screen":{"enable":true,"background_img":"/images/pmgroup.png","background_img_dark":"/images/pmgroup.png","description":"Heroes never die!","hitokoto":false},"social_contact":{"enable":true,"links":{"github":"https://github.com/wRinta","weixin":"img | /images/wechat.png","qq":null,"weibo":null,"zhihu":null,"twitter":null,"x":null,"facebook":null,"email":"wsq1357812@163.com"}},"scroll":{"progress_bar":true,"percent":true,"hide_header":true},"home":{"announcement":"评论没有实时通知！","category":true,"tag":true,"post_datetime":"updated || fa-solid fa-hourglass-start","post_datetime_format":"YYYY-MM-DD HH:mm:ss"},"post":{"author_badge":{"enable":true,"level_badge":false,"custom_badge":["Rinta!"]},"word_count":{"wordcount":true,"min2read":true},"datetime_format":"YYYY-MM-DD HH:mm:ss","copyright_info":true,"share":true,"reward":{"enable":true,"img_link":"/images/reward.png","text":"请作者喝奶茶","img_align":"right"}},"code_block":{"tools":{"enable":true,"style":"mac"},"highlight_theme":"default"},"toc":{"enable":true,"number":true,"expand_all":true,"init_open":true,"layout":"left"},"website_count":{"busuanzi_count":{"enable":true,"site_uv":true,"site_pv":true,"page_pv":true}},"local_search":{"enable":true,"preload":true},"comment":{"enable":true,"use":"valine","valine":{"appid":"oKezB5PXBe6SFd75Ab2I1igt-gzGzoHsz","appkey":"ZyjE4IekdBOYhHEQyVhPqWf9","server_urls":null,"placeholder":"say something.."},"gitalk":{"github_id":"wRinta","github_admins":null,"repository":"repoforcomment","client_id":"78ba639dca276f6befb3","client_secret":"d893b8494166a18989ce599c8e362ccc307f3be9","proxy":null},"twikoo":{"env_id":null,"region":null,"version":"1.6.21"},"waline":{"server_url":null,"reaction":false,"version":2},"giscus":{"repo":null,"repo_id":null,"category":"Announcements","category_id":null,"reactions_enabled":false},"artalk":{"server":null},"disqus":{"shortname":null}},"rss":{"enable":false},"lazyload":{"enable":false},"cdn":{"enable":false,"provider":"cdnjs"},"pjax":{"enable":true},"footer":{"since":2020,"word_count":true,"icp":{"enable":false,"record_code":null,"url":"https://beian.miit.gov.cn"},"site_deploy":{"enable":true,"provider":"github","url":null},"shields_style":{"enable":false,"custom":[{"link_url":null,"img_url":null}]}},"inject":{"enable":false,"css":[null],"js":[null]},"root":"","source_data":{},"version":"4.1.0"}
+    KEEP.language_ago = {"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days ago","week":"%s weeks ago","month":"%s months ago","year":"%s years ago"}
+    KEEP.language_code_block = {"copy":"Copy code","copied":"Copied","fold":"Fold code block","folded":"Folded"}
+    KEEP.language_copy_copyright = {"copy":"Copy copyright info","copied":"Copied","title":"Original post title","author":"Original post author","link":"Original post link"}
+  </script>
+<meta name="generator" content="Hexo 7.1.1"><link rel="alternate" href="/atom.xml" title="hexo" type="application/atom+xml">
+</head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+        <span class="scroll-progress-bar"></span>
+    
+
+    
+        <span class="pjax-progress-bar"></span>
+        <i class="pjax-progress-icon fas fa-circle-notch fa-spin"></i>
+    
+</div>
+
+
+
+<main class="page-container border-box">
+    <!-- home first screen  -->
+    
+
+    <!-- page content -->
+    <div class="page-main-content border-box">
+        <div class="page-main-content-top">
+            
+<header class="header-wrapper">
+
+    <div class="border-box header-content">
+        <div class="left border-box">
+            
+                <a class="logo-image border-box" href="/">
+                    <img src="/images/icon40.png">
+                </a>
+            
+            <a class="site-name border-box" href="/">
+               Elora blog
+            </a>
+        </div>
+
+        <div class="right border-box">
+            <div class="pc">
+                <ul class="menu-list">
+                    
+                        
+                        <li class="menu-item">
+                            <a class=""
+                               href="/"
+                            >
+                                
+                                    <i class="menu-icon fa-solid fa-home"></i>
+                                
+                                HOME
+                            </a>
+                        </li>
+                    
+                        
+                        <li class="menu-item">
+                            <a class=""
+                               href="/archives"
+                            >
+                                
+                                    <i class="menu-icon fa-solid fa-box-archive"></i>
+                                
+                                ARCHIVES
+                            </a>
+                        </li>
+                    
+                        
+                        <li class="menu-item">
+                            <a class=""
+                               href="/tags"
+                            >
+                                
+                                    <i class="menu-icon fa-solid fa-tags"></i>
+                                
+                                TAGS
+                            </a>
+                        </li>
+                    
+                        
+                        <li class="menu-item">
+                            <a class=""
+                               href="/categories"
+                            >
+                                
+                                    <i class="menu-icon fa-solid fa-layer-group"></i>
+                                
+                                CATEGORIES
+                            </a>
+                        </li>
+                    
+                    
+                        <li class="menu-item search search-popup-trigger">
+                            <i class="fas search fa-search"></i>
+                        </li>
+                    
+                </ul>
+            </div>
+            <div class="mobile">
+                
+                    <div class="icon-item search search-popup-trigger"><i class="fas fa-search"></i></div>
+                
+                <div class="icon-item menu-bar">
+                    <div class="menu-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-drawer">
+        <ul class="drawer-menu-list">
+            
+                
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/"
+                    >HOME</a>
+                </li>
+            
+                
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/archives"
+                    >ARCHIVES</a>
+                </li>
+            
+                
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/tags"
+                    >TAGS</a>
+                </li>
+            
+                
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/categories"
+                    >CATEGORIES</a>
+                </li>
+            
+        </ul>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="page-main-content-middle border-box">
+
+            <div class="main-content border-box">
+                
+
+                    
+<div class="fade-in-down-animation">
+    <div class="post-page-container border-box">
+        <div class="post-content-container border-box">
+            
+                <div class="post-content-top border-box"
+                     style="height: 120px"
+                >
+                    <div class="cover-post-title">
+                        Java语言与面向程序设计
+                    </div>
+                    <img class="post-cover" src="/images/pmgroup.png"
+                         onerror="this.style.display='none'"
+                    >
+                </div>
+            
+
+            <div class="post-content-bottom border-box has-cover">
+                
+
+                
+                    <div class="post-header border-box">
+                        
+                            <div class="avatar-box border-box">
+                                <img src="/images/icon40.png">
+                            </div>
+                        
+                        <div class="info-box">
+                            <div class="author border-box">
+                                <span class="name">Elora</span>
+                                
+                                    <span class="author-badge">Rinta!</span>
+                                
+                            </div>
+                            <div class="meta-info border-box">
+                                
+
+<div class="post-meta-info-container border-box post">
+    <div class="post-meta-info border-box">
+        
+
+        
+            <span class="meta-info-item post-create-date">
+                <i class="icon fa-solid fa-calendar-plus"></i>&nbsp;
+                <span class="datetime">2024-06-01 17:47:48</span>
+            </span>
+
+            <span class="meta-info-item post-update-date">
+                <i class="icon fa-solid fa-file-pen"></i>&nbsp;
+                <span class="datetime" data-updated="Sat Jun 01 2024 17:48:35 GMT+0800">2024-06-01 17:48:35</span>
+            </span>
+        
+
+        
+            <span class="meta-info-item post-category border-box"><i class="icon fas fa-folder"></i>&nbsp;
+                <ul class="post-category-ul">
+                    
+                            <li class="category-item"><a href="/categories/Java-Learning/">Java Learning</a></li>
+                        
+                    
+                </ul>
+            </span>
+        
+
+        
+            <span class="post-tag meta-info-item border-box">
+                <ul class="post-tag-ul">
+                    
+                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/Java/">Java</a></li>
+                        
+                    
+                </ul>
+            </span>
+        
+
+        
+        
+            <span class="meta-info-item post-wordcount">
+                <i class="icon fas fa-file-word"></i>&nbsp;<span>875 Words</span>
+            </span>
+        
+        
+            <span class="meta-info-item post-min2read">
+                <i class="icon fas fa-clock"></i>&nbsp;<span>3 Mins</span>
+            </span>
+        
+        
+            <span class="meta-info-item post-pv">
+                <i class="icon fas fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
+            </span>
+        
+    </div>
+
+    
+</div>
+
+                            </div>
+                        </div>
+                    </div>
+                
+
+                <div class="post-content keep-markdown-body">
+                    
+                        <div class="post-aging-tips"
+                             data-update-date="Sat Jun 01 2024 17:48:35 GMT+0800"
+                             data-aging-days="120"
+                        >
+                            <i class="fa-solid fa-circle-exclamation"></i>It has been <span class="days">0</span> days since the last update of this post. Some contents may be outdated. Please pay attention to screening.
+                        </div>
+                    
+
+                    <h1 id="Java语言与面向程序设计"><a href="#Java语言与面向程序设计" class="headerlink" title="Java语言与面向程序设计"></a>Java语言与面向程序设计</h1><h2 id="Java发展历程"><a href="#Java发展历程" class="headerlink" title="Java发展历程"></a>Java发展历程</h2><h3 id="Internet发展这的两次飞跃"><a href="#Internet发展这的两次飞跃" class="headerlink" title="Internet发展这的两次飞跃"></a>Internet发展这的两次飞跃</h3><ul>
+<li>www 万维网</li>
+<li>Java 将网页转为动态</li>
+</ul>
+<h3 id="Java的出现"><a href="#Java的出现" class="headerlink" title="Java的出现"></a>Java的出现</h3><p>1990 SUN公司开发，改进C++</p>
+<p>1994年 Oak语言</p>
+<h3 id="Java三大平台"><a href="#Java三大平台" class="headerlink" title="Java三大平台"></a>Java三大平台</h3><ul>
+<li>Java SE 标准版（J2SE 桌面应用）</li>
+<li>Java EE 企业版（J2EE 网页应用）</li>
+<li>Java ME 微型版（J2ME 手机应用）</li>
+</ul>
+<h2 id="Java语言的特点"><a href="#Java语言的特点" class="headerlink" title="Java语言的特点"></a>Java语言的特点</h2><ul>
+<li>简单易学</li>
+<li><strong>面向对象</strong></li>
+<li><strong>平台无关性</strong></li>
+<li>安全稳定</li>
+<li>支持多线程</li>
+<li>具有丰富的库</li>
+</ul>
+<h3 id="Java是C-–"><a href="#Java是C-–" class="headerlink" title="Java是C++–"></a>Java是C++–</h3><ul>
+<li>无直接指针操作</li>
+<li>自动内存管理</li>
+<li>数据类型长度固定</li>
+<li>不用头文件</li>
+<li>不包含结构和联合</li>
+<li>不支持宏</li>
+<li>不用多用继承</li>
+<li>无类外全局变量</li>
+<li>无GOTO</li>
+</ul>
+<h2 id="Java运行机制"><a href="#Java运行机制" class="headerlink" title="Java运行机制"></a>Java运行机制</h2><h3 id="Java三种核心机制"><a href="#Java三种核心机制" class="headerlink" title="Java三种核心机制"></a>Java三种核心机制</h3><ul>
+<li>Java虚拟机（JVM）</li>
+<li>代码安全性测试（ Code Security）</li>
+<li>垃圾收集机制（Garbage Collection）</li>
+</ul>
+<p><img src="/2024/06/01/Java%E8%AF%AD%E8%A8%80%E4%B8%8E%E9%9D%A2%E5%90%91%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/image-20231003222433439.png" alt="image-20231003222433439"></p>
+<h3 id="JVM"><a href="#JVM" class="headerlink" title="JVM"></a>JVM</h3><p>JVM读取并处理经编译过的字节码class文件。</p>
+<p>JVM规范定义了：</p>
+<ul>
+<li>指令集</li>
+<li>寄存器集</li>
+<li>类文件结构</li>
+<li>堆栈</li>
+<li>垃圾收集堆</li>
+<li>内存区域</li>
+</ul>
+<h3 id="Java运行环境（The-Java-Runtime-Environment）"><a href="#Java运行环境（The-Java-Runtime-Environment）" class="headerlink" title="Java运行环境（The Java Runtime Environment）"></a>Java运行环境（The Java Runtime Environment）</h3><p><strong>JRE &#x3D; JVM + API（Lib）</strong>由虚拟机装载程序并调用相应指令执行</p>
+<p>JRE运行程序时的三项主要功能：</p>
+<ul>
+<li>加载代码：由class loader完成；</li>
+<li>校验代码：由bytecode verifier完成；</li>
+<li>执行代码： 由runtime interpreter完成。</li>
+</ul>
+<h3 id="Java自动垃圾回收技术"><a href="#Java自动垃圾回收技术" class="headerlink" title="Java自动垃圾回收技术"></a>Java自动垃圾回收技术</h3><p>在C&#x2F;C++语言中，程序员负责回收无用内存。</p>
+<p>GC：</p>
+<ul>
+<li><p>系统级线程跟踪存储空间的分配情况</p>
+</li>
+<li><p>在JVM的空闲时，检查并释放那些可被释放的存储器空间</p>
+</li>
+<li><p>程序员无需也无法精确控制和干预该回收过过程。</p>
+</li>
+</ul>
+<h3 id="JDK"><a href="#JDK" class="headerlink" title="JDK"></a>JDK</h3><p><img src="/2024/06/01/Java%E8%AF%AD%E8%A8%80%E4%B8%8E%E9%9D%A2%E5%90%91%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/image-20231003223555114.png" alt="image-20231003223555114"></p>
+<p>JDK &#x3D; JRE + TOOLS</p>
+<p>JRE &#x3D; JVM + API</p>
+<h2 id="面向对象的程序设计"><a href="#面向对象的程序设计" class="headerlink" title="面向对象的程序设计"></a>面向对象的程序设计</h2><h3 id="对象"><a href="#对象" class="headerlink" title="对象"></a>对象</h3><ul>
+<li>现实世界中：客观世界中的一个实体</li>
+<li>计算机世界中：<strong>一个可标识的存储区域</strong></li>
+</ul>
+<h3 id="类"><a href="#类" class="headerlink" title="类"></a>类</h3><p>具有共同属性和行为的对象集合</p>
+<ul>
+<li>属性：变量（字段field）</li>
+<li>行为：函数（方法method）</li>
+</ul>
+<h3 id="类与对象的关系"><a href="#类与对象的关系" class="headerlink" title="类与对象的关系"></a>类与对象的关系</h3><ul>
+<li><p>类是对象的抽象（模板）</p>
+</li>
+<li><p>对象是类的实例</p>
+<p><em>类和对象有时都统称“对象”，为了明确起见，后者成为“对象实例”</em></p>
+</li>
+</ul>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//类</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Person</span>&#123;</span><br><span class="line">    <span class="type">int</span> age;</span><br><span class="line">    String name;</span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">sayHello</span><span class="params">()</span></span>&#123;...&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//对象</span></span><br><span class="line">Person p =<span class="keyword">new</span> <span class="built_in">Person</span>()</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="面向对象的三大特征"><a href="#面向对象的三大特征" class="headerlink" title="面向对象的三大特征"></a>面向对象的三大特征</h3><h4 id="封装性"><a href="#封装性" class="headerlink" title="封装性"></a>封装性</h4><ul>
+<li><p>模块化：将属性和行为封装在类中，程序定义很多类，</p>
+</li>
+<li><p>信息隐蔽：将类的细节部分隐藏起来，用户只通过受保护的接口访问某个类</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Person</span>&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="type">int</span> age;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="type">int</span> <span class="title">getAge</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="keyword">return</span> age;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="type">void</span> <span class="title">setAgw</span><span class="params">(<span class="type">int</span> a)</span></span>&#123;</span><br><span class="line">        age =a<span class="number">&#x27;</span></span><br><span class="line">    &#125;</span><br><span class="line">    String name;</span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">sayHello</span><span class="params">()</span></span>&#123;...&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="继承性"><a href="#继承性" class="headerlink" title="继承性"></a>继承性</h4><p>父类和子类之间共享数据和方法</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//父类</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Person</span>&#123;</span><br><span class="line">	<span class="type">int</span> age;</span><br><span class="line">	String name;</span><br><span class="line">	<span class="function"><span class="type">void</span> <span class="title">sayHello</span><span class="params">()</span></span>&#123;...&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//子类</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Student</span> extends Person&#123;</span><br><span class="line">    String school;</span><br><span class="line">    <span class="type">double</span> score;</span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">meetTeacher</span><span class="params">()</span></span>&#123;...&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>继承的好处</strong>：</p>
+<ul>
+<li>更好地进行抽象与分类</li>
+<li>增强代码的重用率</li>
+<li>提高可维护性</li>
+</ul>
+<h4 id="多态性"><a href="#多态性" class="headerlink" title="多态性"></a>多态性</h4><ul>
+<li>不同的对象收到同一个消息（调用方法）可产生完全不同的效果</li>
+<li>实现的细节则有接受对象自行决定</li>
+</ul>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">foo</span>(Person p)&#123;p.<span class="built_in">sayHello</span>();&#125;</span><br><span class="line"><span class="built_in">foo</span>(<span class="keyword">new</span> <span class="built_in">Student</span>());<span class="comment">//调用学生的打招呼函数</span></span><br><span class="line"><span class="built_in">foo</span>(<span class="keyword">new</span> <span class="built_in">Teacher</span>());<span class="comment">//调用老师的打招呼函数</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="要点"><a href="#要点" class="headerlink" title="要点"></a>要点</h3><ul>
+<li>认为客观世界由各种对象组成</li>
+<li>程序的分析和设计都围绕着<ul>
+<li>有哪些对象类</li>
+<li>每个类有哪些属性、哪些方法</li>
+<li>类之间的关系（继承、关联等）</li>
+<li>对象之间发送消息（调用方法）</li>
+</ul>
+</li>
+</ul>
+
+                </div>
+                
+                        
+<div class="post-copyright-info-container border-box">
+    <div class="copyright-info-content border-box">
+        <div class="copyright-info-top border-box">
+            <div class="copyright-post-title border-box text-ellipsis">
+                Java语言与面向程序设计
+            </div>
+
+            <div class="copyright-post-link border-box text-ellipsis">
+                2024/06/01/Java语言与面向程序设计/
+            </div>
+        </div>
+
+        <div class="copyright-info-bottom border-box">
+            <div class="copyright-post-author bottom-item">
+                <div class="type">
+                    Author
+                </div>
+                <div class="content">Elora</div>
+            </div>
+
+            <div class="post-time bottom-item">
+                <div class="type">
+                    Published
+                </div>
+                <div class="content">2024-06-01 17:47</div>
+            </div>
+
+
+            <div class="post-license bottom-item">
+                <div class="type">
+                    License
+                </div>
+                <div class="content tooltip" data-tooltip-content="CC BY-NC-SA 4.0">
+                    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed" target="_blank">
+                        
+                            <i class="fa-brands fa-creative-commons"></i>
+                            <i class="fa-brands fa-creative-commons-by"></i>
+                            <i class="fa-brands fa-creative-commons-nc"></i>
+                            <i class="fa-brands fa-creative-commons-sa"></i>
+                        
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <i class="copyright-bg fa-solid fa-copyright"></i>
+    </div>
+    <div class="copy-copyright-info flex-center tooltip" data-tooltip-content="Copy copyright info" data-tooltip-offset-y="-2px">
+        <i class="fa-solid fa-copy"></i>
+    </div>
+</div>
+
+                
+
+                <div class="post-bottom-tags-and-share border-box">
+                    <div>
+                        
+                            <ul class="post-tags-box border-box">
+                                
+                                    <li class="tag-item border-box">
+                                        <i class="icon fas fa-hashtag"></i>&nbsp;<a href="/tags/Java/">Java</a>
+                                    </li>
+                                
+                            </ul>
+                        
+                    </div>
+                    <div>
+                        
+                            <div class="post-share-container border-box">
+    <ul class="share-list-wrap border-box">
+        <li class="qq share-item border-box flex-center tooltip"
+            data-tooltip-content="Share to QQ"
+        >
+            <i class="fa-brands fa-qq"></i>
+        </li>
+        <li class="wechat share-item border-box flex-center tooltip tooltip-img"
+            data-tooltip-content="Share to WeChat"
+            data-tooltip-img-tip="Scan by WeChat"
+            data-tooltip-img-style="background-color: #fff; top: -10px; padding: 0.6rem 0.6rem 0.1rem 0.6rem;"
+        >
+            <i class="fa-brands fa-weixin"></i>
+        </li>
+        <li class="weibo share-item border-box flex-center tooltip"
+            data-tooltip-content="Share to WeiBo"
+        >
+            <i class="fa-brands fa-weibo"></i>
+        </li>
+    </ul>
+</div>
+
+                        
+                    </div>
+                </div>
+
+                
+                    <div class="reward-author-container border-box flex-center">
+    <div class="reward-btn keep-button border-box flex-center tooltip tooltip-img"
+            data-tooltip-content="请作者喝奶茶"
+            data-tooltip-img-url="/images/reward.png"
+            data-tooltip-img-trigger="click"
+            data-tooltip-img-style="top: -8px;"
+    >
+        <i class="fa-solid fa-hand-holding-heart"></i>
+    </div>
+</div>
+
+                
+
+                
+                    <div class="post-nav border-box">
+                        
+                        
+                            <div class="next-post">
+                                <a class="next"
+                                   rel="next"
+                                   href="/2024/06/01/%E7%AE%80%E5%8D%95%E7%9A%84Java%E7%A8%8B%E5%BA%8F/"
+                                   title="简单的Java程序"
+                                >
+                                    <span class="title flex-center">
+                                        <span class="post-nav-title-item text-ellipsis">简单的Java程序</span>
+                                        <span class="post-nav-item">Next posts</span>
+                                    </span>
+                                    <span class="right arrow-icon flex-center">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        
+                    </div>
+                
+
+                
+                    
+
+
+    <div class="comments-container border-box">
+        <div id="comments-anchor" class="comment-area-title border-box">
+            <i class="fas fa-comments"></i>&nbsp;Comments
+        </div>
+        <div class="comment-plugin-fail border-box">
+    <span class="fail-tip">Comment plugin failed to load</span>
+    <button class="reload keep-button">Click to reload</button>
+</div>
+<div class="comment-plugin-loading flex-center border-box">
+    <i class="loading-icon fa-solid fa-spinner fa-spin"></i>
+    <span class="load-tip">Loading comment plugin</span>
+</div>
+<script data-pjax>
+  window.KeepCommentPlugin = {}
+  window.KeepCommentPlugin.hideLoading = () => {
+    const cplDom = document.querySelector('.comments-container .comment-plugin-loading')
+    cplDom.style.display = 'none'
+  }
+  window.KeepCommentPlugin.loadFailHandle = () => {
+    window.KeepCommentPlugin.hideLoading()
+    const cpfDom = document.querySelector('.comments-container .comment-plugin-fail')
+    cpfDom.style.display = 'flex'
+    cpfDom.querySelector('.reload').addEventListener('click', () => {
+      window.location.reload()
+    })
+  }
+</script>
+
+        
+            
+
+    <div class="valine-container">
+        <div id="vcomments"></div>
+        <script data-pjax
+                src="//cdn.jsdelivr.net/npm/valine@latest/dist/Valine.min.js"
+                async
+                onerror="window.KeepCommentPlugin.loadFailHandle()"
+        ></script>
+        <script data-pjax
+                async
+                onerror="window.KeepCommentPlugin.loadFailHandle()"
+        >
+          window.KeepCommentPlugin.initValine = () => {
+            const config = {
+              el: '#vcomments',
+              appId: 'oKezB5PXBe6SFd75Ab2I1igt-gzGzoHsz',
+              appKey: 'ZyjE4IekdBOYhHEQyVhPqWf9',
+              meta: ['nick', 'mail', 'link'],
+              avatar: 'wavatar',
+              enableQQ: true,
+              placeholder: 'say something..',
+              lang: 'en'.toLowerCase()
+            }
+
+            if ('') {
+              config.serverURLs = ''
+            }
+
+            if (window?.Valine) {
+              new Valine(config)
+              window.KeepCommentPlugin.hideLoading()
+            } else {
+              setTimeout(() => {
+                window.KeepCommentPlugin.initValine()
+              }, 1000)
+            }
+          }
+
+          if ('true' === 'true') {
+            setTimeout(() => {
+              window.KeepCommentPlugin.initValine()
+            }, 1200)
+          } else {
+            window.addEventListener('DOMContentLoaded', window.KeepCommentPlugin.initValine)
+          }
+        </script>
+    </div>
+
+
+        
+    </div>
+
+
+
+
+
+                
+            </div>
+        </div>
+
+        
+            <div class="pc-post-toc left-toc">
+                <div class="post-toc-wrap border-box">
+    <div class="post-toc border-box">
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Java%E8%AF%AD%E8%A8%80%E4%B8%8E%E9%9D%A2%E5%90%91%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1"><span class="nav-number">1.</span> <span class="nav-text">Java语言与面向程序设计</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Java%E5%8F%91%E5%B1%95%E5%8E%86%E7%A8%8B"><span class="nav-number">1.1.</span> <span class="nav-text">Java发展历程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Internet%E5%8F%91%E5%B1%95%E8%BF%99%E7%9A%84%E4%B8%A4%E6%AC%A1%E9%A3%9E%E8%B7%83"><span class="nav-number">1.1.1.</span> <span class="nav-text">Internet发展这的两次飞跃</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Java%E7%9A%84%E5%87%BA%E7%8E%B0"><span class="nav-number">1.1.2.</span> <span class="nav-text">Java的出现</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Java%E4%B8%89%E5%A4%A7%E5%B9%B3%E5%8F%B0"><span class="nav-number">1.1.3.</span> <span class="nav-text">Java三大平台</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Java%E8%AF%AD%E8%A8%80%E7%9A%84%E7%89%B9%E7%82%B9"><span class="nav-number">1.2.</span> <span class="nav-text">Java语言的特点</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Java%E6%98%AFC-%E2%80%93"><span class="nav-number">1.2.1.</span> <span class="nav-text">Java是C++–</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Java%E8%BF%90%E8%A1%8C%E6%9C%BA%E5%88%B6"><span class="nav-number">1.3.</span> <span class="nav-text">Java运行机制</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Java%E4%B8%89%E7%A7%8D%E6%A0%B8%E5%BF%83%E6%9C%BA%E5%88%B6"><span class="nav-number">1.3.1.</span> <span class="nav-text">Java三种核心机制</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#JVM"><span class="nav-number">1.3.2.</span> <span class="nav-text">JVM</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Java%E8%BF%90%E8%A1%8C%E7%8E%AF%E5%A2%83%EF%BC%88The-Java-Runtime-Environment%EF%BC%89"><span class="nav-number">1.3.3.</span> <span class="nav-text">Java运行环境（The Java Runtime Environment）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Java%E8%87%AA%E5%8A%A8%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6%E6%8A%80%E6%9C%AF"><span class="nav-number">1.3.4.</span> <span class="nav-text">Java自动垃圾回收技术</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#JDK"><span class="nav-number">1.3.5.</span> <span class="nav-text">JDK</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%9A%84%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1"><span class="nav-number">1.4.</span> <span class="nav-text">面向对象的程序设计</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AF%B9%E8%B1%A1"><span class="nav-number">1.4.1.</span> <span class="nav-text">对象</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%B1%BB"><span class="nav-number">1.4.2.</span> <span class="nav-text">类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%B1%BB%E4%B8%8E%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%85%B3%E7%B3%BB"><span class="nav-number">1.4.3.</span> <span class="nav-text">类与对象的关系</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%9A%84%E4%B8%89%E5%A4%A7%E7%89%B9%E5%BE%81"><span class="nav-number">1.4.4.</span> <span class="nav-text">面向对象的三大特征</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%B0%81%E8%A3%85%E6%80%A7"><span class="nav-number">1.4.4.1.</span> <span class="nav-text">封装性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%BB%A7%E6%89%BF%E6%80%A7"><span class="nav-number">1.4.4.2.</span> <span class="nav-text">继承性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%A4%9A%E6%80%81%E6%80%A7"><span class="nav-number">1.4.4.3.</span> <span class="nav-text">多态性</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%A6%81%E7%82%B9"><span class="nav-number">1.4.5.</span> <span class="nav-text">要点</span></a></li></ol></li></ol></li></ol>
+    </div>
+</div>
+
+            </div>
+        
+    </div>
+</div>
+
+
+                
+            </div>
+        </div>
+
+        <div class="page-main-content-bottom border-box">
+            
+<footer class="footer border-box">
+    <div class="border-box website-info-box default">
+        
+            <div class="copyright-info info-item default">
+                &copy;&nbsp;<span>2020</span>&nbsp;-&nbsp;2024
+                
+                    &nbsp;<i class="fas fa-heart icon-animate"></i>&nbsp;&nbsp;<a href="/">Elora</a>
+                
+            </div>
+
+            <div class="theme-info info-item default">
+                Powered by&nbsp;<a target="_blank" href="https://hexo.io">Hexo</a>&nbsp;&&nbsp;Theme&nbsp;<a class="keep-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep">Keep</a>
+            </div>
+
+            
+
+            
+                
+                <div class="deploy-info info-item default">
+                    
+                        This site is deployed on <span class="tooltip" data-tooltip-content="GitHub Pages"><img src="/images/deploy-provider/github.png"></span>
+                    
+                </div>
+            
+        
+
+        <div class="count-item info-item default">
+            
+                <span class="count-box border-box word">
+                    <span class="item-type border-box">Total words</span>
+                    <span class="item-value border-box word">75.1k</span>
+                </span>
+            
+
+            
+                <span class="count-box border-box uv">
+                    <span class="item-type border-box">Unique Visitor</span>
+                    <span class="item-value border-box uv" id="busuanzi_value_site_uv"></span>
+                </span>
+            
+
+            
+                <span class="count-box border-box pv">
+                    <span class="item-type border-box">Page View</span>
+                    <span class="item-value border-box pv" id="busuanzi_value_site_pv"></span>
+                </span>
+            
+        </div>
+    </div>
+</footer>
+
+        </div>
+    </div>
+
+    <!-- post tools -->
+    
+        <div class="post-tools left-toc">
+            <div class="post-tools-container border-box">
+    <ul class="tools-list border-box">
+        <!-- PC TOC show toggle -->
+        
+            <li class="tools-item flex-center toggle-show-toc">
+                <i class="fas fa-list"></i>
+            </li>
+        
+
+        <!-- PC go comment -->
+        
+            <li class="tools-item flex-center go-to-comments">
+                <i class="fas fa-comment"></i>
+                <span class="post-comments-count"></span>
+            </li>
+        
+
+        <!-- PC full screen -->
+        <li class="tools-item flex-center full-screen">
+            <i class="fa-solid fa-expand"></i>
+        </li>
+    </ul>
+</div>
+
+        </div>
+    
+
+    <!-- side tools -->
+    <div class="side-tools">
+        <div class="side-tools-container border-box ">
+    <ul class="side-tools-list side-tools-show-handle border-box">
+        <li class="tools-item tool-font-adjust-plus flex-center">
+            <i class="fas fa-search-plus"></i>
+        </li>
+
+        <li class="tools-item tool-font-adjust-minus flex-center">
+            <i class="fas fa-search-minus"></i>
+        </li>
+
+        <li class="tools-item tool-toggle-theme-mode flex-center">
+            <i class="fas fa-moon"></i>
+        </li>
+
+        <!-- rss -->
+        
+
+        <li class="tools-item tool-scroll-to-bottom flex-center">
+            <i class="fas fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="exposed-tools-list border-box">
+        
+            <li class="tools-item toggle-show-toc-tablet flex-center">
+                <i class="fas fa-list"></i>
+            </li>
+        
+
+        
+            <li class="tools-item go-to-comments-tablet flex-center">
+                <i class="fas fa-comment"></i>
+            </li>
+        
+
+        <li class="tools-item tool-toggle-show flex-center">
+            <i class="fas fa-cog fa-spin"></i>
+        </li>
+
+        <li class="tools-item tool-scroll-to-top flex-center show-arrow">
+            <i class="arrow fas fa-arrow-up"></i>
+            <span class="percent"></span>
+        </li>
+    </ul>
+</div>
+
+    </div>
+
+    <!-- image mask -->
+    <div class="zoom-in-image-mask">
+    <img class="zoom-in-image">
+</div>
+
+
+    <!-- local search -->
+    
+        <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+          <span class="search-input-field-pre">
+            <i class="fas fa-keyboard"></i>
+          </span>
+            <div class="search-input-container">
+                <input autocomplete="off"
+                       autocorrect="off"
+                       autocapitalize="off"
+                       placeholder="Search..."
+                       spellcheck="false"
+                       type="search"
+                       class="search-input"
+                >
+            </div>
+            <span class="close-popup-btn">
+                <i class="fas fa-times"></i>
+            </span>
+        </div>
+        <div id="search-result">
+            <div id="no-result">
+                <i class="fas fa-spinner fa-pulse fa-5x fa-fw"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+    <!-- tablet toc -->
+    
+        <div class="tablet-post-toc-mask">
+            <div class="tablet-post-toc">
+                <div class="post-toc-wrap border-box">
+    <div class="post-toc border-box">
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Java%E8%AF%AD%E8%A8%80%E4%B8%8E%E9%9D%A2%E5%90%91%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1"><span class="nav-number">1.</span> <span class="nav-text">Java语言与面向程序设计</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Java%E5%8F%91%E5%B1%95%E5%8E%86%E7%A8%8B"><span class="nav-number">1.1.</span> <span class="nav-text">Java发展历程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Internet%E5%8F%91%E5%B1%95%E8%BF%99%E7%9A%84%E4%B8%A4%E6%AC%A1%E9%A3%9E%E8%B7%83"><span class="nav-number">1.1.1.</span> <span class="nav-text">Internet发展这的两次飞跃</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Java%E7%9A%84%E5%87%BA%E7%8E%B0"><span class="nav-number">1.1.2.</span> <span class="nav-text">Java的出现</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Java%E4%B8%89%E5%A4%A7%E5%B9%B3%E5%8F%B0"><span class="nav-number">1.1.3.</span> <span class="nav-text">Java三大平台</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Java%E8%AF%AD%E8%A8%80%E7%9A%84%E7%89%B9%E7%82%B9"><span class="nav-number">1.2.</span> <span class="nav-text">Java语言的特点</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Java%E6%98%AFC-%E2%80%93"><span class="nav-number">1.2.1.</span> <span class="nav-text">Java是C++–</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Java%E8%BF%90%E8%A1%8C%E6%9C%BA%E5%88%B6"><span class="nav-number">1.3.</span> <span class="nav-text">Java运行机制</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Java%E4%B8%89%E7%A7%8D%E6%A0%B8%E5%BF%83%E6%9C%BA%E5%88%B6"><span class="nav-number">1.3.1.</span> <span class="nav-text">Java三种核心机制</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#JVM"><span class="nav-number">1.3.2.</span> <span class="nav-text">JVM</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Java%E8%BF%90%E8%A1%8C%E7%8E%AF%E5%A2%83%EF%BC%88The-Java-Runtime-Environment%EF%BC%89"><span class="nav-number">1.3.3.</span> <span class="nav-text">Java运行环境（The Java Runtime Environment）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Java%E8%87%AA%E5%8A%A8%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6%E6%8A%80%E6%9C%AF"><span class="nav-number">1.3.4.</span> <span class="nav-text">Java自动垃圾回收技术</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#JDK"><span class="nav-number">1.3.5.</span> <span class="nav-text">JDK</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%9A%84%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1"><span class="nav-number">1.4.</span> <span class="nav-text">面向对象的程序设计</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AF%B9%E8%B1%A1"><span class="nav-number">1.4.1.</span> <span class="nav-text">对象</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%B1%BB"><span class="nav-number">1.4.2.</span> <span class="nav-text">类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%B1%BB%E4%B8%8E%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%85%B3%E7%B3%BB"><span class="nav-number">1.4.3.</span> <span class="nav-text">类与对象的关系</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%9A%84%E4%B8%89%E5%A4%A7%E7%89%B9%E5%BE%81"><span class="nav-number">1.4.4.</span> <span class="nav-text">面向对象的三大特征</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%B0%81%E8%A3%85%E6%80%A7"><span class="nav-number">1.4.4.1.</span> <span class="nav-text">封装性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%BB%A7%E6%89%BF%E6%80%A7"><span class="nav-number">1.4.4.2.</span> <span class="nav-text">继承性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%A4%9A%E6%80%81%E6%80%A7"><span class="nav-number">1.4.4.3.</span> <span class="nav-text">多态性</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%A6%81%E7%82%B9"><span class="nav-number">1.4.5.</span> <span class="nav-text">要点</span></a></li></ol></li></ol></li></ol>
+    </div>
+</div>
+
+            </div>
+        </div>
+    
+</main>
+
+
+
+<!-- common -->
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/header-shrink.js"></script>
+
+<script src="/js/back2top.js"></script>
+
+<script src="/js/toggle-theme.js"></script>
+
+<script src="/js/code-block.js"></script>
+
+<script src="/js/main.js"></script>
+
+<script src="/js/libs/anime.min.js"></script>
+
+
+<!-- local-search -->
+
+    
+<script src="/js/local-search.js"></script>
+
+
+
+<!-- lazyload -->
+
+
+<div class="pjax">
+    
+        <!-- post-helper -->
+        
+<script src="/js/post/post-helper.js"></script>
+
+
+        <!-- toc -->
+        
+            
+<script src="/js/post/toc.js"></script>
+
+        
+
+        <!-- copyright-info -->
+        
+            
+<script src="/js/post/copyright-info.js"></script>
+
+        
+
+        <!-- share -->
+        
+            
+<script src="/js/post/share.js"></script>
+
+        
+    
+
+    <!-- categories page -->
+    
+
+    <!-- links page -->
+    
+
+    <!-- photos page -->
+    
+
+    <!-- tools page -->
+    
+</div>
+
+<!-- mermaid -->
+
+
+<!-- pjax -->
+
+    
+<script src="/js/libs/pjax.min.js"></script>
+
+<script>
+    window.addEventListener('DOMContentLoaded', () => {
+        window.pjax = new Pjax({
+            selectors: [
+                'head title',
+                '.page-container',
+                '.pjax'
+            ],
+            history: true,
+            debug: false,
+            cacheBust: false,
+            timeout: 0,
+            analytics: false,
+            currentUrlFullReload: false,
+            scrollRestoration: false,
+        });
+
+        document.addEventListener('pjax:send', () => {
+            KEEP.utils.pjaxProgressBarStart()
+        });
+
+        document.addEventListener('pjax:complete', () => {
+            KEEP.utils.pjaxProgressBarEnd()
+            window.pjax.executeScripts(document.querySelectorAll('script[data-pjax], .pjax script'))
+            KEEP.initExecute()
+        });
+    });
+</script>
+
+
+
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/wanko.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+</html>
+
+<script type="text/javascript" src="/js/funnytitle.js"></script>
+<script type="text/javascript" src="/js/love.js"></script>

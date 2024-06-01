@@ -1,0 +1,1106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="Hexo Theme Keep">
+    <meta name="description" content="Hexo Theme Keep">
+    <meta name="author" content="Elora">
+    
+    <title>
+        
+            简单的Java程序 |
+        
+        Elora blog
+    </title>
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    
+        <link rel="shortcut icon" href="/images/icon16.png">
+    
+    
+<link rel="stylesheet" href="/font/css/fontawesome.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/regular.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/solid.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/brands.min.css">
+
+    
+    <script class="keep-theme-configurations">
+    const KEEP = window.KEEP || {}
+    KEEP.hexo_config = {"hostname":"example.com","root":"/","language":"en","path":"search.json"}
+    KEEP.theme_config = {"base_info":{"primary_color":"#ffe8e9","title":"Elora blog","author":"Elora","avatar":"/images/icon40.png","logo":"/images/icon40.png","favicon":"/images/icon16.png"},"menu":{"home":"/ || fa-solid fa-home","archives":"/archives || fa-solid fa-box-archive","tags":"/tags || fa-solid fa-tags","categories":"/categories || fa-solid fa-layer-group"},"first_screen":{"enable":true,"background_img":"/images/pmgroup.png","background_img_dark":"/images/pmgroup.png","description":"Heroes never die!","hitokoto":false},"social_contact":{"enable":true,"links":{"github":"https://github.com/wRinta","weixin":"img | /images/wechat.png","qq":null,"weibo":null,"zhihu":null,"twitter":null,"x":null,"facebook":null,"email":"wsq1357812@163.com"}},"scroll":{"progress_bar":true,"percent":true,"hide_header":true},"home":{"announcement":"评论没有实时通知！","category":true,"tag":true,"post_datetime":"updated || fa-solid fa-hourglass-start","post_datetime_format":"YYYY-MM-DD HH:mm:ss"},"post":{"author_badge":{"enable":true,"level_badge":false,"custom_badge":["Rinta!"]},"word_count":{"wordcount":true,"min2read":true},"datetime_format":"YYYY-MM-DD HH:mm:ss","copyright_info":true,"share":true,"reward":{"enable":true,"img_link":"/images/reward.png","text":"请作者喝奶茶","img_align":"right"}},"code_block":{"tools":{"enable":true,"style":"mac"},"highlight_theme":"default"},"toc":{"enable":true,"number":true,"expand_all":true,"init_open":true,"layout":"left"},"website_count":{"busuanzi_count":{"enable":true,"site_uv":true,"site_pv":true,"page_pv":true}},"local_search":{"enable":true,"preload":true},"comment":{"enable":true,"use":"valine","valine":{"appid":"oKezB5PXBe6SFd75Ab2I1igt-gzGzoHsz","appkey":"ZyjE4IekdBOYhHEQyVhPqWf9","server_urls":null,"placeholder":"say something.."},"gitalk":{"github_id":"wRinta","github_admins":null,"repository":"repoforcomment","client_id":"78ba639dca276f6befb3","client_secret":"d893b8494166a18989ce599c8e362ccc307f3be9","proxy":null},"twikoo":{"env_id":null,"region":null,"version":"1.6.21"},"waline":{"server_url":null,"reaction":false,"version":2},"giscus":{"repo":null,"repo_id":null,"category":"Announcements","category_id":null,"reactions_enabled":false},"artalk":{"server":null},"disqus":{"shortname":null}},"rss":{"enable":false},"lazyload":{"enable":false},"cdn":{"enable":false,"provider":"cdnjs"},"pjax":{"enable":true},"footer":{"since":2020,"word_count":true,"icp":{"enable":false,"record_code":null,"url":"https://beian.miit.gov.cn"},"site_deploy":{"enable":true,"provider":"github","url":null},"shields_style":{"enable":false,"custom":[{"link_url":null,"img_url":null}]}},"inject":{"enable":false,"css":[null],"js":[null]},"root":"","source_data":{},"version":"4.1.0"}
+    KEEP.language_ago = {"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days ago","week":"%s weeks ago","month":"%s months ago","year":"%s years ago"}
+    KEEP.language_code_block = {"copy":"Copy code","copied":"Copied","fold":"Fold code block","folded":"Folded"}
+    KEEP.language_copy_copyright = {"copy":"Copy copyright info","copied":"Copied","title":"Original post title","author":"Original post author","link":"Original post link"}
+  </script>
+<meta name="generator" content="Hexo 7.1.1"><link rel="alternate" href="/atom.xml" title="hexo" type="application/atom+xml">
+</head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+        <span class="scroll-progress-bar"></span>
+    
+
+    
+        <span class="pjax-progress-bar"></span>
+        <i class="pjax-progress-icon fas fa-circle-notch fa-spin"></i>
+    
+</div>
+
+
+
+<main class="page-container border-box">
+    <!-- home first screen  -->
+    
+
+    <!-- page content -->
+    <div class="page-main-content border-box">
+        <div class="page-main-content-top">
+            
+<header class="header-wrapper">
+
+    <div class="border-box header-content">
+        <div class="left border-box">
+            
+                <a class="logo-image border-box" href="/">
+                    <img src="/images/icon40.png">
+                </a>
+            
+            <a class="site-name border-box" href="/">
+               Elora blog
+            </a>
+        </div>
+
+        <div class="right border-box">
+            <div class="pc">
+                <ul class="menu-list">
+                    
+                        
+                        <li class="menu-item">
+                            <a class=""
+                               href="/"
+                            >
+                                
+                                    <i class="menu-icon fa-solid fa-home"></i>
+                                
+                                HOME
+                            </a>
+                        </li>
+                    
+                        
+                        <li class="menu-item">
+                            <a class=""
+                               href="/archives"
+                            >
+                                
+                                    <i class="menu-icon fa-solid fa-box-archive"></i>
+                                
+                                ARCHIVES
+                            </a>
+                        </li>
+                    
+                        
+                        <li class="menu-item">
+                            <a class=""
+                               href="/tags"
+                            >
+                                
+                                    <i class="menu-icon fa-solid fa-tags"></i>
+                                
+                                TAGS
+                            </a>
+                        </li>
+                    
+                        
+                        <li class="menu-item">
+                            <a class=""
+                               href="/categories"
+                            >
+                                
+                                    <i class="menu-icon fa-solid fa-layer-group"></i>
+                                
+                                CATEGORIES
+                            </a>
+                        </li>
+                    
+                    
+                        <li class="menu-item search search-popup-trigger">
+                            <i class="fas search fa-search"></i>
+                        </li>
+                    
+                </ul>
+            </div>
+            <div class="mobile">
+                
+                    <div class="icon-item search search-popup-trigger"><i class="fas fa-search"></i></div>
+                
+                <div class="icon-item menu-bar">
+                    <div class="menu-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-drawer">
+        <ul class="drawer-menu-list">
+            
+                
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/"
+                    >HOME</a>
+                </li>
+            
+                
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/archives"
+                    >ARCHIVES</a>
+                </li>
+            
+                
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/tags"
+                    >TAGS</a>
+                </li>
+            
+                
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/categories"
+                    >CATEGORIES</a>
+                </li>
+            
+        </ul>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="page-main-content-middle border-box">
+
+            <div class="main-content border-box">
+                
+
+                    
+<div class="fade-in-down-animation">
+    <div class="post-page-container border-box">
+        <div class="post-content-container border-box">
+            
+                <div class="post-content-top border-box"
+                     style="height: 120px"
+                >
+                    <div class="cover-post-title">
+                        简单的Java程序
+                    </div>
+                    <img class="post-cover" src="/images/pmgroup.png"
+                         onerror="this.style.display='none'"
+                    >
+                </div>
+            
+
+            <div class="post-content-bottom border-box has-cover">
+                
+
+                
+                    <div class="post-header border-box">
+                        
+                            <div class="avatar-box border-box">
+                                <img src="/images/icon40.png">
+                            </div>
+                        
+                        <div class="info-box">
+                            <div class="author border-box">
+                                <span class="name">Elora</span>
+                                
+                                    <span class="author-badge">Rinta!</span>
+                                
+                            </div>
+                            <div class="meta-info border-box">
+                                
+
+<div class="post-meta-info-container border-box post">
+    <div class="post-meta-info border-box">
+        
+
+        
+            <span class="meta-info-item post-create-date">
+                <i class="icon fa-solid fa-calendar-plus"></i>&nbsp;
+                <span class="datetime">2024-06-01 17:41:53</span>
+            </span>
+
+            <span class="meta-info-item post-update-date">
+                <i class="icon fa-solid fa-file-pen"></i>&nbsp;
+                <span class="datetime" data-updated="Sat Jun 01 2024 17:44:47 GMT+0800">2024-06-01 17:44:47</span>
+            </span>
+        
+
+        
+            <span class="meta-info-item post-category border-box"><i class="icon fas fa-folder"></i>&nbsp;
+                <ul class="post-category-ul">
+                    
+                            <li class="category-item"><a href="/categories/Java-Learning/">Java Learning</a></li>
+                        
+                    
+                </ul>
+            </span>
+        
+
+        
+            <span class="post-tag meta-info-item border-box">
+                <ul class="post-tag-ul">
+                    
+                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/Java/">Java</a></li>
+                        
+                    
+                </ul>
+            </span>
+        
+
+        
+        
+            <span class="meta-info-item post-wordcount">
+                <i class="icon fas fa-file-word"></i>&nbsp;<span>2k Words</span>
+            </span>
+        
+        
+            <span class="meta-info-item post-min2read">
+                <i class="icon fas fa-clock"></i>&nbsp;<span>8 Mins</span>
+            </span>
+        
+        
+            <span class="meta-info-item post-pv">
+                <i class="icon fas fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
+            </span>
+        
+    </div>
+
+    
+</div>
+
+                            </div>
+                        </div>
+                    </div>
+                
+
+                <div class="post-content keep-markdown-body">
+                    
+                        <div class="post-aging-tips"
+                             data-update-date="Sat Jun 01 2024 17:44:47 GMT+0800"
+                             data-aging-days="120"
+                        >
+                            <i class="fa-solid fa-circle-exclamation"></i>It has been <span class="days">0</span> days since the last update of this post. Some contents may be outdated. Please pay attention to screening.
+                        </div>
+                    
+
+                    <h1 id="简单的Java程序"><a href="#简单的Java程序" class="headerlink" title="简单的Java程序"></a>简单的Java程序</h1><h2 id="Java程序的类型"><a href="#Java程序的类型" class="headerlink" title="Java程序的类型"></a>Java程序的类型</h2><ul>
+<li>Application 应用程序</li>
+<li>Applet 小应用程序</li>
+</ul>
+<ol>
+<li>结构和运行环境不同</li>
+<li>前者是独立的程序，需要执行器（调用虚拟机）来运行</li>
+<li>后者是嵌在HTML网页中的非独立的程序<ul>
+<li>由专门的appletViewer来运行</li>
+<li>或者由Web浏览器（调用Java虚拟机）来运行</li>
+</ul>
+</li>
+</ol>
+<h3 id="Application程序"><a href="#Application程序" class="headerlink" title="Application程序"></a>Application程序</h3><ul>
+<li><p>HelloWorld.java</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">HelloWorldApp</span>&#123;<span class="comment">//定义类</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span> <span class="params">(String args[])</span>&#123;<span class="comment">//main方法</span></span><br><span class="line">        System.out.println(<span class="string">&quot;Hello world!&quot;</span>);<span class="comment">//显示并换行</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>要点</p>
+<ul>
+<li>class是主体</li>
+<li>public类名与文件同名</li>
+<li>main()的写法是固定的</li>
+<li>System.out.print 及println及printf</li>
+</ul>
+</li>
+</ul>
+<h3 id="Applet程序"><a href="#Applet程序" class="headerlink" title="Applet程序"></a>Applet程序</h3><ul>
+<li><p>HelloWorldApplet.java</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.awt.*;</span><br><span class="line"><span class="keyword">import</span> java,applet.*;</span><br><span class="line"><span class="keyword">import</span> javax.swing.*;</span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">HelloWorldApplet</span> <span class="keyword">extends</span> <span class="title class_">JApplet</span>&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">paint</span><span class="params">(Graphics g)</span>&#123;</span><br><span class="line">        g.drawString(<span class="string">&quot;Hello World!&quot;</span>,<span class="number">20</span>,<span class="number">20</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p>import表示导入</p>
+</li>
+<li><p>extends JApplet表示继承</p>
+<p><em>Applet或JApplet都可以</em></p>
+</li>
+<li><p>paint()方法表示如何绘制</p>
+</li>
+<li><p>没有main()方法</p>
+</li>
+</ul>
+</li>
+<li><p>HelloWorldApplet.html</p>
+</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">title</span>&gt;</span>An Applet<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">applet</span> <span class="attr">code</span>=<span class="string">&quot;HelloWorldApplet.class&quot;</span> <span class="attr">width</span>=<span class="string">200</span> <span class="attr">height</span>=<span class="string">40</span> <span class="attr">background</span>=<span class="string">white</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">applet</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="Java程序的基本构成"><a href="#Java程序的基本构成" class="headerlink" title="Java程序的基本构成"></a>Java程序的基本构成</h3><ul>
+<li><p>HelloDate.java</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> edu.pku.tds.ch02;<span class="comment">//package语句（0或1句）文件位于包的路径，没有说明在当前路径下</span></span><br><span class="line"><span class="keyword">import</span> java.util.*;<span class="comment">//import 语句（0或1句），导入其他类的库。.*表示这个包的一系列类</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">HelloDate</span>&#123;&#125;<span class="comment">//类定义——class（1个或多个），一个文件只能有一个public类（与文件同名）</span></span><br></pre></td></tr></table></figure>
+
+
+</li>
+<li><p>类&#x3D;类头+类体</p>
+</li>
+<li><p>类成员&#x3D;字段（field）+方法（method）</p>
+<ul>
+<li>字段（field）：属性，变量</li>
+<li>方法（method）：函数</li>
+</ul>
+</li>
+<li><p>方法&#x3D;方法头+方法体</p>
+</li>
+</ul>
+<h2 id="Java程序开发的步骤"><a href="#Java程序开发的步骤" class="headerlink" title="Java程序开发的步骤"></a>Java程序开发的步骤</h2><ul>
+<li>源程序编辑：可用任一文本编辑器</li>
+<li>程序编译：jdk中的javac工具 <em>将.java转化成.class文件</em></li>
+<li>程序运行：java工具</li>
+</ul>
+<h3 id="JDK安装后的文件夹"><a href="#JDK安装后的文件夹" class="headerlink" title="JDK安装后的文件夹"></a>JDK安装后的文件夹</h3><ul>
+<li>bin ：该目录存放工具文件</li>
+<li>jre：存放与java运行环境相关的文件，与官网下载的jre有区别</li>
+<li>demo：存放一些示例文件</li>
+<li>include：存放与C相关的头文件</li>
+<li>lib：存放程序库</li>
+<li>db：数据库相关</li>
+</ul>
+<h3 id="Application的编辑、编译与运行"><a href="#Application的编辑、编译与运行" class="headerlink" title="Application的编辑、编译与运行"></a>Application的编辑、编译与运行</h3><ul>
+<li><p>程序编辑：编辑器——文件名要与public class的类名一致<strong>（区分大小写）</strong></p>
+</li>
+<li><p>程序编译——转换为字节码（bytecode）文件</p>
+<ul>
+<li>（.class文件中包含jvm的指令）</li>
+<li>编译可以使用jdk工具javac.exe</li>
+<li>如javac Hello.java</li>
+</ul>
+</li>
+<li><p>程序的运行——执行.class文件中的指令过程</p>
+<ul>
+<li>如 java Hello</li>
+<li><strong>注意：不要写成java Hello.class因为这里需要的是类名，不是文件名</strong></li>
+</ul>
+</li>
+</ul>
+<h3 id="设定path和classpath"><a href="#设定path和classpath" class="headerlink" title="设定path和classpath"></a>设定path和classpath</h3><ul>
+<li><p>path是命令（java和javac）的路径，classpath是所要引用的类的路径</p>
+</li>
+<li><p>可以在命令行上设定</p>
+<figure class="highlight dockerfile"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">set path=.;c:\jdk\bin   //.表示当前文件夹，..代表上一文件夹，:代表多个路径的分隔符</span><br></pre></td></tr></table></figure>
+
+
+</li>
+<li><p>也可以在系统环境中设定（环境变量）</p>
+</li>
+<li><p>在javac及java命令行上使用-classpath（或-cp）选项可以引用别的库</p>
+</li>
+</ul>
+<figure class="highlight dockerfile"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">javac -cp libxx.jar 源文件名.java</span><br><span class="line">java -cp libxx.jar 类名</span><br></pre></td></tr></table></figure>
+
+<h3 id="使用package时的编译"><a href="#使用package时的编译" class="headerlink" title="使用package时的编译"></a>使用package时的编译</h3><ul>
+<li>文件及路径一致</li>
+<li>程序中使用package语句</li>
+<li>使用import语句</li>
+<li>编译及运行</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">//-d表示生成的类放在哪个文件夹下面去</span><br><span class="line">javac -d classes src\edu\pku\tds\ui\*.java</span><br><span class="line">src\edu\pku\tds\util\*.java src\edu\pku\tds\.java</span><br><span class="line">/-cp表示运行类时寻找的路径</span><br><span class="line">java -cp classes edu.pku.tds.PackageTest</span><br></pre></td></tr></table></figure>
+
+<h3 id="其他的工具"><a href="#其他的工具" class="headerlink" title="其他的工具"></a>其他的工具</h3><ul>
+<li><p>主要的工具</p>
+<ul>
+<li><p>javac ：编译</p>
+</li>
+<li><p>java：运行（控制台及图形界面程序）</p>
+</li>
+<li><p>javaw：运行图形界面程序</p>
+</li>
+<li><p>appletViewer：运行applet程序</p>
+</li>
+</ul>
+</li>
+<li><p>另外几个常用的工具</p>
+<ul>
+<li>jar：打包工具</li>
+<li>javadoc：生成文档</li>
+<li>javap：查看类信息及反汇编</li>
+</ul>
+</li>
+</ul>
+<h4 id="使用jar打包"><a href="#使用jar打包" class="headerlink" title="使用jar打包"></a>使用jar打包</h4><ol>
+<li><p>编译：<em>javac A.java</em></p>
+</li>
+<li><p>打包：<em>jar cvfm  A.jar  A.man  A.class</em></p>
+<p>c表示创建（create），v表示显示详情（verbose），f表示指定文件名，m表示清单文件</p>
+</li>
+<li><p>运行 <em>java  -jar A.jar</em></p>
+</li>
+</ol>
+<ul>
+<li><p>其中A.man 是清单文件（maniifest），内容如下：</p>
+<ul>
+<li>Manifest-Version:1.0</li>
+<li>Class-Path:.</li>
+<li>Main-Class:A</li>
+</ul>
+</li>
+<li><p>清单文件可以任意命名，常见的是用MANIFEST.MF</p>
+</li>
+</ul>
+<h4 id="使用JavaDoc生成文档"><a href="#使用JavaDoc生成文档" class="headerlink" title="使用JavaDoc生成文档"></a>使用JavaDoc生成文档</h4><ul>
+<li>javadoc -d 目录名xxx.java</li>
+<li>&#x2F;**     *&#x2F; 这其中可以用以下标记<ul>
+<li>@author：对类的说明，标明开发该类模块的作者</li>
+<li>@version：对类的说明，标明该类模块的版本</li>
+<li>@see：对类、属性、方法的说明，参考转向，也就是相关主题</li>
+<li>@param：对方法的说明，对方法中某参数的说明</li>
+<li>@return：对方法的说明，对方法返回值的说明</li>
+<li>@exception：对方法的说明，对方法可能抛出的异常进行说明</li>
+</ul>
+</li>
+</ul>
+<h4 id="java的api文档"><a href="#java的api文档" class="headerlink" title="java的api文档"></a>java的api文档</h4><ul>
+<li>在线文档：<a class="link" target="_blank" rel="noopener" href="https://docs/oracle.com/javase/8/docs/api/index.html">https://docs/oracle.com/javase/8/docs/api/index.html<i class="fas fa-external-link-alt"></i></a></li>
+<li>下载网页格式的文档：doc.zip</li>
+<li>从网上搜索到chm格式的文档：JDK_API_1_6_zh_CN.CHM</li>
+</ul>
+<h4 id="使用javap"><a href="#使用javap" class="headerlink" title="使用javap"></a>使用javap</h4><ul>
+<li><p>使用javap查看类的信息：<em>javap 类名</em></p>
+</li>
+<li><p>使用javap反汇编：<em>javap -c 类名</em></p>
+<p><em>生成为jvm的指令</em></p>
+</li>
+</ul>
+<h3 id="输入与输出"><a href="#输入与输出" class="headerlink" title="输入与输出"></a>输入与输出</h3><h4 id="文本界面的输入输出"><a href="#文本界面的输入输出" class="headerlink" title="文本界面的输入输出"></a>文本界面的输入输出</h4><ul>
+<li>java application的输入输出可以是文本界面和图形界面</li>
+<li>java applet只能是图形界面</li>
+</ul>
+<ol>
+<li><p>文本界面：使用java.util.Scanner类 <em>Since JDK1.5</em></p>
+<ul>
+<li><p>用nextIInt()，nextDouble()方法</p>
+</li>
+<li><p>next()得到下一个单词</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//ScannerTest.java</span></span><br><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"><span class="keyword">class</span> <span class="title class_">ScannerTest</span>&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span> <span class="params">( String[] args)</span>&#123;</span><br><span class="line">        <span class="type">Scanner</span> <span class="variable">scanner</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line">        System.out.print(<span class="string">&quot;请输入一个数&quot;</span>);</span><br><span class="line">        <span class="type">int</span> <span class="variable">a</span> <span class="operator">=</span> scanner.nextint();</span><br><span class="line">        System.out.pritntf(<span class="string">&quot;%d的平方是%d\n&quot;</span>,a,a*a);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li><p>文本界面：使用in及out</p>
+<ul>
+<li><p>java.io包</p>
+</li>
+<li><p>System.in.read()</p>
+</li>
+<li><p>System.out.print()及println、printf</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//AppCharInOut.java</span></span><br><span class="line"><span class="type">char</span> <span class="variable">c</span> <span class="operator">=</span> <span class="string">&#x27; &#x27;</span>;</span><br><span class="line">System.out.print(<span class="string">&quot;Please input a char:&quot;</span>);</span><br><span class="line"><span class="keyword">try</span>&#123;</span><br><span class="line">	c= (<span class="type">char</span>)System.in.read();</span><br><span class="line">&#125;<span class="keyword">catch</span>(IOException e)&#123;&#125;<span class="comment">//试图读入，catch ioexception</span></span><br><span class="line">System.out.println(<span class="string">&quot;You have entered :&quot;</span>+c);</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//AppLineInOut.java 输入输出行</span></span><br><span class="line"><span class="keyword">try</span>&#123;</span><br><span class="line">    <span class="type">BufferedReader</span> <span class="variable">in</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">BufferedReader</span>(</span><br><span class="line">    	<span class="keyword">new</span> <span class="title class_">InputStreamReader</span>(System in));<span class="comment">//封装字符流</span></span><br><span class="line">    s= in.readLine();</span><br><span class="line">&#125;<span class="keyword">catch</span>(IOException e)&#123;&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//AppNumInOut.java 输入输出数字</span></span><br><span class="line">BufferedReader in <span class="keyword">new</span> <span class="title class_">BufferedReader</span>(</span><br><span class="line">	<span class="keyword">new</span> <span class="title class_">InputStreamReader</span>(System.in));</span><br><span class="line">System.out.print(<span class="string">&quot;Please input an int:&quot;</span>);</span><br><span class="line">s - in,readLine();</span><br><span class="line">n =Integer.parseInt( s );<span class="comment">//实数：Double.parseDouble(s)</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+</ol>
+<h4 id="图形界面的输入输出"><a href="#图形界面的输入输出" class="headerlink" title="图形界面的输入输出"></a>图形界面的输入输出</h4><p>在图形界面下可以</p>
+<ul>
+<li>使用文本框对象（TextFeild）获取用户输入的数据</li>
+<li>使用标签对象（Label）或文本框对象输出数据</li>
+<li>使用命令按钮（Button）来执行命令</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//先创建自己的图形界面，new一个AppGraphInOut,java</span></span><br><span class="line"><span class="comment">//通过创建一个Frame创建自己的用户界面，在构建AppFrame试，设置该Frame的大小，并用setVisible(true)方法显示出来</span></span><br><span class="line">setLayout( <span class="keyword">new</span> <span class="title class_">FlowLayout</span>());</span><br><span class="line">add(in);</span><br><span class="line">add(btn);</span><br><span class="line">add(out);</span><br><span class="line"><span class="comment">//add(xxxx)加入对象</span></span><br><span class="line">btn.addActionListener( <span class="keyword">new</span> <span class="title class_">BtnActionAdapter</span>());<span class="comment">//添加动作监听器,处理事件</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">BtnActionAdapter</span> <span class="keyword">implements</span> <span class="title class_">ActionListener</span><span class="comment">//事件处理器</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">actionPerformed</span><span class="params">( ActionEvent e)</span></span><br><span class="line">        <span class="comment">//actionPerformed方法</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="type">String</span> <span class="variable">s</span> <span class="operator">=</span> in.getText();</span><br><span class="line">        <span class="type">double</span> <span class="variable">d</span> <span class="operator">=</span> Double.parseDouble(s);</span><br><span class="line">        <span class="type">double</span> <span class="variable">sq</span> <span class="operator">=</span> Math.sqrt(d);</span><br><span class="line">        out.setText(d + <span class="string">&quot;平方根是：&quot;</span>+ sq);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>完整代码（通过控件显示输入输出）：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.awt.*;</span><br><span class="line"><span class="keyword">import</span> java.awt.event.*;</span><br><span class="line"><span class="keyword">import</span> javax.swing.*;</span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">AppGraphInOut</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span> <span class="params">(String args[])</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">new</span> <span class="title class_">AppFrame</span>();<span class="comment">//构造窗口对象</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">class</span> <span class="title class_">AppFrame</span> <span class="keyword">extends</span> <span class="title class_">JFrame</span><span class="comment">//swing包里JFrame,J可以不写</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">JTextField</span> <span class="variable">in</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">JTextField</span>(<span class="number">10</span>);</span><br><span class="line">    <span class="type">JButton</span> <span class="variable">btn</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">JButton</span>(<span class="string">&quot;求平方&quot;</span>);</span><br><span class="line">    <span class="type">JLabel</span> <span class="variable">out</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">JLabel</span>(<span class="string">&quot;用于显示结果的标签&quot;</span>);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">AppFrame</span><span class="params">()</span><span class="comment">//AppFrame的构造方法</span></span><br><span class="line">    &#123;</span><br><span class="line">        setLayout( <span class="keyword">new</span> <span class="title class_">FlowLayout</span>());<span class="comment">//设定布局为流式布局（加进来的东西一个个的放进来）</span></span><br><span class="line">        getContentPane().add(in);<span class="comment">//直接写add也可以，JFrame在内容上添加</span></span><br><span class="line">        getContentPane().add(btn);</span><br><span class="line">        getContentPane().add(out);</span><br><span class="line">        btn.addActionListener( <span class="keyword">new</span> <span class="title class_">BtnActionAdapter</span>() );<span class="comment">//添加事件监听对象</span></span><br><span class="line">        setSize(<span class="number">400</span>,<span class="number">100</span>);</span><br><span class="line">        setDefaultCloseOperation(DISPOSE_ON_CLOSE);<span class="comment">//默认关闭按钮退出程序</span></span><br><span class="line">        setVisible(<span class="literal">true</span>);<span class="comment">//显示出来</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">class</span> <span class="title class_">BtnActionAdapter</span> <span class="keyword">implements</span> <span class="title class_">ActionListener</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">actionPerformed</span> <span class="params">(ActionEvent e)</span><span class="comment">//actionevent:动作事件</span></span><br><span class="line">        &#123;</span><br><span class="line">            <span class="type">String</span> <span class="variable">s</span> <span class="operator">=</span> in.getText();<span class="comment">//从文本框获取文本</span></span><br><span class="line">            <span class="type">double</span> <span class="variable">d</span> <span class="operator">=</span> Double.parseDouble(s);<span class="comment">//转化成实数</span></span><br><span class="line">            <span class="type">double</span> <span class="variable">sq</span> <span class="operator">=</span> d * d;</span><br><span class="line">            out.setText( d + <span class="string">&quot;的平方是：&quot;</span>+ sq);<span class="comment">//显示出来</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>在java8中可简写为e-&gt;(lambda表达式)</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">btn.addActionListener( e-&gt;&#123;</span><br><span class="line">    <span class="type">String</span> <span class="variable">s</span> <span class="operator">=</span> in.getText();<span class="comment">//从文本框获取文本</span></span><br><span class="line">    <span class="type">double</span> <span class="variable">d</span> <span class="operator">=</span> Double.parseDouble(s);<span class="comment">//转化成实数</span></span><br><span class="line">    <span class="type">double</span> <span class="variable">sq</span> <span class="operator">=</span> Math.sqrt(d);</span><br><span class="line">    out.setText( d + <span class="string">&quot;的平方是：&quot;</span>+ sq);<span class="comment">//显示出来</span></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<h3 id="开发环境"><a href="#开发环境" class="headerlink" title="开发环境"></a>开发环境</h3><p>（1）直接使用jdk</p>
+<p>javac,java,appletViewer</p>
+<p>（2）文本工具+调用jdk命令</p>
+<p>notepad++</p>
+<p>（3）集成开发环境（IDE:integrated development environment)</p>
+
+                </div>
+                
+                        
+<div class="post-copyright-info-container border-box">
+    <div class="copyright-info-content border-box">
+        <div class="copyright-info-top border-box">
+            <div class="copyright-post-title border-box text-ellipsis">
+                简单的Java程序
+            </div>
+
+            <div class="copyright-post-link border-box text-ellipsis">
+                2024/06/01/简单的Java程序/
+            </div>
+        </div>
+
+        <div class="copyright-info-bottom border-box">
+            <div class="copyright-post-author bottom-item">
+                <div class="type">
+                    Author
+                </div>
+                <div class="content">Elora</div>
+            </div>
+
+            <div class="post-time bottom-item">
+                <div class="type">
+                    Published
+                </div>
+                <div class="content">2024-06-01 17:41</div>
+            </div>
+
+
+            <div class="post-license bottom-item">
+                <div class="type">
+                    License
+                </div>
+                <div class="content tooltip" data-tooltip-content="CC BY-NC-SA 4.0">
+                    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed" target="_blank">
+                        
+                            <i class="fa-brands fa-creative-commons"></i>
+                            <i class="fa-brands fa-creative-commons-by"></i>
+                            <i class="fa-brands fa-creative-commons-nc"></i>
+                            <i class="fa-brands fa-creative-commons-sa"></i>
+                        
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <i class="copyright-bg fa-solid fa-copyright"></i>
+    </div>
+    <div class="copy-copyright-info flex-center tooltip" data-tooltip-content="Copy copyright info" data-tooltip-offset-y="-2px">
+        <i class="fa-solid fa-copy"></i>
+    </div>
+</div>
+
+                
+
+                <div class="post-bottom-tags-and-share border-box">
+                    <div>
+                        
+                            <ul class="post-tags-box border-box">
+                                
+                                    <li class="tag-item border-box">
+                                        <i class="icon fas fa-hashtag"></i>&nbsp;<a href="/tags/Java/">Java</a>
+                                    </li>
+                                
+                            </ul>
+                        
+                    </div>
+                    <div>
+                        
+                            <div class="post-share-container border-box">
+    <ul class="share-list-wrap border-box">
+        <li class="qq share-item border-box flex-center tooltip"
+            data-tooltip-content="Share to QQ"
+        >
+            <i class="fa-brands fa-qq"></i>
+        </li>
+        <li class="wechat share-item border-box flex-center tooltip tooltip-img"
+            data-tooltip-content="Share to WeChat"
+            data-tooltip-img-tip="Scan by WeChat"
+            data-tooltip-img-style="background-color: #fff; top: -10px; padding: 0.6rem 0.6rem 0.1rem 0.6rem;"
+        >
+            <i class="fa-brands fa-weixin"></i>
+        </li>
+        <li class="weibo share-item border-box flex-center tooltip"
+            data-tooltip-content="Share to WeiBo"
+        >
+            <i class="fa-brands fa-weibo"></i>
+        </li>
+    </ul>
+</div>
+
+                        
+                    </div>
+                </div>
+
+                
+                    <div class="reward-author-container border-box flex-center">
+    <div class="reward-btn keep-button border-box flex-center tooltip tooltip-img"
+            data-tooltip-content="请作者喝奶茶"
+            data-tooltip-img-url="/images/reward.png"
+            data-tooltip-img-trigger="click"
+            data-tooltip-img-style="top: -8px;"
+    >
+        <i class="fa-solid fa-hand-holding-heart"></i>
+    </div>
+</div>
+
+                
+
+                
+                    <div class="post-nav border-box">
+                        
+                            <div class="prev-post">
+                                <a class="prev"
+                                   rel="prev"
+                                   href="/2024/06/01/Java%E8%AF%AD%E8%A8%80%E4%B8%8E%E9%9D%A2%E5%90%91%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"
+                                   title="Java语言与面向程序设计"
+                                >
+                                    <span class="left arrow-icon flex-center">
+                                        <i class="fas fa-chevron-left"></i>
+                                    </span>
+                                    <span class="title flex-center">
+                                        <span class="post-nav-title-item text-ellipsis">Java语言与面向程序设计</span>
+                                        <span class="post-nav-item">Prev posts</span>
+                                    </span>
+                                </a>
+                            </div>
+                        
+                        
+                            <div class="next-post">
+                                <a class="next"
+                                   rel="next"
+                                   href="/2024/06/01/Java%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/"
+                                   title="Java数据类型"
+                                >
+                                    <span class="title flex-center">
+                                        <span class="post-nav-title-item text-ellipsis">Java数据类型</span>
+                                        <span class="post-nav-item">Next posts</span>
+                                    </span>
+                                    <span class="right arrow-icon flex-center">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        
+                    </div>
+                
+
+                
+                    
+
+
+    <div class="comments-container border-box">
+        <div id="comments-anchor" class="comment-area-title border-box">
+            <i class="fas fa-comments"></i>&nbsp;Comments
+        </div>
+        <div class="comment-plugin-fail border-box">
+    <span class="fail-tip">Comment plugin failed to load</span>
+    <button class="reload keep-button">Click to reload</button>
+</div>
+<div class="comment-plugin-loading flex-center border-box">
+    <i class="loading-icon fa-solid fa-spinner fa-spin"></i>
+    <span class="load-tip">Loading comment plugin</span>
+</div>
+<script data-pjax>
+  window.KeepCommentPlugin = {}
+  window.KeepCommentPlugin.hideLoading = () => {
+    const cplDom = document.querySelector('.comments-container .comment-plugin-loading')
+    cplDom.style.display = 'none'
+  }
+  window.KeepCommentPlugin.loadFailHandle = () => {
+    window.KeepCommentPlugin.hideLoading()
+    const cpfDom = document.querySelector('.comments-container .comment-plugin-fail')
+    cpfDom.style.display = 'flex'
+    cpfDom.querySelector('.reload').addEventListener('click', () => {
+      window.location.reload()
+    })
+  }
+</script>
+
+        
+            
+
+    <div class="valine-container">
+        <div id="vcomments"></div>
+        <script data-pjax
+                src="//cdn.jsdelivr.net/npm/valine@latest/dist/Valine.min.js"
+                async
+                onerror="window.KeepCommentPlugin.loadFailHandle()"
+        ></script>
+        <script data-pjax
+                async
+                onerror="window.KeepCommentPlugin.loadFailHandle()"
+        >
+          window.KeepCommentPlugin.initValine = () => {
+            const config = {
+              el: '#vcomments',
+              appId: 'oKezB5PXBe6SFd75Ab2I1igt-gzGzoHsz',
+              appKey: 'ZyjE4IekdBOYhHEQyVhPqWf9',
+              meta: ['nick', 'mail', 'link'],
+              avatar: 'wavatar',
+              enableQQ: true,
+              placeholder: 'say something..',
+              lang: 'en'.toLowerCase()
+            }
+
+            if ('') {
+              config.serverURLs = ''
+            }
+
+            if (window?.Valine) {
+              new Valine(config)
+              window.KeepCommentPlugin.hideLoading()
+            } else {
+              setTimeout(() => {
+                window.KeepCommentPlugin.initValine()
+              }, 1000)
+            }
+          }
+
+          if ('true' === 'true') {
+            setTimeout(() => {
+              window.KeepCommentPlugin.initValine()
+            }, 1200)
+          } else {
+            window.addEventListener('DOMContentLoaded', window.KeepCommentPlugin.initValine)
+          }
+        </script>
+    </div>
+
+
+        
+    </div>
+
+
+
+
+
+                
+            </div>
+        </div>
+
+        
+            <div class="pc-post-toc left-toc">
+                <div class="post-toc-wrap border-box">
+    <div class="post-toc border-box">
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AE%80%E5%8D%95%E7%9A%84Java%E7%A8%8B%E5%BA%8F"><span class="nav-number">1.</span> <span class="nav-text">简单的Java程序</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Java%E7%A8%8B%E5%BA%8F%E7%9A%84%E7%B1%BB%E5%9E%8B"><span class="nav-number">1.1.</span> <span class="nav-text">Java程序的类型</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Application%E7%A8%8B%E5%BA%8F"><span class="nav-number">1.1.1.</span> <span class="nav-text">Application程序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Applet%E7%A8%8B%E5%BA%8F"><span class="nav-number">1.1.2.</span> <span class="nav-text">Applet程序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Java%E7%A8%8B%E5%BA%8F%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%9E%84%E6%88%90"><span class="nav-number">1.1.3.</span> <span class="nav-text">Java程序的基本构成</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Java%E7%A8%8B%E5%BA%8F%E5%BC%80%E5%8F%91%E7%9A%84%E6%AD%A5%E9%AA%A4"><span class="nav-number">1.2.</span> <span class="nav-text">Java程序开发的步骤</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#JDK%E5%AE%89%E8%A3%85%E5%90%8E%E7%9A%84%E6%96%87%E4%BB%B6%E5%A4%B9"><span class="nav-number">1.2.1.</span> <span class="nav-text">JDK安装后的文件夹</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Application%E7%9A%84%E7%BC%96%E8%BE%91%E3%80%81%E7%BC%96%E8%AF%91%E4%B8%8E%E8%BF%90%E8%A1%8C"><span class="nav-number">1.2.2.</span> <span class="nav-text">Application的编辑、编译与运行</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AE%BE%E5%AE%9Apath%E5%92%8Cclasspath"><span class="nav-number">1.2.3.</span> <span class="nav-text">设定path和classpath</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8package%E6%97%B6%E7%9A%84%E7%BC%96%E8%AF%91"><span class="nav-number">1.2.4.</span> <span class="nav-text">使用package时的编译</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%B6%E4%BB%96%E7%9A%84%E5%B7%A5%E5%85%B7"><span class="nav-number">1.2.5.</span> <span class="nav-text">其他的工具</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8jar%E6%89%93%E5%8C%85"><span class="nav-number">1.2.5.1.</span> <span class="nav-text">使用jar打包</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8JavaDoc%E7%94%9F%E6%88%90%E6%96%87%E6%A1%A3"><span class="nav-number">1.2.5.2.</span> <span class="nav-text">使用JavaDoc生成文档</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#java%E7%9A%84api%E6%96%87%E6%A1%A3"><span class="nav-number">1.2.5.3.</span> <span class="nav-text">java的api文档</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8javap"><span class="nav-number">1.2.5.4.</span> <span class="nav-text">使用javap</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BE%93%E5%85%A5%E4%B8%8E%E8%BE%93%E5%87%BA"><span class="nav-number">1.2.6.</span> <span class="nav-text">输入与输出</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%96%87%E6%9C%AC%E7%95%8C%E9%9D%A2%E7%9A%84%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA"><span class="nav-number">1.2.6.1.</span> <span class="nav-text">文本界面的输入输出</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%9B%BE%E5%BD%A2%E7%95%8C%E9%9D%A2%E7%9A%84%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA"><span class="nav-number">1.2.6.2.</span> <span class="nav-text">图形界面的输入输出</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83"><span class="nav-number">1.2.7.</span> <span class="nav-text">开发环境</span></a></li></ol></li></ol></li></ol>
+    </div>
+</div>
+
+            </div>
+        
+    </div>
+</div>
+
+
+                
+            </div>
+        </div>
+
+        <div class="page-main-content-bottom border-box">
+            
+<footer class="footer border-box">
+    <div class="border-box website-info-box default">
+        
+            <div class="copyright-info info-item default">
+                &copy;&nbsp;<span>2020</span>&nbsp;-&nbsp;2024
+                
+                    &nbsp;<i class="fas fa-heart icon-animate"></i>&nbsp;&nbsp;<a href="/">Elora</a>
+                
+            </div>
+
+            <div class="theme-info info-item default">
+                Powered by&nbsp;<a target="_blank" href="https://hexo.io">Hexo</a>&nbsp;&&nbsp;Theme&nbsp;<a class="keep-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep">Keep</a>
+            </div>
+
+            
+
+            
+                
+                <div class="deploy-info info-item default">
+                    
+                        This site is deployed on <span class="tooltip" data-tooltip-content="GitHub Pages"><img src="/images/deploy-provider/github.png"></span>
+                    
+                </div>
+            
+        
+
+        <div class="count-item info-item default">
+            
+                <span class="count-box border-box word">
+                    <span class="item-type border-box">Total words</span>
+                    <span class="item-value border-box word">75.1k</span>
+                </span>
+            
+
+            
+                <span class="count-box border-box uv">
+                    <span class="item-type border-box">Unique Visitor</span>
+                    <span class="item-value border-box uv" id="busuanzi_value_site_uv"></span>
+                </span>
+            
+
+            
+                <span class="count-box border-box pv">
+                    <span class="item-type border-box">Page View</span>
+                    <span class="item-value border-box pv" id="busuanzi_value_site_pv"></span>
+                </span>
+            
+        </div>
+    </div>
+</footer>
+
+        </div>
+    </div>
+
+    <!-- post tools -->
+    
+        <div class="post-tools left-toc">
+            <div class="post-tools-container border-box">
+    <ul class="tools-list border-box">
+        <!-- PC TOC show toggle -->
+        
+            <li class="tools-item flex-center toggle-show-toc">
+                <i class="fas fa-list"></i>
+            </li>
+        
+
+        <!-- PC go comment -->
+        
+            <li class="tools-item flex-center go-to-comments">
+                <i class="fas fa-comment"></i>
+                <span class="post-comments-count"></span>
+            </li>
+        
+
+        <!-- PC full screen -->
+        <li class="tools-item flex-center full-screen">
+            <i class="fa-solid fa-expand"></i>
+        </li>
+    </ul>
+</div>
+
+        </div>
+    
+
+    <!-- side tools -->
+    <div class="side-tools">
+        <div class="side-tools-container border-box ">
+    <ul class="side-tools-list side-tools-show-handle border-box">
+        <li class="tools-item tool-font-adjust-plus flex-center">
+            <i class="fas fa-search-plus"></i>
+        </li>
+
+        <li class="tools-item tool-font-adjust-minus flex-center">
+            <i class="fas fa-search-minus"></i>
+        </li>
+
+        <li class="tools-item tool-toggle-theme-mode flex-center">
+            <i class="fas fa-moon"></i>
+        </li>
+
+        <!-- rss -->
+        
+
+        <li class="tools-item tool-scroll-to-bottom flex-center">
+            <i class="fas fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="exposed-tools-list border-box">
+        
+            <li class="tools-item toggle-show-toc-tablet flex-center">
+                <i class="fas fa-list"></i>
+            </li>
+        
+
+        
+            <li class="tools-item go-to-comments-tablet flex-center">
+                <i class="fas fa-comment"></i>
+            </li>
+        
+
+        <li class="tools-item tool-toggle-show flex-center">
+            <i class="fas fa-cog fa-spin"></i>
+        </li>
+
+        <li class="tools-item tool-scroll-to-top flex-center show-arrow">
+            <i class="arrow fas fa-arrow-up"></i>
+            <span class="percent"></span>
+        </li>
+    </ul>
+</div>
+
+    </div>
+
+    <!-- image mask -->
+    <div class="zoom-in-image-mask">
+    <img class="zoom-in-image">
+</div>
+
+
+    <!-- local search -->
+    
+        <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+          <span class="search-input-field-pre">
+            <i class="fas fa-keyboard"></i>
+          </span>
+            <div class="search-input-container">
+                <input autocomplete="off"
+                       autocorrect="off"
+                       autocapitalize="off"
+                       placeholder="Search..."
+                       spellcheck="false"
+                       type="search"
+                       class="search-input"
+                >
+            </div>
+            <span class="close-popup-btn">
+                <i class="fas fa-times"></i>
+            </span>
+        </div>
+        <div id="search-result">
+            <div id="no-result">
+                <i class="fas fa-spinner fa-pulse fa-5x fa-fw"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+    <!-- tablet toc -->
+    
+        <div class="tablet-post-toc-mask">
+            <div class="tablet-post-toc">
+                <div class="post-toc-wrap border-box">
+    <div class="post-toc border-box">
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AE%80%E5%8D%95%E7%9A%84Java%E7%A8%8B%E5%BA%8F"><span class="nav-number">1.</span> <span class="nav-text">简单的Java程序</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Java%E7%A8%8B%E5%BA%8F%E7%9A%84%E7%B1%BB%E5%9E%8B"><span class="nav-number">1.1.</span> <span class="nav-text">Java程序的类型</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Application%E7%A8%8B%E5%BA%8F"><span class="nav-number">1.1.1.</span> <span class="nav-text">Application程序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Applet%E7%A8%8B%E5%BA%8F"><span class="nav-number">1.1.2.</span> <span class="nav-text">Applet程序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Java%E7%A8%8B%E5%BA%8F%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%9E%84%E6%88%90"><span class="nav-number">1.1.3.</span> <span class="nav-text">Java程序的基本构成</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Java%E7%A8%8B%E5%BA%8F%E5%BC%80%E5%8F%91%E7%9A%84%E6%AD%A5%E9%AA%A4"><span class="nav-number">1.2.</span> <span class="nav-text">Java程序开发的步骤</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#JDK%E5%AE%89%E8%A3%85%E5%90%8E%E7%9A%84%E6%96%87%E4%BB%B6%E5%A4%B9"><span class="nav-number">1.2.1.</span> <span class="nav-text">JDK安装后的文件夹</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Application%E7%9A%84%E7%BC%96%E8%BE%91%E3%80%81%E7%BC%96%E8%AF%91%E4%B8%8E%E8%BF%90%E8%A1%8C"><span class="nav-number">1.2.2.</span> <span class="nav-text">Application的编辑、编译与运行</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AE%BE%E5%AE%9Apath%E5%92%8Cclasspath"><span class="nav-number">1.2.3.</span> <span class="nav-text">设定path和classpath</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8package%E6%97%B6%E7%9A%84%E7%BC%96%E8%AF%91"><span class="nav-number">1.2.4.</span> <span class="nav-text">使用package时的编译</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%B6%E4%BB%96%E7%9A%84%E5%B7%A5%E5%85%B7"><span class="nav-number">1.2.5.</span> <span class="nav-text">其他的工具</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8jar%E6%89%93%E5%8C%85"><span class="nav-number">1.2.5.1.</span> <span class="nav-text">使用jar打包</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8JavaDoc%E7%94%9F%E6%88%90%E6%96%87%E6%A1%A3"><span class="nav-number">1.2.5.2.</span> <span class="nav-text">使用JavaDoc生成文档</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#java%E7%9A%84api%E6%96%87%E6%A1%A3"><span class="nav-number">1.2.5.3.</span> <span class="nav-text">java的api文档</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8javap"><span class="nav-number">1.2.5.4.</span> <span class="nav-text">使用javap</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BE%93%E5%85%A5%E4%B8%8E%E8%BE%93%E5%87%BA"><span class="nav-number">1.2.6.</span> <span class="nav-text">输入与输出</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%96%87%E6%9C%AC%E7%95%8C%E9%9D%A2%E7%9A%84%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA"><span class="nav-number">1.2.6.1.</span> <span class="nav-text">文本界面的输入输出</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%9B%BE%E5%BD%A2%E7%95%8C%E9%9D%A2%E7%9A%84%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA"><span class="nav-number">1.2.6.2.</span> <span class="nav-text">图形界面的输入输出</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83"><span class="nav-number">1.2.7.</span> <span class="nav-text">开发环境</span></a></li></ol></li></ol></li></ol>
+    </div>
+</div>
+
+            </div>
+        </div>
+    
+</main>
+
+
+
+<!-- common -->
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/header-shrink.js"></script>
+
+<script src="/js/back2top.js"></script>
+
+<script src="/js/toggle-theme.js"></script>
+
+<script src="/js/code-block.js"></script>
+
+<script src="/js/main.js"></script>
+
+<script src="/js/libs/anime.min.js"></script>
+
+
+<!-- local-search -->
+
+    
+<script src="/js/local-search.js"></script>
+
+
+
+<!-- lazyload -->
+
+
+<div class="pjax">
+    
+        <!-- post-helper -->
+        
+<script src="/js/post/post-helper.js"></script>
+
+
+        <!-- toc -->
+        
+            
+<script src="/js/post/toc.js"></script>
+
+        
+
+        <!-- copyright-info -->
+        
+            
+<script src="/js/post/copyright-info.js"></script>
+
+        
+
+        <!-- share -->
+        
+            
+<script src="/js/post/share.js"></script>
+
+        
+    
+
+    <!-- categories page -->
+    
+
+    <!-- links page -->
+    
+
+    <!-- photos page -->
+    
+
+    <!-- tools page -->
+    
+</div>
+
+<!-- mermaid -->
+
+
+<!-- pjax -->
+
+    
+<script src="/js/libs/pjax.min.js"></script>
+
+<script>
+    window.addEventListener('DOMContentLoaded', () => {
+        window.pjax = new Pjax({
+            selectors: [
+                'head title',
+                '.page-container',
+                '.pjax'
+            ],
+            history: true,
+            debug: false,
+            cacheBust: false,
+            timeout: 0,
+            analytics: false,
+            currentUrlFullReload: false,
+            scrollRestoration: false,
+        });
+
+        document.addEventListener('pjax:send', () => {
+            KEEP.utils.pjaxProgressBarStart()
+        });
+
+        document.addEventListener('pjax:complete', () => {
+            KEEP.utils.pjaxProgressBarEnd()
+            window.pjax.executeScripts(document.querySelectorAll('script[data-pjax], .pjax script'))
+            KEEP.initExecute()
+        });
+    });
+</script>
+
+
+
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/wanko.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+</html>
+
+<script type="text/javascript" src="/js/funnytitle.js"></script>
+<script type="text/javascript" src="/js/love.js"></script>
