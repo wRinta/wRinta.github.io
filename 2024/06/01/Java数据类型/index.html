@@ -9,7 +9,7 @@
     
     <title>
         
-            Dos命令 |
+            Java数据类型 |
         
         Elora blog
     </title>
@@ -201,12 +201,19 @@
     <div class="post-page-container border-box">
         <div class="post-content-container border-box">
             
-
-            <div class="post-content-bottom border-box">
-                
-                    <div class="post-title">
-                        Dos命令
+                <div class="post-content-top border-box"
+                     style="height: 120px"
+                >
+                    <div class="cover-post-title">
+                        Java数据类型
                     </div>
+                    <img class="post-cover" src="/images/pmgroup.png"
+                         onerror="this.style.display='none'"
+                    >
+                </div>
+            
+
+            <div class="post-content-bottom border-box has-cover">
                 
 
                 
@@ -233,22 +240,31 @@
         
             <span class="meta-info-item post-create-date">
                 <i class="icon fa-solid fa-calendar-plus"></i>&nbsp;
-                <span class="datetime">2024-03-30 20:11:50</span>
+                <span class="datetime">2024-06-01 17:28:52</span>
             </span>
 
             <span class="meta-info-item post-update-date">
                 <i class="icon fa-solid fa-file-pen"></i>&nbsp;
-                <span class="datetime" data-updated="Sat Mar 30 2024 21:44:34 GMT+0800">2024-03-30 21:44:34</span>
+                <span class="datetime" data-updated="Sat Jun 01 2024 17:33:53 GMT+0800">2024-06-01 17:33:53</span>
             </span>
         
 
+        
+            <span class="meta-info-item post-category border-box"><i class="icon fas fa-folder"></i>&nbsp;
+                <ul class="post-category-ul">
+                    
+                            <li class="category-item"><a href="/categories/Java-Learning/">Java Learning</a></li>
+                        
+                    
+                </ul>
+            </span>
         
 
         
             <span class="post-tag meta-info-item border-box">
                 <ul class="post-tag-ul">
                     
-                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/Dos/">Dos</a></li>
+                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/Java/">Java</a></li>
                         
                     
                 </ul>
@@ -258,12 +274,12 @@
         
         
             <span class="meta-info-item post-wordcount">
-                <i class="icon fas fa-file-word"></i>&nbsp;<span>216 Words</span>
+                <i class="icon fas fa-file-word"></i>&nbsp;<span>828 Words</span>
             </span>
         
         
             <span class="meta-info-item post-min2read">
-                <i class="icon fas fa-clock"></i>&nbsp;<span>1 Mins</span>
+                <i class="icon fas fa-clock"></i>&nbsp;<span>3 Mins</span>
             </span>
         
         
@@ -283,46 +299,129 @@
 
                 <div class="post-content keep-markdown-body">
                     
+                        <div class="post-aging-tips"
+                             data-update-date="Sat Jun 01 2024 17:33:53 GMT+0800"
+                             data-aging-days="120"
+                        >
+                            <i class="fa-solid fa-circle-exclamation"></i>It has been <span class="days">0</span> days since the last update of this post. Some contents may be outdated. Please pay attention to screening.
+                        </div>
+                    
 
-                    <h1 id="文件"><a href="#文件" class="headerlink" title="文件"></a>文件</h1><p><code>dir</code>显示当前目录</p>
-<p><img src="/2024/03/30/Dos%E5%91%BD%E4%BB%A4/image-20240330203130125.png"></p>
-<p><code>dir /p</code>分页展示</p>
-<p><img src="/2024/03/30/Dos%E5%91%BD%E4%BB%A4/image-20240330203735575.png"></p>
-<p><code>dir /b</code>只显示文件名称</p>
-<p><img src="/2024/03/30/Dos%E5%91%BD%E4%BB%A4/image-20240330205351092.png"></p>
-<p><code>盘符:</code>切换盘符</p>
-<p><img src="/2024/03/30/Dos%E5%91%BD%E4%BB%A4/image-20240330203243075.png"></p>
-<p><code>cd dir</code>切换到当前盘的某个目录下，tab键可以帮助补全</p>
-<p><img src="/2024/03/30/Dos%E5%91%BD%E4%BB%A4/image-20240330203452073.png"></p>
-<p><code>md</code>创建文件夹，<code>rd</code>删除文件夹</p>
-<p><img src="/2024/03/30/Dos%E5%91%BD%E4%BB%A4/image-20240330203941665.png"></p>
-<p><img src="/2024/03/30/Dos%E5%91%BD%E4%BB%A4/image-20240330203957640.png"></p>
-<p>复制文件要进入到被粘贴文件的路径，将1.txt复制到demo1目录下，<code>copy 1.txt demo1\1.txt</code></p>
-<p><img src="/2024/03/30/Dos%E5%91%BD%E4%BB%A4/image-20240330204312224.png"></p>
-<p>复制文件到当前路径下并重命名，<code>copy 1.txt 2.txt</code></p>
-<p><img src="/2024/03/30/Dos%E5%91%BD%E4%BB%A4/image-20240330204855205.png"></p>
-<p>重命名文件名，<code>ren oldfilename newfilename</code></p>
-<p><img src="/2024/03/30/Dos%E5%91%BD%E4%BB%A4/image-20240330205233019.png"></p>
-<p>将命令的结果保存到文件，<code>&gt; filename</code></p>
-<p><img src="/2024/03/30/Dos%E5%91%BD%E4%BB%A4/image-20240330205444840.png"></p>
-<p><img src="/2024/03/30/Dos%E5%91%BD%E4%BB%A4/image-20240330205510501.png"></p>
-<p><code>cls</code>清屏命令</p>
-<p><code>del</code>删除文件</p>
-<p><img src="/2024/03/30/Dos%E5%91%BD%E4%BB%A4/image-20240330210233942.png"></p>
-<p>批处理文件</p>
-<p><img src="/2024/03/30/Dos%E5%91%BD%E4%BB%A4/image-20240330210531461.png"></p>
-<p><img src="/2024/03/30/Dos%E5%91%BD%E4%BB%A4/image-20240330210627780.png"></p>
-<p><img src="/2024/03/30/Dos%E5%91%BD%E4%BB%A4/image-20240330210642523.png"></p>
-<p>命令管道符<code>command1|command2|command3</code>，后一个命令是对前一个命令结果进行处理</p>
-<p><img src="/2024/03/30/Dos%E5%91%BD%E4%BB%A4/image-20240330213827544.png"></p>
-<p>查看文件夹的目录及<code>tree</code>，详细显示<code>tree /f</code></p>
-<p><img src="/2024/03/30/Dos%E5%91%BD%E4%BB%A4/image-20240330214112032.png"></p>
-<h1 id="非文件"><a href="#非文件" class="headerlink" title="非文件"></a>非文件</h1><p>查看时间<code>time</code></p>
-<p><img src="/2024/03/30/Dos%E5%91%BD%E4%BB%A4/image-20240330210735475.png"></p>
-<p>查看日期<code>date</code></p>
-<p><img src="/2024/03/30/Dos%E5%91%BD%E4%BB%A4/image-20240330210803779.png"></p>
-<p>退出Dos：<code>exit</code></p>
-<p>查看Dos命令：<code>help</code></p>
+                    <h1 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h1><h2 id="Java数据类型划分"><a href="#Java数据类型划分" class="headerlink" title="Java数据类型划分"></a>Java数据类型划分</h2><ul>
+<li>基本数据类型（primitive types）<ul>
+<li>数值型<ul>
+<li>整数类型（byte，short，interesting，long）</li>
+<li>浮点类型（float，double）</li>
+</ul>
+</li>
+<li>字符型（char）</li>
+<li>布尔型（Boolean）</li>
+</ul>
+</li>
+<li>引用类型（reference types）<ul>
+<li>类（class）</li>
+<li>接口（interface）</li>
+<li>数组</li>
+</ul>
+</li>
+</ul>
+<h2 id="两种类型的差别"><a href="#两种类型的差别" class="headerlink" title="两种类型的差别"></a>两种类型的差别</h2><ul>
+<li><p>基本类型：变量在栈</p>
+</li>
+<li><p>引用类型：变量引用到堆，在“那里”。储存的内容在堆</p>
+</li>
+</ul>
+<p><img src="/2024/06/01/Java%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/image-20240129212045250.png"></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">double</span> <span class="variable">d</span> <span class="operator">=</span> <span class="number">3.14</span>;</span><br><span class="line"><span class="type">Person</span> <span class="variable">p</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Person</span>();</span><br><span class="line"><span class="comment">//赋值时</span></span><br><span class="line"><span class="type">double</span> <span class="variable">d2</span> <span class="operator">=</span> d;<span class="comment">//赋值的是值</span></span><br><span class="line"><span class="type">Person</span> <span class="variable">p2</span> <span class="operator">=</span> p;<span class="comment">//赋值的是引用</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="逻辑型"><a href="#逻辑型" class="headerlink" title="逻辑型"></a>逻辑型</h3><ul>
+<li>Boolean类型适于逻辑运算，一般用于程序流程控制</li>
+<li>Boolean类型数据只允许取值true或false<ul>
+<li>不可以0或非0的整数替代true和false</li>
+<li>if(a&#x3D;5)在Java中是不允许的</li>
+</ul>
+</li>
+</ul>
+<h3 id="字符型"><a href="#字符型" class="headerlink" title="字符型"></a>字符型</h3><ul>
+<li><p>char型数据用来表示通常意义上的字符、</p>
+</li>
+<li><p>字符常量是用单引号括起来的单个字符</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">char c = &#x27;A&#x27;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Java字符采用Unicode编码，每个字符占两个字节</p>
+<ul>
+<li><p>可用十六进制编码形式表示</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">char c1=&#x27;\u0061&#x27;;</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li><p>Java语言中还允许使用转义字符’\‘来将其后的字符转变为其它的含义</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">char c2 = &#x27;\n&#x27;；</span><br></pre></td></tr></table></figure>
+
+<p><img src="/2024/06/01/Java%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/image-20240129213751898.png"></p>
+</li>
+</ul>
+<h3 id="整数类型"><a href="#整数类型" class="headerlink" title="整数类型"></a>整数类型</h3><p>Java各整数类型有固定的表数范围和字段长度，而不受具体操作系统的影响，以保证Java程序的可移植性</p>
+<p><img src="/2024/06/01/Java%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/image-20240129214126075.png"></p>
+<h3 id="浮点型"><a href="#浮点型" class="headerlink" title="浮点型"></a>浮点型</h3><p>Java浮点类型有固定的表数范围和字段长度</p>
+<p><img src="/2024/06/01/Java%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/image-20240129214142977.png"></p>
+<h3 id="标识符"><a href="#标识符" class="headerlink" title="标识符"></a>标识符</h3><ul>
+<li><p>名字就是标识符：任何一个变量、常量、方法、对象和类都需要名字</p>
+</li>
+<li><p>标识符要满足如下的规定：</p>
+<ul>
+<li><p>标识符可以由字母、数字和下划线（_）、美元符号（$）组合而成；</p>
+</li>
+<li><p>标识符必须以字母、下划线或美元符号开头，不能以数字开头</p>
+</li>
+</ul>
+</li>
+<li><p>标识符最好与其意义相符，以增加程序的可读性</p>
+</li>
+<li><p>应注意Java是大小写敏感的语言</p>
+<ul>
+<li>按惯例，类名首字母用大写（Pascal）</li>
+<li>其余的（包名、方法名、变量名）首字母都小写（camel）</li>
+<li>少用下划线</li>
+<li>常量随时用随定义</li>
+</ul>
+</li>
+</ul>
+<h2 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h2><p><img src="/2024/06/01/Java%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/image-20240129214901703.png"></p>
+<h3 id="算术运算符"><a href="#算术运算符" class="headerlink" title="算术运算符"></a>算术运算符</h3><p><img src="/2024/06/01/Java%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/image-20240129215058518.png"></p>
+<h3 id="逻辑运算符"><a href="#逻辑运算符" class="headerlink" title="逻辑运算符"></a>逻辑运算符</h3><p><img src="/2024/06/01/Java%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/image-20240129215134031.png"></p>
+<p>短路（short-circuit）逻辑运算符</p>
+<ul>
+<li><p>&amp;&amp;——第一个操作数为假则不判断第二个操作数</p>
+</li>
+<li><p>||——第一个操作数为真则不判断第二个操作数</p>
+</li>
+<li><pre><code class="java">//MyDate d;
+if ((d!=null)&amp;&amp;(d.day&gt;31))&#123;
+    //DO SOMETHING with d
+&#125;
+if (i&lt;0||i&gt;31)&#123;
+    System.out.println(&quot;非法赋值&quot;);
+&#125;
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">  </span><br><span class="line"></span><br><span class="line">### 位运算符</span><br><span class="line"></span><br><span class="line">![](image-20240129215727420.png)</span><br><span class="line"></span><br><span class="line">### 移位运算符</span><br><span class="line"></span><br><span class="line">![](image-20240129215825578.png)</span><br><span class="line"></span><br><span class="line">![](image-20240129215939385.png)</span><br><span class="line"></span><br><span class="line">```java</span><br><span class="line">public class BitwiseOperators &#123;</span><br><span class="line">    public static void main( String args[])&#123;</span><br><span class="line">        int a = 0b1100;</span><br><span class="line">        int b = 0b1010;</span><br><span class="line">        print(&quot;a   &quot;,a);</span><br><span class="line">        print(&quot;b   &quot;,b);</span><br><span class="line">        print(&quot;a&amp;b&quot;,a&amp;b);</span><br><span class="line">        print(&quot;a|b&quot;,a|b);</span><br><span class="line">        print(&quot;a^b&quot;,a^b);</span><br><span class="line">        print(&quot;~a&quot;,~a);</span><br><span class="line">        print(&quot;a&lt;&lt;2&quot;,a&lt;&lt;2);</span><br><span class="line">        print(&quot;a&gt;&gt;2&quot;,a&gt;&gt;2);</span><br><span class="line">        print(&quot;a&gt;&gt;&gt;2&quot;,a&gt;&gt;&gt;2);</span><br><span class="line">    &#125;</span><br><span class="line">    static void print(String prefix,int n)&#123;</span><br><span class="line">        String s =  Integer.toBinaryString(n);</span><br><span class="line">        while(s.length() &lt; 4) s = &quot;0&quot;+s;</span><br><span class="line">        System.out.println(prefix + &quot; &quot; + s);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+</code></pre>
+</li>
+</ul>
+<h3 id="赋值运算符"><a href="#赋值运算符" class="headerlink" title="赋值运算符"></a>赋值运算符</h3><p><img src="/2024/06/01/Java%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/image-20240129222143775.png"></p>
+<p><img src="/2024/06/01/Java%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/image-20240129222427414.png"></p>
+<h3 id="字符串连接运算符"><a href="#字符串连接运算符" class="headerlink" title="字符串连接运算符+"></a>字符串连接运算符+</h3><p><img src="/2024/06/01/Java%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/image-20240129222552066.png"></p>
+<h3 id="表达式"><a href="#表达式" class="headerlink" title="表达式"></a>表达式</h3><p><img src="/2024/06/01/Java%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/image-20240129222717209.png"></p>
+<p>![]image-20240129222837631.png)</p>
+<h4 id="表达式中的类型转换"><a href="#表达式中的类型转换" class="headerlink" title="表达式中的类型转换"></a>表达式中的类型转换</h4><ul>
+<li>当有不同种类的混合运算时：int-&gt;long-&gt;float-&gt;double</li>
+<li>整型提升<ul>
+<li>所有的byte，short，char参与算术运算等转为int</li>
+</ul>
+</li>
+</ul>
+<h3 id="反汇编的代码"><a href="#反汇编的代码" class="headerlink" title="反汇编的代码"></a>反汇编的代码</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">javap -c 类名</span><br></pre></td></tr></table></figure>
+
+
+
 
                 </div>
                 
@@ -331,11 +430,11 @@
     <div class="copyright-info-content border-box">
         <div class="copyright-info-top border-box">
             <div class="copyright-post-title border-box text-ellipsis">
-                Dos命令
+                Java数据类型
             </div>
 
             <div class="copyright-post-link border-box text-ellipsis">
-                2024/03/30/Dos命令/
+                2024/06/01/Java数据类型/
             </div>
         </div>
 
@@ -351,7 +450,7 @@
                 <div class="type">
                     Published
                 </div>
-                <div class="content">2024-03-30 20:11</div>
+                <div class="content">2024-06-01 17:28</div>
             </div>
 
 
@@ -387,7 +486,7 @@
                             <ul class="post-tags-box border-box">
                                 
                                     <li class="tag-item border-box">
-                                        <i class="icon fas fa-hashtag"></i>&nbsp;<a href="/tags/Dos/">Dos</a>
+                                        <i class="icon fas fa-hashtag"></i>&nbsp;<a href="/tags/Java/">Java</a>
                                     </li>
                                 
                             </ul>
@@ -438,31 +537,15 @@
                 
                     <div class="post-nav border-box">
                         
-                            <div class="prev-post">
-                                <a class="prev"
-                                   rel="prev"
-                                   href="/2024/03/31/git%E6%93%8D%E4%BD%9C/"
-                                   title="git操作"
-                                >
-                                    <span class="left arrow-icon flex-center">
-                                        <i class="fas fa-chevron-left"></i>
-                                    </span>
-                                    <span class="title flex-center">
-                                        <span class="post-nav-title-item text-ellipsis">git操作</span>
-                                        <span class="post-nav-item">Prev posts</span>
-                                    </span>
-                                </a>
-                            </div>
-                        
                         
                             <div class="next-post">
                                 <a class="next"
                                    rel="next"
-                                   href="/2024/03/30/web%E5%BA%94%E7%94%A8/"
-                                   title="web应用"
+                                   href="/2024/04/14/%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95/"
+                                   title="接口测试"
                                 >
                                     <span class="title flex-center">
-                                        <span class="post-nav-title-item text-ellipsis">web应用</span>
+                                        <span class="post-nav-title-item text-ellipsis">接口测试</span>
                                         <span class="post-nav-item">Next posts</span>
                                     </span>
                                     <span class="right arrow-icon flex-center">
@@ -572,7 +655,7 @@
             <div class="pc-post-toc left-toc">
                 <div class="post-toc-wrap border-box">
     <div class="post-toc border-box">
-        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%96%87%E4%BB%B6"><span class="nav-number">1.</span> <span class="nav-text">文件</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E9%9D%9E%E6%96%87%E4%BB%B6"><span class="nav-number">2.</span> <span class="nav-text">非文件</span></a></li></ol>
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B"><span class="nav-number">1.</span> <span class="nav-text">数据类型</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Java%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E5%88%92%E5%88%86"><span class="nav-number">1.1.</span> <span class="nav-text">Java数据类型划分</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%A4%E7%A7%8D%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%B7%AE%E5%88%AB"><span class="nav-number">1.2.</span> <span class="nav-text">两种类型的差别</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%80%BB%E8%BE%91%E5%9E%8B"><span class="nav-number">1.2.1.</span> <span class="nav-text">逻辑型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AD%97%E7%AC%A6%E5%9E%8B"><span class="nav-number">1.2.2.</span> <span class="nav-text">字符型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%95%B4%E6%95%B0%E7%B1%BB%E5%9E%8B"><span class="nav-number">1.2.3.</span> <span class="nav-text">整数类型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B5%AE%E7%82%B9%E5%9E%8B"><span class="nav-number">1.2.4.</span> <span class="nav-text">浮点型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%A0%87%E8%AF%86%E7%AC%A6"><span class="nav-number">1.2.5.</span> <span class="nav-text">标识符</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="nav-number">1.3.</span> <span class="nav-text">运算符</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AE%97%E6%9C%AF%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="nav-number">1.3.1.</span> <span class="nav-text">算术运算符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%80%BB%E8%BE%91%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="nav-number">1.3.2.</span> <span class="nav-text">逻辑运算符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%B5%8B%E5%80%BC%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="nav-number">1.3.3.</span> <span class="nav-text">赋值运算符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AD%97%E7%AC%A6%E4%B8%B2%E8%BF%9E%E6%8E%A5%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="nav-number">1.3.4.</span> <span class="nav-text">字符串连接运算符+</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%A1%A8%E8%BE%BE%E5%BC%8F"><span class="nav-number">1.3.5.</span> <span class="nav-text">表达式</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%A1%A8%E8%BE%BE%E5%BC%8F%E4%B8%AD%E7%9A%84%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2"><span class="nav-number">1.3.5.1.</span> <span class="nav-text">表达式中的类型转换</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8F%8D%E6%B1%87%E7%BC%96%E7%9A%84%E4%BB%A3%E7%A0%81"><span class="nav-number">1.3.6.</span> <span class="nav-text">反汇编的代码</span></a></li></ol></li></ol></li></ol>
     </div>
 </div>
 
@@ -766,7 +849,7 @@
             <div class="tablet-post-toc">
                 <div class="post-toc-wrap border-box">
     <div class="post-toc border-box">
-        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%96%87%E4%BB%B6"><span class="nav-number">1.</span> <span class="nav-text">文件</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E9%9D%9E%E6%96%87%E4%BB%B6"><span class="nav-number">2.</span> <span class="nav-text">非文件</span></a></li></ol>
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B"><span class="nav-number">1.</span> <span class="nav-text">数据类型</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Java%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E5%88%92%E5%88%86"><span class="nav-number">1.1.</span> <span class="nav-text">Java数据类型划分</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%A4%E7%A7%8D%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%B7%AE%E5%88%AB"><span class="nav-number">1.2.</span> <span class="nav-text">两种类型的差别</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%80%BB%E8%BE%91%E5%9E%8B"><span class="nav-number">1.2.1.</span> <span class="nav-text">逻辑型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AD%97%E7%AC%A6%E5%9E%8B"><span class="nav-number">1.2.2.</span> <span class="nav-text">字符型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%95%B4%E6%95%B0%E7%B1%BB%E5%9E%8B"><span class="nav-number">1.2.3.</span> <span class="nav-text">整数类型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B5%AE%E7%82%B9%E5%9E%8B"><span class="nav-number">1.2.4.</span> <span class="nav-text">浮点型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%A0%87%E8%AF%86%E7%AC%A6"><span class="nav-number">1.2.5.</span> <span class="nav-text">标识符</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="nav-number">1.3.</span> <span class="nav-text">运算符</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AE%97%E6%9C%AF%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="nav-number">1.3.1.</span> <span class="nav-text">算术运算符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%80%BB%E8%BE%91%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="nav-number">1.3.2.</span> <span class="nav-text">逻辑运算符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%B5%8B%E5%80%BC%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="nav-number">1.3.3.</span> <span class="nav-text">赋值运算符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AD%97%E7%AC%A6%E4%B8%B2%E8%BF%9E%E6%8E%A5%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="nav-number">1.3.4.</span> <span class="nav-text">字符串连接运算符+</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%A1%A8%E8%BE%BE%E5%BC%8F"><span class="nav-number">1.3.5.</span> <span class="nav-text">表达式</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%A1%A8%E8%BE%BE%E5%BC%8F%E4%B8%AD%E7%9A%84%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2"><span class="nav-number">1.3.5.1.</span> <span class="nav-text">表达式中的类型转换</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8F%8D%E6%B1%87%E7%BC%96%E7%9A%84%E4%BB%A3%E7%A0%81"><span class="nav-number">1.3.6.</span> <span class="nav-text">反汇编的代码</span></a></li></ol></li></ol></li></ol>
     </div>
 </div>
 
